@@ -366,13 +366,208 @@ for row in TEMPLATES:
 auto_width(ws5)
 
 # ============================================================
+# SHEET 6: FIELD GLOSSARY (Column header definitions)
+# ============================================================
+ws6 = wb.create_sheet("Field Glossary")
+style_header(ws6, ["field_name", "sap_field", "description_es", "description_en", "data_type", "example", "used_in_templates"])
+
+FIELD_GLOSSARY = [
+    # --- SAP Equipment & Hierarchy Fields ---
+    ("equipment_tag", "EQUNR (alias)", "Tag tecnico del equipo (formato OCP)", "Technical equipment tag (OCP format)", "String", "OCP-CON1-MSAG01", "01-30 (todos)"),
+    ("equnr", "EQUNR", "Numero de equipo SAP (12 digitos)", "SAP Equipment Number (12 digits)", "String", "000000100001", "01, 02, 06, 23, 24, 26, 28"),
+    ("eqktx", "EQKTX", "Texto corto / descripcion del equipo", "Equipment Short Text / Description", "String(40)", "Molino SAG 40x22 L1", "01, 02"),
+    ("eqart", "EQART", "Tipo de equipo SAP (M=Maquina, Q=Inspeccion)", "SAP Equipment Type (M=Machine, Q=Inspection)", "String(1)", "M", "01"),
+    ("eqart_desc", "-", "Descripcion del tipo de equipo", "Equipment type description", "String", "Maquinas", "01"),
+    ("sap_func_loc", "TPLNR", "Ubicacion tecnica SAP (jerarquia)", "SAP Functional Location (hierarchy)", "String(40)", "02-01-01-CHAN01", "01-30 (todos)"),
+    ("tplnr", "TPLNR", "Ubicacion tecnica SAP (nombre original SAP)", "SAP Technical Place Number", "String(40)", "02-01-01-CHAN01", "06"),
+    ("fl_type", "FLTYP", "Tipo de ubicacion tecnica (M=estandar)", "Functional Location Type (M=standard)", "String(1)", "M", "01"),
+    ("pltxt", "PLTXT", "Texto descriptivo de la ubicacion tecnica", "Functional Location Description Text", "String(40)", "Chancado Primario", "01"),
+    ("level", "-", "Nivel jerarquico (1=Planta, 2=Area, 3=Sistema, 4=Equipo)", "Hierarchy Level (1=Plant to 4=Equipment)", "Integer", "4", "01"),
+    ("parent_fl", "TPLMA", "Ubicacion tecnica padre (jerarquia superior)", "Parent Functional Location", "String(40)", "02-01-01", "01"),
+    ("herst", "HERST", "Fabricante del equipo", "Equipment Manufacturer", "String(30)", "Metso", "01"),
+    ("model", "-", "Modelo del equipo", "Equipment Model", "String", "C160", "01"),
+    ("power_kw", "-", "Potencia nominal del equipo (kW)", "Rated Power (kW)", "Decimal", "5500", "01"),
+    ("weight_kg", "-", "Peso del equipo (kg)", "Equipment Weight (kg)", "Decimal", "120000", "01"),
+    ("abckz", "ABCKZ", "Indicador criticidad ABC (1=Alto, 2=Medio, 3=Bajo)", "ABC Criticality Indicator (1=High, 2=Med, 3=Low)", "String(1)", "1", "01, 02"),
+    ("abckz_desc", "-", "Descripcion del nivel de criticidad", "Criticality level description", "String", "Alto", "01, 02"),
+    ("stat", "STAT", "Estado del equipo (ACTIVO, INACTIVO)", "Equipment Status", "String", "ACTIVO", "01"),
+    ("install_date", "INBDT", "Fecha de instalacion del equipo", "Equipment Installation Date", "Date", "2020-03-15", "01"),
+    ("serial_number", "SERNR", "Numero de serie del equipo", "Equipment Serial Number", "String(30)", "SN-2020-001234", "01"),
+    # --- Work Order Fields ---
+    ("aufnr", "AUFNR", "Numero de orden de trabajo SAP", "SAP Work Order Number", "Integer", "1000001", "06, 23, 26, 27, 29"),
+    ("auart", "AUART", "Tipo de orden (PM01/PM02/PM03/PM06/PM07)", "Order Type", "String(4)", "PM01", "06, 23, 26, 27, 29"),
+    ("auart_desc", "-", "Descripcion del tipo de orden", "Order Type Description", "String", "Orden Mant. de Averia", "06, 23, 26"),
+    ("erdat", "ERDAT", "Fecha de creacion de la orden", "Order Created Date", "Date", "2026-01-15", "06"),
+    ("gstrp", "GSTRP", "Fecha inicio planificada (basica)", "Basic Start Date (planned)", "DateTime", "2026-01-20 08:00", "06"),
+    ("gltrp", "GLTRP", "Fecha fin planificada (basica)", "Basic End Date (planned)", "DateTime", "2026-01-20 16:00", "06"),
+    ("iedd", "IEDD", "Fecha inicio real de la orden", "Actual Start Date", "DateTime", "2026-01-20 09:00", "06"),
+    ("iedt", "IEDT", "Fecha fin real de la orden", "Actual End Date", "DateTime", "2026-01-20 15:30", "06"),
+    ("duration_hours", "-", "Duracion total de la intervencion (horas)", "Total intervention duration (hours)", "Decimal", "6.5", "06"),
+    ("system_status", "STAT", "Status sistema SAP de la orden (ABIE/LIBE/NOTI/CTEC)", "SAP System Status of Order", "String", "CTEC", "06, 24"),
+    ("description", "KTEXT", "Texto corto de la orden/aviso (max 72 chars SAP)", "Short Text (max 72 chars SAP limit)", "String(72)", "Reparar fuga aceite Sist Lubricacion", "06, 23"),
+    ("failure_found", "-", "Hallazgo al intervenir (que se encontro)", "Finding during intervention (what was found)", "String", "Rodamiento colapsado", "06"),
+    ("cause_description", "-", "Descripcion de la causa raiz", "Root cause description", "String", "Desgaste normal por horas operacion", "06"),
+    ("solution_description", "-", "Accion correctiva ejecutada", "Corrective action taken", "String", "Se reemplazo componente danado", "06"),
+    ("closure_comments", "-", "Notas de cierre y recomendaciones", "Closure notes and recommendations", "String", "Equipo entregado operativo", "06"),
+    ("crew_size", "-", "Cantidad de trabajadores asignados", "Number of workers assigned", "Integer", "3", "06"),
+    ("specialty", "-", "Especialidad del puesto trabajo (MEC/ELE/INS/LUB/SOL)", "Work Center specialty", "String(3)", "MEC", "06, 26"),
+    ("synth_trace_id", "-", "ID trazabilidad datos sinteticos (interno)", "Synthetic data trace ID (internal)", "String", "S26-OT-0001-A1B2", "06"),
+    # --- Priority Fields ---
+    ("priokx", "PRIOKX", "Codigo prioridad SAP clase Z1 (I/A/M/B)", "SAP Priority Code class Z1", "String(1)", "A", "06"),
+    ("priokx_desc", "-", "Descripcion de la prioridad", "Priority description", "String", "Alta (2-6 dias)", "06"),
+    ("priority_class", "PRIOK", "Clase de prioridad SAP", "SAP Priority Class", "String(2)", "Z1", "06, 23, 24"),
+    ("priority", "-", "Codigo prioridad (I/A/M/B o status backlog)", "Priority code", "String", "A", "23, 24"),
+    ("priority_desc", "-", "Descripcion de la prioridad", "Priority description", "String", "Alta (2-6 dias)", "23, 24"),
+    # --- Notification Fields ---
+    ("ilart", "ILART", "Tipo de aviso/notificacion SAP (A1/A2/A3)", "SAP Notification Type (linked to order)", "String(2)", "A1", "06"),
+    ("ilart_desc", "-", "Descripcion del tipo de aviso", "Notification Type description", "String", "Aviso de mantenimiento", "06"),
+    ("qmnum", "QMNUM", "Numero de notificacion/aviso SAP", "SAP Notification Number", "Integer", "5000001", "06, 24"),
+    ("qmart", "QMART", "Clase de aviso SAP (A1/A2/A3)", "SAP Notification Class", "String(2)", "A1", "24"),
+    ("qmart_desc", "-", "Descripcion de la clase de aviso", "Notification Class description", "String", "Aviso de mantenimiento", "24"),
+    ("notification_catalog", "-", "Catalogo de aviso asignado (M001-M003, P001-P002)", "Assigned notification catalog", "String", "M001", "06, 24"),
+    ("notification_status_schema", "-", "Esquema status usuario del aviso (ZPM00001)", "Notification user status schema", "String", "ZPM00001", "06"),
+    ("notif_user_status", "-", "Status usuario del aviso (APRO/RECH)", "Notification user status", "String(4)", "APRO", "06"),
+    ("user_status_schema", "-", "Esquema status usuario (ZPM00001)", "User status schema", "String", "ZPM00001", "24"),
+    ("user_status", "-", "Status usuario (APRO=Aprobado, RECH=Rechazado)", "User status", "String(4)", "APRO", "24"),
+    ("reported_by", "-", "ID del trabajador que reporto", "Reporting worker ID", "String", "W-MEC-001", "24"),
+    ("reported_date", "-", "Fecha en que se reporto el aviso", "Notification reported date", "Date", "2026-02-15", "24"),
+    ("long_text", "-", "Texto largo del aviso (descripcion extendida)", "Notification long text (extended description)", "String", "Detalle: vibracion excesiva...", "24"),
+    ("damage_code", "-", "Codigo de dano (catalogo B de template 15)", "Damage code (catalog B from template 15)", "String", "B-ROD", "24"),
+    ("cause_code", "-", "Codigo de causa (catalogo 5 de template 15)", "Cause code (catalog 5 from template 15)", "String", "5-FLB", "24"),
+    ("object_part_code", "-", "Codigo parte objeto (catalogo B)", "Object part code (catalog B)", "String", "B-MOT", "24"),
+    ("linked_order", "-", "Numero de orden vinculada al aviso", "Linked order number", "Integer", "1900001", "24"),
+    ("completed_date", "-", "Fecha completado (avisos cerrados)", "Completion date (closed notifications)", "Date", "2026-03-01", "24"),
+    # --- Work Center & Organization Fields ---
+    ("arbpl", "ARBPL", "Puesto de trabajo SAP (8 caracteres)", "SAP Work Center (8 characters)", "String(8)", "PASMEC01", "06"),
+    ("supervisor_wc", "-", "Puesto de trabajo del supervisor", "Supervisor Work Center", "String(8)", "SPASMEC", "06, 23"),
+    ("work_center", "ARBPL", "Puesto de trabajo responsable", "Responsible Work Center", "String(8)", "PASMEC01", "23-27"),
+    ("planning_group", "INGRP", "Grupo de planificacion (P01/P02/P03)", "Planning Group", "String(3)", "P01", "06, 12, 13, 23-30"),
+    ("planning_center", "IWERK", "Centro de planificacion SAP", "SAP Planning Center", "String(4)", "AN01", "06, 23, 24"),
+    ("business_area", "GSBER", "Area de empresa (SEC/RIP/HUM)", "Business Area", "String(3)", "SEC", "06, 23, 24"),
+    ("area", "-", "Nombre del area de proceso", "Process area name", "String", "Chancado", "01-30 (todos)"),
+    ("subprocess", "-", "Nombre del subproceso", "Sub-process name", "String", "Chancado Primario", "06"),
+    # --- Cost Fields ---
+    ("cost_labour_usd", "-", "Costo mano de obra interna (USD)", "Internal labour cost (USD)", "Decimal", "2340.00", "06"),
+    ("cost_materials_usd", "-", "Costo materiales y repuestos (USD)", "Materials & spare parts cost (USD)", "Decimal", "5600.00", "06"),
+    ("cost_external_usd", "-", "Costo servicios externos (USD)", "External services cost (USD)", "Decimal", "12000.00", "06"),
+    ("value_cat_labour", "-", "Categoria valor mano obra (ZMANT001)", "Labour value category", "String", "ZMANT001", "06"),
+    ("value_cat_materials", "-", "Categoria valor materiales (ZMANT002)", "Materials value category", "String", "ZMANT002", "06"),
+    ("value_cat_external", "-", "Categoria valor servicios ext. (ZMANT003)", "External services value category", "String", "ZMANT003", "06"),
+    ("value_category", "-", "Categoria de valor (ZMANT001/002/003)", "Value category", "String", "ZMANT001", "29"),
+    ("amount_usd", "-", "Monto en dolares", "Amount in USD", "Decimal", "3500.00", "29"),
+    ("cost_center", "-", "Centro de costo SAP", "SAP Cost Center", "String", "CC-PL-MEC-SEC", "27, 29"),
+    ("wbs_element", "-", "Elemento PEP/WBS del proyecto", "WBS / PEP Element", "String", "WBS-PL-SEC-MNT-2026", "29"),
+    ("cost_element", "-", "Elemento de costo SAP (cuenta CO)", "SAP Cost Element (CO account)", "String", "621000", "29"),
+    ("budget_usd", "-", "Presupuesto asignado (USD)", "Assigned budget (USD)", "Decimal", "45000.00", "29"),
+    ("variance_usd", "-", "Varianza costo vs presupuesto (USD)", "Cost vs budget variance (USD)", "Decimal", "-2300.00", "29"),
+    ("variance_pct", "-", "Varianza porcentual (%)", "Variance percentage (%)", "Decimal", "-5.1", "29"),
+    ("unit_cost_usd", "-", "Costo unitario del material (USD)", "Unit cost of material (USD)", "Decimal", "1250.00", "27, 28"),
+    ("total_cost_usd", "-", "Costo total (cantidad x unitario)", "Total cost (qty x unit cost)", "Decimal", "3750.00", "27"),
+    # --- Material & BOM Fields ---
+    ("material_code", "MATNR (alias)", "Codigo material sintetico (S26-MAT-NNNN)", "Synthetic material code", "String", "S26-MAT-0001", "07, 27, 28"),
+    ("sap_material_number", "MATNR", "Numero de material SAP (12 digitos)", "SAP Material Number (12 digits)", "String(12)", "000000010001", "27, 28"),
+    ("component_desc", "-", "Descripcion del componente/material", "Component/Material description", "String", "Rodamiento SKF 22328", "28"),
+    ("quantity", "-", "Cantidad (en la unidad de medida)", "Quantity (in unit of measure)", "Decimal", "2", "27, 28"),
+    ("unit_of_measure", "MEINS", "Unidad de medida (EA/KG/L/M/DR/PL/BX/MT)", "Unit of Measure", "String(3)", "EA", "07, 25, 27, 28"),
+    ("item_number", "-", "Numero posicion BOM (incrementos de 10)", "BOM Item Number (increments of 10)", "String(4)", "0010", "28"),
+    ("item_category", "-", "Categoria del item (SPARE/WEAR/CONSUMABLE)", "Item category", "String", "SPARE", "28"),
+    ("critical_spare", "-", "Es repuesto critico (TRUE/FALSE)", "Is critical spare (TRUE/FALSE)", "Boolean", "TRUE", "28"),
+    ("component_category", "-", "Categoria componente BOM (L=stock/N=non-stock/D=doc)", "BOM Component Category", "String(1)", "L", "28"),
+    ("movement_type", "BWART", "Tipo de movimiento SAP (261/262/101/311)", "SAP Movement Type", "String(3)", "261", "27"),
+    ("storage_location", "LGORT", "Ubicacion almacenamiento", "Storage Location", "String", "ALM-CENTRAL", "27"),
+    ("reservation_id", "-", "Numero de reserva de material", "Material reservation number", "String", "S26-RES-0001", "27"),
+    ("movement_doc_id", "-", "Numero documento movimiento", "Movement document number", "String", "S26-MOV-0001", "27"),
+    ("lead_time_days", "-", "Tiempo de entrega (dias)", "Lead time (days)", "Integer", "45", "07, 28"),
+    # --- Measurement Fields ---
+    ("measurement_point_id", "POINT", "ID punto de medida SAP (12 digitos)", "SAP Measurement Point ID (12 digits)", "String(12)", "000000000001", "04, 25"),
+    ("measurement_doc_id", "-", "ID documento de medicion", "Measurement document ID", "String", "S26-MDOC-0001", "25"),
+    ("characteristic", "ATNAM", "Caracteristica medida (TEMP_BRG_DE, VIB_RAD_DE...)", "Measured characteristic", "String", "TEMP_BRG_DE", "04, 25"),
+    ("characteristic_desc", "-", "Descripcion de la caracteristica medida", "Characteristic description", "String", "Temperatura rodamiento LA", "25"),
+    ("reading_date", "-", "Fecha de la lectura/medicion", "Reading/measurement date", "Date", "2026-02-15", "25"),
+    ("reading_time", "-", "Hora de la lectura (turno 08:00-20:00)", "Reading time (shift 08:00-20:00)", "Time", "10:30", "25"),
+    ("measured_value", "-", "Valor medido", "Measured value", "Decimal", "72.5", "25"),
+    ("counter_reading", "-", "Lectura del contador (horometro, ciclos)", "Counter reading (hours, cycles)", "Integer", "45230", "25"),
+    ("valuation_code", "-", "Codigo valoracion (1=OK, 2=Warning, 3=Alarm)", "Valuation code (1=OK, 2=Warning, 3=Alarm)", "Integer", "1", "25"),
+    ("lower_limit", "-", "Limite inferior de medicion", "Lower measurement limit", "Decimal", "0", "04, 25"),
+    ("upper_limit", "-", "Limite superior de medicion", "Upper measurement limit", "Decimal", "95", "04, 25"),
+    ("target_value", "-", "Valor objetivo de medicion", "Target measurement value", "Decimal", "65", "04, 25"),
+    ("is_counter", "-", "Es tipo contador (TRUE/FALSE)", "Is counter type (TRUE/FALSE)", "Boolean", "FALSE", "04, 25"),
+    # --- Time Confirmation Fields ---
+    ("confirmation_id", "-", "ID de confirmacion de tiempo", "Time confirmation ID", "String", "S26-CONF-0001", "26"),
+    ("operation_number", "VORNR", "Numero de operacion (0010, 0020, 0030...)", "Operation Number (increments of 10)", "String(4)", "0010", "26"),
+    ("sub_operation", "-", "Sub-operacion (0000 por defecto)", "Sub-operation (0000 default)", "String(4)", "0000", "26"),
+    ("confirmation_type", "-", "Tipo confirmacion (INDIVIDUAL/COLLECTIVE)", "Confirmation type", "String", "INDIVIDUAL", "26"),
+    ("worker_id", "-", "ID del trabajador que ejecuto", "Executing worker ID", "String", "W-MEC-001", "09, 25, 26"),
+    ("worker_name", "-", "Nombre del trabajador", "Worker name", "String", "Tecnico MEC 001", "26"),
+    ("actual_work_hours", "-", "Horas netas trabajadas", "Actual net work hours", "Decimal", "4.5", "26"),
+    ("break_hours", "-", "Horas de descanso (1h turno 7x7)", "Break hours (1h per 7x7 shift)", "Decimal", "1.0", "26"),
+    ("travel_time_hours", "-", "Tiempo de traslado al equipo (horas)", "Travel time to equipment (hours)", "Decimal", "0.5", "26"),
+    ("setup_time_hours", "-", "Tiempo de preparacion (horas)", "Setup time (hours)", "Decimal", "1.0", "26"),
+    ("total_duration_hours", "-", "Duracion total (trabajo+descanso+traslado+prep)", "Total duration (work+break+travel+setup)", "Decimal", "7.0", "26"),
+    ("final_confirmation", "-", "Es ultima confirmacion de la orden (TRUE/FALSE)", "Is final confirmation for order (TRUE/FALSE)", "Boolean", "TRUE", "26"),
+    ("system_status_after", "-", "Status sistema despues de confirmacion (PCNF/CNF)", "System status after confirmation", "String(4)", "CNF", "26"),
+    # --- Reliability / Weibull Fields ---
+    ("ttf_record_id", "-", "ID registro time-to-failure", "Time-to-failure record ID", "String", "S26-TTF-0001", "30"),
+    ("failure_event_id", "-", "ID del evento de falla (ref OT PM01)", "Failure event ID (ref PM01 order)", "Integer", "1000005", "30"),
+    ("failure_date", "-", "Fecha del evento de falla", "Failure event date", "Date", "2026-02-10", "30"),
+    ("previous_failure_date", "-", "Fecha falla previa en mismo equipo", "Previous failure date on same equipment", "Date", "2025-11-15", "30"),
+    ("time_to_failure_days", "-", "Dias entre fallas (TTF)", "Days between failures (TTF)", "Integer", "87", "30"),
+    ("operating_hours", "-", "Horas operacion entre fallas", "Operating hours between failures", "Integer", "1740", "30"),
+    ("suspension", "-", "Dato censurado (TRUE=aun funcionando)", "Censored data (TRUE=still running)", "Boolean", "FALSE", "30"),
+    ("failure_mechanism", "-", "Mecanismo de falla (18 valores validos)", "Failure mechanism (18 valid values)", "String", "WEARS", "03, 30"),
+    ("failure_cause", "-", "Causa de falla (44 valores validos)", "Failure cause (44 valid values)", "String", "ABRASION", "03, 30"),
+    ("failure_pattern", "-", "Patron falla Nowlan&Heap (A-F)", "Failure pattern Nowlan&Heap (A-F)", "String", "B_AGE", "30"),
+    ("maintainable_item", "-", "Item mantenible que fallo", "Maintainable item that failed", "String", "Rodamiento", "30"),
+    ("repair_duration_hours", "-", "Duracion de la reparacion (horas)", "Repair duration (hours)", "Decimal", "12.5", "30"),
+    ("beta", "-", "Parametro forma Weibull (>1=desgaste, <1=infant, =1=aleatorio)", "Weibull shape parameter", "Decimal", "2.1", "30"),
+    ("eta_days", "-", "Parametro escala Weibull (vida caracteristica, dias)", "Weibull scale parameter (characteristic life, days)", "Decimal", "180.5", "30"),
+    ("gamma_days", "-", "Parametro ubicacion Weibull (periodo libre falla, dias)", "Weibull location parameter (failure-free period, days)", "Decimal", "10.0", "30"),
+    ("r_squared", "-", "Bondad de ajuste del modelo Weibull", "Weibull model goodness of fit", "Decimal", "0.94", "30"),
+    ("mtbf_days", "-", "Tiempo medio entre fallas (dias)", "Mean Time Between Failures (days)", "Decimal", "162.5", "30"),
+    ("recommended_interval_days", "-", "Intervalo optimo recomendado (dias)", "Recommended optimal interval (days)", "Integer", "126", "30"),
+    ("equipment_class", "-", "Clase de equipo para agrupacion (ej: BOMBA_PULPA)", "Equipment class for grouping", "String", "BOMBA_PULPA", "30"),
+    ("sample_size", "-", "Tamano de muestra para calculo Weibull", "Sample size for Weibull calculation", "Integer", "12", "30"),
+    ("confidence_level", "-", "Nivel de confianza del calculo", "Calculation confidence level", "Decimal", "0.90", "30"),
+    # --- Backlog-specific Fields ---
+    ("backlog_id", "-", "ID del item de backlog", "Backlog item ID", "String", "S26-BKL-0001", "23"),
+    ("work_request_id", "-", "ID de la solicitud de trabajo vinculada", "Linked work request ID", "String", "S26-WR-0001", "23"),
+    ("status", "-", "Estado del item (backlog, reserva, etc.)", "Item status", "String", "AWAITING_MATERIALS", "23, 27"),
+    ("blocking_reason", "-", "Razon de bloqueo del item backlog", "Backlog item blocking reason", "String", "Repuesto en transito", "23"),
+    ("created_date", "-", "Fecha de creacion del registro", "Record creation date", "Date", "2026-02-01", "23"),
+    ("age_days", "-", "Antiguedad del item en dias", "Item age in days", "Integer", "45", "23"),
+    ("estimated_duration_hours", "-", "Duracion estimada de la intervencion (horas)", "Estimated intervention duration (hours)", "Decimal", "8.0", "23"),
+    ("required_specialties", "-", "Especialidades requeridas (CSV: MEC,ELE,INS)", "Required specialties (CSV)", "String", "MEC,ELE", "23"),
+    ("materials_ready", "-", "Materiales disponibles (TRUE/FALSE)", "Materials available (TRUE/FALSE)", "Boolean", "TRUE", "23"),
+    ("shutdown_required", "-", "Requiere parada de equipo (TRUE/FALSE)", "Equipment shutdown required (TRUE/FALSE)", "Boolean", "FALSE", "23"),
+    ("groupable", "-", "Agrupable en paquete de trabajo (TRUE/FALSE)", "Groupable in work package (TRUE/FALSE)", "Boolean", "TRUE", "23"),
+    ("group_id", "-", "ID del grupo/paquete de trabajo", "Work package group ID", "String", "WP-GRP-0005", "23"),
+    # --- Generic / Common Fields ---
+    ("period", "-", "Periodo contable (YYYY-MM)", "Accounting period", "String", "2026-02", "12, 13, 29"),
+    ("recorded_by", "-", "ID del tecnico que registro la lectura", "Recording technician ID", "String", "W-INS-003", "25"),
+    ("posting_date", "-", "Fecha de contabilizacion", "Posting date", "Date", "2026-02-15", "27, 29"),
+    ("settlement_rule", "-", "Regla de liquidacion (FULL/PERIODIC)", "Settlement rule", "String", "FULL", "29"),
+    ("pm07_activity_class", "-", "Clase actividad PM07 (RP1=Mayor, RP2=Menor)", "PM07 activity class (RP1=Major, RP2=Minor)", "String(3)", "RP1", "06"),
+    ("pm07_activity_desc", "-", "Descripcion clase actividad PM07", "PM07 activity class description", "String", "Reparacion Mayor", "06"),
+    ("bom_id", "-", "ID de lista de materiales", "Bill of Materials ID", "String", "S26-BOM-0001", "28"),
+    ("bom_level", "-", "Nivel de BOM (1=superior)", "BOM level (1=top level)", "Integer", "1", "28"),
+    ("change_frequency", "-", "Frecuencia de cambio (HIGH/MEDIUM/LOW)", "Change frequency", "String", "MEDIUM", "28"),
+    ("applicable_system", "-", "Sistema aplicable (LUBE/HIDR/TRAN/MECA/SELL/ELEC)", "Applicable system", "String", "MECA", "28"),
+    ("currency", "-", "Moneda (USD)", "Currency", "String(3)", "USD", "29"),
+    ("text", "-", "Texto libre / notas de la operacion", "Free text / operation notes", "String", "Trabajo MEC en MSAG01", "26"),
+]
+
+for row in FIELD_GLOSSARY:
+    ws6.append(list(row))
+auto_width(ws6)
+
+# ============================================================
 # SAVE
 # ============================================================
 path = os.path.join(OUT, "00_data_dictionary.xlsx")
 wb.save(path)
 print(f"\n  -> Saved: 00_data_dictionary.xlsx")
 
-total_codes = len(SAP_CODES) + len(ORG_CODES) + len(CATALOG_CODES) + len(PRIORITY_MAP) + len(TEMPLATES)
-print(f"     Sheets: 5 (SAP Codes, Organizational, Catalogs, Priority Mapping, Template Index)")
-print(f"     Total entries: {total_codes}")
+total_codes = len(SAP_CODES) + len(ORG_CODES) + len(CATALOG_CODES) + len(PRIORITY_MAP) + len(TEMPLATES) + len(FIELD_GLOSSARY)
+print(f"     Sheets: 6 (SAP Codes, Organizational, Catalogs, Priority Mapping, Template Index, Field Glossary)")
+print(f"     Total entries: {total_codes} ({len(FIELD_GLOSSARY)} field definitions)")
 print("=" * 70)
