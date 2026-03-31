@@ -2587,6 +2587,16 @@ class ImportSource(str, Enum):
     PLANNING_KPI = "PLANNING_KPI"                      # Template 12
     DE_KPI = "DE_KPI"                                  # Template 13
     MAINTENANCE_STRATEGY = "MAINTENANCE_STRATEGY"      # Template 14
+    # Gap Analysis Fase 3 (GAP-AMS)
+    ACTIVE_BACKLOG = "ACTIVE_BACKLOG"                    # Template 23
+    SAP_NOTIFICATIONS = "SAP_NOTIFICATIONS"              # Template 24
+    MEASUREMENT_DOCUMENTS = "MEASUREMENT_DOCUMENTS"      # Template 25
+    # Gap Analysis Fase 4 (GAP-AMS)
+    TIME_CONFIRMATIONS = "TIME_CONFIRMATIONS"            # Template 26
+    MATERIAL_MOVEMENTS = "MATERIAL_MOVEMENTS"            # Template 27
+    EQUIPMENT_BOM = "EQUIPMENT_BOM"                      # Template 28
+    COST_HISTORY = "COST_HISTORY"                        # Template 29
+    RELIABILITY_DATA = "RELIABILITY_DATA"                # Template 30
 
 
 class CorrelationType(str, Enum):

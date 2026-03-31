@@ -1034,7 +1034,7 @@ h06 = [
     "duration_hours",
     "cost_labour_usd", "cost_materials_usd", "cost_external_usd",
     "value_cat_labour", "value_cat_materials", "value_cat_external",
-    "failure_found",
+    "failure_found", "cause_description", "solution_description", "closure_comments",
     "arbpl", "supervisor_wc",
     "system_status",
     "pm07_activity_class", "pm07_activity_desc",
@@ -1083,6 +1083,44 @@ FAILURE_FOUND = [
     "Cortocircuito bobinado", "Desalineamiento severo", "Cavitacion impulsor",
     "Corrosion avanzada", "Fatiga en eje", "Obstruccion material", "Desgaste abrasivo",
     "Fuga hidraulica", "Vibracion desbalance", None, None,
+]
+
+# Closure fields (separate RNG to preserve main random state)
+_closure_rng = random.Random(20260406)
+
+CAUSE_DESCRIPTIONS = [
+    "Desgaste normal por horas operacion", "Falta lubricacion periodica",
+    "Contaminacion aceite por ingreso agua", "Sobrecarga operacional continua",
+    "Desalineamiento progresivo no detectado", "Fatiga por ciclos termicos",
+    "Corrosion por ambiente agresivo", "Vibracion excesiva no corregida",
+    "Material inadecuado para servicio", "Falla aislacion por humedad",
+    "Cavitacion por operacion fuera rango", "Torque inadecuado pernos fijacion",
+]
+
+SOLUTION_DESCRIPTIONS = [
+    "Se reemplazo componente danado y verifico alineamiento",
+    "Se reparo y aplico lubricacion segun pauta preventiva",
+    "Se cambio sello mecanico y verifico presiones",
+    "Se rebobino motor y verifico aislacion",
+    "Se realizo alineamiento laser y verifico vibracion",
+    "Se limpio sistema y cambio filtros",
+    "Se cambio rodamientos y ajusto holguras",
+    "Se soldo fisura y aplico END para verificar",
+    "Se cambio revestimiento desgastado",
+    "Se calibro instrumentacion y verifico lecturas",
+    "Se reparo fuga y probo estanqueidad",
+    "Se reemplazo componente y probo en vacio antes de entrega",
+]
+
+CLOSURE_COMMENTS_TPL = [
+    "Equipo entregado operativo. Verificar en proxima ronda",
+    "Reparacion exitosa. Recomendar inclusion en plan PM {freq}S",
+    "Componente reemplazado. Solicitar repuesto reserva a almacen",
+    "Trabajo completado sin novedad. Equipo en servicio normal",
+    "Intervencion completada. Pendiente monitoreo vibracion 7 dias",
+    "Reparacion temporal. Programar intervencion definitiva en parada",
+    "Equipo operativo. Actualizar procedimiento de mantenimiento",
+    "Trabajo finalizado. Registrar consumo materiales en SAP",
 ]
 
 SYS_NAMES = ["Sist Lubricacion", "Sist Hidraulico", "Sist Transmision", "Motor Electrico",
@@ -1180,6 +1218,9 @@ for ot_type, count in OT_DIST.items():
             cost_lab, cost_mat, cost_ext,
             "ZMANT001" if cost_lab > 0 else "", "ZMANT002" if cost_mat > 0 else "", "ZMANT003" if cost_ext > 0 else "",
             random.choice(FAILURE_FOUND) if sys_status == "CTEC" else "",
+            _closure_rng.choice(CAUSE_DESCRIPTIONS) if sys_status == "CTEC" else "",
+            _closure_rng.choice(SOLUTION_DESCRIPTIONS) if sys_status == "CTEC" else "",
+            _closure_rng.choice(CLOSURE_COMMENTS_TPL).format(freq=_closure_rng.choice([4, 8, 13, 26])) if sys_status == "CTEC" else "",
             wc, sup_wc, sys_status,
             pm07_act, pm07_desc,
             crew, spec,

@@ -1,0 +1,1728 @@
+{
+  "reservations_count": 80,
+  "movements_count": 120,
+  "reservations": [
+    {
+      "reservation_id": "S26-RES-0001-0E36",
+      "aufnr": 7000017,
+      "material_code": "S26-MAT-0018",
+      "quantity_reserved": 9,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-HUM-01"
+    },
+    {
+      "reservation_id": "S26-RES-0002-79D8",
+      "aufnr": 3000015,
+      "material_code": "S26-MAT-0010",
+      "quantity_reserved": 8,
+      "status": "PARTIALLY_DELIVERED",
+      "storage_location": "ALM-HUM-01"
+    },
+    {
+      "reservation_id": "S26-RES-0003-AEA0",
+      "aufnr": 7000008,
+      "material_code": "S26-MAT-0017",
+      "quantity_reserved": 6,
+      "status": "OPEN",
+      "storage_location": "ALM-CENTRAL"
+    },
+    {
+      "reservation_id": "S26-RES-0004-349D",
+      "aufnr": 3000001,
+      "material_code": "S26-MAT-0002",
+      "quantity_reserved": 5,
+      "status": "PARTIALLY_DELIVERED",
+      "storage_location": "ALM-SEC-01"
+    },
+    {
+      "reservation_id": "S26-RES-0005-AFBB",
+      "aufnr": 7000001,
+      "material_code": "S26-MAT-0003",
+      "quantity_reserved": 10,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-SEC-01"
+    },
+    {
+      "reservation_id": "S26-RES-0006-3E04",
+      "aufnr": 2000020,
+      "material_code": "S26-MAT-0008",
+      "quantity_reserved": 3,
+      "status": "PARTIALLY_DELIVERED",
+      "storage_location": "ALM-CENTRAL"
+    },
+    {
+      "reservation_id": "S26-RES-0007-0C16",
+      "aufnr": 1000002,
+      "material_code": "S26-MAT-0018",
+      "quantity_reserved": 7,
+      "status": "OPEN",
+      "storage_location": "ALM-CENTRAL"
+    },
+    {
+      "reservation_id": "S26-RES-0008-1D59",
+      "aufnr": 1000013,
+      "material_code": "S26-MAT-0003",
+      "quantity_reserved": 2,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-HUM-01"
+    },
+    {
+      "reservation_id": "S26-RES-0009-A394",
+      "aufnr": 1000029,
+      "material_code": "S26-MAT-0019",
+      "quantity_reserved": 4,
+      "status": "OPEN",
+      "storage_location": "ALM-CENTRAL"
+    },
+    {
+      "reservation_id": "S26-RES-0010-3A5A",
+      "aufnr": 1000014,
+      "material_code": "S26-MAT-0002",
+      "quantity_reserved": 6,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-SEC-01"
+    },
+    {
+      "reservation_id": "S26-RES-0011-CE59",
+      "aufnr": 2000033,
+      "material_code": "S26-MAT-0015",
+      "quantity_reserved": 8,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-SEC-01"
+    },
+    {
+      "reservation_id": "S26-RES-0012-A19E",
+      "aufnr": 3000015,
+      "material_code": "S26-MAT-0006",
+      "quantity_reserved": 3,
+      "status": "OPEN",
+      "storage_location": "ALM-RIP-01"
+    },
+    {
+      "reservation_id": "S26-RES-0013-0864",
+      "aufnr": 1000026,
+      "material_code": "S26-MAT-0014",
+      "quantity_reserved": 7,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-HUM-01"
+    },
+    {
+      "reservation_id": "S26-RES-0014-CCC3",
+      "aufnr": 6000006,
+      "material_code": "S26-MAT-0013",
+      "quantity_reserved": 5,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-SEC-01"
+    },
+    {
+      "reservation_id": "S26-RES-0015-69E5",
+      "aufnr": 3000011,
+      "material_code": "S26-MAT-0012",
+      "quantity_reserved": 5,
+      "status": "OPEN",
+      "storage_location": "ALM-RIP-01"
+    },
+    {
+      "reservation_id": "S26-RES-0016-5340",
+      "aufnr": 7000018,
+      "material_code": "S26-MAT-0002",
+      "quantity_reserved": 7,
+      "status": "PARTIALLY_DELIVERED",
+      "storage_location": "ALM-HUM-01"
+    },
+    {
+      "reservation_id": "S26-RES-0017-C7E8",
+      "aufnr": 2000023,
+      "material_code": "S26-MAT-0004",
+      "quantity_reserved": 9,
+      "status": "PARTIALLY_DELIVERED",
+      "storage_location": "ALM-RIP-01"
+    },
+    {
+      "reservation_id": "S26-RES-0018-C2D6",
+      "aufnr": 6000014,
+      "material_code": "S26-MAT-0020",
+      "quantity_reserved": 10,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-SEC-01"
+    },
+    {
+      "reservation_id": "S26-RES-0019-EC30",
+      "aufnr": 2000040,
+      "material_code": "S26-MAT-0002",
+      "quantity_reserved": 10,
+      "status": "PARTIALLY_DELIVERED",
+      "storage_location": "ALM-SEC-01"
+    },
+    {
+      "reservation_id": "S26-RES-0020-447E",
+      "aufnr": 1000005,
+      "material_code": "S26-MAT-0007",
+      "quantity_reserved": 5,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-SEC-01"
+    },
+    {
+      "reservation_id": "S26-RES-0021-CF39",
+      "aufnr": 3000015,
+      "material_code": "S26-MAT-0020",
+      "quantity_reserved": 8,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-HUM-01"
+    },
+    {
+      "reservation_id": "S26-RES-0022-C339",
+      "aufnr": 6000015,
+      "material_code": "S26-MAT-0016",
+      "quantity_reserved": 8,
+      "status": "PARTIALLY_DELIVERED",
+      "storage_location": "ALM-RIP-01"
+    },
+    {
+      "reservation_id": "S26-RES-0023-1CC7",
+      "aufnr": 2000014,
+      "material_code": "S26-MAT-0008",
+      "quantity_reserved": 5,
+      "status": "PARTIALLY_DELIVERED",
+      "storage_location": "ALM-CENTRAL"
+    },
+    {
+      "reservation_id": "S26-RES-0024-3F76",
+      "aufnr": 2000017,
+      "material_code": "S26-MAT-0010",
+      "quantity_reserved": 2,
+      "status": "PARTIALLY_DELIVERED",
+      "storage_location": "ALM-CENTRAL"
+    },
+    {
+      "reservation_id": "S26-RES-0025-85A0",
+      "aufnr": 7000006,
+      "material_code": "S26-MAT-0020",
+      "quantity_reserved": 4,
+      "status": "PARTIALLY_DELIVERED",
+      "storage_location": "ALM-CENTRAL"
+    },
+    {
+      "reservation_id": "S26-RES-0026-D63A",
+      "aufnr": 2000015,
+      "material_code": "S26-MAT-0018",
+      "quantity_reserved": 5,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-CENTRAL"
+    },
+    {
+      "reservation_id": "S26-RES-0027-2CAB",
+      "aufnr": 7000016,
+      "material_code": "S26-MAT-0020",
+      "quantity_reserved": 5,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-CENTRAL"
+    },
+    {
+      "reservation_id": "S26-RES-0028-9D4C",
+      "aufnr": 2000008,
+      "material_code": "S26-MAT-0006",
+      "quantity_reserved": 7,
+      "status": "OPEN",
+      "storage_location": "ALM-CENTRAL"
+    },
+    {
+      "reservation_id": "S26-RES-0029-901F",
+      "aufnr": 6000010,
+      "material_code": "S26-MAT-0018",
+      "quantity_reserved": 1,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-HUM-01"
+    },
+    {
+      "reservation_id": "S26-RES-0030-5EC5",
+      "aufnr": 2000035,
+      "material_code": "S26-MAT-0019",
+      "quantity_reserved": 5,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-RIP-01"
+    },
+    {
+      "reservation_id": "S26-RES-0031-7C56",
+      "aufnr": 2000026,
+      "material_code": "S26-MAT-0015",
+      "quantity_reserved": 3,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-CENTRAL"
+    },
+    {
+      "reservation_id": "S26-RES-0032-C5EA",
+      "aufnr": 6000015,
+      "material_code": "S26-MAT-0008",
+      "quantity_reserved": 7,
+      "status": "OPEN",
+      "storage_location": "ALM-HUM-01"
+    },
+    {
+      "reservation_id": "S26-RES-0033-6062",
+      "aufnr": 2000035,
+      "material_code": "S26-MAT-0009",
+      "quantity_reserved": 1,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-RIP-01"
+    },
+    {
+      "reservation_id": "S26-RES-0034-8F65",
+      "aufnr": 1000021,
+      "material_code": "S26-MAT-0008",
+      "quantity_reserved": 6,
+      "status": "PARTIALLY_DELIVERED",
+      "storage_location": "ALM-HUM-01"
+    },
+    {
+      "reservation_id": "S26-RES-0035-A153",
+      "aufnr": 1000001,
+      "material_code": "S26-MAT-0010",
+      "quantity_reserved": 4,
+      "status": "PARTIALLY_DELIVERED",
+      "storage_location": "ALM-HUM-01"
+    },
+    {
+      "reservation_id": "S26-RES-0036-4C6E",
+      "aufnr": 3000011,
+      "material_code": "S26-MAT-0004",
+      "quantity_reserved": 4,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-SEC-01"
+    },
+    {
+      "reservation_id": "S26-RES-0037-66C7",
+      "aufnr": 6000014,
+      "material_code": "S26-MAT-0020",
+      "quantity_reserved": 3,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-RIP-01"
+    },
+    {
+      "reservation_id": "S26-RES-0038-167C",
+      "aufnr": 2000010,
+      "material_code": "S26-MAT-0004",
+      "quantity_reserved": 2,
+      "status": "PARTIALLY_DELIVERED",
+      "storage_location": "ALM-CENTRAL"
+    },
+    {
+      "reservation_id": "S26-RES-0039-C4A8",
+      "aufnr": 3000010,
+      "material_code": "S26-MAT-0012",
+      "quantity_reserved": 3,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-HUM-01"
+    },
+    {
+      "reservation_id": "S26-RES-0040-C59C",
+      "aufnr": 1000017,
+      "material_code": "S26-MAT-0010",
+      "quantity_reserved": 8,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-CENTRAL"
+    },
+    {
+      "reservation_id": "S26-RES-0041-1FB6",
+      "aufnr": 2000024,
+      "material_code": "S26-MAT-0005",
+      "quantity_reserved": 1,
+      "status": "PARTIALLY_DELIVERED",
+      "storage_location": "ALM-SEC-01"
+    },
+    {
+      "reservation_id": "S26-RES-0042-2CBE",
+      "aufnr": 2000028,
+      "material_code": "S26-MAT-0016",
+      "quantity_reserved": 9,
+      "status": "PARTIALLY_DELIVERED",
+      "storage_location": "ALM-CENTRAL"
+    },
+    {
+      "reservation_id": "S26-RES-0043-8EA1",
+      "aufnr": 1000027,
+      "material_code": "S26-MAT-0012",
+      "quantity_reserved": 8,
+      "status": "PARTIALLY_DELIVERED",
+      "storage_location": "ALM-CENTRAL"
+    },
+    {
+      "reservation_id": "S26-RES-0044-7BAE",
+      "aufnr": 2000010,
+      "material_code": "S26-MAT-0002",
+      "quantity_reserved": 8,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-HUM-01"
+    },
+    {
+      "reservation_id": "S26-RES-0045-34B9",
+      "aufnr": 6000006,
+      "material_code": "S26-MAT-0015",
+      "quantity_reserved": 5,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-RIP-01"
+    },
+    {
+      "reservation_id": "S26-RES-0046-D33A",
+      "aufnr": 1000011,
+      "material_code": "S26-MAT-0009",
+      "quantity_reserved": 9,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-RIP-01"
+    },
+    {
+      "reservation_id": "S26-RES-0047-D20C",
+      "aufnr": 2000020,
+      "material_code": "S26-MAT-0005",
+      "quantity_reserved": 1,
+      "status": "OPEN",
+      "storage_location": "ALM-CENTRAL"
+    },
+    {
+      "reservation_id": "S26-RES-0048-7CE5",
+      "aufnr": 3000007,
+      "material_code": "S26-MAT-0018",
+      "quantity_reserved": 4,
+      "status": "PARTIALLY_DELIVERED",
+      "storage_location": "ALM-SEC-01"
+    },
+    {
+      "reservation_id": "S26-RES-0049-4117",
+      "aufnr": 2000022,
+      "material_code": "S26-MAT-0009",
+      "quantity_reserved": 8,
+      "status": "OPEN",
+      "storage_location": "ALM-SEC-01"
+    },
+    {
+      "reservation_id": "S26-RES-0050-6626",
+      "aufnr": 2000003,
+      "material_code": "S26-MAT-0020",
+      "quantity_reserved": 5,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-HUM-01"
+    },
+    {
+      "reservation_id": "S26-RES-0051-3A73",
+      "aufnr": 1000009,
+      "material_code": "S26-MAT-0015",
+      "quantity_reserved": 1,
+      "status": "OPEN",
+      "storage_location": "ALM-SEC-01"
+    },
+    {
+      "reservation_id": "S26-RES-0052-3C52",
+      "aufnr": 7000017,
+      "material_code": "S26-MAT-0007",
+      "quantity_reserved": 4,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-RIP-01"
+    },
+    {
+      "reservation_id": "S26-RES-0053-8EAA",
+      "aufnr": 3000008,
+      "material_code": "S26-MAT-0009",
+      "quantity_reserved": 1,
+      "status": "PARTIALLY_DELIVERED",
+      "storage_location": "ALM-SEC-01"
+    },
+    {
+      "reservation_id": "S26-RES-0054-7F4B",
+      "aufnr": 1000017,
+      "material_code": "S26-MAT-0019",
+      "quantity_reserved": 2,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-RIP-01"
+    },
+    {
+      "reservation_id": "S26-RES-0055-7EEA",
+      "aufnr": 3000003,
+      "material_code": "S26-MAT-0010",
+      "quantity_reserved": 3,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-RIP-01"
+    },
+    {
+      "reservation_id": "S26-RES-0056-208C",
+      "aufnr": 7000008,
+      "material_code": "S26-MAT-0017",
+      "quantity_reserved": 5,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-HUM-01"
+    },
+    {
+      "reservation_id": "S26-RES-0057-F10C",
+      "aufnr": 2000039,
+      "material_code": "S26-MAT-0010",
+      "quantity_reserved": 6,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-SEC-01"
+    },
+    {
+      "reservation_id": "S26-RES-0058-DC2D",
+      "aufnr": 7000010,
+      "material_code": "S26-MAT-0002",
+      "quantity_reserved": 10,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-RIP-01"
+    },
+    {
+      "reservation_id": "S26-RES-0059-406B",
+      "aufnr": 2000017,
+      "material_code": "S26-MAT-0004",
+      "quantity_reserved": 9,
+      "status": "PARTIALLY_DELIVERED",
+      "storage_location": "ALM-HUM-01"
+    },
+    {
+      "reservation_id": "S26-RES-0060-A7B4",
+      "aufnr": 1000000,
+      "material_code": "S26-MAT-0011",
+      "quantity_reserved": 6,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-HUM-01"
+    },
+    {
+      "reservation_id": "S26-RES-0061-12B4",
+      "aufnr": 2000025,
+      "material_code": "S26-MAT-0017",
+      "quantity_reserved": 10,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-SEC-01"
+    },
+    {
+      "reservation_id": "S26-RES-0062-6068",
+      "aufnr": 3000008,
+      "material_code": "S26-MAT-0018",
+      "quantity_reserved": 8,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-SEC-01"
+    },
+    {
+      "reservation_id": "S26-RES-0063-6DEC",
+      "aufnr": 3000000,
+      "material_code": "S26-MAT-0017",
+      "quantity_reserved": 7,
+      "status": "PARTIALLY_DELIVERED",
+      "storage_location": "ALM-CENTRAL"
+    },
+    {
+      "reservation_id": "S26-RES-0064-6F8D",
+      "aufnr": 2000001,
+      "material_code": "S26-MAT-0001",
+      "quantity_reserved": 9,
+      "status": "PARTIALLY_DELIVERED",
+      "storage_location": "ALM-CENTRAL"
+    },
+    {
+      "reservation_id": "S26-RES-0065-0F6E",
+      "aufnr": 3000004,
+      "material_code": "S26-MAT-0002",
+      "quantity_reserved": 7,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-CENTRAL"
+    },
+    {
+      "reservation_id": "S26-RES-0066-CFC6",
+      "aufnr": 1000010,
+      "material_code": "S26-MAT-0002",
+      "quantity_reserved": 7,
+      "status": "PARTIALLY_DELIVERED",
+      "storage_location": "ALM-SEC-01"
+    },
+    {
+      "reservation_id": "S26-RES-0067-9586",
+      "aufnr": 1000030,
+      "material_code": "S26-MAT-0007",
+      "quantity_reserved": 5,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-HUM-01"
+    },
+    {
+      "reservation_id": "S26-RES-0068-2993",
+      "aufnr": 3000009,
+      "material_code": "S26-MAT-0014",
+      "quantity_reserved": 8,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-SEC-01"
+    },
+    {
+      "reservation_id": "S26-RES-0069-7F8F",
+      "aufnr": 7000018,
+      "material_code": "S26-MAT-0002",
+      "quantity_reserved": 4,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-RIP-01"
+    },
+    {
+      "reservation_id": "S26-RES-0070-19E2",
+      "aufnr": 2000026,
+      "material_code": "S26-MAT-0018",
+      "quantity_reserved": 4,
+      "status": "OPEN",
+      "storage_location": "ALM-CENTRAL"
+    },
+    {
+      "reservation_id": "S26-RES-0071-F702",
+      "aufnr": 2000032,
+      "material_code": "S26-MAT-0008",
+      "quantity_reserved": 2,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-CENTRAL"
+    },
+    {
+      "reservation_id": "S26-RES-0072-2CAE",
+      "aufnr": 1000007,
+      "material_code": "S26-MAT-0009",
+      "quantity_reserved": 9,
+      "status": "OPEN",
+      "storage_location": "ALM-RIP-01"
+    },
+    {
+      "reservation_id": "S26-RES-0073-9B08",
+      "aufnr": 7000011,
+      "material_code": "S26-MAT-0009",
+      "quantity_reserved": 10,
+      "status": "OPEN",
+      "storage_location": "ALM-HUM-01"
+    },
+    {
+      "reservation_id": "S26-RES-0074-00C9",
+      "aufnr": 2000027,
+      "material_code": "S26-MAT-0003",
+      "quantity_reserved": 1,
+      "status": "PARTIALLY_DELIVERED",
+      "storage_location": "ALM-HUM-01"
+    },
+    {
+      "reservation_id": "S26-RES-0075-E07D",
+      "aufnr": 1000012,
+      "material_code": "S26-MAT-0014",
+      "quantity_reserved": 3,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-SEC-01"
+    },
+    {
+      "reservation_id": "S26-RES-0076-47AD",
+      "aufnr": 2000027,
+      "material_code": "S26-MAT-0003",
+      "quantity_reserved": 1,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-CENTRAL"
+    },
+    {
+      "reservation_id": "S26-RES-0077-3A2A",
+      "aufnr": 7000003,
+      "material_code": "S26-MAT-0018",
+      "quantity_reserved": 8,
+      "status": "FULLY_DELIVERED",
+      "storage_location": "ALM-HUM-01"
+    },
+    {
+      "reservation_id": "S26-RES-0078-CC55",
+      "aufnr": 7000005,
+      "material_code": "S26-MAT-0013",
+      "quantity_reserved": 9,
+      "status": "OPEN",
+      "storage_location": "ALM-SEC-01"
+    },
+    {
+      "reservation_id": "S26-RES-0079-7073",
+      "aufnr": 1000003,
+      "material_code": "S26-MAT-0003",
+      "quantity_reserved": 4,
+      "status": "OPEN",
+      "storage_location": "ALM-CENTRAL"
+    },
+    {
+      "reservation_id": "S26-RES-0080-E439",
+      "aufnr": 2000021,
+      "material_code": "S26-MAT-0007",
+      "quantity_reserved": 9,
+      "status": "OPEN",
+      "storage_location": "ALM-SEC-01"
+    }
+  ],
+  "movements": [
+    {
+      "movement_doc_id": "S26-MOV-0001-33D9",
+      "material_code": "S26-MAT-0001",
+      "movement_type": "261",
+      "quantity": 1,
+      "movement_date": "2025-07-11",
+      "aufnr": 1000023,
+      "total_cost_usd": 1250.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0002-E98C",
+      "material_code": "S26-MAT-0010",
+      "movement_type": "261",
+      "quantity": 18,
+      "movement_date": "2026-03-15",
+      "aufnr": 3000009,
+      "total_cost_usd": 29700.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0003-6266",
+      "material_code": "S26-MAT-0009",
+      "movement_type": "261",
+      "quantity": 4,
+      "movement_date": "2025-11-22",
+      "aufnr": 2000034,
+      "total_cost_usd": 1280.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0004-93A7",
+      "material_code": "S26-MAT-0004",
+      "movement_type": "261",
+      "quantity": 14,
+      "movement_date": "2025-11-07",
+      "aufnr": 2000020,
+      "total_cost_usd": 2590.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0005-6CAA",
+      "material_code": "S26-MAT-0009",
+      "movement_type": "261",
+      "quantity": 3,
+      "movement_date": "2025-11-24",
+      "aufnr": 7000017,
+      "total_cost_usd": 960.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0006-33CD",
+      "material_code": "S26-MAT-0016",
+      "movement_type": "261",
+      "quantity": 17,
+      "movement_date": "2025-09-18",
+      "aufnr": 1000022,
+      "total_cost_usd": 595.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0007-F0B4",
+      "material_code": "S26-MAT-0016",
+      "movement_type": "261",
+      "quantity": 19,
+      "movement_date": "2026-03-21",
+      "aufnr": 7000002,
+      "total_cost_usd": 665.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0008-78F9",
+      "material_code": "S26-MAT-0016",
+      "movement_type": "261",
+      "quantity": 13,
+      "movement_date": "2026-02-23",
+      "aufnr": 1000007,
+      "total_cost_usd": 455.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0009-0FE5",
+      "material_code": "S26-MAT-0007",
+      "movement_type": "261",
+      "quantity": 12,
+      "movement_date": "2026-03-25",
+      "aufnr": 7000013,
+      "total_cost_usd": 26400.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0010-769E",
+      "material_code": "S26-MAT-0010",
+      "movement_type": "261",
+      "quantity": 13,
+      "movement_date": "2025-12-22",
+      "aufnr": 1000027,
+      "total_cost_usd": 21450.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0011-0434",
+      "material_code": "S26-MAT-0009",
+      "movement_type": "261",
+      "quantity": 12,
+      "movement_date": "2025-11-17",
+      "aufnr": 2000038,
+      "total_cost_usd": 3840.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0012-E985",
+      "material_code": "S26-MAT-0017",
+      "movement_type": "261",
+      "quantity": 8,
+      "movement_date": "2026-02-03",
+      "aufnr": 2000044,
+      "total_cost_usd": 176000.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0013-9991",
+      "material_code": "S26-MAT-0009",
+      "movement_type": "261",
+      "quantity": 1,
+      "movement_date": "2026-01-26",
+      "aufnr": 3000010,
+      "total_cost_usd": 320.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0014-DDED",
+      "material_code": "S26-MAT-0010",
+      "movement_type": "261",
+      "quantity": 18,
+      "movement_date": "2025-11-06",
+      "aufnr": 1000001,
+      "total_cost_usd": 29700.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0015-9E35",
+      "material_code": "S26-MAT-0014",
+      "movement_type": "261",
+      "quantity": 9,
+      "movement_date": "2025-08-28",
+      "aufnr": 6000007,
+      "total_cost_usd": 405.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0016-105E",
+      "material_code": "S26-MAT-0011",
+      "movement_type": "261",
+      "quantity": 6,
+      "movement_date": "2025-11-04",
+      "aufnr": 7000016,
+      "total_cost_usd": 111000.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0017-B885",
+      "material_code": "S26-MAT-0014",
+      "movement_type": "261",
+      "quantity": 10,
+      "movement_date": "2025-12-21",
+      "aufnr": 1000020,
+      "total_cost_usd": 450.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0018-525A",
+      "material_code": "S26-MAT-0020",
+      "movement_type": "261",
+      "quantity": 1,
+      "movement_date": "2025-10-08",
+      "aufnr": 7000014,
+      "total_cost_usd": 42.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0019-3F02",
+      "material_code": "S26-MAT-0013",
+      "movement_type": "261",
+      "quantity": 16,
+      "movement_date": "2025-12-05",
+      "aufnr": 2000007,
+      "total_cost_usd": 10880.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0020-0005",
+      "material_code": "S26-MAT-0019",
+      "movement_type": "261",
+      "quantity": 16,
+      "movement_date": "2025-07-13",
+      "aufnr": 3000007,
+      "total_cost_usd": 8320.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0021-1B44",
+      "material_code": "S26-MAT-0016",
+      "movement_type": "261",
+      "quantity": 4,
+      "movement_date": "2026-01-15",
+      "aufnr": 2000031,
+      "total_cost_usd": 140.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0022-4D66",
+      "material_code": "S26-MAT-0018",
+      "movement_type": "261",
+      "quantity": 2,
+      "movement_date": "2025-09-07",
+      "aufnr": 2000005,
+      "total_cost_usd": 1780.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0023-ED08",
+      "material_code": "S26-MAT-0017",
+      "movement_type": "261",
+      "quantity": 20,
+      "movement_date": "2026-03-02",
+      "aufnr": 1000029,
+      "total_cost_usd": 440000.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0024-DD67",
+      "material_code": "S26-MAT-0010",
+      "movement_type": "261",
+      "quantity": 10,
+      "movement_date": "2025-07-09",
+      "aufnr": 1000025,
+      "total_cost_usd": 16500.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0025-4493",
+      "material_code": "S26-MAT-0018",
+      "movement_type": "261",
+      "quantity": 3,
+      "movement_date": "2025-12-07",
+      "aufnr": 1000010,
+      "total_cost_usd": 2670.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0026-CABD",
+      "material_code": "S26-MAT-0009",
+      "movement_type": "261",
+      "quantity": 16,
+      "movement_date": "2026-03-10",
+      "aufnr": 7000013,
+      "total_cost_usd": 5120.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0027-2FD9",
+      "material_code": "S26-MAT-0017",
+      "movement_type": "261",
+      "quantity": 5,
+      "movement_date": "2026-02-28",
+      "aufnr": 3000000,
+      "total_cost_usd": 110000.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0028-D9E0",
+      "material_code": "S26-MAT-0005",
+      "movement_type": "261",
+      "quantity": 5,
+      "movement_date": "2026-01-18",
+      "aufnr": 1000008,
+      "total_cost_usd": 9000.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0029-EF03",
+      "material_code": "S26-MAT-0003",
+      "movement_type": "261",
+      "quantity": 18,
+      "movement_date": "2025-12-25",
+      "aufnr": 2000043,
+      "total_cost_usd": 153000.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0030-544B",
+      "material_code": "S26-MAT-0004",
+      "movement_type": "261",
+      "quantity": 15,
+      "movement_date": "2025-11-20",
+      "aufnr": 1000026,
+      "total_cost_usd": 2775.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0031-91A0",
+      "material_code": "S26-MAT-0020",
+      "movement_type": "261",
+      "quantity": 16,
+      "movement_date": "2025-10-12",
+      "aufnr": 2000030,
+      "total_cost_usd": 672.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0032-D631",
+      "material_code": "S26-MAT-0003",
+      "movement_type": "261",
+      "quantity": 7,
+      "movement_date": "2025-09-06",
+      "aufnr": 2000042,
+      "total_cost_usd": 59500.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0033-12D0",
+      "material_code": "S26-MAT-0006",
+      "movement_type": "261",
+      "quantity": 8,
+      "movement_date": "2026-01-12",
+      "aufnr": 3000008,
+      "total_cost_usd": 1960.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0034-44D8",
+      "material_code": "S26-MAT-0003",
+      "movement_type": "261",
+      "quantity": 3,
+      "movement_date": "2025-09-04",
+      "aufnr": 2000018,
+      "total_cost_usd": 25500.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0035-8828",
+      "material_code": "S26-MAT-0007",
+      "movement_type": "261",
+      "quantity": 3,
+      "movement_date": "2025-08-31",
+      "aufnr": 2000021,
+      "total_cost_usd": 6600.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0036-F53F",
+      "material_code": "S26-MAT-0014",
+      "movement_type": "261",
+      "quantity": 20,
+      "movement_date": "2026-03-02",
+      "aufnr": 1000031,
+      "total_cost_usd": 900.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0037-B6C2",
+      "material_code": "S26-MAT-0005",
+      "movement_type": "261",
+      "quantity": 7,
+      "movement_date": "2025-10-15",
+      "aufnr": 1000030,
+      "total_cost_usd": 12600.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0038-6D14",
+      "material_code": "S26-MAT-0008",
+      "movement_type": "261",
+      "quantity": 17,
+      "movement_date": "2025-09-07",
+      "aufnr": 2000024,
+      "total_cost_usd": 212500.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0039-4549",
+      "material_code": "S26-MAT-0013",
+      "movement_type": "261",
+      "quantity": 8,
+      "movement_date": "2025-11-30",
+      "aufnr": 7000006,
+      "total_cost_usd": 5440.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0040-49BE",
+      "material_code": "S26-MAT-0015",
+      "movement_type": "261",
+      "quantity": 4,
+      "movement_date": "2025-12-31",
+      "aufnr": 3000014,
+      "total_cost_usd": 112.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0041-A4DB",
+      "material_code": "S26-MAT-0002",
+      "movement_type": "261",
+      "quantity": 16,
+      "movement_date": "2025-08-03",
+      "aufnr": 6000009,
+      "total_cost_usd": 54400.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0042-E540",
+      "material_code": "S26-MAT-0017",
+      "movement_type": "261",
+      "quantity": 19,
+      "movement_date": "2025-12-15",
+      "aufnr": 2000018,
+      "total_cost_usd": 418000.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0043-888C",
+      "material_code": "S26-MAT-0015",
+      "movement_type": "261",
+      "quantity": 1,
+      "movement_date": "2025-10-19",
+      "aufnr": 7000016,
+      "total_cost_usd": 28.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0044-921B",
+      "material_code": "S26-MAT-0018",
+      "movement_type": "261",
+      "quantity": 9,
+      "movement_date": "2026-01-31",
+      "aufnr": 2000027,
+      "total_cost_usd": 8010.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0045-A04D",
+      "material_code": "S26-MAT-0017",
+      "movement_type": "261",
+      "quantity": 11,
+      "movement_date": "2025-10-30",
+      "aufnr": 2000000,
+      "total_cost_usd": 242000.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0046-7517",
+      "material_code": "S26-MAT-0018",
+      "movement_type": "261",
+      "quantity": 11,
+      "movement_date": "2026-03-16",
+      "aufnr": 3000011,
+      "total_cost_usd": 9790.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0047-88CC",
+      "material_code": "S26-MAT-0016",
+      "movement_type": "261",
+      "quantity": 13,
+      "movement_date": "2025-12-27",
+      "aufnr": 6000013,
+      "total_cost_usd": 455.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0048-4580",
+      "material_code": "S26-MAT-0015",
+      "movement_type": "261",
+      "quantity": 8,
+      "movement_date": "2025-10-27",
+      "aufnr": 1000009,
+      "total_cost_usd": 224.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0049-C306",
+      "material_code": "S26-MAT-0003",
+      "movement_type": "261",
+      "quantity": 12,
+      "movement_date": "2025-10-22",
+      "aufnr": 3000000,
+      "total_cost_usd": 102000.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0050-74CA",
+      "material_code": "S26-MAT-0006",
+      "movement_type": "261",
+      "quantity": 1,
+      "movement_date": "2026-02-16",
+      "aufnr": 6000009,
+      "total_cost_usd": 245.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0051-3A16",
+      "material_code": "S26-MAT-0003",
+      "movement_type": "261",
+      "quantity": 17,
+      "movement_date": "2025-10-12",
+      "aufnr": 3000009,
+      "total_cost_usd": 144500.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0052-F712",
+      "material_code": "S26-MAT-0012",
+      "movement_type": "261",
+      "quantity": 20,
+      "movement_date": "2026-01-14",
+      "aufnr": 7000013,
+      "total_cost_usd": 84000.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0053-A97C",
+      "material_code": "S26-MAT-0002",
+      "movement_type": "261",
+      "quantity": 18,
+      "movement_date": "2026-03-11",
+      "aufnr": 2000019,
+      "total_cost_usd": 61200.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0054-0467",
+      "material_code": "S26-MAT-0003",
+      "movement_type": "261",
+      "quantity": 3,
+      "movement_date": "2025-11-23",
+      "aufnr": 2000006,
+      "total_cost_usd": 25500.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0055-F458",
+      "material_code": "S26-MAT-0003",
+      "movement_type": "261",
+      "quantity": 18,
+      "movement_date": "2025-08-08",
+      "aufnr": 3000008,
+      "total_cost_usd": 153000.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0056-83E6",
+      "material_code": "S26-MAT-0014",
+      "movement_type": "261",
+      "quantity": 5,
+      "movement_date": "2025-12-18",
+      "aufnr": 7000013,
+      "total_cost_usd": 225.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0057-E229",
+      "material_code": "S26-MAT-0005",
+      "movement_type": "261",
+      "quantity": 11,
+      "movement_date": "2025-12-25",
+      "aufnr": 1000008,
+      "total_cost_usd": 19800.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0058-EAA1",
+      "material_code": "S26-MAT-0020",
+      "movement_type": "261",
+      "quantity": 4,
+      "movement_date": "2025-11-27",
+      "aufnr": 1000014,
+      "total_cost_usd": 168.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0059-C116",
+      "material_code": "S26-MAT-0010",
+      "movement_type": "261",
+      "quantity": 2,
+      "movement_date": "2026-01-02",
+      "aufnr": 2000028,
+      "total_cost_usd": 3300.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0060-81DE",
+      "material_code": "S26-MAT-0001",
+      "movement_type": "261",
+      "quantity": 3,
+      "movement_date": "2025-08-06",
+      "aufnr": 1000012,
+      "total_cost_usd": 3750.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0061-C0D3",
+      "material_code": "S26-MAT-0013",
+      "movement_type": "261",
+      "quantity": 2,
+      "movement_date": "2025-10-12",
+      "aufnr": 2000004,
+      "total_cost_usd": 1360.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0062-4F91",
+      "material_code": "S26-MAT-0006",
+      "movement_type": "261",
+      "quantity": 12,
+      "movement_date": "2025-09-06",
+      "aufnr": 7000002,
+      "total_cost_usd": 2940.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0063-2BDA",
+      "material_code": "S26-MAT-0018",
+      "movement_type": "261",
+      "quantity": 7,
+      "movement_date": "2025-11-20",
+      "aufnr": 2000019,
+      "total_cost_usd": 6230.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0064-A25A",
+      "material_code": "S26-MAT-0016",
+      "movement_type": "261",
+      "quantity": 19,
+      "movement_date": "2025-07-19",
+      "aufnr": 6000015,
+      "total_cost_usd": 665.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0065-28D1",
+      "material_code": "S26-MAT-0012",
+      "movement_type": "261",
+      "quantity": 1,
+      "movement_date": "2026-02-02",
+      "aufnr": 2000008,
+      "total_cost_usd": 4200.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0066-A7F1",
+      "material_code": "S26-MAT-0012",
+      "movement_type": "261",
+      "quantity": 15,
+      "movement_date": "2025-08-28",
+      "aufnr": 2000020,
+      "total_cost_usd": 63000.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0067-E826",
+      "material_code": "S26-MAT-0019",
+      "movement_type": "261",
+      "quantity": 15,
+      "movement_date": "2025-12-13",
+      "aufnr": 2000031,
+      "total_cost_usd": 7800.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0068-4BD7",
+      "material_code": "S26-MAT-0009",
+      "movement_type": "261",
+      "quantity": 7,
+      "movement_date": "2026-01-12",
+      "aufnr": 1000001,
+      "total_cost_usd": 2240.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0069-EC12",
+      "material_code": "S26-MAT-0016",
+      "movement_type": "261",
+      "quantity": 14,
+      "movement_date": "2025-10-08",
+      "aufnr": 2000044,
+      "total_cost_usd": 490.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0070-9B0E",
+      "material_code": "S26-MAT-0006",
+      "movement_type": "261",
+      "quantity": 5,
+      "movement_date": "2026-02-04",
+      "aufnr": 6000002,
+      "total_cost_usd": 1225.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0071-8BD0",
+      "material_code": "S26-MAT-0003",
+      "movement_type": "261",
+      "quantity": 12,
+      "movement_date": "2025-12-22",
+      "aufnr": 2000012,
+      "total_cost_usd": 102000.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0072-0537",
+      "material_code": "S26-MAT-0001",
+      "movement_type": "261",
+      "quantity": 14,
+      "movement_date": "2025-08-28",
+      "aufnr": 2000008,
+      "total_cost_usd": 17500.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0073-002B",
+      "material_code": "S26-MAT-0013",
+      "movement_type": "101",
+      "quantity": 18,
+      "movement_date": "2025-12-13",
+      "aufnr": "",
+      "total_cost_usd": 12240.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0074-AD37",
+      "material_code": "S26-MAT-0018",
+      "movement_type": "101",
+      "quantity": 1,
+      "movement_date": "2026-02-28",
+      "aufnr": "",
+      "total_cost_usd": 890.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0075-D0DB",
+      "material_code": "S26-MAT-0011",
+      "movement_type": "101",
+      "quantity": 2,
+      "movement_date": "2025-12-11",
+      "aufnr": "",
+      "total_cost_usd": 37000.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0076-AFC1",
+      "material_code": "S26-MAT-0001",
+      "movement_type": "101",
+      "quantity": 7,
+      "movement_date": "2025-10-18",
+      "aufnr": "",
+      "total_cost_usd": 8750.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0077-D04A",
+      "material_code": "S26-MAT-0006",
+      "movement_type": "101",
+      "quantity": 4,
+      "movement_date": "2025-08-28",
+      "aufnr": "",
+      "total_cost_usd": 980.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0078-350E",
+      "material_code": "S26-MAT-0001",
+      "movement_type": "101",
+      "quantity": 10,
+      "movement_date": "2025-09-21",
+      "aufnr": "",
+      "total_cost_usd": 12500.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0079-9312",
+      "material_code": "S26-MAT-0020",
+      "movement_type": "101",
+      "quantity": 13,
+      "movement_date": "2026-02-12",
+      "aufnr": "",
+      "total_cost_usd": 546.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0080-6BD4",
+      "material_code": "S26-MAT-0017",
+      "movement_type": "101",
+      "quantity": 16,
+      "movement_date": "2025-09-01",
+      "aufnr": "",
+      "total_cost_usd": 352000.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0081-A0B4",
+      "material_code": "S26-MAT-0012",
+      "movement_type": "101",
+      "quantity": 11,
+      "movement_date": "2026-02-02",
+      "aufnr": "",
+      "total_cost_usd": 46200.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0082-C9A4",
+      "material_code": "S26-MAT-0004",
+      "movement_type": "101",
+      "quantity": 12,
+      "movement_date": "2025-10-26",
+      "aufnr": "",
+      "total_cost_usd": 2220.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0083-D525",
+      "material_code": "S26-MAT-0015",
+      "movement_type": "101",
+      "quantity": 10,
+      "movement_date": "2025-12-02",
+      "aufnr": "",
+      "total_cost_usd": 280.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0084-7E8F",
+      "material_code": "S26-MAT-0009",
+      "movement_type": "101",
+      "quantity": 2,
+      "movement_date": "2025-09-05",
+      "aufnr": "",
+      "total_cost_usd": 640.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0085-6F13",
+      "material_code": "S26-MAT-0012",
+      "movement_type": "101",
+      "quantity": 8,
+      "movement_date": "2025-08-11",
+      "aufnr": "",
+      "total_cost_usd": 33600.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0086-6B59",
+      "material_code": "S26-MAT-0010",
+      "movement_type": "101",
+      "quantity": 8,
+      "movement_date": "2026-02-01",
+      "aufnr": "",
+      "total_cost_usd": 13200.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0087-AF44",
+      "material_code": "S26-MAT-0001",
+      "movement_type": "101",
+      "quantity": 6,
+      "movement_date": "2025-11-06",
+      "aufnr": "",
+      "total_cost_usd": 7500.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0088-E4A1",
+      "material_code": "S26-MAT-0002",
+      "movement_type": "101",
+      "quantity": 6,
+      "movement_date": "2025-09-08",
+      "aufnr": "",
+      "total_cost_usd": 20400.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0089-F563",
+      "material_code": "S26-MAT-0010",
+      "movement_type": "101",
+      "quantity": 1,
+      "movement_date": "2026-02-08",
+      "aufnr": "",
+      "total_cost_usd": 1650.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0090-AD67",
+      "material_code": "S26-MAT-0007",
+      "movement_type": "101",
+      "quantity": 2,
+      "movement_date": "2026-01-01",
+      "aufnr": "",
+      "total_cost_usd": 4400.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0091-424C",
+      "material_code": "S26-MAT-0012",
+      "movement_type": "101",
+      "quantity": 3,
+      "movement_date": "2025-10-13",
+      "aufnr": "",
+      "total_cost_usd": 12600.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0092-CBDF",
+      "material_code": "S26-MAT-0007",
+      "movement_type": "101",
+      "quantity": 10,
+      "movement_date": "2025-12-04",
+      "aufnr": "",
+      "total_cost_usd": 22000.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0093-B154",
+      "material_code": "S26-MAT-0014",
+      "movement_type": "101",
+      "quantity": 4,
+      "movement_date": "2025-08-25",
+      "aufnr": "",
+      "total_cost_usd": 180.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0094-1079",
+      "material_code": "S26-MAT-0009",
+      "movement_type": "101",
+      "quantity": 3,
+      "movement_date": "2025-11-11",
+      "aufnr": "",
+      "total_cost_usd": 960.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0095-BD76",
+      "material_code": "S26-MAT-0003",
+      "movement_type": "101",
+      "quantity": 4,
+      "movement_date": "2025-11-24",
+      "aufnr": "",
+      "total_cost_usd": 34000.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0096-DE9E",
+      "material_code": "S26-MAT-0017",
+      "movement_type": "101",
+      "quantity": 10,
+      "movement_date": "2026-01-19",
+      "aufnr": "",
+      "total_cost_usd": 220000.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0097-DBB8",
+      "material_code": "S26-MAT-0009",
+      "movement_type": "101",
+      "quantity": 9,
+      "movement_date": "2026-01-05",
+      "aufnr": "",
+      "total_cost_usd": 2880.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0098-0413",
+      "material_code": "S26-MAT-0001",
+      "movement_type": "101",
+      "quantity": 1,
+      "movement_date": "2025-12-14",
+      "aufnr": "",
+      "total_cost_usd": 1250.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0099-7CFC",
+      "material_code": "S26-MAT-0004",
+      "movement_type": "101",
+      "quantity": 4,
+      "movement_date": "2025-09-23",
+      "aufnr": "",
+      "total_cost_usd": 740.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0100-A994",
+      "material_code": "S26-MAT-0007",
+      "movement_type": "101",
+      "quantity": 5,
+      "movement_date": "2026-01-01",
+      "aufnr": "",
+      "total_cost_usd": 11000.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0101-7E76",
+      "material_code": "S26-MAT-0009",
+      "movement_type": "101",
+      "quantity": 5,
+      "movement_date": "2025-11-30",
+      "aufnr": "",
+      "total_cost_usd": 1600.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0102-F71B",
+      "material_code": "S26-MAT-0018",
+      "movement_type": "101",
+      "quantity": 20,
+      "movement_date": "2025-08-02",
+      "aufnr": "",
+      "total_cost_usd": 17800.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0103-C491",
+      "material_code": "S26-MAT-0014",
+      "movement_type": "311",
+      "quantity": 19,
+      "movement_date": "2025-08-06",
+      "aufnr": "",
+      "total_cost_usd": 855.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0104-C1C5",
+      "material_code": "S26-MAT-0016",
+      "movement_type": "311",
+      "quantity": 2,
+      "movement_date": "2026-01-31",
+      "aufnr": "",
+      "total_cost_usd": 70.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0105-358B",
+      "material_code": "S26-MAT-0010",
+      "movement_type": "311",
+      "quantity": 18,
+      "movement_date": "2025-07-13",
+      "aufnr": "",
+      "total_cost_usd": 29700.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0106-3046",
+      "material_code": "S26-MAT-0020",
+      "movement_type": "311",
+      "quantity": 16,
+      "movement_date": "2025-09-19",
+      "aufnr": "",
+      "total_cost_usd": 672.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0107-F56A",
+      "material_code": "S26-MAT-0011",
+      "movement_type": "311",
+      "quantity": 15,
+      "movement_date": "2026-02-16",
+      "aufnr": "",
+      "total_cost_usd": 277500.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0108-3A3D",
+      "material_code": "S26-MAT-0006",
+      "movement_type": "311",
+      "quantity": 2,
+      "movement_date": "2025-12-16",
+      "aufnr": "",
+      "total_cost_usd": 490.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0109-0856",
+      "material_code": "S26-MAT-0002",
+      "movement_type": "311",
+      "quantity": 15,
+      "movement_date": "2025-08-24",
+      "aufnr": "",
+      "total_cost_usd": 51000.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0110-D087",
+      "material_code": "S26-MAT-0007",
+      "movement_type": "311",
+      "quantity": 1,
+      "movement_date": "2025-10-01",
+      "aufnr": "",
+      "total_cost_usd": 2200.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0111-75A2",
+      "material_code": "S26-MAT-0009",
+      "movement_type": "311",
+      "quantity": 6,
+      "movement_date": "2026-02-20",
+      "aufnr": "",
+      "total_cost_usd": 1920.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0112-E51E",
+      "material_code": "S26-MAT-0014",
+      "movement_type": "311",
+      "quantity": 20,
+      "movement_date": "2026-02-01",
+      "aufnr": "",
+      "total_cost_usd": 900.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0113-B7C6",
+      "material_code": "S26-MAT-0012",
+      "movement_type": "311",
+      "quantity": 9,
+      "movement_date": "2026-02-17",
+      "aufnr": "",
+      "total_cost_usd": 37800.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0114-52C0",
+      "material_code": "S26-MAT-0008",
+      "movement_type": "311",
+      "quantity": 15,
+      "movement_date": "2025-09-23",
+      "aufnr": "",
+      "total_cost_usd": 187500.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0115-C8A8",
+      "material_code": "S26-MAT-0005",
+      "movement_type": "262",
+      "quantity": 9,
+      "movement_date": "2025-10-25",
+      "aufnr": 7000009,
+      "total_cost_usd": 16200.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0116-408D",
+      "material_code": "S26-MAT-0017",
+      "movement_type": "262",
+      "quantity": 11,
+      "movement_date": "2025-10-10",
+      "aufnr": 2000011,
+      "total_cost_usd": 242000.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0117-F2DD",
+      "material_code": "S26-MAT-0002",
+      "movement_type": "262",
+      "quantity": 17,
+      "movement_date": "2025-08-07",
+      "aufnr": 3000009,
+      "total_cost_usd": 57800.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0118-E303",
+      "material_code": "S26-MAT-0011",
+      "movement_type": "262",
+      "quantity": 8,
+      "movement_date": "2025-12-30",
+      "aufnr": 7000000,
+      "total_cost_usd": 148000.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0119-916B",
+      "material_code": "S26-MAT-0002",
+      "movement_type": "262",
+      "quantity": 10,
+      "movement_date": "2025-08-05",
+      "aufnr": 2000025,
+      "total_cost_usd": 34000.0
+    },
+    {
+      "movement_doc_id": "S26-MOV-0120-A3BA",
+      "material_code": "S26-MAT-0002",
+      "movement_type": "262",
+      "quantity": 11,
+      "movement_date": "2026-01-17",
+      "aufnr": 7000010,
+      "total_cost_usd": 37400.0
+    }
+  ]
+}

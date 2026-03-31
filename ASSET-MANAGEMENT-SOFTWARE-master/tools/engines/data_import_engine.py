@@ -76,6 +76,32 @@ _REQUIRED_COLUMNS: dict[ImportSource, list[str]] = {
     ImportSource.MAINTENANCE_STRATEGY: [
         "strategy_id", "equipment_tag", "mechanism", "cause", "tactics_type",
     ],
+    # Gap Analysis Fase 3 (GAP-AMS)
+    ImportSource.ACTIVE_BACKLOG: [
+        "backlog_id", "equipment_tag", "priority", "status", "estimated_duration_hours",
+    ],
+    ImportSource.SAP_NOTIFICATIONS: [
+        "qmnum", "qmart", "equipment_tag", "reported_date", "system_status",
+    ],
+    ImportSource.MEASUREMENT_DOCUMENTS: [
+        "measurement_point_id", "equipment_tag", "reading_date", "measured_value",
+    ],
+    # Gap Analysis Fase 4 (GAP-AMS)
+    ImportSource.TIME_CONFIRMATIONS: [
+        "confirmation_id", "aufnr", "worker_id", "actual_work_hours",
+    ],
+    ImportSource.MATERIAL_MOVEMENTS: [
+        "material_code", "movement_type", "quantity", "movement_date",
+    ],
+    ImportSource.EQUIPMENT_BOM: [
+        "equipment_tag", "material_code", "quantity",
+    ],
+    ImportSource.COST_HISTORY: [
+        "aufnr", "value_category", "amount_usd",
+    ],
+    ImportSource.RELIABILITY_DATA: [
+        "equipment_tag", "failure_date", "time_to_failure_days",
+    ],
 }
 
 # ── Known column aliases for auto-mapping ─────────────────────────

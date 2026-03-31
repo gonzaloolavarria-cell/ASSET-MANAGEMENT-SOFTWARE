@@ -69,6 +69,15 @@ def get_mock_data(transaction: str) -> dict | list:
         "IP10": "maintenance_plans.json",
         "MM60": "materials_bom.json",
         "IL03": "functional_locations.json",
+        # Gap Analysis Fase 3
+        "IW38_BACKLOG": "active_backlog.json",
+        "IW28": "notifications.json",
+        "IK12": "measurement_docs.json",
+        # Gap Analysis Fase 4
+        "IW42": "time_confirmations.json",
+        "MB51": "material_movements.json",
+        "CS03": "equipment_bom.json",
+        "KOB1": "cost_history.json",
     }
     filename = file_map.get(transaction.upper())
     if not filename:

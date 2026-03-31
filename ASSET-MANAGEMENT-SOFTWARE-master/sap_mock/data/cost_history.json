@@ -1,0 +1,605 @@
+{
+  "total_records": 100,
+  "cost_records": [
+    {
+      "aufnr": 7000014,
+      "value_category": "ZMANT001",
+      "amount_usd": 1032.0,
+      "period": "2025-09"
+    },
+    {
+      "aufnr": 7000014,
+      "value_category": "ZMANT002",
+      "amount_usd": 9621.85,
+      "period": "2025-09"
+    },
+    {
+      "aufnr": 7000000,
+      "value_category": "ZMANT001",
+      "amount_usd": 9261.0,
+      "period": "2025-07"
+    },
+    {
+      "aufnr": 7000000,
+      "value_category": "ZMANT002",
+      "amount_usd": 14169.95,
+      "period": "2025-07"
+    },
+    {
+      "aufnr": 2000015,
+      "value_category": "ZMANT001",
+      "amount_usd": 2043.0,
+      "period": "2025-08"
+    },
+    {
+      "aufnr": 2000015,
+      "value_category": "ZMANT002",
+      "amount_usd": 629.78,
+      "period": "2025-08"
+    },
+    {
+      "aufnr": 2000011,
+      "value_category": "ZMANT001",
+      "amount_usd": 783.0,
+      "period": "2026-01"
+    },
+    {
+      "aufnr": 2000011,
+      "value_category": "ZMANT002",
+      "amount_usd": 13058.61,
+      "period": "2026-01"
+    },
+    {
+      "aufnr": 2000032,
+      "value_category": "ZMANT001",
+      "amount_usd": 6692.4,
+      "period": "2026-01"
+    },
+    {
+      "aufnr": 2000032,
+      "value_category": "ZMANT002",
+      "amount_usd": 2239.68,
+      "period": "2026-01"
+    },
+    {
+      "aufnr": 3000005,
+      "value_category": "ZMANT001",
+      "amount_usd": 994.5,
+      "period": "2025-11"
+    },
+    {
+      "aufnr": 3000005,
+      "value_category": "ZMANT002",
+      "amount_usd": 5397.29,
+      "period": "2025-11"
+    },
+    {
+      "aufnr": 3000005,
+      "value_category": "ZMANT003",
+      "amount_usd": 16241.07,
+      "period": "2025-11"
+    },
+    {
+      "aufnr": 2000010,
+      "value_category": "ZMANT001",
+      "amount_usd": 5664.0,
+      "period": "2025-05"
+    },
+    {
+      "aufnr": 2000010,
+      "value_category": "ZMANT002",
+      "amount_usd": 4130.35,
+      "period": "2025-05"
+    },
+    {
+      "aufnr": 6000002,
+      "value_category": "ZMANT001",
+      "amount_usd": 5332.5,
+      "period": "2025-07"
+    },
+    {
+      "aufnr": 6000002,
+      "value_category": "ZMANT002",
+      "amount_usd": 6509.53,
+      "period": "2025-07"
+    },
+    {
+      "aufnr": 1000002,
+      "value_category": "ZMANT001",
+      "amount_usd": 4425.6,
+      "period": "2025-06"
+    },
+    {
+      "aufnr": 1000002,
+      "value_category": "ZMANT002",
+      "amount_usd": 3034.21,
+      "period": "2025-06"
+    },
+    {
+      "aufnr": 2000007,
+      "value_category": "ZMANT001",
+      "amount_usd": 3897.6,
+      "period": "2025-07"
+    },
+    {
+      "aufnr": 2000007,
+      "value_category": "ZMANT002",
+      "amount_usd": 12728.17,
+      "period": "2025-07"
+    },
+    {
+      "aufnr": 1000018,
+      "value_category": "ZMANT001",
+      "amount_usd": 3676.8,
+      "period": "2025-07"
+    },
+    {
+      "aufnr": 1000018,
+      "value_category": "ZMANT002",
+      "amount_usd": 12961.96,
+      "period": "2025-07"
+    },
+    {
+      "aufnr": 3000013,
+      "value_category": "ZMANT001",
+      "amount_usd": 2416.5,
+      "period": "2025-08"
+    },
+    {
+      "aufnr": 3000013,
+      "value_category": "ZMANT002",
+      "amount_usd": 6414.56,
+      "period": "2025-08"
+    },
+    {
+      "aufnr": 3000002,
+      "value_category": "ZMANT001",
+      "amount_usd": 728.0,
+      "period": "2025-05"
+    },
+    {
+      "aufnr": 3000002,
+      "value_category": "ZMANT003",
+      "amount_usd": 25110.59,
+      "period": "2025-05"
+    },
+    {
+      "aufnr": 3000010,
+      "value_category": "ZMANT001",
+      "amount_usd": 1560.0,
+      "period": "2025-11"
+    },
+    {
+      "aufnr": 3000010,
+      "value_category": "ZMANT002",
+      "amount_usd": 893.12,
+      "period": "2025-11"
+    },
+    {
+      "aufnr": 3000010,
+      "value_category": "ZMANT003",
+      "amount_usd": 47404.01,
+      "period": "2025-11"
+    },
+    {
+      "aufnr": 7000011,
+      "value_category": "ZMANT001",
+      "amount_usd": 19116.0,
+      "period": "2025-06"
+    },
+    {
+      "aufnr": 7000011,
+      "value_category": "ZMANT002",
+      "amount_usd": 11476.02,
+      "period": "2025-06"
+    },
+    {
+      "aufnr": 7000011,
+      "value_category": "ZMANT003",
+      "amount_usd": 48551.6,
+      "period": "2025-06"
+    },
+    {
+      "aufnr": 6000012,
+      "value_category": "ZMANT001",
+      "amount_usd": 2664.0,
+      "period": "2025-08"
+    },
+    {
+      "aufnr": 2000001,
+      "value_category": "ZMANT001",
+      "amount_usd": 1701.0,
+      "period": "2025-05"
+    },
+    {
+      "aufnr": 2000001,
+      "value_category": "ZMANT002",
+      "amount_usd": 4275.57,
+      "period": "2025-05"
+    },
+    {
+      "aufnr": 6000008,
+      "value_category": "ZMANT001",
+      "amount_usd": 1092.0,
+      "period": "2025-05"
+    },
+    {
+      "aufnr": 1000020,
+      "value_category": "ZMANT001",
+      "amount_usd": 696.8,
+      "period": "2025-09"
+    },
+    {
+      "aufnr": 1000020,
+      "value_category": "ZMANT002",
+      "amount_usd": 9668.6,
+      "period": "2025-09"
+    },
+    {
+      "aufnr": 2000025,
+      "value_category": "ZMANT001",
+      "amount_usd": 6534.0,
+      "period": "2025-05"
+    },
+    {
+      "aufnr": 2000025,
+      "value_category": "ZMANT002",
+      "amount_usd": 9292.41,
+      "period": "2025-05"
+    },
+    {
+      "aufnr": 1000007,
+      "value_category": "ZMANT001",
+      "amount_usd": 2304.0,
+      "period": "2025-05"
+    },
+    {
+      "aufnr": 2000014,
+      "value_category": "ZMANT001",
+      "amount_usd": 850.5,
+      "period": "2026-03"
+    },
+    {
+      "aufnr": 2000014,
+      "value_category": "ZMANT002",
+      "amount_usd": 3750.57,
+      "period": "2026-03"
+    },
+    {
+      "aufnr": 3000004,
+      "value_category": "ZMANT001",
+      "amount_usd": 540.8,
+      "period": "2025-09"
+    },
+    {
+      "aufnr": 3000004,
+      "value_category": "ZMANT002",
+      "amount_usd": 4849.66,
+      "period": "2025-09"
+    },
+    {
+      "aufnr": 3000004,
+      "value_category": "ZMANT003",
+      "amount_usd": 27432.91,
+      "period": "2025-09"
+    },
+    {
+      "aufnr": 2000023,
+      "value_category": "ZMANT001",
+      "amount_usd": 3052.8,
+      "period": "2025-04"
+    },
+    {
+      "aufnr": 2000023,
+      "value_category": "ZMANT002",
+      "amount_usd": 6685.83,
+      "period": "2025-04"
+    },
+    {
+      "aufnr": 7000003,
+      "value_category": "ZMANT001",
+      "amount_usd": 5319.6,
+      "period": "2025-07"
+    },
+    {
+      "aufnr": 7000003,
+      "value_category": "ZMANT002",
+      "amount_usd": 4053.22,
+      "period": "2025-07"
+    },
+    {
+      "aufnr": 7000003,
+      "value_category": "ZMANT003",
+      "amount_usd": 31068.02,
+      "period": "2025-07"
+    },
+    {
+      "aufnr": 3000001,
+      "value_category": "ZMANT001",
+      "amount_usd": 3724.8,
+      "period": "2026-01"
+    },
+    {
+      "aufnr": 2000008,
+      "value_category": "ZMANT001",
+      "amount_usd": 1507.2,
+      "period": "2026-02"
+    },
+    {
+      "aufnr": 2000008,
+      "value_category": "ZMANT002",
+      "amount_usd": 1877.47,
+      "period": "2026-02"
+    },
+    {
+      "aufnr": 1000029,
+      "value_category": "ZMANT001",
+      "amount_usd": 2683.2,
+      "period": "2025-05"
+    },
+    {
+      "aufnr": 1000029,
+      "value_category": "ZMANT002",
+      "amount_usd": 4216.04,
+      "period": "2025-05"
+    },
+    {
+      "aufnr": 3000015,
+      "value_category": "ZMANT001",
+      "amount_usd": 4339.2,
+      "period": "2025-12"
+    },
+    {
+      "aufnr": 3000015,
+      "value_category": "ZMANT002",
+      "amount_usd": 10482.8,
+      "period": "2025-12"
+    },
+    {
+      "aufnr": 3000015,
+      "value_category": "ZMANT003",
+      "amount_usd": 7510.17,
+      "period": "2025-12"
+    },
+    {
+      "aufnr": 2000041,
+      "value_category": "ZMANT001",
+      "amount_usd": 2454.4,
+      "period": "2025-09"
+    },
+    {
+      "aufnr": 2000041,
+      "value_category": "ZMANT002",
+      "amount_usd": 3149.34,
+      "period": "2025-09"
+    },
+    {
+      "aufnr": 6000004,
+      "value_category": "ZMANT001",
+      "amount_usd": 2016.0,
+      "period": "2026-02"
+    },
+    {
+      "aufnr": 6000004,
+      "value_category": "ZMANT002",
+      "amount_usd": 12000.0,
+      "period": "2026-02"
+    },
+    {
+      "aufnr": 7000007,
+      "value_category": "ZMANT001",
+      "amount_usd": 2268.0,
+      "period": "2026-01"
+    },
+    {
+      "aufnr": 7000007,
+      "value_category": "ZMANT002",
+      "amount_usd": 4082.1,
+      "period": "2026-01"
+    },
+    {
+      "aufnr": 7000007,
+      "value_category": "ZMANT003",
+      "amount_usd": 17294.44,
+      "period": "2026-01"
+    },
+    {
+      "aufnr": 1000012,
+      "value_category": "ZMANT001",
+      "amount_usd": 6076.8,
+      "period": "2026-01"
+    },
+    {
+      "aufnr": 1000012,
+      "value_category": "ZMANT002",
+      "amount_usd": 2732.1,
+      "period": "2026-01"
+    },
+    {
+      "aufnr": 2000037,
+      "value_category": "ZMANT001",
+      "amount_usd": 652.5,
+      "period": "2025-09"
+    },
+    {
+      "aufnr": 2000020,
+      "value_category": "ZMANT001",
+      "amount_usd": 3096.0,
+      "period": "2025-06"
+    },
+    {
+      "aufnr": 2000020,
+      "value_category": "ZMANT002",
+      "amount_usd": 1715.33,
+      "period": "2025-06"
+    },
+    {
+      "aufnr": 1000000,
+      "value_category": "ZMANT001",
+      "amount_usd": 7372.8,
+      "period": "2025-11"
+    },
+    {
+      "aufnr": 1000000,
+      "value_category": "ZMANT002",
+      "amount_usd": 7142.75,
+      "period": "2025-11"
+    },
+    {
+      "aufnr": 7000013,
+      "value_category": "ZMANT001",
+      "amount_usd": 3724.8,
+      "period": "2025-08"
+    },
+    {
+      "aufnr": 7000013,
+      "value_category": "ZMANT002",
+      "amount_usd": 12781.41,
+      "period": "2025-08"
+    },
+    {
+      "aufnr": 7000013,
+      "value_category": "ZMANT003",
+      "amount_usd": 44256.33,
+      "period": "2025-08"
+    },
+    {
+      "aufnr": 1000028,
+      "value_category": "ZMANT001",
+      "amount_usd": 4080.0,
+      "period": "2025-12"
+    },
+    {
+      "aufnr": 6000003,
+      "value_category": "ZMANT001",
+      "amount_usd": 1996.8,
+      "period": "2026-01"
+    },
+    {
+      "aufnr": 6000003,
+      "value_category": "ZMANT002",
+      "amount_usd": 14367.5,
+      "period": "2026-01"
+    },
+    {
+      "aufnr": 3000003,
+      "value_category": "ZMANT001",
+      "amount_usd": 1017.6,
+      "period": "2025-07"
+    },
+    {
+      "aufnr": 3000003,
+      "value_category": "ZMANT002",
+      "amount_usd": 4762.36,
+      "period": "2025-07"
+    },
+    {
+      "aufnr": 3000003,
+      "value_category": "ZMANT003",
+      "amount_usd": 12938.47,
+      "period": "2025-07"
+    },
+    {
+      "aufnr": 6000006,
+      "value_category": "ZMANT001",
+      "amount_usd": 4680.0,
+      "period": "2026-02"
+    },
+    {
+      "aufnr": 6000006,
+      "value_category": "ZMANT002",
+      "amount_usd": 10084.53,
+      "period": "2026-02"
+    },
+    {
+      "aufnr": 7000009,
+      "value_category": "ZMANT001",
+      "amount_usd": 4815.0,
+      "period": "2026-01"
+    },
+    {
+      "aufnr": 6000014,
+      "value_category": "ZMANT001",
+      "amount_usd": 5075.2,
+      "period": "2026-02"
+    },
+    {
+      "aufnr": 2000034,
+      "value_category": "ZMANT001",
+      "amount_usd": 1327.5,
+      "period": "2025-12"
+    },
+    {
+      "aufnr": 2000034,
+      "value_category": "ZMANT002",
+      "amount_usd": 12717.56,
+      "period": "2025-12"
+    },
+    {
+      "aufnr": 2000016,
+      "value_category": "ZMANT001",
+      "amount_usd": 1419.6,
+      "period": "2025-10"
+    },
+    {
+      "aufnr": 2000016,
+      "value_category": "ZMANT002",
+      "amount_usd": 1390.36,
+      "period": "2025-10"
+    },
+    {
+      "aufnr": 2000005,
+      "value_category": "ZMANT001",
+      "amount_usd": 3762.0,
+      "period": "2025-08"
+    },
+    {
+      "aufnr": 2000005,
+      "value_category": "ZMANT002",
+      "amount_usd": 9571.47,
+      "period": "2025-08"
+    },
+    {
+      "aufnr": 1000024,
+      "value_category": "ZMANT001",
+      "amount_usd": 3456.0,
+      "period": "2025-05"
+    },
+    {
+      "aufnr": 1000024,
+      "value_category": "ZMANT002",
+      "amount_usd": 10117.53,
+      "period": "2025-05"
+    },
+    {
+      "aufnr": 1000004,
+      "value_category": "ZMANT001",
+      "amount_usd": 4524.0,
+      "period": "2025-05"
+    },
+    {
+      "aufnr": 1000025,
+      "value_category": "ZMANT001",
+      "amount_usd": 1143.0,
+      "period": "2025-12"
+    },
+    {
+      "aufnr": 1000025,
+      "value_category": "ZMANT002",
+      "amount_usd": 8155.81,
+      "period": "2025-12"
+    },
+    {
+      "aufnr": 3000007,
+      "value_category": "ZMANT001",
+      "amount_usd": 3494.4,
+      "period": "2025-06"
+    },
+    {
+      "aufnr": 3000007,
+      "value_category": "ZMANT002",
+      "amount_usd": 3015.87,
+      "period": "2025-06"
+    }
+  ]
+}

@@ -1,0 +1,2465 @@
+{
+  "total_items": 246,
+  "bom_items": [
+    {
+      "bom_id": "S26-BOM-0001-7B8C",
+      "equipment_tag": "OCP-CON1-CHAN01",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0001",
+      "component_desc": "Rodamiento SKF 22328 CC/W33",
+      "quantity": 1,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0002-DBE0",
+      "equipment_tag": "OCP-CON1-CHAN01",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0002",
+      "component_desc": "Sello mecanico John Crane 5610",
+      "quantity": 1,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0003-AB24",
+      "equipment_tag": "OCP-CON1-CHAN01",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0009",
+      "component_desc": "Grasa Mobil SHC 220 (18kg)",
+      "quantity": 4,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0004-61C7",
+      "equipment_tag": "OCP-CON1-CHAN01",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0014",
+      "component_desc": "Perno hex M24x100 Gr 8.8",
+      "quantity": 1,
+      "item_category": "SPARE",
+      "critical_spare": true
+    },
+    {
+      "bom_id": "S26-BOM-0005-17E6",
+      "equipment_tag": "OCP-CON1-CHAN02",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0009",
+      "component_desc": "Grasa Mobil SHC 220 (18kg)",
+      "quantity": 4,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0006-F927",
+      "equipment_tag": "OCP-CON1-CHAN02",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0013",
+      "component_desc": "Malla harnero poliuretano 50x50",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0007-68EB",
+      "equipment_tag": "OCP-CON1-CHAN02",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0017",
+      "component_desc": "Reductor Flender B3SH 14",
+      "quantity": 4,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0008-CACB",
+      "equipment_tag": "OCP-CON1-CHAN02",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0014",
+      "component_desc": "Perno hex M24x100 Gr 8.8",
+      "quantity": 1,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0009-69AC",
+      "equipment_tag": "OCP-CON1-CHAN02",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0020",
+      "component_desc": "Cable XLPE 3x95mm2",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0010-CE13",
+      "equipment_tag": "OCP-CON1-ALIM01",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0018",
+      "component_desc": "Encoder Siemens 6FX2001",
+      "quantity": 2,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0011-81EC",
+      "equipment_tag": "OCP-CON1-ALIM01",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0017",
+      "component_desc": "Reductor Flender B3SH 14",
+      "quantity": 2,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0012-2AC5",
+      "equipment_tag": "OCP-CON1-ALIM01",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0019",
+      "component_desc": "Contactor Siemens 3RT1065",
+      "quantity": 2,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0013-C5FF",
+      "equipment_tag": "OCP-CON1-ALIM01",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0004",
+      "component_desc": "Correa Gates PowerBand 5VX1500",
+      "quantity": 4,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0014-1A14",
+      "equipment_tag": "OCP-CON1-ALIM01",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0012",
+      "component_desc": "Valvula Weir 8/6 Isogate",
+      "quantity": 1,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0015-5B5E",
+      "equipment_tag": "OCP-CON1-ALIM02",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0002",
+      "component_desc": "Sello mecanico John Crane 5610",
+      "quantity": 4,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0016-D8CC",
+      "equipment_tag": "OCP-CON1-ALIM02",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0005",
+      "component_desc": "Aceite Shell Omala S4 GX 320 (200L)",
+      "quantity": 3,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0017-EB64",
+      "equipment_tag": "OCP-CON1-ALIM02",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0013",
+      "component_desc": "Malla harnero poliuretano 50x50",
+      "quantity": 2,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0018-5217",
+      "equipment_tag": "OCP-CON1-ALIM02",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0012",
+      "component_desc": "Valvula Weir 8/6 Isogate",
+      "quantity": 3,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0019-1A35",
+      "equipment_tag": "OCP-CON1-ALIM02",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0009",
+      "component_desc": "Grasa Mobil SHC 220 (18kg)",
+      "quantity": 3,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0020-F4E5",
+      "equipment_tag": "OCP-CON1-COSE01",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0001",
+      "component_desc": "Rodamiento SKF 22328 CC/W33",
+      "quantity": 3,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0021-70D3",
+      "equipment_tag": "OCP-CON1-COSE01",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0017",
+      "component_desc": "Reductor Flender B3SH 14",
+      "quantity": 4,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0022-A35F",
+      "equipment_tag": "OCP-CON1-COSE01",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0013",
+      "component_desc": "Malla harnero poliuretano 50x50",
+      "quantity": 3,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0023-9139",
+      "equipment_tag": "OCP-CON1-COSE02",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0017",
+      "component_desc": "Reductor Flender B3SH 14",
+      "quantity": 3,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0024-126B",
+      "equipment_tag": "OCP-CON1-COSE02",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0018",
+      "component_desc": "Encoder Siemens 6FX2001",
+      "quantity": 1,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0025-689A",
+      "equipment_tag": "OCP-CON1-COSE02",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0008",
+      "component_desc": "Liner Mn Steel Metso C160",
+      "quantity": 3,
+      "item_category": "SPARE",
+      "critical_spare": true
+    },
+    {
+      "bom_id": "S26-BOM-0026-F005",
+      "equipment_tag": "OCP-CON1-COSE02",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0019",
+      "component_desc": "Contactor Siemens 3RT1065",
+      "quantity": 3,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0027-73E5",
+      "equipment_tag": "OCP-CON1-COTE01",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0004",
+      "component_desc": "Correa Gates PowerBand 5VX1500",
+      "quantity": 2,
+      "item_category": "SPARE",
+      "critical_spare": true
+    },
+    {
+      "bom_id": "S26-BOM-0028-933A",
+      "equipment_tag": "OCP-CON1-COTE01",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0014",
+      "component_desc": "Perno hex M24x100 Gr 8.8",
+      "quantity": 3,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0029-22CD",
+      "equipment_tag": "OCP-CON1-COTE01",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0007",
+      "component_desc": "Acoplamiento Falk 1110T",
+      "quantity": 4,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0030-A59C",
+      "equipment_tag": "OCP-CON1-COTE01",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0010",
+      "component_desc": "Sensor vibr Bently Nevada 330180",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0031-7F35",
+      "equipment_tag": "OCP-CON1-COTE01",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0008",
+      "component_desc": "Liner Mn Steel Metso C160",
+      "quantity": 1,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0032-DE31",
+      "equipment_tag": "OCP-CON1-COTE02",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0018",
+      "component_desc": "Encoder Siemens 6FX2001",
+      "quantity": 1,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0033-6B51",
+      "equipment_tag": "OCP-CON1-COTE02",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0009",
+      "component_desc": "Grasa Mobil SHC 220 (18kg)",
+      "quantity": 2,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0034-5D2F",
+      "equipment_tag": "OCP-CON1-COTE02",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0005",
+      "component_desc": "Aceite Shell Omala S4 GX 320 (200L)",
+      "quantity": 3,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0035-CD8D",
+      "equipment_tag": "OCP-CON1-HARV01",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0007",
+      "component_desc": "Acoplamiento Falk 1110T",
+      "quantity": 3,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0036-E7F5",
+      "equipment_tag": "OCP-CON1-HARV01",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0017",
+      "component_desc": "Reductor Flender B3SH 14",
+      "quantity": 2,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0037-26C6",
+      "equipment_tag": "OCP-CON1-HARV01",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0009",
+      "component_desc": "Grasa Mobil SHC 220 (18kg)",
+      "quantity": 1,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0038-4F08",
+      "equipment_tag": "OCP-CON1-HARV02",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0001",
+      "component_desc": "Rodamiento SKF 22328 CC/W33",
+      "quantity": 4,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0039-B17F",
+      "equipment_tag": "OCP-CON1-HARV02",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0006",
+      "component_desc": "Filtro hidraulico Parker 925835",
+      "quantity": 1,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0040-EEB0",
+      "equipment_tag": "OCP-CON1-HARV02",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0005",
+      "component_desc": "Aceite Shell Omala S4 GX 320 (200L)",
+      "quantity": 3,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0041-5882",
+      "equipment_tag": "OCP-CON1-HARV02",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0003",
+      "component_desc": "Impulsor Warman 10/8",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0042-FBC3",
+      "equipment_tag": "OCP-CON1-HARV03",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0001",
+      "component_desc": "Rodamiento SKF 22328 CC/W33",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0043-7EAC",
+      "equipment_tag": "OCP-CON1-HARV03",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0004",
+      "component_desc": "Correa Gates PowerBand 5VX1500",
+      "quantity": 4,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0044-C5CE",
+      "equipment_tag": "OCP-CON1-HARV03",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0005",
+      "component_desc": "Aceite Shell Omala S4 GX 320 (200L)",
+      "quantity": 4,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0045-BD1F",
+      "equipment_tag": "OCP-CON1-HARV03",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0017",
+      "component_desc": "Reductor Flender B3SH 14",
+      "quantity": 2,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0046-74A7",
+      "equipment_tag": "OCP-CON1-HARV03",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0008",
+      "component_desc": "Liner Mn Steel Metso C160",
+      "quantity": 1,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0047-6A12",
+      "equipment_tag": "OCP-CON1-CORR01",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0009",
+      "component_desc": "Grasa Mobil SHC 220 (18kg)",
+      "quantity": 1,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0048-E2FE",
+      "equipment_tag": "OCP-CON1-CORR01",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0012",
+      "component_desc": "Valvula Weir 8/6 Isogate",
+      "quantity": 2,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0049-658C",
+      "equipment_tag": "OCP-CON1-CORR01",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0008",
+      "component_desc": "Liner Mn Steel Metso C160",
+      "quantity": 2,
+      "item_category": "SPARE",
+      "critical_spare": true
+    },
+    {
+      "bom_id": "S26-BOM-0050-8F48",
+      "equipment_tag": "OCP-CON1-CORR01",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0001",
+      "component_desc": "Rodamiento SKF 22328 CC/W33",
+      "quantity": 2,
+      "item_category": "SPARE",
+      "critical_spare": true
+    },
+    {
+      "bom_id": "S26-BOM-0051-5761",
+      "equipment_tag": "OCP-CON1-CORR01",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0016",
+      "component_desc": "Junta tórica Viton DN150",
+      "quantity": 2,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0052-73AF",
+      "equipment_tag": "OCP-CON1-CORR02",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0007",
+      "component_desc": "Acoplamiento Falk 1110T",
+      "quantity": 4,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0053-6EC0",
+      "equipment_tag": "OCP-CON1-CORR02",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0002",
+      "component_desc": "Sello mecanico John Crane 5610",
+      "quantity": 2,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0054-13E6",
+      "equipment_tag": "OCP-CON1-CORR02",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0018",
+      "component_desc": "Encoder Siemens 6FX2001",
+      "quantity": 2,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0055-9F4B",
+      "equipment_tag": "OCP-CON1-CORR02",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0011",
+      "component_desc": "Motor WEG W22 250kW",
+      "quantity": 2,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0056-AF98",
+      "equipment_tag": "OCP-CON1-CORR02",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0008",
+      "component_desc": "Liner Mn Steel Metso C160",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0057-B80A",
+      "equipment_tag": "OCP-CON1-CORR03",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0016",
+      "component_desc": "Junta tórica Viton DN150",
+      "quantity": 1,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0058-5C6C",
+      "equipment_tag": "OCP-CON1-CORR03",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0018",
+      "component_desc": "Encoder Siemens 6FX2001",
+      "quantity": 3,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0059-049A",
+      "equipment_tag": "OCP-CON1-CORR03",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0012",
+      "component_desc": "Valvula Weir 8/6 Isogate",
+      "quantity": 2,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0060-3959",
+      "equipment_tag": "OCP-CON1-CORR03",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0010",
+      "component_desc": "Sensor vibr Bently Nevada 330180",
+      "quantity": 2,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0061-DC0F",
+      "equipment_tag": "OCP-CON1-CORR03",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0011",
+      "component_desc": "Motor WEG W22 250kW",
+      "quantity": 3,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0062-ED31",
+      "equipment_tag": "OCP-CON1-MSAG01",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0002",
+      "component_desc": "Sello mecanico John Crane 5610",
+      "quantity": 4,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0063-C93D",
+      "equipment_tag": "OCP-CON1-MSAG01",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0007",
+      "component_desc": "Acoplamiento Falk 1110T",
+      "quantity": 1,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0064-1C99",
+      "equipment_tag": "OCP-CON1-MSAG01",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0012",
+      "component_desc": "Valvula Weir 8/6 Isogate",
+      "quantity": 2,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0065-8907",
+      "equipment_tag": "OCP-CON1-MSAG01",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0013",
+      "component_desc": "Malla harnero poliuretano 50x50",
+      "quantity": 3,
+      "item_category": "SPARE",
+      "critical_spare": true
+    },
+    {
+      "bom_id": "S26-BOM-0066-0B29",
+      "equipment_tag": "OCP-CON1-MSAG01",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0009",
+      "component_desc": "Grasa Mobil SHC 220 (18kg)",
+      "quantity": 2,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0067-9092",
+      "equipment_tag": "OCP-CON1-MSAG02",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0015",
+      "component_desc": "Empaquetadura grafito 1/2in",
+      "quantity": 4,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0068-B8C4",
+      "equipment_tag": "OCP-CON1-MSAG02",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0008",
+      "component_desc": "Liner Mn Steel Metso C160",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0069-D1C3",
+      "equipment_tag": "OCP-CON1-MSAG02",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0002",
+      "component_desc": "Sello mecanico John Crane 5610",
+      "quantity": 1,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0070-02A1",
+      "equipment_tag": "OCP-CON1-MBOL01",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0020",
+      "component_desc": "Cable XLPE 3x95mm2",
+      "quantity": 3,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0071-762E",
+      "equipment_tag": "OCP-CON1-MBOL01",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0018",
+      "component_desc": "Encoder Siemens 6FX2001",
+      "quantity": 1,
+      "item_category": "SPARE",
+      "critical_spare": true
+    },
+    {
+      "bom_id": "S26-BOM-0072-827F",
+      "equipment_tag": "OCP-CON1-MBOL01",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0006",
+      "component_desc": "Filtro hidraulico Parker 925835",
+      "quantity": 4,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0073-6E77",
+      "equipment_tag": "OCP-CON1-MBOL01",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0012",
+      "component_desc": "Valvula Weir 8/6 Isogate",
+      "quantity": 2,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0074-53C6",
+      "equipment_tag": "OCP-CON1-MBOL01",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0013",
+      "component_desc": "Malla harnero poliuretano 50x50",
+      "quantity": 1,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0075-ED67",
+      "equipment_tag": "OCP-CON1-MBOL02",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0018",
+      "component_desc": "Encoder Siemens 6FX2001",
+      "quantity": 1,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0076-3B8E",
+      "equipment_tag": "OCP-CON1-MBOL02",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0011",
+      "component_desc": "Motor WEG W22 250kW",
+      "quantity": 2,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0077-1A18",
+      "equipment_tag": "OCP-CON1-MBOL02",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0015",
+      "component_desc": "Empaquetadura grafito 1/2in",
+      "quantity": 3,
+      "item_category": "SPARE",
+      "critical_spare": true
+    },
+    {
+      "bom_id": "S26-BOM-0078-EA90",
+      "equipment_tag": "OCP-CON1-MBOL02",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0019",
+      "component_desc": "Contactor Siemens 3RT1065",
+      "quantity": 3,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0079-190D",
+      "equipment_tag": "OCP-CON1-MBOL03",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0009",
+      "component_desc": "Grasa Mobil SHC 220 (18kg)",
+      "quantity": 3,
+      "item_category": "SPARE",
+      "critical_spare": true
+    },
+    {
+      "bom_id": "S26-BOM-0080-EBF3",
+      "equipment_tag": "OCP-CON1-MBOL03",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0020",
+      "component_desc": "Cable XLPE 3x95mm2",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0081-A805",
+      "equipment_tag": "OCP-CON1-MBOL03",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0018",
+      "component_desc": "Encoder Siemens 6FX2001",
+      "quantity": 4,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0082-F3AC",
+      "equipment_tag": "OCP-CON1-MBOL03",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0013",
+      "component_desc": "Malla harnero poliuretano 50x50",
+      "quantity": 1,
+      "item_category": "SPARE",
+      "critical_spare": true
+    },
+    {
+      "bom_id": "S26-BOM-0083-4B10",
+      "equipment_tag": "OCP-CON1-MBOL03",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0007",
+      "component_desc": "Acoplamiento Falk 1110T",
+      "quantity": 2,
+      "item_category": "SPARE",
+      "critical_spare": true
+    },
+    {
+      "bom_id": "S26-BOM-0084-9053",
+      "equipment_tag": "OCP-CON1-BOMB01",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0002",
+      "component_desc": "Sello mecanico John Crane 5610",
+      "quantity": 2,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0085-67EA",
+      "equipment_tag": "OCP-CON1-BOMB01",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0015",
+      "component_desc": "Empaquetadura grafito 1/2in",
+      "quantity": 4,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0086-9F76",
+      "equipment_tag": "OCP-CON1-BOMB01",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0020",
+      "component_desc": "Cable XLPE 3x95mm2",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0087-2E4F",
+      "equipment_tag": "OCP-CON1-BOMB02",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0003",
+      "component_desc": "Impulsor Warman 10/8",
+      "quantity": 3,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0088-591B",
+      "equipment_tag": "OCP-CON1-BOMB02",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0016",
+      "component_desc": "Junta tórica Viton DN150",
+      "quantity": 1,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0089-9255",
+      "equipment_tag": "OCP-CON1-BOMB02",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0002",
+      "component_desc": "Sello mecanico John Crane 5610",
+      "quantity": 4,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0090-5E7F",
+      "equipment_tag": "OCP-CON1-BOMB02",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0006",
+      "component_desc": "Filtro hidraulico Parker 925835",
+      "quantity": 1,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0091-9B3E",
+      "equipment_tag": "OCP-CON1-BOMB02",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0020",
+      "component_desc": "Cable XLPE 3x95mm2",
+      "quantity": 3,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0092-7FE7",
+      "equipment_tag": "OCP-CON1-BOMB03",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0011",
+      "component_desc": "Motor WEG W22 250kW",
+      "quantity": 2,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0093-2955",
+      "equipment_tag": "OCP-CON1-BOMB03",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0009",
+      "component_desc": "Grasa Mobil SHC 220 (18kg)",
+      "quantity": 2,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0094-ADEF",
+      "equipment_tag": "OCP-CON1-BOMB03",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0001",
+      "component_desc": "Rodamiento SKF 22328 CC/W33",
+      "quantity": 2,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0095-2926",
+      "equipment_tag": "OCP-CON1-BOMB03",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0002",
+      "component_desc": "Sello mecanico John Crane 5610",
+      "quantity": 2,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0096-4D24",
+      "equipment_tag": "OCP-CON1-BOMB03",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0018",
+      "component_desc": "Encoder Siemens 6FX2001",
+      "quantity": 1,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0097-25A1",
+      "equipment_tag": "OCP-CON1-BOMB04",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0013",
+      "component_desc": "Malla harnero poliuretano 50x50",
+      "quantity": 1,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0098-22E6",
+      "equipment_tag": "OCP-CON1-BOMB04",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0002",
+      "component_desc": "Sello mecanico John Crane 5610",
+      "quantity": 2,
+      "item_category": "SPARE",
+      "critical_spare": true
+    },
+    {
+      "bom_id": "S26-BOM-0099-0839",
+      "equipment_tag": "OCP-CON1-BOMB04",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0014",
+      "component_desc": "Perno hex M24x100 Gr 8.8",
+      "quantity": 2,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0100-49EE",
+      "equipment_tag": "OCP-CON1-BOMB05",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0004",
+      "component_desc": "Correa Gates PowerBand 5VX1500",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0101-AA7B",
+      "equipment_tag": "OCP-CON1-BOMB05",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0014",
+      "component_desc": "Perno hex M24x100 Gr 8.8",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0102-4B3B",
+      "equipment_tag": "OCP-CON1-BOMB05",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0016",
+      "component_desc": "Junta tórica Viton DN150",
+      "quantity": 4,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0103-C559",
+      "equipment_tag": "OCP-CON1-BOMB05",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0020",
+      "component_desc": "Cable XLPE 3x95mm2",
+      "quantity": 4,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0104-C3CC",
+      "equipment_tag": "OCP-CON1-HCIC01",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0012",
+      "component_desc": "Valvula Weir 8/6 Isogate",
+      "quantity": 1,
+      "item_category": "SPARE",
+      "critical_spare": true
+    },
+    {
+      "bom_id": "S26-BOM-0105-BB6C",
+      "equipment_tag": "OCP-CON1-HCIC01",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0005",
+      "component_desc": "Aceite Shell Omala S4 GX 320 (200L)",
+      "quantity": 2,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0106-C76C",
+      "equipment_tag": "OCP-CON1-HCIC01",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0008",
+      "component_desc": "Liner Mn Steel Metso C160",
+      "quantity": 3,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0107-CD55",
+      "equipment_tag": "OCP-CON1-HCIC02",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0012",
+      "component_desc": "Valvula Weir 8/6 Isogate",
+      "quantity": 3,
+      "item_category": "SPARE",
+      "critical_spare": true
+    },
+    {
+      "bom_id": "S26-BOM-0108-E783",
+      "equipment_tag": "OCP-CON1-HCIC02",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0013",
+      "component_desc": "Malla harnero poliuretano 50x50",
+      "quantity": 2,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0109-0B15",
+      "equipment_tag": "OCP-CON1-HCIC02",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0004",
+      "component_desc": "Correa Gates PowerBand 5VX1500",
+      "quantity": 2,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0110-663F",
+      "equipment_tag": "OCP-CON1-HCIC03",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0016",
+      "component_desc": "Junta tórica Viton DN150",
+      "quantity": 4,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0111-C804",
+      "equipment_tag": "OCP-CON1-HCIC03",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0008",
+      "component_desc": "Liner Mn Steel Metso C160",
+      "quantity": 2,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0112-63DD",
+      "equipment_tag": "OCP-CON1-HCIC03",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0005",
+      "component_desc": "Aceite Shell Omala S4 GX 320 (200L)",
+      "quantity": 4,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0113-5CDF",
+      "equipment_tag": "OCP-CON1-HCIC03",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0007",
+      "component_desc": "Acoplamiento Falk 1110T",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0114-13D9",
+      "equipment_tag": "OCP-CON1-HCIC03",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0002",
+      "component_desc": "Sello mecanico John Crane 5610",
+      "quantity": 3,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0115-A415",
+      "equipment_tag": "OCP-CON1-CFRO01",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0005",
+      "component_desc": "Aceite Shell Omala S4 GX 320 (200L)",
+      "quantity": 3,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0116-EB57",
+      "equipment_tag": "OCP-CON1-CFRO01",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0006",
+      "component_desc": "Filtro hidraulico Parker 925835",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": true
+    },
+    {
+      "bom_id": "S26-BOM-0117-6D9A",
+      "equipment_tag": "OCP-CON1-CFRO01",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0001",
+      "component_desc": "Rodamiento SKF 22328 CC/W33",
+      "quantity": 3,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0118-DADD",
+      "equipment_tag": "OCP-CON1-CFRO02",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0004",
+      "component_desc": "Correa Gates PowerBand 5VX1500",
+      "quantity": 1,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0119-BC5A",
+      "equipment_tag": "OCP-CON1-CFRO02",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0002",
+      "component_desc": "Sello mecanico John Crane 5610",
+      "quantity": 1,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0120-8909",
+      "equipment_tag": "OCP-CON1-CFRO02",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0013",
+      "component_desc": "Malla harnero poliuretano 50x50",
+      "quantity": 1,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0121-08CE",
+      "equipment_tag": "OCP-CON1-CFRO02",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0017",
+      "component_desc": "Reductor Flender B3SH 14",
+      "quantity": 1,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0122-6690",
+      "equipment_tag": "OCP-CON1-CFRO02",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0011",
+      "component_desc": "Motor WEG W22 250kW",
+      "quantity": 1,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0123-C109",
+      "equipment_tag": "OCP-CON1-CFRO03",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0020",
+      "component_desc": "Cable XLPE 3x95mm2",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0124-40F1",
+      "equipment_tag": "OCP-CON1-CFRO03",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0018",
+      "component_desc": "Encoder Siemens 6FX2001",
+      "quantity": 2,
+      "item_category": "SPARE",
+      "critical_spare": true
+    },
+    {
+      "bom_id": "S26-BOM-0125-545B",
+      "equipment_tag": "OCP-CON1-CFRO03",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0012",
+      "component_desc": "Valvula Weir 8/6 Isogate",
+      "quantity": 3,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0126-4FF5",
+      "equipment_tag": "OCP-CON1-CFRO04",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0008",
+      "component_desc": "Liner Mn Steel Metso C160",
+      "quantity": 4,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0127-E7F1",
+      "equipment_tag": "OCP-CON1-CFRO04",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0012",
+      "component_desc": "Valvula Weir 8/6 Isogate",
+      "quantity": 4,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0128-F87B",
+      "equipment_tag": "OCP-CON1-CFRO04",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0009",
+      "component_desc": "Grasa Mobil SHC 220 (18kg)",
+      "quantity": 3,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0129-E749",
+      "equipment_tag": "OCP-CON1-CFRO04",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0010",
+      "component_desc": "Sensor vibr Bently Nevada 330180",
+      "quantity": 3,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0130-1288",
+      "equipment_tag": "OCP-CON1-CFRO04",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0011",
+      "component_desc": "Motor WEG W22 250kW",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0131-4C16",
+      "equipment_tag": "OCP-CON1-CFCL01",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0008",
+      "component_desc": "Liner Mn Steel Metso C160",
+      "quantity": 2,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0132-6623",
+      "equipment_tag": "OCP-CON1-CFCL01",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0017",
+      "component_desc": "Reductor Flender B3SH 14",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": true
+    },
+    {
+      "bom_id": "S26-BOM-0133-FE0F",
+      "equipment_tag": "OCP-CON1-CFCL01",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0005",
+      "component_desc": "Aceite Shell Omala S4 GX 320 (200L)",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0134-93D3",
+      "equipment_tag": "OCP-CON1-CFCL02",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0004",
+      "component_desc": "Correa Gates PowerBand 5VX1500",
+      "quantity": 1,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0135-70C3",
+      "equipment_tag": "OCP-CON1-CFCL02",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0008",
+      "component_desc": "Liner Mn Steel Metso C160",
+      "quantity": 2,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0136-5B65",
+      "equipment_tag": "OCP-CON1-CFCL02",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0002",
+      "component_desc": "Sello mecanico John Crane 5610",
+      "quantity": 4,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0137-B33F",
+      "equipment_tag": "OCP-CON1-CFCL02",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0007",
+      "component_desc": "Acoplamiento Falk 1110T",
+      "quantity": 2,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0138-4B85",
+      "equipment_tag": "OCP-CON1-CFSC01",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0020",
+      "component_desc": "Cable XLPE 3x95mm2",
+      "quantity": 4,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0139-7AA5",
+      "equipment_tag": "OCP-CON1-CFSC01",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0007",
+      "component_desc": "Acoplamiento Falk 1110T",
+      "quantity": 2,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0140-2909",
+      "equipment_tag": "OCP-CON1-CFSC01",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0012",
+      "component_desc": "Valvula Weir 8/6 Isogate",
+      "quantity": 2,
+      "item_category": "SPARE",
+      "critical_spare": true
+    },
+    {
+      "bom_id": "S26-BOM-0141-D311",
+      "equipment_tag": "OCP-CON1-CFSC02",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0016",
+      "component_desc": "Junta tórica Viton DN150",
+      "quantity": 2,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0142-3156",
+      "equipment_tag": "OCP-CON1-CFSC02",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0017",
+      "component_desc": "Reductor Flender B3SH 14",
+      "quantity": 4,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0143-3E21",
+      "equipment_tag": "OCP-CON1-CFSC02",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0004",
+      "component_desc": "Correa Gates PowerBand 5VX1500",
+      "quantity": 1,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0144-6EB7",
+      "equipment_tag": "OCP-CON1-CFSC02",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0003",
+      "component_desc": "Impulsor Warman 10/8",
+      "quantity": 1,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0145-3332",
+      "equipment_tag": "OCP-CON1-CFSC02",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0007",
+      "component_desc": "Acoplamiento Falk 1110T",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0146-BCD4",
+      "equipment_tag": "OCP-CON1-AGIT01",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0004",
+      "component_desc": "Correa Gates PowerBand 5VX1500",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0147-94B0",
+      "equipment_tag": "OCP-CON1-AGIT01",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0018",
+      "component_desc": "Encoder Siemens 6FX2001",
+      "quantity": 3,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0148-098D",
+      "equipment_tag": "OCP-CON1-AGIT01",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0001",
+      "component_desc": "Rodamiento SKF 22328 CC/W33",
+      "quantity": 3,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0149-97AC",
+      "equipment_tag": "OCP-CON1-AGIT02",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0020",
+      "component_desc": "Cable XLPE 3x95mm2",
+      "quantity": 3,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0150-5C8F",
+      "equipment_tag": "OCP-CON1-AGIT02",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0019",
+      "component_desc": "Contactor Siemens 3RT1065",
+      "quantity": 1,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0151-C42F",
+      "equipment_tag": "OCP-CON1-AGIT02",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0018",
+      "component_desc": "Encoder Siemens 6FX2001",
+      "quantity": 4,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0152-32EE",
+      "equipment_tag": "OCP-CON1-AGIT02",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0006",
+      "component_desc": "Filtro hidraulico Parker 925835",
+      "quantity": 4,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0153-492D",
+      "equipment_tag": "OCP-CON1-AGIT02",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0012",
+      "component_desc": "Valvula Weir 8/6 Isogate",
+      "quantity": 4,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0154-5943",
+      "equipment_tag": "OCP-CON1-DREA01",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0001",
+      "component_desc": "Rodamiento SKF 22328 CC/W33",
+      "quantity": 4,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0155-12F0",
+      "equipment_tag": "OCP-CON1-DREA01",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0018",
+      "component_desc": "Encoder Siemens 6FX2001",
+      "quantity": 1,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0156-545A",
+      "equipment_tag": "OCP-CON1-DREA01",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0016",
+      "component_desc": "Junta tórica Viton DN150",
+      "quantity": 3,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0157-25D0",
+      "equipment_tag": "OCP-CON1-DREA01",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0002",
+      "component_desc": "Sello mecanico John Crane 5610",
+      "quantity": 1,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0158-50C8",
+      "equipment_tag": "OCP-CON1-DREA01",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0020",
+      "component_desc": "Cable XLPE 3x95mm2",
+      "quantity": 1,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0159-DA9E",
+      "equipment_tag": "OCP-CON1-DREA02",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0002",
+      "component_desc": "Sello mecanico John Crane 5610",
+      "quantity": 3,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0160-7D90",
+      "equipment_tag": "OCP-CON1-DREA02",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0008",
+      "component_desc": "Liner Mn Steel Metso C160",
+      "quantity": 3,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0161-05FF",
+      "equipment_tag": "OCP-CON1-DREA02",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0014",
+      "component_desc": "Perno hex M24x100 Gr 8.8",
+      "quantity": 4,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0162-2A00",
+      "equipment_tag": "OCP-CON1-DREA02",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0010",
+      "component_desc": "Sensor vibr Bently Nevada 330180",
+      "quantity": 4,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0163-C93E",
+      "equipment_tag": "OCP-CON1-DREA03",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0005",
+      "component_desc": "Aceite Shell Omala S4 GX 320 (200L)",
+      "quantity": 1,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0164-5D5F",
+      "equipment_tag": "OCP-CON1-DREA03",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0012",
+      "component_desc": "Valvula Weir 8/6 Isogate",
+      "quantity": 4,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0165-742D",
+      "equipment_tag": "OCP-CON1-DREA03",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0009",
+      "component_desc": "Grasa Mobil SHC 220 (18kg)",
+      "quantity": 2,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0166-A60B",
+      "equipment_tag": "OCP-CON1-DREA03",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0016",
+      "component_desc": "Junta tórica Viton DN150",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0167-6449",
+      "equipment_tag": "OCP-CON1-DREA03",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0008",
+      "component_desc": "Liner Mn Steel Metso C160",
+      "quantity": 3,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0168-FA44",
+      "equipment_tag": "OCP-CON1-ESPC01",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0009",
+      "component_desc": "Grasa Mobil SHC 220 (18kg)",
+      "quantity": 2,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0169-3413",
+      "equipment_tag": "OCP-CON1-ESPC01",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0016",
+      "component_desc": "Junta tórica Viton DN150",
+      "quantity": 1,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0170-1C6C",
+      "equipment_tag": "OCP-CON1-ESPC01",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0006",
+      "component_desc": "Filtro hidraulico Parker 925835",
+      "quantity": 2,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0171-0210",
+      "equipment_tag": "OCP-CON1-ESPC01",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0020",
+      "component_desc": "Cable XLPE 3x95mm2",
+      "quantity": 2,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0172-1F62",
+      "equipment_tag": "OCP-CON1-ESPC01",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0018",
+      "component_desc": "Encoder Siemens 6FX2001",
+      "quantity": 1,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0173-1F2A",
+      "equipment_tag": "OCP-CON1-ESPC02",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0003",
+      "component_desc": "Impulsor Warman 10/8",
+      "quantity": 1,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0174-04C7",
+      "equipment_tag": "OCP-CON1-ESPC02",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0018",
+      "component_desc": "Encoder Siemens 6FX2001",
+      "quantity": 3,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0175-B242",
+      "equipment_tag": "OCP-CON1-ESPC02",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0009",
+      "component_desc": "Grasa Mobil SHC 220 (18kg)",
+      "quantity": 3,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0176-BFFB",
+      "equipment_tag": "OCP-CON1-ESPC02",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0019",
+      "component_desc": "Contactor Siemens 3RT1065",
+      "quantity": 1,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0177-5392",
+      "equipment_tag": "OCP-CON1-ESPC02",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0001",
+      "component_desc": "Rodamiento SKF 22328 CC/W33",
+      "quantity": 4,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0178-8B18",
+      "equipment_tag": "OCP-CON1-ESPR01",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0014",
+      "component_desc": "Perno hex M24x100 Gr 8.8",
+      "quantity": 1,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0179-3251",
+      "equipment_tag": "OCP-CON1-ESPR01",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0018",
+      "component_desc": "Encoder Siemens 6FX2001",
+      "quantity": 1,
+      "item_category": "SPARE",
+      "critical_spare": true
+    },
+    {
+      "bom_id": "S26-BOM-0180-94E6",
+      "equipment_tag": "OCP-CON1-ESPR01",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0013",
+      "component_desc": "Malla harnero poliuretano 50x50",
+      "quantity": 1,
+      "item_category": "SPARE",
+      "critical_spare": true
+    },
+    {
+      "bom_id": "S26-BOM-0181-B6C6",
+      "equipment_tag": "OCP-CON1-ESPR01",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0015",
+      "component_desc": "Empaquetadura grafito 1/2in",
+      "quantity": 1,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0182-4AF1",
+      "equipment_tag": "OCP-CON1-BREL01",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0005",
+      "component_desc": "Aceite Shell Omala S4 GX 320 (200L)",
+      "quantity": 4,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0183-2D63",
+      "equipment_tag": "OCP-CON1-BREL01",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0014",
+      "component_desc": "Perno hex M24x100 Gr 8.8",
+      "quantity": 1,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0184-9E6D",
+      "equipment_tag": "OCP-CON1-BREL01",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0011",
+      "component_desc": "Motor WEG W22 250kW",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": true
+    },
+    {
+      "bom_id": "S26-BOM-0185-6A0E",
+      "equipment_tag": "OCP-CON1-BREL01",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0012",
+      "component_desc": "Valvula Weir 8/6 Isogate",
+      "quantity": 3,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0186-D590",
+      "equipment_tag": "OCP-CON1-BREL02",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0004",
+      "component_desc": "Correa Gates PowerBand 5VX1500",
+      "quantity": 4,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0187-8811",
+      "equipment_tag": "OCP-CON1-BREL02",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0014",
+      "component_desc": "Perno hex M24x100 Gr 8.8",
+      "quantity": 1,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0188-28D9",
+      "equipment_tag": "OCP-CON1-BREL02",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0007",
+      "component_desc": "Acoplamiento Falk 1110T",
+      "quantity": 3,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0189-FEC7",
+      "equipment_tag": "OCP-CON1-FILT01",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0001",
+      "component_desc": "Rodamiento SKF 22328 CC/W33",
+      "quantity": 2,
+      "item_category": "SPARE",
+      "critical_spare": true
+    },
+    {
+      "bom_id": "S26-BOM-0190-128F",
+      "equipment_tag": "OCP-CON1-FILT01",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0018",
+      "component_desc": "Encoder Siemens 6FX2001",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0191-3E5B",
+      "equipment_tag": "OCP-CON1-FILT01",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0002",
+      "component_desc": "Sello mecanico John Crane 5610",
+      "quantity": 1,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0192-787F",
+      "equipment_tag": "OCP-CON1-FILT02",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0016",
+      "component_desc": "Junta tórica Viton DN150",
+      "quantity": 3,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0193-BE12",
+      "equipment_tag": "OCP-CON1-FILT02",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0009",
+      "component_desc": "Grasa Mobil SHC 220 (18kg)",
+      "quantity": 1,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0194-D306",
+      "equipment_tag": "OCP-CON1-FILT02",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0002",
+      "component_desc": "Sello mecanico John Crane 5610",
+      "quantity": 3,
+      "item_category": "SPARE",
+      "critical_spare": true
+    },
+    {
+      "bom_id": "S26-BOM-0195-8132",
+      "equipment_tag": "OCP-CON1-FILT03",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0018",
+      "component_desc": "Encoder Siemens 6FX2001",
+      "quantity": 1,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0196-7EBA",
+      "equipment_tag": "OCP-CON1-FILT03",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0010",
+      "component_desc": "Sensor vibr Bently Nevada 330180",
+      "quantity": 3,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0197-D8BA",
+      "equipment_tag": "OCP-CON1-FILT03",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0016",
+      "component_desc": "Junta tórica Viton DN150",
+      "quantity": 2,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0198-A6C8",
+      "equipment_tag": "OCP-CON1-FILT03",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0014",
+      "component_desc": "Perno hex M24x100 Gr 8.8",
+      "quantity": 1,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0199-57DA",
+      "equipment_tag": "OCP-CON1-SECA01",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0001",
+      "component_desc": "Rodamiento SKF 22328 CC/W33",
+      "quantity": 3,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0200-949C",
+      "equipment_tag": "OCP-CON1-SECA01",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0013",
+      "component_desc": "Malla harnero poliuretano 50x50",
+      "quantity": 3,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0201-3B4F",
+      "equipment_tag": "OCP-CON1-SECA01",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0009",
+      "component_desc": "Grasa Mobil SHC 220 (18kg)",
+      "quantity": 1,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0202-C2F1",
+      "equipment_tag": "OCP-CON1-SECA01",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0012",
+      "component_desc": "Valvula Weir 8/6 Isogate",
+      "quantity": 2,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0203-A27A",
+      "equipment_tag": "OCP-CON1-CORR04",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0017",
+      "component_desc": "Reductor Flender B3SH 14",
+      "quantity": 1,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0204-EC2F",
+      "equipment_tag": "OCP-CON1-CORR04",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0020",
+      "component_desc": "Cable XLPE 3x95mm2",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0205-7E0D",
+      "equipment_tag": "OCP-CON1-CORR04",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0003",
+      "component_desc": "Impulsor Warman 10/8",
+      "quantity": 1,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0206-77E2",
+      "equipment_tag": "OCP-CON1-CORR04",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0014",
+      "component_desc": "Perno hex M24x100 Gr 8.8",
+      "quantity": 2,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0207-C59A",
+      "equipment_tag": "OCP-CON1-CORR04",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0002",
+      "component_desc": "Sello mecanico John Crane 5610",
+      "quantity": 4,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0208-B511",
+      "equipment_tag": "OCP-CON1-CORR05",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0017",
+      "component_desc": "Reductor Flender B3SH 14",
+      "quantity": 1,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0209-2DC3",
+      "equipment_tag": "OCP-CON1-CORR05",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0002",
+      "component_desc": "Sello mecanico John Crane 5610",
+      "quantity": 3,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0210-6132",
+      "equipment_tag": "OCP-CON1-CORR05",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0006",
+      "component_desc": "Filtro hidraulico Parker 925835",
+      "quantity": 1,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0211-1F02",
+      "equipment_tag": "OCP-CON1-CORR05",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0005",
+      "component_desc": "Aceite Shell Omala S4 GX 320 (200L)",
+      "quantity": 1,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0212-8DF8",
+      "equipment_tag": "OCP-CON1-COMP01",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0009",
+      "component_desc": "Grasa Mobil SHC 220 (18kg)",
+      "quantity": 3,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0213-8319",
+      "equipment_tag": "OCP-CON1-COMP01",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0001",
+      "component_desc": "Rodamiento SKF 22328 CC/W33",
+      "quantity": 2,
+      "item_category": "SPARE",
+      "critical_spare": true
+    },
+    {
+      "bom_id": "S26-BOM-0214-1DA2",
+      "equipment_tag": "OCP-CON1-COMP01",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0003",
+      "component_desc": "Impulsor Warman 10/8",
+      "quantity": 2,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0215-CAEF",
+      "equipment_tag": "OCP-CON1-COMP02",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0011",
+      "component_desc": "Motor WEG W22 250kW",
+      "quantity": 2,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0216-50B5",
+      "equipment_tag": "OCP-CON1-COMP02",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0010",
+      "component_desc": "Sensor vibr Bently Nevada 330180",
+      "quantity": 2,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0217-BADA",
+      "equipment_tag": "OCP-CON1-COMP02",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0001",
+      "component_desc": "Rodamiento SKF 22328 CC/W33",
+      "quantity": 3,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0218-4FDD",
+      "equipment_tag": "OCP-CON1-COMP02",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0014",
+      "component_desc": "Perno hex M24x100 Gr 8.8",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0219-F509",
+      "equipment_tag": "OCP-CON1-COMP02",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0006",
+      "component_desc": "Filtro hidraulico Parker 925835",
+      "quantity": 4,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0220-EDA3",
+      "equipment_tag": "OCP-CON1-BAGP01",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0006",
+      "component_desc": "Filtro hidraulico Parker 925835",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0221-706C",
+      "equipment_tag": "OCP-CON1-BAGP01",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0012",
+      "component_desc": "Valvula Weir 8/6 Isogate",
+      "quantity": 2,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0222-EF18",
+      "equipment_tag": "OCP-CON1-BAGP01",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0002",
+      "component_desc": "Sello mecanico John Crane 5610",
+      "quantity": 2,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0223-2CC3",
+      "equipment_tag": "OCP-CON1-BAGP01",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0005",
+      "component_desc": "Aceite Shell Omala S4 GX 320 (200L)",
+      "quantity": 3,
+      "item_category": "SPARE",
+      "critical_spare": true
+    },
+    {
+      "bom_id": "S26-BOM-0224-8BA9",
+      "equipment_tag": "OCP-CON1-BAGP01",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0015",
+      "component_desc": "Empaquetadura grafito 1/2in",
+      "quantity": 2,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0225-E1AE",
+      "equipment_tag": "OCP-CON1-BAGP02",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0006",
+      "component_desc": "Filtro hidraulico Parker 925835",
+      "quantity": 4,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0226-4ADD",
+      "equipment_tag": "OCP-CON1-BAGP02",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0014",
+      "component_desc": "Perno hex M24x100 Gr 8.8",
+      "quantity": 3,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0227-CB4A",
+      "equipment_tag": "OCP-CON1-BAGP02",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0008",
+      "component_desc": "Liner Mn Steel Metso C160",
+      "quantity": 4,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0228-5517",
+      "equipment_tag": "OCP-CON1-BAGP02",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0010",
+      "component_desc": "Sensor vibr Bently Nevada 330180",
+      "quantity": 3,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0229-2EF5",
+      "equipment_tag": "OCP-CON1-BAGP02",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0005",
+      "component_desc": "Aceite Shell Omala S4 GX 320 (200L)",
+      "quantity": 2,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0230-C865",
+      "equipment_tag": "OCP-CON1-ANPH01",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0017",
+      "component_desc": "Reductor Flender B3SH 14",
+      "quantity": 3,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0231-F8A2",
+      "equipment_tag": "OCP-CON1-ANPH01",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0009",
+      "component_desc": "Grasa Mobil SHC 220 (18kg)",
+      "quantity": 3,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0232-CF24",
+      "equipment_tag": "OCP-CON1-ANPH01",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0006",
+      "component_desc": "Filtro hidraulico Parker 925835",
+      "quantity": 3,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0233-E979",
+      "equipment_tag": "OCP-CON1-FLMT01",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0019",
+      "component_desc": "Contactor Siemens 3RT1065",
+      "quantity": 1,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0234-261E",
+      "equipment_tag": "OCP-CON1-FLMT01",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0018",
+      "component_desc": "Encoder Siemens 6FX2001",
+      "quantity": 3,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0235-B797",
+      "equipment_tag": "OCP-CON1-FLMT01",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0003",
+      "component_desc": "Impulsor Warman 10/8",
+      "quantity": 1,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0236-F48C",
+      "equipment_tag": "OCP-CON1-FLMT01",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0007",
+      "component_desc": "Acoplamiento Falk 1110T",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0237-AA5E",
+      "equipment_tag": "OCP-CON1-FLMT01",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0011",
+      "component_desc": "Motor WEG W22 250kW",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0238-FDA6",
+      "equipment_tag": "OCP-CON1-DENS01",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0011",
+      "component_desc": "Motor WEG W22 250kW",
+      "quantity": 2,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0239-0031",
+      "equipment_tag": "OCP-CON1-DENS01",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0012",
+      "component_desc": "Valvula Weir 8/6 Isogate",
+      "quantity": 3,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0240-5885",
+      "equipment_tag": "OCP-CON1-DENS01",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0008",
+      "component_desc": "Liner Mn Steel Metso C160",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0241-6C90",
+      "equipment_tag": "OCP-CON1-DENS01",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0020",
+      "component_desc": "Cable XLPE 3x95mm2",
+      "quantity": 4,
+      "item_category": "SPARE",
+      "critical_spare": true
+    },
+    {
+      "bom_id": "S26-BOM-0242-D9BF",
+      "equipment_tag": "OCP-CON1-DENS01",
+      "item_number": "0050",
+      "material_code": "S26-MAT-0013",
+      "component_desc": "Malla harnero poliuretano 50x50",
+      "quantity": 3,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0243-B495",
+      "equipment_tag": "OCP-CON1-VIBM01",
+      "item_number": "0010",
+      "material_code": "S26-MAT-0004",
+      "component_desc": "Correa Gates PowerBand 5VX1500",
+      "quantity": 2,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0244-0850",
+      "equipment_tag": "OCP-CON1-VIBM01",
+      "item_number": "0020",
+      "material_code": "S26-MAT-0010",
+      "component_desc": "Sensor vibr Bently Nevada 330180",
+      "quantity": 2,
+      "item_category": "WEAR",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0245-255B",
+      "equipment_tag": "OCP-CON1-VIBM01",
+      "item_number": "0030",
+      "material_code": "S26-MAT-0019",
+      "component_desc": "Contactor Siemens 3RT1065",
+      "quantity": 1,
+      "item_category": "SPARE",
+      "critical_spare": false
+    },
+    {
+      "bom_id": "S26-BOM-0246-BE16",
+      "equipment_tag": "OCP-CON1-VIBM01",
+      "item_number": "0040",
+      "material_code": "S26-MAT-0009",
+      "component_desc": "Grasa Mobil SHC 220 (18kg)",
+      "quantity": 3,
+      "item_category": "CONSUMABLE",
+      "critical_spare": false
+    }
+  ]
+}
