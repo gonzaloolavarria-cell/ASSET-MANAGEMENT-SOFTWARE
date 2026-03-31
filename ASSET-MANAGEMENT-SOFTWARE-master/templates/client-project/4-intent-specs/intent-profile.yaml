@@ -1,0 +1,32 @@
+# Intent Profile — Generated from RFI or client interview
+# Schema version 1.0 — Compatible with IP-L1/L2/L3 loading
+schema_version: "1.0"
+
+# IP-L1: Intent Summary (~200 tokens) — ALWAYS loaded by all agents
+intent_summary:
+  client: ""                        # Client company name
+  project: ""                       # Project name/slug
+  trade_off_priority:               # Ordered list, first = highest priority
+    - safety
+    - availability
+    - cost
+  risk_appetite: "moderate"         # conservative | moderate | aggressive
+  primary_kpi: "availability"       # Main KPI to optimize
+  primary_kpi_target: 90            # Numeric target for primary KPI
+  hard_limits: []                   # Non-negotiable constraints (list of strings)
+
+# IP-L2: Domain-Specific Intent (~500-800 tokens per domain)
+# Populated after client interview or during project setup
+domain_intent:
+  reliability: {}
+  planning: {}
+  spare_parts: {}
+
+# IP-L3: Full Context (~3500 tokens) — loaded on demand
+full_context: {}
+
+# Trade-off resolution matrix
+trade_off_matrix: []
+
+# Veto rules (unconditional overrides)
+veto_rules: []

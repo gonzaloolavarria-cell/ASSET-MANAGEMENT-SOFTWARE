@@ -1,0 +1,2378 @@
+{
+  "session_id": "f2882cbf-5648-479d-b0da-dc322a11a24b",
+  "equipment_tag": "SAG Mill 001",
+  "plant_code": "OCP-JFC",
+  "started_at": "2026-03-12T03:09:59.757869",
+  "client_slug": "",
+  "project_slug": "",
+  "execution_plan_path": "",
+  "entities": {
+    "hierarchy_nodes": [
+      {
+        "assessment_id": "CA-001",
+        "node_id": "fb8d6fbc-c8a0-49ed-af37-0573995fe034",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 3,
+            "comments": null
+          }
+        ],
+        "probability": 3,
+        "overall_score": 15.0,
+        "risk_class": "III_HIGH",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      },
+      {
+        "assessment_id": "CA-002",
+        "node_id": "f142fb9f-836a-4828-9aee-67ce9f8ea80a",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 3,
+            "comments": null
+          }
+        ],
+        "probability": 3,
+        "overall_score": 15.0,
+        "risk_class": "III_HIGH",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      },
+      {
+        "assessment_id": "CA-003",
+        "node_id": "fbcbcba3-4985-4a0e-9072-bf1a722efac9",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 1,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 2,
+            "comments": null
+          }
+        ],
+        "probability": 3,
+        "overall_score": 15.0,
+        "risk_class": "III_HIGH",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      },
+      {
+        "assessment_id": "CA-004",
+        "node_id": "d5044ee3-e072-444f-adbd-46cb9f289b3c",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 3,
+            "comments": null
+          }
+        ],
+        "probability": 4,
+        "overall_score": 20.0,
+        "risk_class": "IV_CRITICAL",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      },
+      {
+        "assessment_id": "CA-005",
+        "node_id": "6c05b7c8-1d3f-4c9a-99a3-3effb0f200bb",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 2,
+            "comments": null
+          }
+        ],
+        "probability": 4,
+        "overall_score": 20.0,
+        "risk_class": "IV_CRITICAL",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      },
+      {
+        "assessment_id": "CA-006",
+        "node_id": "f3956c84-e7de-4621-9d7d-669b6b17fe76",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 4,
+            "comments": null
+          }
+        ],
+        "probability": 2,
+        "overall_score": 10.0,
+        "risk_class": "III_HIGH",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      },
+      {
+        "assessment_id": "CA-007",
+        "node_id": "d378a731-1585-492a-8149-7ed0e651f896",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 1,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 2,
+            "comments": null
+          }
+        ],
+        "probability": 4,
+        "overall_score": 16.0,
+        "risk_class": "III_HIGH",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      },
+      {
+        "assessment_id": "CA-008",
+        "node_id": "e3657af4-ade0-4619-848e-25a6d20dd4dd",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 3,
+            "comments": null
+          }
+        ],
+        "probability": 2,
+        "overall_score": 10.0,
+        "risk_class": "III_HIGH",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      },
+      {
+        "assessment_id": "CA-009",
+        "node_id": "cd447023-d24b-42f8-8bfe-f9a63d0213c0",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 2,
+            "comments": null
+          }
+        ],
+        "probability": 4,
+        "overall_score": 20.0,
+        "risk_class": "IV_CRITICAL",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      },
+      {
+        "assessment_id": "CA-010",
+        "node_id": "b75d1769-6989-451a-8bda-95275f4abd61",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 2,
+            "comments": null
+          }
+        ],
+        "probability": 3,
+        "overall_score": 15.0,
+        "risk_class": "III_HIGH",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      },
+      {
+        "assessment_id": "CA-011",
+        "node_id": "1d335a1d-7295-453c-8aad-b96280772e70",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 2,
+            "comments": null
+          }
+        ],
+        "probability": 3,
+        "overall_score": 15.0,
+        "risk_class": "III_HIGH",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      },
+      {
+        "assessment_id": "CA-012",
+        "node_id": "7f290c64-b38c-4412-af90-e2645a1de4f5",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 1,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 1,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 1,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 1,
+            "comments": null
+          }
+        ],
+        "probability": 4,
+        "overall_score": 12.0,
+        "risk_class": "III_HIGH",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      },
+      {
+        "assessment_id": "CA-013",
+        "node_id": "222b4ce3-06d7-4376-be6e-0c307642fc5c",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 2,
+            "comments": null
+          }
+        ],
+        "probability": 2,
+        "overall_score": 8.0,
+        "risk_class": "II_MEDIUM",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      },
+      {
+        "assessment_id": "CA-014",
+        "node_id": "a14af001-cdc8-4c48-a4f8-917c935da95f",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 1,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 1,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 1,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 1,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 1,
+            "comments": null
+          }
+        ],
+        "probability": 3,
+        "overall_score": 9.0,
+        "risk_class": "II_MEDIUM",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      },
+      {
+        "node_id": "4071a3c7-96b5-4c23-b1bd-5d038a1d2b96",
+        "node_type": "EQUIPMENT",
+        "name": "SAG Mill",
+        "name_fr": "Broyeur SAG",
+        "code": "GRD-SAG-ML-001",
+        "tag": "GRD-SAG-ML-001",
+        "level": 4,
+        "plant_id": "OCP-JFC",
+        "criticality": "AA",
+        "status": "ACTIVE",
+        "metadata_json": {
+          "manufacturer": "Metso",
+          "model": "",
+          "serial_number": "",
+          "installation_date": "",
+          "power_kw": 8000,
+          "weight_kg": 0,
+          "equipment_type": "SAG_MILL",
+          "equipment_type_id": "ET-SAG-MILL",
+          "specifications": {}
+        }
+      },
+      {
+        "node_id": "3c2a6bed-5733-4150-ac70-2440284cc9d0",
+        "node_type": "SUB_ASSEMBLY",
+        "name": "Drive System",
+        "name_fr": "Syst\u00e8me d'entra\u00eenement",
+        "code": "GRD-SAG-ML-001-DRI",
+        "tag": "GRD-SAG-ML-001-DRI",
+        "parent_node_id": "4071a3c7-96b5-4c23-b1bd-5d038a1d2b96",
+        "level": 5,
+        "plant_id": "OCP-JFC",
+        "criticality": "AA",
+        "status": "ACTIVE",
+        "order": 1
+      },
+      {
+        "node_id": "fb8d6fbc-c8a0-49ed-af37-0573995fe034",
+        "node_type": "MAINTAINABLE_ITEM",
+        "name": "Main Drive Motor",
+        "name_fr": "Moteur d'entra\u00eenement principal",
+        "code": "GRD-SAG-ML-001-DRI-MAI01",
+        "tag": "GRD-SAG-ML-001-DRI-MAI01",
+        "parent_node_id": "3c2a6bed-5733-4150-ac70-2440284cc9d0",
+        "level": 6,
+        "plant_id": "OCP-JFC",
+        "status": "ACTIVE",
+        "order": 1,
+        "metadata_json": {
+          "weibull_beta": 3.2,
+          "weibull_eta": 2190,
+          "component_lib_ref": "CL-MOTOR-HV"
+        }
+      },
+      {
+        "node_id": "f142fb9f-836a-4828-9aee-67ce9f8ea80a",
+        "node_type": "MAINTAINABLE_ITEM",
+        "name": "Main Gearbox",
+        "name_fr": "R\u00e9ducteur principal",
+        "code": "GRD-SAG-ML-001-DRI-MAI02",
+        "tag": "GRD-SAG-ML-001-DRI-MAI02",
+        "parent_node_id": "3c2a6bed-5733-4150-ac70-2440284cc9d0",
+        "level": 6,
+        "plant_id": "OCP-JFC",
+        "status": "ACTIVE",
+        "order": 2,
+        "metadata_json": {
+          "weibull_beta": 2.8,
+          "weibull_eta": 2555,
+          "component_lib_ref": "CL-GEARBOX-PLANETARY"
+        }
+      },
+      {
+        "node_id": "fbcbcba3-4985-4a0e-9072-bf1a722efac9",
+        "node_type": "MAINTAINABLE_ITEM",
+        "name": "Drive Coupling",
+        "name_fr": "Accouplement d'entra\u00eenement",
+        "code": "GRD-SAG-ML-001-DRI-DRI03",
+        "tag": "GRD-SAG-ML-001-DRI-DRI03",
+        "parent_node_id": "3c2a6bed-5733-4150-ac70-2440284cc9d0",
+        "level": 6,
+        "plant_id": "OCP-JFC",
+        "status": "ACTIVE",
+        "order": 3,
+        "metadata_json": {
+          "weibull_beta": 3.0,
+          "weibull_eta": 1095,
+          "component_lib_ref": "CL-COUPLING-FLEX"
+        }
+      },
+      {
+        "node_id": "68c9820c-0d2c-43dd-b957-7729ead2eabc",
+        "node_type": "SUB_ASSEMBLY",
+        "name": "Grinding System",
+        "name_fr": "Syst\u00e8me de broyage",
+        "code": "GRD-SAG-ML-001-GRI",
+        "tag": "GRD-SAG-ML-001-GRI",
+        "parent_node_id": "4071a3c7-96b5-4c23-b1bd-5d038a1d2b96",
+        "level": 5,
+        "plant_id": "OCP-JFC",
+        "criticality": "AA",
+        "status": "ACTIVE",
+        "order": 2
+      },
+      {
+        "node_id": "d5044ee3-e072-444f-adbd-46cb9f289b3c",
+        "node_type": "MAINTAINABLE_ITEM",
+        "name": "Mill Liner",
+        "name_fr": "Blindage du broyeur",
+        "code": "GRD-SAG-ML-001-GRI-MIL01",
+        "tag": "GRD-SAG-ML-001-GRI-MIL01",
+        "parent_node_id": "68c9820c-0d2c-43dd-b957-7729ead2eabc",
+        "level": 6,
+        "plant_id": "OCP-JFC",
+        "status": "ACTIVE",
+        "order": 1,
+        "metadata_json": {
+          "weibull_beta": 3.8,
+          "weibull_eta": 365,
+          "component_lib_ref": "CL-LINER-MILL"
+        }
+      },
+      {
+        "node_id": "6c05b7c8-1d3f-4c9a-99a3-3effb0f200bb",
+        "node_type": "MAINTAINABLE_ITEM",
+        "name": "Lifter Bar",
+        "name_fr": "Barre de relevage",
+        "code": "GRD-SAG-ML-001-GRI-LIF02",
+        "tag": "GRD-SAG-ML-001-GRI-LIF02",
+        "parent_node_id": "68c9820c-0d2c-43dd-b957-7729ead2eabc",
+        "level": 6,
+        "plant_id": "OCP-JFC",
+        "status": "ACTIVE",
+        "order": 2,
+        "metadata_json": {
+          "weibull_beta": 4.0,
+          "weibull_eta": 365,
+          "component_lib_ref": "CL-LIFTER-MILL"
+        }
+      },
+      {
+        "node_id": "f3956c84-e7de-4621-9d7d-669b6b17fe76",
+        "node_type": "MAINTAINABLE_ITEM",
+        "name": "Mill Shell",
+        "name_fr": "Virole du broyeur",
+        "code": "GRD-SAG-ML-001-GRI-MIL03",
+        "tag": "GRD-SAG-ML-001-GRI-MIL03",
+        "parent_node_id": "68c9820c-0d2c-43dd-b957-7729ead2eabc",
+        "level": 6,
+        "plant_id": "OCP-JFC",
+        "status": "ACTIVE",
+        "order": 3,
+        "metadata_json": {
+          "weibull_beta": 2.0,
+          "weibull_eta": 3650,
+          "component_lib_ref": "CL-SHELL-MILL"
+        }
+      },
+      {
+        "node_id": "919b6f52-2b25-411e-b0c2-f6cd8d7dc108",
+        "node_type": "SUB_ASSEMBLY",
+        "name": "Feed System",
+        "name_fr": "Syst\u00e8me d'alimentation",
+        "code": "GRD-SAG-ML-001-FEE",
+        "tag": "GRD-SAG-ML-001-FEE",
+        "parent_node_id": "4071a3c7-96b5-4c23-b1bd-5d038a1d2b96",
+        "level": 5,
+        "plant_id": "OCP-JFC",
+        "criticality": "AA",
+        "status": "ACTIVE",
+        "order": 3
+      },
+      {
+        "node_id": "d378a731-1585-492a-8149-7ed0e651f896",
+        "node_type": "MAINTAINABLE_ITEM",
+        "name": "Feed Chute",
+        "name_fr": "Goulotte d'alimentation",
+        "code": "GRD-SAG-ML-001-FEE-FEE01",
+        "tag": "GRD-SAG-ML-001-FEE-FEE01",
+        "parent_node_id": "919b6f52-2b25-411e-b0c2-f6cd8d7dc108",
+        "level": 6,
+        "plant_id": "OCP-JFC",
+        "status": "ACTIVE",
+        "order": 1,
+        "metadata_json": {
+          "weibull_beta": 3.0,
+          "weibull_eta": 365,
+          "component_lib_ref": "CL-CHUTE"
+        }
+      },
+      {
+        "node_id": "e3657af4-ade0-4619-848e-25a6d20dd4dd",
+        "node_type": "MAINTAINABLE_ITEM",
+        "name": "Feed Trunnion",
+        "name_fr": "Tourillon d'alimentation",
+        "code": "GRD-SAG-ML-001-FEE-FEE02",
+        "tag": "GRD-SAG-ML-001-FEE-FEE02",
+        "parent_node_id": "919b6f52-2b25-411e-b0c2-f6cd8d7dc108",
+        "level": 6,
+        "plant_id": "OCP-JFC",
+        "status": "ACTIVE",
+        "order": 2,
+        "metadata_json": {
+          "weibull_beta": 2.5,
+          "weibull_eta": 1825,
+          "component_lib_ref": "CL-TRUNNION"
+        }
+      },
+      {
+        "node_id": "fd73992b-a70f-46ad-a902-617f92b2d86f",
+        "node_type": "SUB_ASSEMBLY",
+        "name": "Discharge System",
+        "name_fr": "Syst\u00e8me de d\u00e9charge",
+        "code": "GRD-SAG-ML-001-DIS",
+        "tag": "GRD-SAG-ML-001-DIS",
+        "parent_node_id": "4071a3c7-96b5-4c23-b1bd-5d038a1d2b96",
+        "level": 5,
+        "plant_id": "OCP-JFC",
+        "criticality": "AA",
+        "status": "ACTIVE",
+        "order": 4
+      },
+      {
+        "node_id": "cd447023-d24b-42f8-8bfe-f9a63d0213c0",
+        "node_type": "MAINTAINABLE_ITEM",
+        "name": "Trommel Screen",
+        "name_fr": "Trommel",
+        "code": "GRD-SAG-ML-001-DIS-TRO01",
+        "tag": "GRD-SAG-ML-001-DIS-TRO01",
+        "parent_node_id": "fd73992b-a70f-46ad-a902-617f92b2d86f",
+        "level": 6,
+        "plant_id": "OCP-JFC",
+        "status": "ACTIVE",
+        "order": 1,
+        "metadata_json": {
+          "weibull_beta": 3.5,
+          "weibull_eta": 270,
+          "component_lib_ref": "CL-SCREEN-TROMMEL"
+        }
+      },
+      {
+        "node_id": "b75d1769-6989-451a-8bda-95275f4abd61",
+        "node_type": "MAINTAINABLE_ITEM",
+        "name": "Discharge Trunnion",
+        "name_fr": "Tourillon de d\u00e9charge",
+        "code": "GRD-SAG-ML-001-DIS-DIS02",
+        "tag": "GRD-SAG-ML-001-DIS-DIS02",
+        "parent_node_id": "fd73992b-a70f-46ad-a902-617f92b2d86f",
+        "level": 6,
+        "plant_id": "OCP-JFC",
+        "status": "ACTIVE",
+        "order": 2,
+        "metadata_json": {
+          "weibull_beta": 3.0,
+          "weibull_eta": 547,
+          "component_lib_ref": "CL-TRUNNION"
+        }
+      },
+      {
+        "node_id": "8cdf9309-7293-4c97-a850-4a65f70e4a19",
+        "node_type": "SUB_ASSEMBLY",
+        "name": "Lubrication System",
+        "name_fr": "Syst\u00e8me de lubrification",
+        "code": "GRD-SAG-ML-001-LUB",
+        "tag": "GRD-SAG-ML-001-LUB",
+        "parent_node_id": "4071a3c7-96b5-4c23-b1bd-5d038a1d2b96",
+        "level": 5,
+        "plant_id": "OCP-JFC",
+        "criticality": "AA",
+        "status": "ACTIVE",
+        "order": 5
+      },
+      {
+        "node_id": "1d335a1d-7295-453c-8aad-b96280772e70",
+        "node_type": "MAINTAINABLE_ITEM",
+        "name": "Lube Oil Pump",
+        "name_fr": "Pompe \u00e0 huile",
+        "code": "GRD-SAG-ML-001-LUB-LUB01",
+        "tag": "GRD-SAG-ML-001-LUB-LUB01",
+        "parent_node_id": "8cdf9309-7293-4c97-a850-4a65f70e4a19",
+        "level": 6,
+        "plant_id": "OCP-JFC",
+        "status": "ACTIVE",
+        "order": 1,
+        "metadata_json": {
+          "weibull_beta": 1.8,
+          "weibull_eta": 1095,
+          "component_lib_ref": "CL-PUMP-LUBE"
+        }
+      },
+      {
+        "node_id": "7f290c64-b38c-4412-af90-e2645a1de4f5",
+        "node_type": "MAINTAINABLE_ITEM",
+        "name": "Oil Filter",
+        "name_fr": "Filtre \u00e0 huile",
+        "code": "GRD-SAG-ML-001-LUB-OIL02",
+        "tag": "GRD-SAG-ML-001-LUB-OIL02",
+        "parent_node_id": "8cdf9309-7293-4c97-a850-4a65f70e4a19",
+        "level": 6,
+        "plant_id": "OCP-JFC",
+        "status": "ACTIVE",
+        "order": 2,
+        "metadata_json": {
+          "weibull_beta": 2.5,
+          "weibull_eta": 120,
+          "component_lib_ref": "CL-FILTER-OIL"
+        }
+      },
+      {
+        "node_id": "222b4ce3-06d7-4376-be6e-0c307642fc5c",
+        "node_type": "MAINTAINABLE_ITEM",
+        "name": "Oil Cooler",
+        "name_fr": "Refroidisseur d'huile",
+        "code": "GRD-SAG-ML-001-LUB-OIL03",
+        "tag": "GRD-SAG-ML-001-LUB-OIL03",
+        "parent_node_id": "8cdf9309-7293-4c97-a850-4a65f70e4a19",
+        "level": 6,
+        "plant_id": "OCP-JFC",
+        "status": "ACTIVE",
+        "order": 3,
+        "metadata_json": {
+          "weibull_beta": 2.0,
+          "weibull_eta": 1825,
+          "component_lib_ref": "CL-COOLER-OIL"
+        }
+      },
+      {
+        "node_id": "93542e7b-42d4-4f57-95b7-d780cc3b74b6",
+        "node_type": "SUB_ASSEMBLY",
+        "name": "Instrumentation",
+        "name_fr": "Instrumentation",
+        "code": "GRD-SAG-ML-001-INS",
+        "tag": "GRD-SAG-ML-001-INS",
+        "parent_node_id": "4071a3c7-96b5-4c23-b1bd-5d038a1d2b96",
+        "level": 5,
+        "plant_id": "OCP-JFC",
+        "criticality": "AA",
+        "status": "ACTIVE",
+        "order": 6
+      },
+      {
+        "node_id": "a14af001-cdc8-4c48-a4f8-917c935da95f",
+        "node_type": "MAINTAINABLE_ITEM",
+        "name": "Vibration Sensor",
+        "name_fr": "Capteur de vibration",
+        "code": "GRD-SAG-ML-001-INS-VIB01",
+        "tag": "GRD-SAG-ML-001-INS-VIB01",
+        "parent_node_id": "93542e7b-42d4-4f57-95b7-d780cc3b74b6",
+        "level": 6,
+        "plant_id": "OCP-JFC",
+        "status": "ACTIVE",
+        "order": 1,
+        "metadata_json": {
+          "weibull_beta": 1.0,
+          "weibull_eta": 2190,
+          "component_lib_ref": "CL-SENSOR-VIBRATION"
+        }
+      }
+    ],
+    "criticality_assessments": [
+      {
+        "assessment_id": "CA-001",
+        "node_id": "fb8d6fbc-c8a0-49ed-af37-0573995fe034",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 3,
+            "comments": null
+          }
+        ],
+        "probability": 3,
+        "overall_score": 15.0,
+        "risk_class": "III_HIGH",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      },
+      {
+        "assessment_id": "CA-002",
+        "node_id": "f142fb9f-836a-4828-9aee-67ce9f8ea80a",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 3,
+            "comments": null
+          }
+        ],
+        "probability": 3,
+        "overall_score": 15.0,
+        "risk_class": "III_HIGH",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      },
+      {
+        "assessment_id": "CA-003",
+        "node_id": "fbcbcba3-4985-4a0e-9072-bf1a722efac9",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 1,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 2,
+            "comments": null
+          }
+        ],
+        "probability": 3,
+        "overall_score": 15.0,
+        "risk_class": "III_HIGH",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      },
+      {
+        "assessment_id": "CA-004",
+        "node_id": "d5044ee3-e072-444f-adbd-46cb9f289b3c",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 3,
+            "comments": null
+          }
+        ],
+        "probability": 4,
+        "overall_score": 20.0,
+        "risk_class": "IV_CRITICAL",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      },
+      {
+        "assessment_id": "CA-005",
+        "node_id": "6c05b7c8-1d3f-4c9a-99a3-3effb0f200bb",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 2,
+            "comments": null
+          }
+        ],
+        "probability": 4,
+        "overall_score": 20.0,
+        "risk_class": "IV_CRITICAL",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      },
+      {
+        "assessment_id": "CA-006",
+        "node_id": "f3956c84-e7de-4621-9d7d-669b6b17fe76",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 4,
+            "comments": null
+          }
+        ],
+        "probability": 2,
+        "overall_score": 10.0,
+        "risk_class": "III_HIGH",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      },
+      {
+        "assessment_id": "CA-007",
+        "node_id": "d378a731-1585-492a-8149-7ed0e651f896",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 1,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 2,
+            "comments": null
+          }
+        ],
+        "probability": 4,
+        "overall_score": 16.0,
+        "risk_class": "III_HIGH",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      },
+      {
+        "assessment_id": "CA-008",
+        "node_id": "e3657af4-ade0-4619-848e-25a6d20dd4dd",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 3,
+            "comments": null
+          }
+        ],
+        "probability": 2,
+        "overall_score": 10.0,
+        "risk_class": "III_HIGH",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      },
+      {
+        "assessment_id": "CA-009",
+        "node_id": "cd447023-d24b-42f8-8bfe-f9a63d0213c0",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 2,
+            "comments": null
+          }
+        ],
+        "probability": 4,
+        "overall_score": 20.0,
+        "risk_class": "IV_CRITICAL",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      },
+      {
+        "assessment_id": "CA-010",
+        "node_id": "b75d1769-6989-451a-8bda-95275f4abd61",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 2,
+            "comments": null
+          }
+        ],
+        "probability": 3,
+        "overall_score": 15.0,
+        "risk_class": "III_HIGH",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      },
+      {
+        "assessment_id": "CA-011",
+        "node_id": "1d335a1d-7295-453c-8aad-b96280772e70",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 5,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 2,
+            "comments": null
+          }
+        ],
+        "probability": 3,
+        "overall_score": 15.0,
+        "risk_class": "III_HIGH",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      },
+      {
+        "assessment_id": "CA-012",
+        "node_id": "7f290c64-b38c-4412-af90-e2645a1de4f5",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 1,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 1,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 1,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 1,
+            "comments": null
+          }
+        ],
+        "probability": 4,
+        "overall_score": 12.0,
+        "risk_class": "III_HIGH",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      },
+      {
+        "assessment_id": "CA-013",
+        "node_id": "222b4ce3-06d7-4376-be6e-0c307642fc5c",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 4,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 2,
+            "comments": null
+          }
+        ],
+        "probability": 2,
+        "overall_score": 8.0,
+        "risk_class": "II_MEDIUM",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      },
+      {
+        "assessment_id": "CA-014",
+        "node_id": "a14af001-cdc8-4c48-a4f8-917c935da95f",
+        "assessed_at": "2026-01-01 00:00:00",
+        "assessed_by": "reliability_agent",
+        "method": "FULL_MATRIX",
+        "criteria_scores": [
+          {
+            "category": "SAFETY",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "HEALTH",
+            "consequence_level": 1,
+            "comments": null
+          },
+          {
+            "category": "ENVIRONMENT",
+            "consequence_level": 1,
+            "comments": null
+          },
+          {
+            "category": "PRODUCTION",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "OPERATING_COST",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "CAPITAL_COST",
+            "consequence_level": 1,
+            "comments": null
+          },
+          {
+            "category": "SCHEDULE",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "REVENUE",
+            "consequence_level": 3,
+            "comments": null
+          },
+          {
+            "category": "COMMUNICATIONS",
+            "consequence_level": 1,
+            "comments": null
+          },
+          {
+            "category": "COMPLIANCE",
+            "consequence_level": 2,
+            "comments": null
+          },
+          {
+            "category": "REPUTATION",
+            "consequence_level": 1,
+            "comments": null
+          }
+        ],
+        "probability": 3,
+        "overall_score": 9.0,
+        "risk_class": "II_MEDIUM",
+        "max_consequence": null,
+        "ai_suggested_class": null,
+        "ai_justification": null,
+        "status": "DRAFT"
+      }
+    ],
+    "functions": [],
+    "functional_failures": [],
+    "failure_modes": [],
+    "maintenance_tasks": [],
+    "work_packages": [],
+    "deliverables": []
+  },
+  "sap_upload_package": null,
+  "agent_interactions": [
+    {
+      "timestamp": "2026-03-12T03:12:08.881020",
+      "agent_type": "orchestrator",
+      "milestone": 1,
+      "instruction": "M1 \u2014 Equipment: SAG Mill 001 | Plant: OCP-JFC | Nodes: 0 | FMs: 0 | Tasks: 0",
+      "response_summary": "All 14 criticality assessments completed successfully. Let me now compile the final results.\n\n## Step 4 \u2014 Final Results\n\n### Summary of Criticality Assessments\n\n| # | Maintainable Item | Tag | Risk Class | Score | Rationale |\n|---|---|---|---|---|---|\n| 1 | Main Drive Motor | GRD-SAG-ML-001-DRI-MAI01 | **III_HIGH** | 15.0 | 8MW motor \u2014 catastrophic production/revenue impact; safety risk from stored energy |\n| 2 | Main Gearbox | GRD-SAG-ML-001-DRI-MAI02 | **III_HIGH** | 15.0 | Planetary gearbox \u2014"
+    }
+  ]
+}

@@ -1,0 +1,569 @@
+{
+  "_meta": {
+    "equipment_type_id": "ET-SLURRY-PUMP",
+    "version": "1.0.0",
+    "description": "Troubleshooting decision tree for Slurry Pump (A/B criticality). Covers impeller wear, seal failures, cavitation, suction blockage, and bearing failures.",
+    "entry_categories": ["vibration", "leak", "performance", "noise", "pressure"]
+  },
+  "entry_nodes": {
+    "vibration": "V-001",
+    "leak": "L-001",
+    "performance": "P-001",
+    "noise": "N-001",
+    "pressure": "PR-001"
+  },
+  "nodes": {
+    "V-001": {
+      "question": "Is the vibration predominantly from the wet end (pump casing) or the dry end (bearing assembly/motor)?",
+      "question_fr": "La vibration provient-elle principalement du côté humide (corps de pompe) ou du côté sec (paliers/moteur)?",
+      "branches": {
+        "wet_end": "V-010",
+        "dry_end": "V-020",
+        "both": "V-030"
+      }
+    },
+    "V-010": {
+      "question": "Can you feel excessive vibration on the pump casing by hand? Is it pulsating or continuous?",
+      "question_fr": "Pouvez-vous sentir une vibration excessive sur le corps de pompe à la main? Est-elle pulsante ou continue?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Tactile vibration check on pump casing, suction and discharge flanges",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 5,
+        "threshold": "Pulsating → hydraulic issue (cavitation, recirculation); continuous → mechanical imbalance"
+      },
+      "branches": {
+        "pulsating": "V-011",
+        "continuous": "V-012"
+      }
+    },
+    "V-011": {
+      "question": "Check suction pressure. Is NPSH available < NPSH required (cavitation risk)?",
+      "question_fr": "Vérifier la pression d'aspiration. Le NPSH disponible est-il < NPSH requis (risque de cavitation)?",
+      "test": {
+        "test_type": "PORTABLE_INSTRUMENT",
+        "description": "Measure suction pressure with calibrated gauge and calculate NPSHa vs NPSHr",
+        "estimated_cost_usd": 50,
+        "estimated_time_minutes": 10,
+        "threshold": "NPSHa < NPSHr + 1.0 m → cavitation occurring; NPSHa < NPSHr → severe cavitation"
+      },
+      "branches": {
+        "yes": "V-011-DIAG",
+        "no": "V-013"
+      }
+    },
+    "V-011-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-31",
+      "terminal_mechanism": "WEARS_ERODES",
+      "terminal_cause": "DESIGN_DEFICIENCY",
+      "corrective_action": "Cavitation damage from insufficient NPSH. Increase sump level, reduce pump speed, check suction line for blockage. Inspect impeller for cavitation pitting damage.",
+      "corrective_action_fr": "Dommage de cavitation par NPSH insuffisant. Augmenter niveau du puisard, réduire vitesse pompe, vérifier ligne d'aspiration pour blocage. Inspecter l'impulseur pour dommage par piqûres de cavitation."
+    },
+    "V-012": {
+      "question": "Is the impeller visually worn or eroded? Check impeller clearance with feeler gauge.",
+      "question_fr": "L'impulseur est-il visuellement usé ou érodé? Vérifier le jeu de l'impulseur avec jauge d'épaisseur.",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Visual inspection of impeller vanes for erosion, gouging, and uneven wear (requires casing removal)",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 15,
+        "threshold": "Vane thickness <60% original or uneven wear → replace impeller"
+      },
+      "branches": {
+        "severe_wear": "V-012-DIAG",
+        "moderate_wear": "V-012A",
+        "minimal_wear": "V-014"
+      }
+    },
+    "V-012-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-31",
+      "terminal_mechanism": "WEARS_ERODES",
+      "terminal_cause": "DESIGN_DEFICIENCY",
+      "corrective_action": "Impeller severely eroded causing imbalance and vibration. Replace impeller. Consider upgrading to higher-chrome or rubber-lined impeller for abrasive service.",
+      "corrective_action_fr": "Impulseur sévèrement érodé causant déséquilibre et vibration. Remplacer l'impulseur. Considérer mise à niveau vers impulseur chrome supérieur ou caoutchouté pour service abrasif."
+    },
+    "V-012A": {
+      "question": "Check impeller-to-suction plate clearance. Is it >OEM maximum?",
+      "question_fr": "Vérifier le jeu impulseur-plaque d'aspiration. Est-il >maximum OEM?",
+      "test": {
+        "test_type": "PORTABLE_INSTRUMENT",
+        "description": "Measure front and back clearance with feeler gauge at 4 points around impeller",
+        "estimated_cost_usd": 50,
+        "estimated_time_minutes": 10,
+        "threshold": "Clearance >OEM max → adjust or replace wear components"
+      },
+      "branches": {
+        "yes": "V-012A-DIAG",
+        "no": "V-014"
+      }
+    },
+    "V-012A-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-34",
+      "terminal_mechanism": "WEARS_ERODES",
+      "terminal_cause": "OPERATING_ERROR",
+      "corrective_action": "Excessive impeller clearance from wear. Adjust impeller position forward to restore clearance. Replace suction liner/plate if worn beyond adjustment range.",
+      "corrective_action_fr": "Jeu excessif de l'impulseur par usure. Ajuster la position de l'impulseur vers l'avant. Remplacer plaque/revêtement d'aspiration si usé au-delà de la plage d'ajustement."
+    },
+    "V-013": {
+      "question": "Check for air entrainment at suction. Is there a vortex in the sump or air leaking into suction pipe?",
+      "question_fr": "Vérifier l'entraînement d'air à l'aspiration. Y a-t-il un vortex dans le puisard ou une fuite d'air dans le tuyau d'aspiration?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Visual check for vortex in sump, listen for air sucking noise at suction pipe joints",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 10,
+        "threshold": "Visible vortex or air-sucking noise → sump level too low or baffle missing"
+      },
+      "branches": {
+        "vortex_in_sump": "V-013-DIAG",
+        "air_leak_suction": "V-013A-DIAG",
+        "no_air": "V-012"
+      }
+    },
+    "V-013-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-34",
+      "terminal_mechanism": "WEARS_ERODES",
+      "terminal_cause": "OPERATING_ERROR",
+      "corrective_action": "Air entrainment from sump vortex. Increase sump level, install anti-vortex baffle, reduce pump speed. Air ingress accelerates impeller erosion.",
+      "corrective_action_fr": "Entraînement d'air par vortex dans le puisard. Augmenter niveau du puisard, installer déflecteur anti-vortex, réduire vitesse pompe."
+    },
+    "V-013A-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-81",
+      "terminal_mechanism": "LEAKS",
+      "terminal_cause": "SEAL_DEGRADATION",
+      "corrective_action": "Air leak at suction piping joint or gland packing. Tighten flanges and gland. Replace gaskets if leak persists. Air ingress causes cavitation-like damage.",
+      "corrective_action_fr": "Fuite d'air au raccord du tuyau d'aspiration ou au presse-étoupe. Resserrer brides et presse-étoupe. Remplacer joints si fuite persiste."
+    },
+    "V-014": {
+      "question": "Check pump shaft runout with dial indicator. Is shaft runout >0.05 mm?",
+      "question_fr": "Vérifier le faux-rond de l'arbre avec comparateur. Le faux-rond est-il >0,05 mm?",
+      "test": {
+        "test_type": "PORTABLE_INSTRUMENT",
+        "description": "Measure shaft runout at coupling end and impeller end with dial indicator",
+        "estimated_cost_usd": 50,
+        "estimated_time_minutes": 10,
+        "threshold": "Runout >0.05 mm → shaft bent or bearing seat worn"
+      },
+      "branches": {
+        "yes": "V-014-DIAG",
+        "no": "V-020"
+      }
+    },
+    "V-014-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-13",
+      "terminal_mechanism": "FRACTURES_BREAKS",
+      "terminal_cause": "ASSEMBLY_INSTALLATION_ERROR",
+      "corrective_action": "Shaft bent or bearing seat worn causing excessive runout. Replace shaft assembly. Check bearing housing bore for wear. Verify alignment after reassembly.",
+      "corrective_action_fr": "Arbre tordu ou siège de roulement usé causant faux-rond excessif. Remplacer l'ensemble arbre. Vérifier alésage du boîtier de roulement. Vérifier alignement après remontage."
+    },
+    "V-020": {
+      "question": "Measure bearing vibration with portable analyzer. Is overall velocity >4.5 mm/s?",
+      "question_fr": "Mesurer la vibration des paliers avec analyseur portable. Vélocité globale >4,5 mm/s?",
+      "test": {
+        "test_type": "VIBRATION_ANALYSIS",
+        "description": "Measure vibration at pump bearing housing in V, H, A planes on both DE and NDE",
+        "estimated_cost_usd": 200,
+        "estimated_time_minutes": 30,
+        "threshold": "ISO 10816: >4.5 mm/s = Zone C (alert), >7.1 mm/s = Zone D (danger)"
+      },
+      "branches": {
+        "yes": "V-021",
+        "no": "V-025"
+      }
+    },
+    "V-021": {
+      "question": "Is high-frequency envelope elevated (>5 kHz) indicating bearing defect?",
+      "question_fr": "L'enveloppe haute fréquence est-elle élevée (>5 kHz) indiquant un défaut de roulement?",
+      "test": {
+        "test_type": "VIBRATION_ANALYSIS",
+        "description": "High-frequency envelope spectrum — look for BPFO, BPFI, BSF bearing defect frequencies",
+        "estimated_cost_usd": 200,
+        "estimated_time_minutes": 20,
+        "threshold": "Bearing defect frequencies present → bearing damage confirmed"
+      },
+      "branches": {
+        "yes": "V-021-DIAG",
+        "no": "V-022"
+      }
+    },
+    "V-021-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-52",
+      "terminal_mechanism": "OVERHEATS_MELTS",
+      "terminal_cause": "CONTAMINATION",
+      "corrective_action": "Bearing damage from slurry contamination ingress past seals. Replace bearings and seals. Verify seal water supply pressure and flow. Improve bearing housing sealing.",
+      "corrective_action_fr": "Dommage au roulement par infiltration de pulpe contaminée au-delà des joints. Remplacer roulements et joints. Vérifier pression et débit d'eau de garniture. Améliorer l'étanchéité du boîtier."
+    },
+    "V-022": {
+      "question": "Check bearing temperature with IR thermometer. Is it >10°C above normal?",
+      "question_fr": "Vérifier la température du palier au pistolet IR. Est-elle >10°C au-dessus de la normale?",
+      "test": {
+        "test_type": "PORTABLE_INSTRUMENT",
+        "description": "Measure bearing housing temperature with IR thermometer at DE and NDE",
+        "estimated_cost_usd": 50,
+        "estimated_time_minutes": 5,
+        "threshold": "Temp >90°C or >10°C above baseline → lubrication or load issue"
+      },
+      "branches": {
+        "yes": "V-022-DIAG",
+        "no": "V-025"
+      }
+    },
+    "V-022-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-52",
+      "terminal_mechanism": "OVERHEATS_MELTS",
+      "terminal_cause": "CONTAMINATION",
+      "corrective_action": "Bearing overheating from contamination or over/under-greasing. Check grease condition and quantity. Purge and re-grease with correct amount. Verify seal integrity.",
+      "corrective_action_fr": "Surchauffe du roulement par contamination ou graissage excessif/insuffisant. Vérifier état et quantité de graisse. Purger et regraisser avec la quantité correcte."
+    },
+    "V-025": {
+      "question": "Check pump-motor alignment with laser. Is misalignment >0.05 mm?",
+      "question_fr": "Vérifier l'alignement pompe-moteur au laser. Désalignement >0,05 mm?",
+      "test": {
+        "test_type": "SPECIALIST_ANALYSIS",
+        "description": "Laser alignment measurement of pump-motor coupling",
+        "estimated_cost_usd": 2000,
+        "estimated_time_minutes": 120,
+        "threshold": "Alignment >0.05 mm offset or angularity → realign per manufacturer spec"
+      },
+      "branches": {
+        "yes": "V-025-DIAG",
+        "no": "DIAG-ESC"
+      }
+    },
+    "V-025-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-13",
+      "terminal_mechanism": "FRACTURES_BREAKS",
+      "terminal_cause": "ASSEMBLY_INSTALLATION_ERROR",
+      "corrective_action": "Pump-motor misalignment. Realign per manufacturer specification. Check baseplate grouting and foundation for cracking. Verify pipe strain is not distorting pump casing.",
+      "corrective_action_fr": "Désalignement pompe-moteur. Réaligner selon spécification fabricant. Vérifier scellement de la plaque de base et fondation. Vérifier que la contrainte de tuyauterie ne déforme pas le corps."
+    },
+    "V-030": {
+      "question": "Both wet and dry ends vibrating. Check motor current — is it significantly above normal?",
+      "question_fr": "Vibration côtés humide et sec. Vérifier courant moteur — est-il significativement au-dessus de la normale?",
+      "test": {
+        "test_type": "PORTABLE_INSTRUMENT",
+        "description": "Measure motor current with clamp meter on all 3 phases",
+        "estimated_cost_usd": 50,
+        "estimated_time_minutes": 5,
+        "threshold": "Current >110% FLA → check for blockage or excessive SG"
+      },
+      "branches": {
+        "yes": "PR-020",
+        "no": "V-020"
+      }
+    },
+    "L-001": {
+      "question": "Where is the leak? Stuffing box/gland, casing joint, or suction/discharge flanges?",
+      "question_fr": "Où est la fuite? Presse-étoupe/garniture, joint de corps, ou brides d'aspiration/refoulement?",
+      "branches": {
+        "stuffing_box": "L-010",
+        "casing_joint": "L-020",
+        "flanges": "L-030"
+      }
+    },
+    "L-010": {
+      "question": "Is the stuffing box/gland packing leaking excessively (more than controlled drip)?",
+      "question_fr": "Le presse-étoupe/garniture fuit-il excessivement (plus qu'un égouttement contrôlé)?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Visual inspection of gland packing area — assess leak rate (drip vs stream vs spray)",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 5,
+        "threshold": "Spray or continuous stream → gland adjustment needed; unable to control → replace packing"
+      },
+      "branches": {
+        "spray_or_stream": "L-011",
+        "excessive_drip": "L-012",
+        "controlled_drip": "DIAG-ESC"
+      }
+    },
+    "L-011": {
+      "question": "Check gland water/seal water supply pressure. Is seal water pressure adequate (>1 bar above discharge)?",
+      "question_fr": "Vérifier la pression d'eau de garniture. La pression d'eau est-elle adéquate (>1 bar au-dessus du refoulement)?",
+      "test": {
+        "test_type": "PORTABLE_INSTRUMENT",
+        "description": "Measure seal water pressure at gland inlet with pressure gauge",
+        "estimated_cost_usd": 50,
+        "estimated_time_minutes": 10,
+        "threshold": "Seal water pressure < discharge pressure + 1 bar → increase seal water"
+      },
+      "branches": {
+        "low_pressure": "L-011-DIAG",
+        "adequate": "L-012"
+      }
+    },
+    "L-011-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-81",
+      "terminal_mechanism": "LEAKS",
+      "terminal_cause": "SEAL_DEGRADATION",
+      "corrective_action": "Seal water pressure insufficient — slurry bypassing packing. Increase seal water supply pressure. Check seal water strainer for blockage. Replace packing if worn.",
+      "corrective_action_fr": "Pression d'eau de garniture insuffisante — la pulpe contourne le presse-étoupe. Augmenter pression d'eau. Vérifier filtre eau de garniture. Remplacer garniture si usée."
+    },
+    "L-012": {
+      "question": "Is the shaft sleeve scored or grooved under the packing area?",
+      "question_fr": "La chemise d'arbre est-elle rayée ou rainurée sous la zone de garniture?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Visual and tactile inspection of shaft sleeve surface (requires packing removal)",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 15,
+        "threshold": "Groove depth >0.25 mm or surface roughness >Ra 1.6 → replace sleeve"
+      },
+      "branches": {
+        "yes": "L-012-DIAG",
+        "no": "L-011-DIAG"
+      }
+    },
+    "L-012-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-81",
+      "terminal_mechanism": "LEAKS",
+      "terminal_cause": "SEAL_DEGRADATION",
+      "corrective_action": "Shaft sleeve scored — packing cannot seal against grooved surface. Replace shaft sleeve and packing. Verify seal water quality (no abrasives).",
+      "corrective_action_fr": "Chemise d'arbre rayée — la garniture ne peut pas étancher contre une surface rainurée. Remplacer chemise et garniture. Vérifier qualité eau de garniture."
+    },
+    "L-020": {
+      "question": "Is slurry leaking from the pump casing split joint?",
+      "question_fr": "De la pulpe fuit-elle du joint de corps de pompe?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Visual inspection of casing joint for slurry weeping or spray",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 5,
+        "threshold": "Any casing joint leak → tighten bolts evenly; if persists → replace gasket at shutdown"
+      },
+      "branches": {
+        "yes": "L-020-DIAG",
+        "no": "DIAG-ESC"
+      }
+    },
+    "L-020-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-85",
+      "terminal_mechanism": "LEAKS",
+      "terminal_cause": "ASSEMBLY_ERROR",
+      "corrective_action": "Casing joint leaking. Retighten casing bolts evenly in star pattern. If leak persists, replace gasket at next shutdown. Check bolt stretch and flange flatness.",
+      "corrective_action_fr": "Fuite au joint de corps. Resserrer les boulons uniformément en étoile. Si fuite persiste, remplacer joint au prochain arrêt. Vérifier allongement des boulons et planéité des brides."
+    },
+    "L-030": {
+      "question": "Is the flange leak at suction or discharge? Check bolt torque.",
+      "question_fr": "La fuite de bride est-elle à l'aspiration ou au refoulement? Vérifier le couple des boulons.",
+      "test": {
+        "test_type": "PORTABLE_INSTRUMENT",
+        "description": "Check flange bolt torque with torque wrench at leaking flange",
+        "estimated_cost_usd": 50,
+        "estimated_time_minutes": 10,
+        "threshold": "Bolts below torque spec → retorque; gasket damaged → replace"
+      },
+      "branches": {
+        "loose_bolts": "L-030-DIAG",
+        "bolts_tight": "L-020-DIAG"
+      }
+    },
+    "L-030-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-85",
+      "terminal_mechanism": "LEAKS",
+      "terminal_cause": "ASSEMBLY_ERROR",
+      "corrective_action": "Flange bolts loose causing leak. Retorque to specification. If gasket is damaged or compressed, replace at next shutdown. Verify flange alignment and pipe support.",
+      "corrective_action_fr": "Boulons de bride desserrés causant fuite. Resserrer au couple. Si joint endommagé, remplacer au prochain arrêt. Vérifier alignement bride et support de tuyauterie."
+    },
+    "P-001": {
+      "question": "What performance issue? Low flow, low head/pressure, or pump running but not pumping?",
+      "question_fr": "Quel problème de performance? Faible débit, faible pression, ou pompe en marche mais ne pompe pas?",
+      "branches": {
+        "low_flow": "P-010",
+        "low_head": "P-020",
+        "not_pumping": "P-030"
+      }
+    },
+    "P-010": {
+      "question": "Check suction line for blockage. Is sump level adequate and suction screen clear?",
+      "question_fr": "Vérifier la ligne d'aspiration pour blocage. Le niveau du puisard est-il adéquat et la crépine dégagée?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Visual check of sump level, suction screen/grate condition, and suction pipe entry",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 10,
+        "threshold": "Sump level below suction pipe or screen blocked → clear and restore level"
+      },
+      "branches": {
+        "blocked": "P-010-DIAG",
+        "low_sump": "V-011-DIAG",
+        "clear": "V-012"
+      }
+    },
+    "P-010-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-34",
+      "terminal_mechanism": "WEARS_ERODES",
+      "terminal_cause": "OPERATING_ERROR",
+      "corrective_action": "Suction blockage reducing flow. Clear suction screen and pipe. Investigate source of blockage (oversize rocks, debris, liner fragments). Consider larger screen apertures.",
+      "corrective_action_fr": "Blocage d'aspiration réduisant le débit. Dégager crépine et tuyau. Investiguer source du blocage (roches surdimensionnées, débris, fragments de revêtement)."
+    },
+    "P-020": {
+      "question": "Check impeller wear condition and clearance. Is the pump operating far from its BEP?",
+      "question_fr": "Vérifier l'usure et le jeu de l'impulseur. La pompe fonctionne-t-elle loin de son point de meilleur rendement?",
+      "test": {
+        "test_type": "PROCESS_MONITORING",
+        "description": "Plot current operating point on pump curve — compare flow/head with design BEP",
+        "estimated_cost_usd": 100,
+        "estimated_time_minutes": 15,
+        "threshold": "Operating <60% or >120% BEP flow → adjust system or pump speed"
+      },
+      "branches": {
+        "worn_impeller": "V-012-DIAG",
+        "off_curve": "P-020-DIAG",
+        "on_curve": "DIAG-ESC"
+      }
+    },
+    "P-020-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-34",
+      "terminal_mechanism": "WEARS_ERODES",
+      "terminal_cause": "OPERATING_ERROR",
+      "corrective_action": "Pump operating far from BEP — low head from worn components or system changes. Check discharge pipe for partial blockage. Adjust pump speed or impeller diameter.",
+      "corrective_action_fr": "Pompe fonctionnant loin du point de meilleur rendement. Vérifier le tuyau de refoulement pour blocage partiel. Ajuster vitesse ou diamètre d'impulseur."
+    },
+    "P-030": {
+      "question": "Is the pump primed? Check for air lock in casing.",
+      "question_fr": "La pompe est-elle amorcée? Vérifier le bouchon d'air dans le corps.",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Open casing vent to check for air lock; listen for air-bound pump noise (irregular, cavitating sound)",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 5,
+        "threshold": "Air in casing → vent and reprime; recurrent → check suction air leaks"
+      },
+      "branches": {
+        "air_locked": "V-013-DIAG",
+        "primed": "P-031"
+      }
+    },
+    "P-031": {
+      "question": "Check impeller rotation direction. Is it correct per the arrow on the casing?",
+      "question_fr": "Vérifier le sens de rotation de l'impulseur. Est-il correct selon la flèche sur le corps?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Confirm motor rotation direction matches pump casing arrow during brief bump start",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 5,
+        "threshold": "Wrong rotation → swap any 2 motor phases at MCC"
+      },
+      "branches": {
+        "wrong_rotation": "P-031-DIAG",
+        "correct": "V-012"
+      }
+    },
+    "P-031-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-13",
+      "terminal_mechanism": "FRACTURES_BREAKS",
+      "terminal_cause": "ASSEMBLY_INSTALLATION_ERROR",
+      "corrective_action": "Pump running in reverse rotation after motor work. Swap any two phases at MCC. Verify rotation before full-speed start. Check impeller for damage from reverse operation.",
+      "corrective_action_fr": "Pompe en rotation inverse après intervention moteur. Inverser deux phases au MCC. Vérifier rotation avant démarrage pleine vitesse. Inspecter impulseur pour dommage."
+    },
+    "N-001": {
+      "question": "What type of noise? Cavitation rattle, metallic scraping, or bearing rumble?",
+      "question_fr": "Quel type de bruit? Crépitement de cavitation, frottement métallique, ou grondement de roulement?",
+      "branches": {
+        "cavitation_rattle": "V-011",
+        "metallic_scraping": "N-010",
+        "bearing_rumble": "V-020"
+      }
+    },
+    "N-010": {
+      "question": "Is the metallic scraping from inside the pump (impeller touching casing/liner)?",
+      "question_fr": "Le frottement métallique provient-il de l'intérieur de la pompe (impulseur touchant corps/revêtement)?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Listen with stethoscope at pump casing to locate scraping source",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 5,
+        "threshold": "Continuous scraping → SHUTDOWN — impeller contact with casing/liner"
+      },
+      "branches": {
+        "yes": "N-010-DIAG",
+        "no": "V-020"
+      }
+    },
+    "N-010-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-34",
+      "terminal_mechanism": "WEARS_ERODES",
+      "terminal_cause": "OPERATING_ERROR",
+      "corrective_action": "Impeller contacting casing/liner — shut down immediately. Check impeller adjustment and shaft runout. Replace worn liner and readjust impeller clearance.",
+      "corrective_action_fr": "Impulseur en contact avec corps/revêtement — arrêt immédiat. Vérifier ajustement impulseur et faux-rond arbre. Remplacer revêtement usé et réajuster le jeu."
+    },
+    "PR-001": {
+      "question": "Is the pressure issue high discharge pressure or low discharge pressure?",
+      "question_fr": "Le problème de pression est-il une pression de refoulement élevée ou basse?",
+      "branches": {
+        "high_pressure": "PR-010",
+        "low_pressure": "P-020"
+      }
+    },
+    "PR-010": {
+      "question": "Check discharge line for blockage. Is there sanding or buildup in the discharge pipe?",
+      "question_fr": "Vérifier la ligne de refoulement pour blocage. Y a-t-il un ensablement ou une accumulation dans le tuyau?",
+      "test": {
+        "test_type": "PORTABLE_INSTRUMENT",
+        "description": "Measure pressure at pump discharge and at multiple points along pipeline to locate restriction",
+        "estimated_cost_usd": 50,
+        "estimated_time_minutes": 10,
+        "threshold": "Pressure drop >20% between two points → blockage in that section"
+      },
+      "branches": {
+        "blocked": "PR-010-DIAG",
+        "clear": "PR-020"
+      }
+    },
+    "PR-010-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-34",
+      "terminal_mechanism": "WEARS_ERODES",
+      "terminal_cause": "OPERATING_ERROR",
+      "corrective_action": "Discharge pipeline partially blocked causing high pressure. Flush pipeline. Check slurry concentration — may need to dilute. Verify pipeline velocity >1.5 m/s to prevent settling.",
+      "corrective_action_fr": "Pipeline de refoulement partiellement bloqué causant haute pression. Rincer la conduite. Vérifier concentration de pulpe. Assurer vélocité >1,5 m/s pour éviter le dépôt."
+    },
+    "PR-020": {
+      "question": "Check motor current. Is the pump running against a closed valve or high system resistance?",
+      "question_fr": "Vérifier le courant moteur. La pompe fonctionne-t-elle contre une vanne fermée ou une résistance système élevée?",
+      "test": {
+        "test_type": "PORTABLE_INSTRUMENT",
+        "description": "Measure motor current and compare with valve positions and system configuration",
+        "estimated_cost_usd": 50,
+        "estimated_time_minutes": 5,
+        "threshold": "Current >FLA with valve closed or throttled → open valve or adjust system"
+      },
+      "branches": {
+        "valve_closed": "PR-020-DIAG",
+        "valve_open": "DIAG-ESC"
+      }
+    },
+    "PR-020-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-34",
+      "terminal_mechanism": "WEARS_ERODES",
+      "terminal_cause": "OPERATING_ERROR",
+      "corrective_action": "Pump running against closed or partially closed discharge valve. Open valve. If automatic, check valve actuator and control signal. Running dead-headed damages impeller and seals.",
+      "corrective_action_fr": "Pompe fonctionnant contre vanne fermée ou partiellement fermée. Ouvrir la vanne. Si automatique, vérifier actionneur et signal de commande."
+    },
+    "DIAG-ESC": {
+      "is_terminal": true,
+      "terminal_diagnosis": "ESCALATE",
+      "corrective_action": "Root cause not identified through standard troubleshooting. Escalate to specialist for hydraulic analysis, detailed vibration study, or pump performance test.",
+      "corrective_action_fr": "Cause racine non identifiée par dépannage standard. Escalader vers spécialiste pour analyse hydraulique, étude vibratoire détaillée, ou test de performance pompe."
+    }
+  }
+}

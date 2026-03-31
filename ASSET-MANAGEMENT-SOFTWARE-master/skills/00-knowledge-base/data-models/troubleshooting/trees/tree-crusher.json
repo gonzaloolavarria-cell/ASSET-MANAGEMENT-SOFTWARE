@@ -1,0 +1,669 @@
+{
+  "_meta": {
+    "equipment_type_id": "ET-CRUSHER",
+    "version": "1.0.0",
+    "description": "Troubleshooting decision tree for Crusher — gyratory/cone type (AA/A criticality). Covers liner/mantle wear, bearing failures, eccentric bushing wear, chamber blockage, and drive issues.",
+    "entry_categories": ["vibration", "noise", "performance", "temperature", "visual"]
+  },
+  "entry_nodes": {
+    "vibration": "V-001",
+    "noise": "N-001",
+    "performance": "P-001",
+    "temperature": "T-001",
+    "visual": "VIS-001"
+  },
+  "nodes": {
+    "V-001": {
+      "question": "Is the vibration predominantly from the drive system (motor/countershaft) or the main shaft/head assembly?",
+      "question_fr": "La vibration provient-elle principalement du système d'entraînement (moteur/arbre à pignon) ou de l'ensemble arbre principal/tête?",
+      "branches": {
+        "drive_system": "V-010",
+        "main_shaft_head": "V-020",
+        "entire_crusher": "V-030"
+      }
+    },
+    "V-010": {
+      "question": "Can you feel excessive vibration at the countershaft bearing housings by hand?",
+      "question_fr": "Pouvez-vous sentir une vibration excessive sur les paliers de l'arbre à pignon à la main?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Tactile vibration check at countershaft DE and NDE bearing housings, compare both sides",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 5,
+        "threshold": "Perceptible difference between DE and NDE → localized bearing or gear issue"
+      },
+      "branches": {
+        "DE_bearing": "V-011",
+        "NDE_bearing": "V-011",
+        "pinion_area": "V-012"
+      }
+    },
+    "V-011": {
+      "question": "Measure countershaft bearing vibration with portable analyzer. Is overall velocity >4.5 mm/s?",
+      "question_fr": "Mesurer la vibration du palier d'arbre à pignon avec analyseur portable. Vélocité globale >4,5 mm/s?",
+      "test": {
+        "test_type": "VIBRATION_ANALYSIS",
+        "description": "Measure vibration at countershaft bearings in V, H, A planes",
+        "estimated_cost_usd": 200,
+        "estimated_time_minutes": 30,
+        "threshold": "ISO 10816: >4.5 mm/s = Zone C (alert), >7.1 mm/s = Zone D (danger)"
+      },
+      "branches": {
+        "yes": "V-011A",
+        "no": "V-012"
+      }
+    },
+    "V-011A": {
+      "question": "Is high-frequency envelope elevated (>5 kHz) indicating bearing defect frequencies?",
+      "question_fr": "L'enveloppe haute fréquence est-elle élevée (>5 kHz) indiquant des fréquences de défaut de roulement?",
+      "test": {
+        "test_type": "VIBRATION_ANALYSIS",
+        "description": "High-frequency envelope spectrum at countershaft bearings — look for BPFO, BPFI harmonics",
+        "estimated_cost_usd": 200,
+        "estimated_time_minutes": 20,
+        "threshold": "Bearing defect frequencies present → bearing damage confirmed"
+      },
+      "branches": {
+        "yes": "V-011A-DIAG",
+        "no": "V-012"
+      }
+    },
+    "V-011A-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-51",
+      "terminal_mechanism": "OVERHEATS_MELTS",
+      "terminal_cause": "LACK_OF_LUBRICATION",
+      "corrective_action": "Countershaft bearing damage from lubrication issue. Schedule bearing replacement at next shutdown. Check oil supply to countershaft bearings — verify oil flow and cleanliness.",
+      "corrective_action_fr": "Dommage au roulement d'arbre à pignon par problème de lubrification. Planifier remplacement au prochain arrêt. Vérifier alimentation en huile — débit et propreté."
+    },
+    "V-012": {
+      "question": "Check pinion-to-bevel gear mesh. Is there high amplitude at gear mesh frequency (GMF)?",
+      "question_fr": "Vérifier l'engrènement pignon-couronne conique. Y a-t-il une amplitude élevée à la fréquence d'engrènement (GMF)?",
+      "test": {
+        "test_type": "VIBRATION_ANALYSIS",
+        "description": "Vibration spectrum at countershaft bearing — look for GMF and sidebands indicating gear wear",
+        "estimated_cost_usd": 200,
+        "estimated_time_minutes": 30,
+        "threshold": "GMF amplitude >3x baseline or significant sidebands → gear tooth damage"
+      },
+      "branches": {
+        "yes": "V-012-DIAG",
+        "no": "V-013"
+      }
+    },
+    "V-012-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-31",
+      "terminal_mechanism": "WEARS_ERODES",
+      "terminal_cause": "DESIGN_DEFICIENCY",
+      "corrective_action": "Pinion-bevel gear mesh wear detected. Check gear tooth contact pattern, backlash, and tooth condition at next shutdown. Verify gear oil condition and level.",
+      "corrective_action_fr": "Usure d'engrènement pignon-couronne conique détectée. Vérifier portée dentaire, jeu de flanc, et état des dents au prochain arrêt. Vérifier état et niveau d'huile."
+    },
+    "V-013": {
+      "question": "Check motor-countershaft coupling alignment and condition. Is coupling worn or misaligned?",
+      "question_fr": "Vérifier l'alignement et l'état de l'accouplement moteur-arbre à pignon. L'accouplement est-il usé ou désaligné?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Visual inspection of coupling element for wear, cracks, and guard condition",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 10,
+        "threshold": "Visible wear, cracking, or rubber deterioration → schedule replacement"
+      },
+      "branches": {
+        "worn": "V-013-DIAG",
+        "misaligned": "V-013A",
+        "good": "DIAG-ESC"
+      }
+    },
+    "V-013-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-31",
+      "terminal_mechanism": "WEARS_ERODES",
+      "terminal_cause": "DESIGN_DEFICIENCY",
+      "corrective_action": "Drive coupling worn. Replace coupling element at next shutdown. Verify alignment after replacement per manufacturer specification.",
+      "corrective_action_fr": "Accouplement d'entraînement usé. Remplacer l'élément d'accouplement au prochain arrêt. Vérifier alignement après remplacement selon spécification fabricant."
+    },
+    "V-013A": {
+      "question": "Measure motor-countershaft alignment with laser tool. Is misalignment >0.08 mm?",
+      "question_fr": "Mesurer l'alignement moteur-arbre à pignon au laser. Désalignement >0,08 mm?",
+      "test": {
+        "test_type": "SPECIALIST_ANALYSIS",
+        "description": "Laser alignment measurement of motor to countershaft coupling",
+        "estimated_cost_usd": 2000,
+        "estimated_time_minutes": 120,
+        "threshold": "Alignment >0.08 mm offset or >0.05 mm/100 mm angularity → realign"
+      },
+      "branches": {
+        "yes": "V-013A-DIAG",
+        "no": "DIAG-ESC"
+      }
+    },
+    "V-013A-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-13",
+      "terminal_mechanism": "FRACTURES_BREAKS",
+      "terminal_cause": "ASSEMBLY_INSTALLATION_ERROR",
+      "corrective_action": "Motor-countershaft misalignment. Realign per manufacturer specification. Check foundation condition and anchor bolt tightness.",
+      "corrective_action_fr": "Désalignement moteur-arbre à pignon. Réaligner selon spécification fabricant. Vérifier état de la fondation et serrage des boulons d'ancrage."
+    },
+    "V-020": {
+      "question": "Is the main shaft vibration synchronized with eccentric rotation (gyration frequency)?",
+      "question_fr": "La vibration de l'arbre principal est-elle synchronisée avec la rotation excentrique (fréquence de giration)?",
+      "test": {
+        "test_type": "VIBRATION_ANALYSIS",
+        "description": "Measure vibration at spider/top shell — identify gyration frequency component and harmonics",
+        "estimated_cost_usd": 200,
+        "estimated_time_minutes": 30,
+        "threshold": "Elevated gyration frequency → eccentric wear; sub-synchronous → looseness"
+      },
+      "branches": {
+        "gyration_frequency": "V-021",
+        "sub_synchronous": "V-022",
+        "broadband": "V-023"
+      }
+    },
+    "V-021": {
+      "question": "Check eccentric bushing oil condition. Sample oil for bronze wear particles (Cu, Sn).",
+      "question_fr": "Vérifier l'état de l'huile de la bague excentrique. Échantillonner l'huile pour particules de bronze (Cu, Sn).",
+      "test": {
+        "test_type": "OIL_ANALYSIS",
+        "description": "Sample eccentric bushing oil — analyze for Cu, Sn, Fe wear metals and particle count",
+        "estimated_cost_usd": 150,
+        "estimated_time_minutes": 60,
+        "threshold": "Cu >200 ppm or Sn >50 ppm → eccentric bushing wear; Fe >150 ppm → gear wear"
+      },
+      "branches": {
+        "high_bronze": "V-021-DIAG",
+        "high_iron": "V-012-DIAG",
+        "normal": "V-023"
+      }
+    },
+    "V-021-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-34",
+      "terminal_mechanism": "WEARS_ERODES",
+      "terminal_cause": "OPERATING_ERROR",
+      "corrective_action": "Eccentric bushing wear detected via elevated bronze particles in oil. Schedule eccentric bushing inspection at next major shutdown. Monitor oil metals weekly. Ensure correct oil viscosity.",
+      "corrective_action_fr": "Usure de la bague excentrique détectée par particules de bronze élevées dans l'huile. Planifier inspection au prochain arrêt majeur. Surveiller métaux dans l'huile hebdomadairement."
+    },
+    "V-022": {
+      "question": "Check spider arm/cap bolts and top shell bolts for looseness.",
+      "question_fr": "Vérifier les boulons de chapeau d'araignée et de la virole supérieure pour desserrage.",
+      "test": {
+        "test_type": "PORTABLE_INSTRUMENT",
+        "description": "Check bolt torque on spider cap bolts, top shell bolts, and mantle nut with torque wrench",
+        "estimated_cost_usd": 50,
+        "estimated_time_minutes": 10,
+        "threshold": "Any bolt below OEM spec → retorque; multiple loose → investigate root cause"
+      },
+      "branches": {
+        "loose_bolts": "V-022-DIAG",
+        "tight": "V-023"
+      }
+    },
+    "V-022-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-61",
+      "terminal_mechanism": "LOOSENS",
+      "terminal_cause": "VIBRATION_FATIGUE",
+      "corrective_action": "Critical bolts loosened from vibration fatigue. Retorque all bolts to OEM specification. Check for fretting damage at bolt holes. Consider thread-locking compound.",
+      "corrective_action_fr": "Boulons critiques desserrés par fatigue vibratoire. Resserrer tous les boulons selon spéc OEM. Vérifier dommage de fretting aux trous de boulons. Considérer produit de freinage."
+    },
+    "V-023": {
+      "question": "Check main shaft clearance in spider bushing. Is clearance excessive?",
+      "question_fr": "Vérifier le jeu de l'arbre principal dans la bague d'araignée. Le jeu est-il excessif?",
+      "test": {
+        "test_type": "PORTABLE_INSTRUMENT",
+        "description": "Measure clearance between main shaft and spider bushing with feeler gauge",
+        "estimated_cost_usd": 50,
+        "estimated_time_minutes": 10,
+        "threshold": "Clearance >OEM maximum → spider bushing worn, schedule replacement"
+      },
+      "branches": {
+        "yes": "V-023-DIAG",
+        "no": "DIAG-ESC"
+      }
+    },
+    "V-023-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-34",
+      "terminal_mechanism": "WEARS_ERODES",
+      "terminal_cause": "OPERATING_ERROR",
+      "corrective_action": "Spider bushing worn causing excessive main shaft clearance. Schedule spider bushing replacement at next major shutdown. Check spider lubrication system.",
+      "corrective_action_fr": "Bague d'araignée usée causant jeu excessif de l'arbre principal. Planifier remplacement au prochain arrêt majeur. Vérifier système de lubrification d'araignée."
+    },
+    "V-030": {
+      "question": "Is the entire crusher foundation vibrating? Check anchor bolts and foundation condition.",
+      "question_fr": "Toute la fondation du concasseur vibre-t-elle? Vérifier les boulons d'ancrage et l'état de la fondation.",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Tactile and visual check of crusher foundation — cracks, anchor bolt condition, grout integrity",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 15,
+        "threshold": "Foundation cracks, loose anchors, or deteriorated grout → structural concern"
+      },
+      "branches": {
+        "foundation_issue": "V-030-DIAG",
+        "foundation_ok": "V-020"
+      }
+    },
+    "V-030-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-61",
+      "terminal_mechanism": "LOOSENS",
+      "terminal_cause": "VIBRATION_FATIGUE",
+      "corrective_action": "Crusher foundation deterioration causing whole-body vibration. Repair grout, retorque anchor bolts. If foundation cracked, engage structural engineer for assessment.",
+      "corrective_action_fr": "Détérioration de la fondation du concasseur causant vibration globale. Réparer scellement, resserrer boulons d'ancrage. Si fondation fissurée, faire évaluer par ingénieur structure."
+    },
+    "N-001": {
+      "question": "What type of noise? Metallic banging/clanking, grinding, or high-pitched squealing?",
+      "question_fr": "Quel type de bruit? Cognement/claquement métallique, broyage, ou grincement aigu?",
+      "branches": {
+        "banging_clanking": "N-010",
+        "grinding": "N-020",
+        "squealing": "N-030"
+      }
+    },
+    "N-010": {
+      "question": "Is the banging from tramp metal or oversize material entering the crushing chamber?",
+      "question_fr": "Le cognement est-il dû à du métal parasite ou du matériau surdimensionné entrant dans la chambre de concassage?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Listen for irregular loud bangs — check feed for tramp metal or oversized rocks",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 5,
+        "threshold": "Irregular heavy bangs → tramp metal; regular bangs → mechanical issue"
+      },
+      "branches": {
+        "tramp_metal": "N-010-DIAG",
+        "oversize_rock": "N-010A",
+        "mechanical": "V-022"
+      }
+    },
+    "N-010-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-34",
+      "terminal_mechanism": "WEARS_ERODES",
+      "terminal_cause": "OPERATING_ERROR",
+      "corrective_action": "Tramp metal entering crusher causing impact damage. Check/repair tramp iron removal system (magnet, metal detector). Inspect liners for impact damage. Install or improve tramp protection.",
+      "corrective_action_fr": "Métal parasite entrant dans le concasseur causant dommage par impact. Vérifier/réparer système de déferraillage. Inspecter blindages pour dommage d'impact. Installer protection anti-imbroyable."
+    },
+    "N-010A": {
+      "question": "Is the crusher experiencing frequent chamber blockages from oversize feed?",
+      "question_fr": "Le concasseur subit-il des blocages fréquents de la chambre par du matériau surdimensionné?",
+      "test": {
+        "test_type": "PROCESS_MONITORING",
+        "description": "Review crusher power draw and feed size distribution — check for frequent power spikes from oversize",
+        "estimated_cost_usd": 100,
+        "estimated_time_minutes": 15,
+        "threshold": "Frequent power spikes >150% normal → feed size exceeds crusher inlet opening"
+      },
+      "branches": {
+        "yes": "N-010A-DIAG",
+        "no": "V-020"
+      }
+    },
+    "N-010A-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-71",
+      "terminal_mechanism": "STICKS_SEIZES",
+      "terminal_cause": "CONTAMINATION",
+      "corrective_action": "Crusher chamber blockage from oversize feed material. Install grizzly/scalping screen upstream. Adjust blasting pattern for smaller feed size. Check crusher CSS setting.",
+      "corrective_action_fr": "Blocage de la chambre du concasseur par matériau surdimensionné. Installer grizzly/crible de scalpage en amont. Ajuster patron de tir pour granulométrie plus fine. Vérifier réglage CSS."
+    },
+    "N-020": {
+      "question": "Is the grinding noise from the crushing chamber (liner/mantle contact area)?",
+      "question_fr": "Le bruit de broyage provient-il de la chambre de concassage (zone de contact blindage/manteau)?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Listen at different levels of crusher shell with stethoscope to locate grinding source",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 10,
+        "threshold": "Grinding from chamber → liner/mantle contact or worn liners"
+      },
+      "branches": {
+        "chamber": "N-020A",
+        "eccentric_area": "V-021",
+        "countershaft": "V-012"
+      }
+    },
+    "N-020A": {
+      "question": "Check liner and mantle condition. Measure wear profile at accessible inspection points.",
+      "question_fr": "Vérifier l'état des blindages et du manteau. Mesurer le profil d'usure aux points d'inspection accessibles.",
+      "test": {
+        "test_type": "NDT",
+        "description": "Ultrasonic thickness measurement on concave liners at multiple elevations and around circumference",
+        "estimated_cost_usd": 500,
+        "estimated_time_minutes": 60,
+        "threshold": "Liner thickness <50% original → schedule replacement; <25% → urgent"
+      },
+      "branches": {
+        "severely_worn": "N-020A-DIAG",
+        "moderately_worn": "P-010",
+        "acceptable": "V-021"
+      }
+    },
+    "N-020A-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-31",
+      "terminal_mechanism": "WEARS_ERODES",
+      "terminal_cause": "DESIGN_DEFICIENCY",
+      "corrective_action": "Crusher liners/mantle severely worn. Schedule liner change at next planned shutdown. Consider manganese steel grade upgrade for longer wear life. Adjust CSS to compensate temporarily.",
+      "corrective_action_fr": "Blindages/manteau du concasseur sévèrement usés. Planifier changement au prochain arrêt. Considérer acier au manganèse de grade supérieur. Ajuster CSS pour compenser temporairement."
+    },
+    "N-030": {
+      "question": "Is the squealing from the countershaft bearing area or the hydraulic system?",
+      "question_fr": "Le grincement provient-il de la zone du palier d'arbre à pignon ou du système hydraulique?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Locate squeal source — countershaft bearings, hydraulic pump, or relief valve area",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 5,
+        "threshold": "Bearing squeal → lubrication issue; hydraulic → air in system or relief valve"
+      },
+      "branches": {
+        "bearing": "V-011A-DIAG",
+        "hydraulic": "N-030-DIAG",
+        "unknown": "DIAG-ESC"
+      }
+    },
+    "N-030-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-71",
+      "terminal_mechanism": "STICKS_SEIZES",
+      "terminal_cause": "CONTAMINATION",
+      "corrective_action": "Hydraulic system squealing — possible air entrainment or contaminated fluid. Check hydraulic oil level. Bleed air from system. Sample oil for water and particle contamination.",
+      "corrective_action_fr": "Grincement du système hydraulique — possible entraînement d'air ou fluide contaminé. Vérifier niveau d'huile. Purger l'air du système. Échantillonner huile pour eau et particules."
+    },
+    "P-001": {
+      "question": "What performance issue? Low throughput, poor product size (too coarse), or high power consumption?",
+      "question_fr": "Quel problème de performance? Faible débit, granulométrie trop grossière, ou consommation électrique élevée?",
+      "branches": {
+        "low_throughput": "P-010",
+        "coarse_product": "P-020",
+        "high_power": "P-030"
+      }
+    },
+    "P-010": {
+      "question": "Is the crusher feed rate adequate? Check feeder operation and bin level.",
+      "question_fr": "Le débit d'alimentation du concasseur est-il adéquat? Vérifier le fonctionnement de l'alimentateur et le niveau de la trémie.",
+      "test": {
+        "test_type": "PROCESS_MONITORING",
+        "description": "Review feeder speed, bin level trend, and crusher power draw from DCS",
+        "estimated_cost_usd": 100,
+        "estimated_time_minutes": 15,
+        "threshold": "Low feed rate → feeder issue; full feed with low throughput → crusher issue"
+      },
+      "branches": {
+        "low_feed": "P-010-ESC",
+        "full_feed_low_output": "P-010A",
+        "normal_feed": "N-020A"
+      }
+    },
+    "P-010-ESC": {
+      "is_terminal": true,
+      "terminal_diagnosis": "ESCALATE",
+      "corrective_action": "Low throughput from feed system issue — not a crusher problem. Investigate feeder, bin flow, and upstream equipment. Check for material bridging in bin.",
+      "corrective_action_fr": "Faible débit dû à un problème du système d'alimentation — pas un problème de concasseur. Investiguer alimentateur, écoulement de trémie, et équipement en amont."
+    },
+    "P-010A": {
+      "question": "Check crusher CSS (Closed Side Setting). Has it increased beyond design specification?",
+      "question_fr": "Vérifier le CSS (réglage côté fermé) du concasseur. A-t-il augmenté au-delà de la spécification?",
+      "test": {
+        "test_type": "PORTABLE_INSTRUMENT",
+        "description": "Measure CSS with lead ball method or laser measurement system",
+        "estimated_cost_usd": 50,
+        "estimated_time_minutes": 10,
+        "threshold": "CSS >design spec by >15% → liners worn, adjust hydraulic setting or change liners"
+      },
+      "branches": {
+        "css_too_wide": "N-020A-DIAG",
+        "css_normal": "V-021"
+      }
+    },
+    "P-020": {
+      "question": "Check product size distribution. Is the crusher producing more fines than expected or more oversize?",
+      "question_fr": "Vérifier la distribution granulométrique. Le concasseur produit-il plus de fines que prévu ou plus de surdimensionné?",
+      "test": {
+        "test_type": "PROCESS_MONITORING",
+        "description": "Review product screen oversize percentage and compare with design P80",
+        "estimated_cost_usd": 100,
+        "estimated_time_minutes": 15,
+        "threshold": "Oversize >10% above design → liner wear or CSS drift; excess fines → over-crushing"
+      },
+      "branches": {
+        "too_much_oversize": "P-010A",
+        "too_many_fines": "P-020-DIAG",
+        "normal_distribution": "DIAG-ESC"
+      }
+    },
+    "P-020-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-34",
+      "terminal_mechanism": "WEARS_ERODES",
+      "terminal_cause": "OPERATING_ERROR",
+      "corrective_action": "Over-crushing producing excessive fines. Check CSS setting — may be too tight. Verify feed rate is adequate (choke-fed operation). Adjust CSS wider if product allows.",
+      "corrective_action_fr": "Sur-concassage produisant des fines excessives. Vérifier réglage CSS — peut être trop serré. Vérifier que le débit est adéquat (alimentation noyée). Élargir CSS si le produit le permet."
+    },
+    "P-030": {
+      "question": "Check motor current. Is it consistently above nameplate rating?",
+      "question_fr": "Vérifier le courant moteur. Est-il constamment au-dessus de la valeur nominale?",
+      "test": {
+        "test_type": "PORTABLE_INSTRUMENT",
+        "description": "Measure motor current with clamp meter on all 3 phases",
+        "estimated_cost_usd": 50,
+        "estimated_time_minutes": 5,
+        "threshold": "Current >100% FLA sustained → overloaded; >110% → reduce feed immediately"
+      },
+      "branches": {
+        "overloaded": "P-030A",
+        "normal": "V-020"
+      }
+    },
+    "P-030A": {
+      "question": "Is the high power from hard rock feed or chamber packing/blockage?",
+      "question_fr": "La puissance élevée est-elle due à de la roche dure ou au bourrage/blocage de la chambre?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Visual check of feed material hardness characteristics and crusher chamber fill level",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 5,
+        "threshold": "Chamber packed → reduce feed; hard rock → adjust CSS wider or reduce throughput"
+      },
+      "branches": {
+        "hard_rock": "P-030A-DIAG",
+        "chamber_packing": "N-010A-DIAG"
+      }
+    },
+    "P-030A-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-34",
+      "terminal_mechanism": "WEARS_ERODES",
+      "terminal_cause": "OPERATING_ERROR",
+      "corrective_action": "Motor overloaded from hard rock feed. Reduce feed rate or open CSS. Review ore hardness data and adjust crusher operating parameters. Monitor liner wear rate increase.",
+      "corrective_action_fr": "Moteur en surcharge par roche dure. Réduire débit ou ouvrir CSS. Revoir données de dureté et ajuster paramètres opératoires. Surveiller taux d'usure accru des blindages."
+    },
+    "T-001": {
+      "question": "Where is the high temperature? Countershaft bearings, eccentric bushing oil, motor, or hydraulic system?",
+      "question_fr": "Où se situe la haute température? Paliers d'arbre à pignon, huile de bague excentrique, moteur, ou système hydraulique?",
+      "branches": {
+        "countershaft_bearings": "T-010",
+        "eccentric_oil": "T-020",
+        "motor": "T-030",
+        "hydraulic": "T-040"
+      }
+    },
+    "T-010": {
+      "question": "Check countershaft bearing temperature with IR thermometer. Is it >90°C or >10°C above baseline?",
+      "question_fr": "Vérifier la température du palier d'arbre à pignon au pistolet IR. Est-elle >90°C ou >10°C au-dessus de la référence?",
+      "test": {
+        "test_type": "PORTABLE_INSTRUMENT",
+        "description": "Measure bearing housing temperature with IR thermometer at both DE and NDE",
+        "estimated_cost_usd": 50,
+        "estimated_time_minutes": 5,
+        "threshold": ">90°C or >10°C above baseline → lubrication or bearing issue"
+      },
+      "branches": {
+        "yes": "T-010A",
+        "no": "V-011"
+      }
+    },
+    "T-010A": {
+      "question": "Is the oil supply to countershaft bearings adequate? Check oil flow and filter condition.",
+      "question_fr": "L'alimentation en huile des paliers est-elle adéquate? Vérifier le débit et l'état du filtre.",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Visual check of oil flow sight glass, filter dP indicator, and oil level in reservoir",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 5,
+        "threshold": "No flow or low flow → check pump; filter dP high → change filter"
+      },
+      "branches": {
+        "low_flow": "V-011A-DIAG",
+        "filter_blocked": "T-010A-DIAG",
+        "adequate": "V-011A"
+      }
+    },
+    "T-010A-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-51",
+      "terminal_mechanism": "OVERHEATS_MELTS",
+      "terminal_cause": "LACK_OF_LUBRICATION",
+      "corrective_action": "Oil filter blocked restricting flow to countershaft bearings. Change filter immediately. Sample oil for contamination. Check for water ingress and particle generation source.",
+      "corrective_action_fr": "Filtre d'huile bloqué restreignant le débit vers les paliers. Changer filtre immédiatement. Échantillonner huile pour contamination. Vérifier entrée d'eau et source de particules."
+    },
+    "T-020": {
+      "question": "Check eccentric bushing oil return temperature. Is it >65°C or >15°C above supply temperature?",
+      "question_fr": "Vérifier la température de retour d'huile de la bague excentrique. Est-elle >65°C ou >15°C au-dessus de la température d'alimentation?",
+      "test": {
+        "test_type": "TEMPERATURE_MONITORING",
+        "description": "Measure oil supply and return temperatures — calculate temperature rise across eccentric bushing",
+        "estimated_cost_usd": 100,
+        "estimated_time_minutes": 15,
+        "threshold": "dT >15°C → excessive friction; return temp >65°C → oil degradation risk"
+      },
+      "branches": {
+        "high_dt": "T-020-DIAG",
+        "normal_dt": "V-021"
+      }
+    },
+    "T-020-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-51",
+      "terminal_mechanism": "OVERHEATS_MELTS",
+      "terminal_cause": "LACK_OF_LUBRICATION",
+      "corrective_action": "Eccentric bushing running hot — excessive friction from wear or insufficient oil flow. Check oil cooler performance, oil viscosity, and flow rate. Sample oil for bronze particles.",
+      "corrective_action_fr": "Bague excentrique en surchauffe — friction excessive par usure ou débit insuffisant. Vérifier performance du refroidisseur, viscosité et débit. Échantillonner huile pour particules de bronze."
+    },
+    "T-030": {
+      "question": "Check motor cooling. Are motor fins dusty or fan not running properly?",
+      "question_fr": "Vérifier le refroidissement du moteur. Les ailettes sont-elles poussiéreuses ou le ventilateur ne fonctionne-t-il pas?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Visual inspection of motor cooling fan operation, air filter, and fin cleanliness",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 5,
+        "threshold": "Blocked cooling → clean immediately; fan not running → repair fan motor"
+      },
+      "branches": {
+        "cooling_blocked": "T-030-DIAG",
+        "fan_issue": "T-030-DIAG",
+        "cooling_ok": "P-030"
+      }
+    },
+    "T-030-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-54",
+      "terminal_mechanism": "OVERHEATS_MELTS",
+      "terminal_cause": "COOLING_FAILURE",
+      "corrective_action": "Motor overheating from cooling system failure. Clean motor fins and air filter immediately. Repair/replace cooling fan if damaged. Schedule regular cleaning in dusty environment.",
+      "corrective_action_fr": "Surchauffe moteur par défaillance du système de refroidissement. Nettoyer ailettes et filtre immédiatement. Réparer/remplacer ventilateur si endommagé. Planifier nettoyage régulier."
+    },
+    "T-040": {
+      "question": "Check hydraulic oil temperature and cooler fan operation.",
+      "question_fr": "Vérifier la température de l'huile hydraulique et le fonctionnement du ventilateur du refroidisseur.",
+      "test": {
+        "test_type": "TEMPERATURE_MONITORING",
+        "description": "Measure hydraulic oil tank temperature and check air-cooler fan operation and fin cleanliness",
+        "estimated_cost_usd": 100,
+        "estimated_time_minutes": 15,
+        "threshold": "Oil temp >60°C → cooler issue; normal operating range 35-55°C"
+      },
+      "branches": {
+        "cooler_not_working": "T-030-DIAG",
+        "cooler_working_hot_oil": "N-030-DIAG",
+        "normal": "DIAG-ESC"
+      }
+    },
+    "VIS-001": {
+      "question": "What visual issue? Oil leaks, liner/mantle damage, or material buildup?",
+      "question_fr": "Quel problème visuel? Fuites d'huile, dommage aux blindages/manteau, ou accumulation de matériau?",
+      "branches": {
+        "oil_leak": "VIS-010",
+        "liner_damage": "N-020A",
+        "material_buildup": "VIS-020"
+      }
+    },
+    "VIS-010": {
+      "question": "Where is the oil leak? Countershaft seal, eccentric bushing seal, or hydraulic system?",
+      "question_fr": "Où est la fuite d'huile? Joint d'arbre à pignon, joint de bague excentrique, ou système hydraulique?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Visual inspection of all seal areas and hydraulic connections for oil leakage",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 10,
+        "threshold": "Active drip or pooling → schedule seal replacement; heavy leak → urgent"
+      },
+      "branches": {
+        "countershaft_seal": "VIS-010-DIAG",
+        "eccentric_seal": "VIS-010-DIAG",
+        "hydraulic": "VIS-010A-DIAG"
+      }
+    },
+    "VIS-010-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-81",
+      "terminal_mechanism": "LEAKS",
+      "terminal_cause": "SEAL_DEGRADATION",
+      "corrective_action": "Crusher shaft seal leaking. Schedule seal replacement at next shutdown. Monitor oil level daily and top up. Check for dust contamination entering through failed seal.",
+      "corrective_action_fr": "Fuite au joint d'arbre du concasseur. Planifier remplacement au prochain arrêt. Surveiller niveau d'huile quotidiennement. Vérifier contamination par poussière via joint défaillant."
+    },
+    "VIS-010A-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-81",
+      "terminal_mechanism": "LEAKS",
+      "terminal_cause": "SEAL_DEGRADATION",
+      "corrective_action": "Hydraulic system leak found. Tighten connections or replace hoses/fittings. Top up hydraulic oil with correct grade. Monitor adjustment system performance.",
+      "corrective_action_fr": "Fuite du système hydraulique trouvée. Resserrer connexions ou remplacer flexibles/raccords. Compléter huile hydraulique avec grade correct. Surveiller performance du système d'ajustement."
+    },
+    "VIS-020": {
+      "question": "Is material building up in the feed hopper or around the spider arms preventing proper material flow?",
+      "question_fr": "Le matériau s'accumule-t-il dans la trémie ou autour des bras d'araignée empêchant l'écoulement correct?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Visual inspection of feed hopper, spider arms, and crusher top for material buildup or bridging",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 10,
+        "threshold": "Material bridging → clear with air cannon or mechanical means"
+      },
+      "branches": {
+        "buildup_present": "VIS-020-DIAG",
+        "no_buildup": "DIAG-ESC"
+      }
+    },
+    "VIS-020-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-71",
+      "terminal_mechanism": "STICKS_SEIZES",
+      "terminal_cause": "CONTAMINATION",
+      "corrective_action": "Material buildup restricting crusher feed. Clear buildup manually or with air cannon. Check for wet/sticky material causing bridging. Consider installing vibrating feeder or air cannons.",
+      "corrective_action_fr": "Accumulation de matériau restreignant l'alimentation. Dégager manuellement ou avec canon à air. Vérifier si matériau humide/collant cause le pontage. Considérer alimentateur vibrant ou canons à air."
+    },
+    "DIAG-ESC": {
+      "is_terminal": true,
+      "terminal_diagnosis": "ESCALATE",
+      "corrective_action": "Root cause not identified through standard troubleshooting. Escalate to specialist for detailed vibration analysis, crusher cavity scan, or OEM diagnostic assessment.",
+      "corrective_action_fr": "Cause racine non identifiée par dépannage standard. Escalader vers spécialiste pour analyse vibratoire détaillée, scan de cavité, ou évaluation diagnostique OEM."
+    }
+  }
+}

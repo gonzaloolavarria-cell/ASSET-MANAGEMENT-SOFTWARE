@@ -1,0 +1,376 @@
+Jorge Alquinta
+tiene hartos puntos y podemos entrar al detalle ahí, oportunidades de mejora, cosas que a lo mejor agregarían valor colocarlas, pero había que ver paso a paso, pero está bastante buena. Me gustó. O sea, se entiende que es lo primero que todo que se entiende, está fácil de moverse, tiene todos los tópicos, a lo mejor por ejemplo en RCE, podrían agregarse más herramientas a las que ya tienen ahí pero la veo bastante buena.
+Jose Cortinat
+A ver te digo para manejar la expectativa eso literalmente es un trabajo de un día ¿vale? de un día de trabajo o dos que Gonzalo con David estuvieron viendo un poco el Front, Pero y luego, claro, luego está el tema de la plataforma detrás, la que fui construyendo yo con los agentes y tal, pero todavía no se ha materializado, o sea, no se ha trabajado de manera, no es un prototipo todavía, ni siquiera vale, o sea, está y está en esa línea, así que me parece bueno que hayas visto, que le hayas visto potencial, que se entienda más o menos para dónde va, al menos.
+Jose Cortinat
+Me explico, porque como te digo, no está completa para nada, vamos, hay que trabajarla. Por decirte de alguna manera, todas esas planillas que vimos la otra vez, la jerarquía, de la criticidad, de los modos de falla, de los paquetes de trabajo, de la estrategia de mantenimiento que vimos en Excel. La idea es que deberían cargarse, descargarse eso o trabajas en la plataforma o generas por otro lado masivamente el software y puedas exportarlo en Excel.
+Jose Cortinat
+en el fondo esos Excel sean los productos finales que también están cargados y se visualizan como corresponde en la plataforma, con su jerarquía, su FMEA o qué sé yo, listado de tareas, lo que sea.
+Jorge Alquinta
+Está buenísimo. Hay detalles que hay que ir ajustando. Por ejemplo, el tema del RCM o las tareas. Está tareas de monitoreo de condición. tareas de tiempo fijo y faltan las tareas por uso, que la diferencia de tiempo fijo es cuando tu defines ya vamos a cambiar una pieza, un repuesto cada seis meses o vamos a ejecutar esta actividad cada seis meses. El de por uso es en función de horas. Si el equipo no opera, el odómetro no avanza hasta que llegue un odómetro.
+Jose Cortinat
+Sí, claro. Sí, totalmente. Para ciertas actividades o modos de falla, Que sean en base a horas operacionales y no tiempo fijo, vamos, digamos tiempo calendario. Bueno, pues ahora que se conecte Magda, lo que vamos a hacer es, bueno, ahora les comenta la Magda un poquito, un segundito. ¿Te sirvió o no, Gonzalo, pudiste o no con el código. 
+Jose Cortinat
+Gonzalo, no te escucho.
+Gonzalo
+Sorry, no te decía que no me sirvió. Te lo voy a pedir de nuevo. Voy a hacer el proceso.
+Jose Cortinat
+Dale, dale. Oye, va pillando forma la plataforma esta. digamos la intranet, el sistema operativo este.
+Gonzalo
+Sí, ayer estuvimos revisando con David en la tarde. Los puntos que habías comentado con Macro.
+Jose Cortinat
+Tienes que poner tu grupo. Sí. Igual.
+Gonzalo
+Claro, tú ponte audífonos para hablar.
+Jose Cortinat
+Pero para escuchar escucha desde aquí, igual, ¿no? ¿Entiendes? Eso no existe. Sí, no te pongas los audífonos en la oreja, sin más.
+Jose Cortinat
+¿Qué decías tú, Gonzalo. 
+Gonzalo
+Eh. no, me pidió un código ahora. Ah, vale? No sé si te llegó un correo, porque. Es que ahora no me dice que fue un correo. Bueno. Si se repite. Si se repite mi audio, ¿no. 
+Magda
+No. Eh. Vamos a seguir en. Lo escucho repetido José. ¿Si yo hablo así? Si yo hablo así, me escuchan bien. José. José, voy bajar el. Es que si no hemos escuchado bien. Ya. Vamos a seguir en. Vamos a seguir entonces. Con la. con la parte siguiente antes de revisar la plataforma con el detalle que han estado mirando, entonces seguimos en el mismo link, pero vamos a tratar de comenzar un poco la información en lo que tenemos que trabajar ahora.
+Magda
+Ya porque ahí ven mi pantalla, no? Bueno, tenemos un viral que todos los actores o posibles vectores involucrados o usuarios que podría tener en esta plataforma. Entonces, la idea ahora es que nosotros podamos definir primero a grandes rasgos que lo podemos hacer acá mismo.
+Magda
+qué funcionalidades, teniendo en consideración cada una de las cosas que busca cada uno de estos actores en la plataforma, qué es lo que nosotros tenemos la oportunidad de hacer, es decir, qué cosas podríamos automatizar, qué cosas podríamos analizar, predecir, explicar y orquestar para dar respuesta a las necesidades del usuario. Entonces, vamos a apuntar esto por acá, lo que podemos hacer. 
+Jorge Alquinta
+Porque va a haber que editar, ¿Cierto? Hay que colocar también el mismo ejercicio de la.
+Magda
+Central. Ahí vayan entrando porque ahora vamos a estar trabajando todos y lo mismo. Si nos sirve vamos a partir por mirar en cada uno de los roles lo que lo que pusimos esto cada uno y después, podemos partir por el resultado esperado en el fondo, cómo se ve que la plataforma sea exitosa, cómo se ve que la plataforma cumpla con lo que el usuario quiere y luego de eso qué cosas podríamos automatizar, qué cosas debería analizar la plataforma, qué cosas debería predecir, explicar y orquestar.
+Magda
+Entonces vamos a hablar de funcionalidad, Vamos a hacer esa como ese brainstorming, esa ayuda de ideas en torno a funcionalidad. Vale, voy a dejar aquí varios post para que vayamos comenzando. Porque eso nos va a guiar, o sea es solamente para que hagamos en la nada que ese rol es traer en la plataforma y con esa información decir ok, cómo lo logramos.
+Magda
+funcionalidades y aquí ya vienen ideas de funcionalidades que las plataformas pueden tener. Nos vamos a dar un tiempo cortito, solamente cinco minutos. Si necesitamos más, agregamos más.
+Gonzalo
+Perdón, iba a trabajar la parte de automatizar, pero viendo que también se ve en el resultado esperado. ¿Cuál es la sección. 
+Magda
+El resultado, No, estamos trabajando todo, como lluvia de ideas. Ya partimos del año pasado. Y seguimos conectando. Seguimos conectando. ¿Qué tareas debería tener la plataforma en automatizar, analizar, qué decir?
+Magda
+Aquí ya hablamos de funcionalidades Son funcionalidades la plataforma debería.
+Magda
+Okay.
+Magda
+Se nos acaba el tiempo, ¿Cómo vamos. 
+Magda
+Bien, ¿Estamos? ¿Estamos? ¿Quién los resultados esperábamos? Algunas cosas, pero bueno. También las tenemos. También las tenemos de pesadas antes. Ya, veamos.
+Magda
+Ya, veamos que los apoyen pensamos un poco lo que tenemos y en base a que se les vayan ocurriendo los pan agregamos. En los resultados esperados de esta plataforma, cómo sabemos que la plataforma es exitosa, porque disponemos de los KPIs en tiempo real, no hay que estar buscándolos en distintos lugares. Somos capaces de gatillar acciones de alto nivel, de alto nivel para KPIs bajo el target, visibilidad y reporting para tomar decisiones.
+Magda
+Eso de cara a los gerentes de mantenimiento, de gestión de activos. Después tenemos cómo se me iría el éxito, porque somos capaces de tener una librería inteligente con hijos para proyectos en desarrollo, disponer de KPIs en tiempo real, o sea esto es algo como bien clave. Un dashboard con estatus de proyecto, costo, plazo, no conformidades, EDP, compromisos, etcétera, que probablemente pueda en el lado del consultor también ayudar a medir cuál es el avance que tienen los entregables de los proyectos y esas cosas, pero más funcionalidades.
+Magda
+Datch for con capital de resultados de disciplina operacional, base inteligente de datos maestros, usar mejores prácticas en análisis de RSA. O sea, van saliendo como cosas súper claras y súper embarcadas de cómo tienen que queremos lograr con esto. Después tenemos Datch for V o Ts por equipos críticos y prioridad. Bueno, ahí lo que se les vaya ocurriendo y lo vamos agregando. Y si nos vamos al mapping, al mapeo de features, o funcionalidades que la plataforma debería tener. Y aquí los pueden ir nombrando y si hay algo que por ahí no están de acuerdo o no se entiende o no hace sentido, porfa levanten la mano porque es súper importante que les quede muy muy claro cuál va a ser el alcance de la plataforma.
+Magda
+Entonces, primero tenemos en automatizar, estructurar data desestructurada de solicitud de trabajo de mantenedores. todo lo que se recibe que pueda sistematizarse de una manera que sirva para hacer gestión sobre el trabajo. Después tenemos la generación de órdenes de trabajo, que esto se automatice también. Automatizar las sugerencias de troubleshooting para acelerar la resolución de fallas a como que tenga sugerencias del cual puede ser el problema para acelerar la resolución.
+Magda
+Reportes de cumplimiento, actualización de inventarios, generación de cronogramas de parada de mantenimiento y mantenimiento menor y mayor generación de jerarquía, criticidad, esfemeca, estrategia de mantenimiento, pautas de mantenimiento, paquetes de trabajo y plantillas de carga SAP cuando hacemos plantillas de carga SAP ¿qué nos estamos imaginando. 
+Jose Cortinat
+Como para Gladel Esos son plantillas Excel con un formato, Estándar vale para todas esas data maestra que decía Jorge antes, de forma que se pueda como cargar automáticamente en formato bulk. Toda esta estrategia de mantenimiento, mejor todavía sería si está realmente conectado con el módulo de PM, donde están cargados módulo de PM de paradas de parada de planta.
+Jose Cortinat
+o. PM, sí, plant maintenance, creo que es el modo PM, donde están los planes de mantenimiento, que sé yo ideal si además está conectado y sincronizado a través de una API, sabes, no a través de un instrumento que es una planilla Excel, es decir, que el software genera una planilla Excel y luego hay alguien que va y la carga masivamente o con una macro así. Es la planilla ASAP.
+Jose Cortinat
+Eso es lo que de manera más tradicional siempre se ha hecho. Vale, a eso me refería con plantillas de carga ASAP. Podría ser conectado directamente a través de API. Habría que estudiar un poco como las posibilidades, que eso en su día, por poner un poco en situación. Fue siempre la vendida marketera que es el equipo del Railson y el Orien y tal le vendió la pomada a Anglo American como que eso iba a pasar algún día.
+Jose Cortinat
+No sé si realmente pasó o no pasó finalmente que iba a conectarse o sincronizarse con SAP.
+Magda
+Colección de datos históricos de OTS, fallas con equipos, sus manuales, reportes, etc. Automatizar la captura de fallas con una app. Esta es la misma que. Reporte de cumplimiento, lo dijimos, actualización de inventario. Después en analizar tenemos analizar data histórica de fallas para predecir fallas futuras, análisis de causa de Madrid, data poblativa histórica son muy parecidas, detección de anomalías, benchmarking de activos, extracción de conocimiento, acá nos referimos a la extracción de conocimiento de personas mayores que tienen el conocimiento y queremos como conservarlo o.
+Jose Cortinat
+¿A qué nos referimos con la extracción. 
+Gonzalo
+Yo no lo he puesto, no sé. No vamos a apreciar extracción de conocimiento de los documentos, todo. Lo que existe como registro, como.
+Magda
+Está automatizado, que esté acá, que se extraiga la información de mantenimiento. Ok, después tenemos en predecir que debería predecir esta plataforma, las fallas de mantenimiento, la necesidad de repuestos, la vida útil remanente, riesgo de disponibilidad, demanda de repuestos.
+Magda
+Luego tenemos en explicar, cualquier duda de los equipos que los contenedores tengan, causa a raíz de fallas, certificación de diagnóstico, análisis de sensibilidad y resumen ejecutivo. ¿Qué debería orquestar esta plataforma? Agentes que se comunican entre sí sobre fallas, planes de mantenimiento y uso de recursos, agente financiero que lleva al control de retorno de la inversión en mantenimiento, avance en la ejecución de paradas mayores y planificación dinámica, cierre de ciclo, closed loop,
+Magda
+Ven que falten cosas, incluso por la plataforma que ya tenemos hecha cosas que se deberían agregar a lo que tenemos ahora.
+Jose Cortinat
+Por ejemplo el tema financiero ese creo que no está ahora mismo, pero ¿podría estar en el sistema de OR actualmente de alguna manera.
+Magda
+Pero no me refiero a que la plataforma le falten, me refiero a que aquí, a esta idea que estamos plasmando, que faltan cosas que por ahí la plataforma tiene, o cosas que no hayamos nombrado, sobre todo esto que nombramos acá.
+Jose Cortinat
+Si la plataforma tiene temas de análisis de ingeniería de confiabilidad, Análisis de Pareto, Jack Knife, otro tipo de herramientas bien de confiabilidad, muy de muy para el ingeniero. Confiabilidad, hacer sus análisis y hacer la reportabilidad de, no sé, llegar al entendimiento del MTTR. ¿Cuál es las? ¿Cuáles son las fallas? Digamos más el 80% de las fallas que está, el 20% de las fallas que está generando el 80% de las paradas.
+Jose Cortinat
+y. Esa parte no está del todo desarrollada tampoco en la herramienta, pero. Pero sí que está y no está aquí. No lo he visto.
+Magda
+¿Lo podrías agregar. 
+Jose Cortinat
+Ok.
+Magda
+Vale, porque.
+Magda
+¿Lo agregaste o no? Que vamos a hacer una primera priorización, pero solamente para tener un modelo inicial del pago. Si yo lo tengo a ustedes, ¿qué debería estar en, en el MVP, en la versión inicial, más allá de lo que ya está, ¿qué es lo que debería estar? Entonces cada uno va a tener cinco votos para elegir cuáles son las cosas que deberían estar en este MVP, tampoco lo tomen como que es tallado en piedra, pero tuvimos que tener una visión inicial de lo que debería estar acá.
+Magda
+Entonces vamos a tener 4 minutitos para leerlo bien y votar por 5 conceptos, puede ser que nos demoramos un poco menos. Estamos pensando en MVP, el primer producto que debería estar. ¿Cuáles son las principales cosas que debería tener? Díganme si les aparece en su pantalla algo que dice unirse a la votación. ¿La votación? Si. Y a todos les aparece que tienen 5 votos, ¿no?
+Magda
+Super Vamos a probar entonces Ya, entonces a ver que es lo mas importante.
+Magda
+Elijan bien porque solo tienen 5 entonces.
+Magda
+Ojo, no está tampoco escrito en piedra, ya no es que sí o sí va a hacer esto, vamos a hacer un análisis después, pero nos va a una primera mirada. ¿Cómo van? Yo ya he terminado.
+Jose Cortinat
+Ya he terminado.
+Magda
+Falta uno.
+Jorge Alquinta
+Identificado. Pero a ver, falto yo, hay que colocarlos en algún lado, que recién.
+Jose Cortinat
+Ah, Jorge, tienes que seleccionar los stickers.
+Magda
+Sí, mira. Tienes que. ¿Ves ahí mi pantalla? En los ítems. En los ítems más.
+Jorge Alquinta
+En el miro, ahora veo tu pantalla.
+Magda
+Ya, en el miro. Primero, primero. Ah, ya. Ah.
+Jorge Alquinta
+Yo recién apreté a I'm Down y no había marcado nada, tenía que marcar primero y después pinchar en.
+Magda
+Sí, pero. Sí, pero puede hacer.
+Magda
+¿Qué es? Que le pongas un circulito o lo que sea por ahí.
+Gonzalo
+Ya.
+Magda
+Ya no te dejes llevar por lo que ya está, pero.
+Magda
+Ya. Bueno, ahí tienes tus fotos. Que van a ser. Que van a ser estas estrellitas, lo único que es arrastrarlo hacer las funcionalidades que tú consideres ¿Vale. 
+Jorge Alquinta
+se ven? Círculo.
+Magda
+Ah sí.
+Magda
+Ahí, ahí. Un poco ahí.
+Jorge Alquinta
+Hay uno que está duplicada, Pero bueno, la podemos revisar no miro, sino que me refiero a que votaron en distintos lados y es lo mismo. Hay que votar 5, ¿no. 
+Magda
+Sí.
+Magda
+Cuatro, me falta uno.
+Magda
+¿Ahí está? ¿Ahí está. Ya. ¿Entonces suscribieron? ¿Cuáles son las cosas principales que tendría que tener? ¿Estructurar data desestructurada de la solicitud de trabajo.
+Jose Cortinat
+Que de hecho eso es lo mismo que el último voto de esa misma columna, o sea que estamos casi todos de acuerdo.
+Magda
+Vale, ¿Me ayudas juntando las que no son iguales? O sea, trae el de abajo, ¿No? Esta. Vale, entonces una de las primeras cosas que necesitamos es que esto capture la información, ¿Cierto? De las fallas y todo eso. Después lo segundo, generación de jerarquía, criticidad, este veka, estrategia de mantenimiento, contra el mantenimiento, paquetes de trabajo y planea sap, eso sería lo segundo Después sería los análisis de causa raíz y agentes que se comuniquen entre sí.
+Magda
+de recursos eso sería como principal principal como una primera priorización ahora si nos vamos a lo siguiente ya es pensando como en la arquitectura una solución ¿Qué en específico agentes debería tener? ¿Qué herramientas debería tener? y qué decisiones debería ayudar a tomar, como viendo más específico todavía.
+Magda
+Llegamos con un brain también como bien breve en este caso. Aquí tenemos abajo.
+Gonzalo
+¿Hay más duda en cuanto a los las herramientas? Solamente estamos hablando del PAC, porque también pueden haber herramientas en el fondo.
+Magda
+Todo, es como yo voy a idea general porque con esto va a construir la especificación.
+Magda
+me falto algo, pero se los voy a decir y pongámoslo también. ¿Qué restricciones debiese tener? Porque eso nos va a servir para el contexto.
+Jose Cortinat
+Sí.
+Magda
+Súper. Ya. Entonces, pasada rápida. ¿Te puedes limpiar? Ya. Vale, en agentes que ya tenemos, un agente de manager, agente de confiabilidad de planificación, incluido repuestos, agentes de gestión de activos con SPD, CA, S55, ISU55000, AGIA Ember, agente orquestador, agente de diagnóstico de análisis, en herramientas batch porque puede ser customizado e interactivo,
+Magda
+una herramienta tipo Notebook LM para preguntar sobre los equipos y las fallas, como el que es un chatbox un buscador RGA requiere aumented generation motor de simulación, digital twin, skills para generar jerarquía artificial estrategia, skills planificador categorizar priorizar backlog, planificar OT, generar cronograma de plano para mayor en datos, Histórico de OPI, fallas, estrategias de mantenimiento existentes, manuales de dataships de vendors, equipo, budget forecast, LOM, caso base, datales cooperativo, todas las que sean las ISO que sean necesarias, grafo de archivos, mapeo de relaciones entre datos y componentes,
+Magda
+para el razonamiento del sistema, data desde AI system, PICSA otros, data de sensores de equipo, procesos, work management y tout, best practices, RCA, maestro de materiales, alcance de trabajo para realizar alcance del trabajo, realizar en la plataforma, normas, procedimiento de referencia con este contexto metodológico y que mas tenemos, decisiones, el sistema entrega alertas que permiten tomar decisiones sobre paradas, etcétera.
+Magda
+Flujo del dato en tu end y OEX en base a usuario, política de costos, seguridad y privacidad, en base a usuario flujo de la revisión en funciones generadas. O sea, me imagino que acá a lo que nos referimos es que los flujos estén adoptados por el perfil que lo está utilizando.
+Jose Cortinat
+Claro.
+Magda
+Ok, hay algo más que, sobre esta parte de en algo más que falta que habría que agregar.
+Jorge Alquinta
+Se trata de colocar un agente por rol. O sea, ya tenemos el rol manager, tenemos el rol planificador, el rol programador, el rol supervisor, lo mismo que hablábamos en el ejercicio de la mañana, los roles claves que vas a encontrar en toda la faena. Entonces, va a ser más fácil de identificar qué cosas necesita cada rol para su toma de decisiones o para su desarrollo operativo de sus procesos.
+Magda
+Ok, super ahí lo agregué. Con esa mirada, porque conté que hicimos un ratito para mirar la plataforma, vamos a lo último. Porque la parte de acá no es para construir en este boomshop, sino que con toda la información que hemos levantado la vamos a poder construir, que son las especificaciones como más técnicas para que esto se haga realidad. Entonces, si tuviéramos que decir que esta plataforma fue exitosa, ¿qué es lo que vamos a asumir?
+Magda
+¿Qué es lo que vamos a buscar validar con esta plataforma? Y en específico, con UCT, por ejemplo, que yo, con Pertualidad. que puede ser, no sé, el trabajo se va a hacer de forma mucho más rápida, se va a generar un ahorro, no sé. ¿Cómo lo vamos a experimentar con la plataforma? ¿Qué métricas vamos a perseguir para decir que esa hipótesis se está cumpliendo y qué resultado esperamos con el uso de la plataforma?
+Magda
+¿Se entiende? Y acá también, dos minutitos para que lo podamos completar, pueden avanzar todas las ideas que quieran y luego definimos con qué potecitos vamos. Uy, perdón.
+Magda
+Resultados del resultado esperado, puede ser que no lo tengamos ahí 100% claro ahora, pero es algo que deberíamos medir antes de que iniciamos un piloto, cuando iniciamos cualquier tipo de piloto es clave poder destruir bajo qué circunstancias lo consideramos exitosos.
+Jose Cortinat
+NPI se llama, ¿no? NPI ¿Qué? NPI no es el punto de satisfacción ese.
+Magda
+Ya, si quieres, le he dado que. pensar a la coma, pero fue, cada uno lo hizo, a su manera comentar las que tú planteas Planteas. 
+Gonzalo
+La hipótesis era la precisión del diagnóstico, osea si la gente efectivamente puede identificar fallas mejor de lo que se esta haciendo manualmente o como se aplica dentro de la empresa, luego el experimento cual es, que se va a alimentar a la gente con diferentes casos históricos con fallas reales para definir efectivamente si decirle cual fue la causa, y de acuerdo a eso, en la métrica de medir efectivamente cual fue el porcentaje de acierto de lo que tuvo la IA en realmente fue lo que paso. el resultado viene siendo un porcentaje de diagnóstico correcto o no, de un porcentaje relativo en este caso mayor de 85% y pasa a ser como aceptable.
+Magda
+Super. El resto tiene.
+Jorge Alquinta
+Por ejemplo yo puse el mantenedores reducen X por ciento el tiempo de los diagnósticos asertivos que es lo que habíamos comentado, retraso de los travelchuques y todo eso. Entonces, claro, el experimento ahí sería poder poder medir, una vez que tengamos la plataforma, cierto, poder medir cómo esa información disponible a mano en tiempo real y de calidad le permitiría a estos mecánicos, eléctricos, el rol que sea, poder reducir esos tiempos.
+Jorge Alquinta
+Y ahí, claro, Como decía José, podría ser una base de datos, hechos en base a experiencia, de mantenedores que ya tienen mucho know-how, y también además en base a la información de los manuales. En muchos manuales de fabricantes, las últimas páginas, datos cabe chupi, no en todos, pero en algunas yo los he visto. Algunas marcas sí los tienen. Obviamente no son todos, igual hay otras fallas que están como las principales. Entonces toda esa mezcla de información teórica que viene de fábrica, la experiencia podría generar una buena base de trabajo del Chucking.
+Jorge Alquinta
+La métrica yo creo que sería esa. Serían las horas hombre ahorradas, tal como sale ahí. No lo posible. Se contaría para otra cosa, pero conversa. Mientras el diagnóstico sea lo más rápido, el tiempo de atención del equipo y el impacto en costo y/o en producción, se reduciría el impacto de eso. Bueno, y el resultado sería eso. ¿Sería más producción o más disponibilidad. 
+Magda
+Ahí tenemos nuestras alternativas y el póster.
+Jose Cortinat
+Vale, a ver qué agrego yo por ahí.
+Magda
+Me muteo.
+Jose Cortinat
+Bueno, yo he puesto hipótesis. Una hipótesis es que con estas soluciones, con una de las funcionalidades se va a reducir, no sé, lo he puesto por poner, 200% el tiempo invertido en la planificación de imprevistos. Porque el planificador va a saber como con mayor asertividad y mayor confiabilidad lo que el técnico está en levantamiento, su criticidad y que requiere para poder planificar ese imprevisto y si y demás.
+Jose Cortinat
+Vale, otra cosa, una hipótesis que yo mantengo es que vamos a conseguir unir el dato end to end desde la entrada del primer levantamiento de una solicitud de trabajo de terreno. Pasando por todo lo que es la planificación, ¿no? Y cuando digo otra planificación, también hay eso ligado a que el planificador va a tener entendimiento de lo que está solicitando el usuario, digamos como solicitud de trabajo con histórico de fallas y órdenes de trabajo similares en el mismo equipo.
+Jose Cortinat
+Vale, y por lo mismo, por la otra rama está en la rama del planificador. Lo mismo la rama de confiabilidad para poder entonces unir todos los datos y entrar en ese proceso de aprendizaje y mejora de planes de mantenimiento y demás. Bien. Unos robustos por falta. Otra hipótesis es que con esta herramienta vamos a conseguir cerrar la brecha que siempre se ha mantenido abierta.
+Jose Cortinat
+De que como los recursos son limitados, nunca consigues tener el plan de mantenimiento 100% cubierto. Nunca terminas de tener como los repuestos 100% catalogados. Siempre te falta algo de data maestra o datos de creados en SAP y demás. Entonces yo siento que con esto es como que se tiende a cero. El La necesidad de recursos, porque es tan disruptivamente mayor la productividad que puedes tener en la generación de todo eso, que en el fondo los recursos se van a destinar a las puras revisiones de todo, que no es menor, pero no es lo mismo hacerlo que revisar, ¿sabes?
+Jose Cortinat
+Entonces, yo creo que esas son las hipótesis que queremos como confirmar el experimento cuando lo desarrollemos. Oye, pondremos en las manos del mantenedor la aplicación para que empiece a levantar temas y ver si eso le está agregando valor al planificador en su planificación y entendimiento de la gestión de su backlog. ¿Vale? Luego, en cuanto a métricas, he puesto, ¿qué he puesto o no he puesto nada?
+Jose Cortinat
+Ah, no, no he puesto nada. Bueno. Y en resultado, los mantenedores tienen un una satisfacción de usuario no positivo positiva sobre la plataforma, que no es menor. O sea, si hay una adopción mínima por parte del usuario de que está levantando los problemas, va a ser va a ser exitoso que el planificador consiga reducir, bueno, que consiga aumentar la confiabilidad de su entendimiento en lo que le están solicitando como trabajo.
+Jose Cortinat
+Y que se consiguen generar estos rcmsy planes de mantenimiento de manera consistente, no aleatoria. Vale, eso es un resultado clave en el fondo, que sea bastante preciso a la hora de hacer los análisis.
+Magda
+Eso, bueno, después. vamos a hacer el ejercicio como de no acabarlo en esta reunión veamos lo que tengamos hoy en la plataforma después de habernos estado como conceptual. Pero sí vamos a hacer que elegir una o dos hipótesis de manera para. Para el piloto. Para el piloto y las métricas, porque las metas, cómo se va a terminar.
+Magda
+Así que muchas gracias a todos por esta mirada general, mirada general. Yo he construido. Yo voy a construir la última que para eso con eso podemos empezar los desarrollos, ¿Vale? José, si quieres. José, si quieres ver la plataforma.
+Jorge Alquinta
+Vale.
+Jose Cortinat
+Ya se ve, ¿no? Listo, entonces, bueno, aquí es una especie como de a todo esto, estoy en el apartado, digamos, de administrador, donde se supone que veo todo, ¿no? Aquí en el lateral tenemos diferentes funcionalidades que está todavía un poco mezclado, ¿no? Pero supongamos que pudiese tener un dashboard donde tengo mis acciones rápidas de capturar. Una nueva esto, obviamente, el operador o el mantenedor va a tener un dashboard diferente con sus métricas, por ejemplo, cuántos, cuántas solicitudes de trabajo he levantado, porcentaje de la confiabilidad en, digamos, lo que yo dije que se requería versus lo que realmente se requería.
+Jose Cortinat
+Vale, pero bueno, luego aquí tienes el la captura, no donde tú vienes aquí y le dices. Hay una falla en el rodamiento delantero del motor. Hace mucho ruido, hay que programar un reemplazo o hacer un análisis de vibraciones o un análisis mayor.
+Jose Cortinat
+Pero yo no sé cómo la gente va a colocarlo. No, pero aquí no ha dicho nada de del motor ni ni qué es en concreto. Pero bueno, se supone que yo aquí le podría agregar más, sacarle una foto directamente, qué sé yo, vale, pero el tema es que pum, se le envía la solicitud, ya sea texto libre o lo que sea, y me en el fondo me convierte mi contenido en una estructura rígida de campos que o se completan o no se completan, vale.
+Jose Cortinat
+Pero va a ser hoy el equipo en concreto, el componente en concreto, el tag en concreto, si es urgente o no es urgente, el modo de falla dentro del listado de modos de falla que ya tenemos predefinidos, combinación mecanismo falla, causa, duración estimada de la reparación. ¿Qué tipo de work order type? Claro, como le he dicho que hace falta ir a inspeccionar, pues me ha hecho una PM cero uno de inspección. Validación, priority, confirming, no sé.
+Jose Cortinat
+El caso es que bueno, le doy así y se supone que a ver, claro, es un último check como final de vale, el modo de falla está. Sí, me gusta porque antes de enviarlo es, oye, revisa que tienes, no es verdad, claro que no le he puesto el tag, es verdad que no le he puesto no sé cuántos. Entonces ya al enviarlo acaba de crear el work request, vale. Entonces yo puedo ir go to Work Request. Esta es la visualización que podría tener el mantenedor con sus Work Request y el estatus actual está pendiente o está validada o está rejected, o sea, como que no ha sido aprobada o lo que sea, no, y el planificador en el fondo también tendría que tener algo así como que le llega el Work Request a darle un clic.
+Jose Cortinat
+Ver el Work request y mira, está aquí, creo ya ver las fotografías del Work request, qué tipo de mantenimiento se requiere, la descripción de la falla. Vale, entonces aquí lo validas o no se ha confirmado la prioridad. Sí, el no sé qué otro checklist del planificador, no, que al final le dice, oye, mira, voy a validar el Work request y ahí se convierte en un trabajo. Esto no está funcionando, pero un trabajo que entra dentro del backlog, vale. Ese backlog va a tener va a tener un montón de trabajo, vale que van a ser tipo oye, para qué equipos, qué tipo de prioridad, estimación de duración de la de del esto del trabajo, mano de obra que requerido que requiere repuestos, si requiere repuestos o no, si requiere ser ejecutado en un mantenimiento mayor o puede ser ejecutado en un mantenimiento mensual de para.
+Jose Cortinat
+Menor, digamos, claro, y aquí con KPI no, que no, que blocked by stock, es decir, trabajo o mantenimiento requeridos, pero que nos está faltando el repuesto o qué sé yo, vale. Luego se supone que vas a poder hacer aquí ciertos programas de mantenimiento. Claro, aquí generar el cronograma, no sé qué ha hecho aquí. Pero en el fondo tú tendrías aquí, a ver, work orders, corrective, planned.
+Jose Cortinat
+A ver. Ah, corrective, planned. ¿Esto es? Ah, se está abriendo aquí. Son dos órdenes de trabajo. Ah, bueno, se supone que esto es como para decir, venga, esto va a ser el lunes o el martes, lo que sea. Se supone, no sé.
+Jose Cortinat
+Prioridad.
+Jose Cortinat
+Close with OCM, no sé qué es el OCM, la verdad, ahora mismo mantenimiento de un tipo, de otro tipo, de otro tipo, vale, pero aquí tampoco veo como que genere un cronograma o de primera se ejecuta esto y tal, pero bueno, se debería poder generar una programación y sobre todo más enfocado en mantenimientos mayores, no que ahí hay mucha mayor complejidad. Mucha más coordinación de tareas.
+Jose Cortinat
+Yo visualizo que podríamos tener un agente de gestor de planificación de parada mayor en el que con el cierre de la del día, digamos lo reportado con en órdenes de trabajo, va generando toda la reportabilidad automatizada de el avance de la parada, requerimientos, bloqueos, que se yo, y sugerencia de enfoque de trabajo al día siguiente. Y así. Para que los equipos estén como más alineados cuando comienzan el turno, ¿no?
+Jose Cortinat
+Bueno, aquí hay un supuesto, un planificador como para decirle, oye, que es crítico, que no dentro del backlog, ¿qué tareas podría yo hacer ahora mismo que me demore en menos de 4 horas para la especialidad mecánica porque tengo una oportunidad ahí o tengo mano de obra disponible o lo que sea, no? O tengo una oportunidad, una ventana de mantenimiento por una falla de no sé qué. ¿Y qué puedo intervenir? ¿Qué tengo listo actualmente? Y se cumple que tengo repuestos, es menor a tanto tiempo, este tipo de mano de obra y tenemos las herramientas.
+Jose Cortinat
+Ah, pues mira, podréis ejecutar todo esto, ok, imprímeme esto, pum, listo. Esta navegación de planificación que es planning and scheduling. Schedule Wit AI Plan. Ves, aquí hay muchas cosas que son como todavía que no, No está construido y con lo que hemos hecho hoy, pues vamos a tener que hacerlo. Bueno, esta era la parte del levantamiento y la supuesta planificación o gestión del backlog. Luego ya este es el apartado que tendría disponible el de confiabilidad, que puede ser que uno no vea lo del otro.
+Jose Cortinat
+Vale, cada uno va a tener como su módulo o su sus datos visibles. Aquí, claro, yo le puedo agregar, por ejemplo, de la librería un molino. le agrega un molino. Si yo estaba aquí, seleccionado eso y le meto un molino, claro, ahora me ha metido un molino, pero dentro de la jerarquía. Aquí me lo han metido fuera. Yo tendría que poder borrarlo también. Ha metido el molino aquí y el molino tiene un drive motor con sus datos, que tendrá aquí, por ejemplo, el identificador, la criticidad que tenga, histórico.
+Jose Cortinat
+Podrían ser órdenes de trabajo que se han ejecutado en ese en ese molino. Podría haber un tipo como análisis de fallas que tengamos de ese molino. Tendríamos aquí el FMK o lo que sea, vale, o en realidad no así tan pequeñito, pero aquí tendríamos como toda la estrategia de mantenimiento, lo que sea. Si yo le doy aquí, por ejemplo, a al Ball Mill y le digo improve with AI, a ver qué me dice, analiza y me dice. A I will analyze the current hierarchy and suggest improvements before applying them.
+Jose Cortinat
+Oye, le podrías agregar estos subsistemas, el motor del assembly, el lubrication system, el cooling system, estandarizar la nomenclatura del Ball Mill, no Ball Mill Update Criticality Classification. Es como que me ha hecho un análisis de lo que ven en cuanto a jerarquía, data que tienes completada y te dice, oye, te está faltando todo esto. aplicarlo, vale, vamos a aplicarlo. Y aquí no sé si lo ha hecho, creo que no, pero debería aquí hacerme los sistemas o lo que sea.
+Jose Cortinat
+Ah, que quiero crear directamente al nivel del Drive Motor. Bueno, no me ha permitido, pero al nivel del Ball Mill me permite crear un Work request. Aquí, claro, tendría que venir directamente el tag con, con la información del propio equipo, pero no lo ha hecho. Jerarquía, ya lo hemos visto. Criticidad. Aquí se supone que podría yo. Asset Help no es lo mismo la criticidad del activo inherente al equipo, que la salud actual en base a ciertas condiciones que estemos monitoreando.
+Jose Cortinat
+Antes Jorge ha puesto, oye, que esté conectado con el PI System. Aunque tenga datos de análisis de vibraciones, no podríamos tener un entendimiento de la salud del activo, no, y podríamos ir monitoreando aquí en FMK. ¿Qué tiene FMK Analysis? A ver, ad function, generar task, FMK overview, one failure mode, average.
+Jose Cortinat
+Internal task, work packages, shape upload. Sí, claro, a nivel de. aquí yo podría seleccionar cada equipo y ver en el fondo desde sus funciones hasta, no sé, como este es el ranking RPM que no me acuerdo muy bien, es seguridad, operación y algo, no sé, no me acuerdo en qué era. ¿Tú sabes lo que es eso, Jorge? Esto del SOB, De es como el es como la criticidad del activo en base a seguridad, operación y no me acuerdo que era esto, vale, pero bueno, no lo no está, pero tú imagínate que sí, eso sí, exacto, seguridad, detección y qué.
+Jose Cortinat
+Y ocurrencia. Vale, te da un poco la criticidad del activo o lo que sea. Podríamos tener aquí, tú imagínate, como el Orient, pero bien hecho, tener todo el tema del análisis de los modos de falla, esas planillas Excel que vimos en su día, que era como lo que debería producir, eso se debería poder visualizar aquí, incluso como en su día Jorge "El Railson", que no lo viste tú, pero era como tenías una jerarquía, Y tú, la jerarquía, podrías ver aquí todo esto bien, toda la estrategia de mantenimiento.
+Jose Cortinat
+Ves aquí es como hay un tema de a ver si esto esto del RCM, como esto, el flujo no debería ir dentro del sistema, debería hacerlo, pero por detrás, no visualizarse aquí nada. Mira, esto está súper bien. esto. Si los datos son correctos, poder medir en el fondo como ciertos datos claves de mantenimiento a nivel de equipos, ¿no?
+Jose Cortinat
+O a nivel de proceso. Un apartado de root cost analysis que aquí no hay nada hecho, pero aquí se se tendría que poder hacer el diagrama de. causa y efecto o diagrama de espina de pescado o los cinco porqués, diferentes metodologías de RCA y poderla ver aquí como incluso generar el reporte sobre ello.
+Jose Cortinat
+¿Esto qué es? 5 porqués. Esto va en la línea, pero no está hecho. Por lo mismo, Jorge, igual me sorprende que me digas que se veía así. Bueno, Está bien, pero le falta mucha cosa todavía. Vale, analítica, paretos, temas de por orden de trabajo. Aquí deberíamos literalmente para mantenimiento, para confiabilidad y tener un apartado de analítica y reportabilidad automática con los KPIs que son de interés.
+Jose Cortinat
+Executive Dashboard, que también estamos en, En mantenimiento, en planificación, disponibilidad, en calidad, la ejecución, reportes. Mira, download y me puedo descargar un reporte actual de cómo está el backlog actualmente. Hoy tantas órdenes de tantos trabajos pendientes de repuestos, tantos.
+Jose Cortinat
+trabajos esperando a ser planificados o que entren dentro del programa de la parada mayor y en el fondo y luego con estadísticas, cantidad de HH, con lo cual ya podemos ir planificando con mayor anticipación. Toda la serie de reportabilidades que quisiéramos tener. SAP Integration. Bueno, esto no veo nada. Eso es lo que eso es lo que hay ahora mismo, vale, y luego por otro lado, déjame mostrarle esto, me voy aquí al asset management, el master plan, este vale, entonces un poco como dentro de la plataforma, cómo está construido actualmente, vale, tiene diferentes que dicen como capas de información, ¿no?
+Jose Cortinat
+Unos esquemas en Python y demás con que son como no sé funciones, no los explicaría muy bien. Un modelo de generación de RFI en base al alcance, al contexto de del cliente y qué queremos tratar, te autogenera un RFI, tienen librerías de equipos, tienen librerías de componentes. ¿Es capaz de generarte la data maestra en base a ciertas especificaciones?
+Jose Cortinat
+Obviamente no está esto trabajado todavía, pero se espera que pueda ser. Tiene generación de diferentes formatos de entregables en Excel, que son los que vimos el otro día, y tiene una tabla de modos de falla. Vale, luego los key esquemas que son estos, no los esquemas estos de aquí son en el fondo. es. El nodo de la planificación de la jerarquía de la planta, el nodo de la criticidad de las funciones, las fallas funcionales de los nodos de falla, de las tareas de mantenimiento, los paquetes de trabajo, los las planillas de carga, la captura, el fondo, fondo.
+Jose Cortinat
+Todas estas como esquemas son como funciones o funcionalidades específicas, ¿no? Nos dice Ingen layer, que es la capa de los engens, que esos engens se suponen que son determinísticos, es decir, que siempre van a entregarte un resultado, digamos, igual, no variable, en base a, como suelen ser los LLMs y todo esto de la IAG negativa.
+Jose Cortinat
+Se supone que deberían ser determinísticos. No lo tengo yo tan seguro, ¿eh? Pero se Pero son, por ejemplo, para que estos son los ingen, el análisis de la criticidad, el árbol de decisiones del RCM, el FMK, la priorización, la agrupación de trabajos en el backlog, la construcción de los paquetes de trabajo.
+Jose Cortinat
+La execución task scheduling, la planificación de la ejecución de trabajo, la exportación de planillas de SAP, la generación de reportabilidades, notificaciones. Todo esto son como funcionalidades que lo que estábamos viendo antes de que se le pide al a la herramienta, no la evaluación de la calidad, vale, y luego actualmente tiene. Estos agentes, ya Jorge hablaba del tema de los roles, me parece bien.
+Jose Cortinat
+De hecho, habría que ver si el propio orquestador le damos esas habilidades, esas skills de la visión de el gerente. Vale, quiero decir, qué KPI se tienen que revisar, qué temas hay que levantar, qué preguntas hay que hacer a los otros agentes para que le pasen la información que un gerente pediría, etcétera, no. Pero actualmente tenemos un orquestador que está utilizando el modelo Sonet, el, digamos, el de confiabilidad, que hace todo el tema de criticidad, FMK, RCM, todo esto.
+Jose Cortinat
+Luego tenemos el planificador que lo que hace es empaquetar actividades. Habrá que ver eso si lo dejamos al planificador o lo hace el ingeniero confiabilidad, pero es un poco lo que el Jorge también decía de la secuencia de ejecución de actividades, Gonzalo.
+Gonzalo
+Sí, tengo la duda, José, ¿cómo estás definiendo, cómo definiste el modelo a utilizar cada uno de los agentes.
+Jose Cortinat
+Pucha, no lo sé, no sé cómo está, pero está en el. bueno, intuyo, estoy prácticamente seguro que está en el propio agente que te dice aquí el modelo que está utilizando.
+Gonzalo
+Claro, pero mi duda es porque claro, efectivamente por qué utiliza. 
+Jose Cortinat
+Por la Por la dificultad, por la dificultad que de que conlleva las skills y qué tan analíticas son o qué tanto consumo de información y demás es. Entonces, por ejemplo, para el de confiabilidad, que tiene que hacer mucho estudio de análisis y confiabilidad y tal, pues el más, el modelo más potente, el que simplemente te tiene que decir, vale, ya has terminado eso, ahora empieza esto otro. En base a un master plan, no necesita una un trabajo tan grande, alguien a otro que tiene que simplemente que revisar en una planilla de base de datos si existe un componente o no, los spare parts o lo que sea, pues entonces tampoco necesita mucho análisis, no tiene que determinar el límite aceptable del modo de falla de la tarea.
+Jose Cortinat
+No sé qué es por eso, vale, de hecho, pero de todas maneras no, tampoco fui yo el que en el que el que inicialmente. Lo definió, o sea, fue el propio, o sea, como el con el propio cloud code me sugirió. Yo le dije, yo le planteé que necesitábamos tener una gestión eficiente de los tokens de los tokens y me y me propuso pues una distribución de modelos en base a qué complejo era cada cada actividad que tenía que hacer cada uno.
+Gonzalo
+Sí entiendo porque eso lleva a que efectivamente una vez que se desarrolle. Prototipo, el código obviamente tiene que ser multi lenguaje y que esté cargada la estructura de todas las áreas necesario. para que aplique de acuerdo al agente que estoy utilizando.
+Jose Cortinat
+Sí. Bueno, tiene que estar por aquí, pero si no es como cuestión de preguntarle aquí. Oye, ¿dónde es que están? No le voy a preguntar lo que estamos.
+Gonzalo
+Eso es todo porque. Efectivamente hoy en día estamos desarrollando diferentes herramientas que tienen diferente agente y skill. Quizás obviamente, para utilizar esos agentes Skills el modelo de lenguaje que le estamos usando como estándar por ejemplo el de Gemini con la API quizás no es el que aplique correctamente o no es el mejor o sea hace el trabajo pero quizás puede ser mejor con otro modelo.
+Jose Cortinat
+Bueno, voy a decirlo ahí. Sigamos un poco, un poco esto del clavo, esto de aquí, el plan.
+Jose Cortinat
+Aquí, por ejemplo, en los skills coverage, esto todo esto hay que ir revisando Gonzalo, o sea, Jorge también en el sistema, lo tengo que subir a GitHub de todas maneras, pero aquí vemos reporte de cobertura de las skills por agente, es decir, qué habilidades tiene cada agente, ¿no? Pues dice, todos los 40 skills están asignados de esta manera, ¿no? El orquestador tiene 15 asignados, Reliability Engineer, que es. tiene 16 y así. Y el mapeo completo, skill por agente.
+Jose Cortinat
+Skill de construcción de equipo, de jerarquía de equipos. Categoría, en el ámbito del maintenance strategy, agente que lo utiliza, el reliability. De todas maneras, hay por ahí un Excel que es, a ver, lo voy a buscar un segundo, skills, que es más manejable que ese documento que te estamos mostrando. Document Skilled Mapping.
+Magda
+A ver. Agente. Categoría.
+Jose Cortinat
+Ah, sí. Entonces, aquí se ve que.
+Jose Cortinat
+se ve un poco mal, pero es. Orquestación de workflow de trabajo, validación de calidad, revisión. O sea, Conduct Management Review, que es un poco como el gerente, como revisar. ¿Eso quién lo tiene? A múltiples agentes. Vale.
+Jose Cortinat
+Luego. Espera un segundo, ¿eh? Sí.
+Magda
+Tenemos.
+Jose Cortinat
+Ah, ya. Vale, entonces nos vamos ya.
+Magda
+Eh. Déjame ver aquí un segundo.
+Jose Cortinat
+Vale, este master plan es un poco cómo ha ido evolucionando la herramienta, no con todos los avances. Lo voy a dejar aquí, pero solo por pasarlo súper rápido por encima. Entonces aquí te dice más información sobre cómo se orquesta, que hay como cuatro milestones principales, que es el tema de la jerarquía de la planta, la estrategia de mantenimiento. el desarrollo de los paquetes de trabajo y no sé qué.
+Jose Cortinat
+Para cada etapa de estos procesos que hemos visto, como la identificación del trabajo, la estrategia de mantenimiento, la planificación del trabajo, la ingeniería de confiabilidad, ¿cuántas skills tienen y qué skills? Vale, algunos ejemplos. Tema de APIs, esto ya yo ya, por ejemplo, Gonzalo, esto lo tendría que tomar el David y empezar a desarrollar, no sé qué. Temas de APIs, de bases de datos, de no sé cuántos, vale, y el UX Layers, dime.
+Jose Cortinat
+Son altas conexiones. Por ejemplo, estas 19 páginas covering the full workflow. Se supone que existen estas, Páginas, pero esto puede ser que esté descatalogado porque un problema que tenemos Gonzalo es que el David lo tomó por un lado, ustedes trabajaron por otro lado y yo ahora tengo aquí una plataforma que es otra y hay que hacer el la unión en GitHub y eso tenemos que empezar a maestrizarlo más porque yo siento que lo estamos un poco haciendo como por casa.
+Jose Cortinat
+Todavía no está claro. A mí me dice David, no, si. 
+Jorge Alquinta
+En la carpeta que hablamos el viernes, esa de "templates", cuando te ibas a "product", "or system", estaba "methodology" y después "templates", estaban todos ahí en Excel. Estaban con el mismo nombre.
+Jose Cortinat
+¿Cuál es? ¿Esto aquí, esto? Sí, posible, sí, yo creo que sí. O la mayoría, la mayoría, la mayoría. Bueno, luego aquí supporting system. Luego está habla aquí del tema de la gestión de la memoria del cliente. Todo esto es un tema de ir gestionando las memorias de requerimientos del cliente o solicitudes especiales en cuanto a calidad, en cuanto a metodología. Pero bueno, sin más, que ya les muestro que hay un una parte interna importante y luego hay unos unos temas de gaps y así.
+Jose Cortinat
+Y como de siguientes pasos, vale, hay que trabajarlo con el David. O sea, yo a mí me gustaría ver cómo vamos a trabajar juntos como para entender esto que hay detrás con el David y empezar a definir, en base a lo que hemos dicho con Magda, el los alcances de esos 2 o 3 funcionalidades clave que vemos y demás. Bueno, eso. Mucha información, hay mucha información ahí, o sea, como que.
+Jose Cortinat
+No es que me preocupe, me pregunto cuál sería la mejor manera de como de trabajarlo. ¿Sabes? En adelante. Como para.
+Jorge Alquinta
+¿Sabes cómo lo verías, José? Porque es la vista del consultor. El consultor tiene una mirada de herramientas y metodologías y cosas que va viendo y que le hace más sentido. Pero si te pones en los pies del usuario, de los roles, de las personas que van a operar esto en una mina, sería bueno hacerlo por funcionar. O sea, todo lo que es de planificación, llamémosle área, al rol planificador, al rol programador, todas las herramientas, todo el tema de repuesto, lo que hablamos recién. Al ingeniero de confiabilidad, ahí el tema de estrategia, a diferencia de un consultor que trabaja mucho con eso.
+Jorge Alquinta
+El ingeniero de confiabilidad no anda desarrollando estrategias a cada rato. El, Él usa más temas de RCA, análisis de causa raíz, y otras cosas más. Entonces, y el tema obviamente de los KPI, el tema de la data, pero el otro tiene que estar, pero hay que darle más énfasis y menos, y qué cosa va abajo. El tema de repuestos va dentro de la planificación. En el tema supervisor, si se le van a colocar temas asociados a travel churting, también su ventana. Y una, la mirada es el gerencial de manager, qué cosas tiene que ver.
+Jorge Alquinta
+él y que son las mismas que tienen que ver al resto, pero él las ve porque con eso toma decisiones y ve si el barco va a direccionar, se desvió y hay que hacer algo para aliviarlo, que son los KPI digamos más globales y conectado con la producción.
+Jose Cortinat
+Sí, sí, de todas maneras, tú Jorge te tienes que poner ahí con el equipo en el UX, porque tú vas a tener una buena visión de el ojo, no sé, industrial o el planificador y tal, como, de qué manera está entrenado y cómo le gustaría, cómo consumir el dato y todo eso. ¡Listo! Dejémoslo hasta aquí, que tenemos otra reunión nosotros. Somos todos nosotros, estamos en la misma. Eh. ¿Estás almorzado, Gonzalo.
+Jorge Alquinta
+Yo iré almorzao, yo no he almorzao.
+Jose Cortinat
+¡Dale, Jorge.
+Jorge Alquinta
+Yo no he almorzao.
+Jose Cortinat
+¡Ah, no! Tú tampoco, Gonzalo. Ya, eh. Pero tenemos. A ver.
+Jorge Alquinta
+¿De acá son las dos. Son las dos cuatro.
+Jose Cortinat
+Nada, tú, Jorge, déjalo, vale, ¿qué hora es? Y si cómo lo hacemos, a ver qué hora es, son a las 2:00 allí.
+Gonzalo
+Pero yo puedo seguir, no hay problema porque al final tenemos la reunión hasta las 3:00.
+Jose Cortinat
+Va listo, pues entonces nos junta, nos quedamos nosotros Gonzalo y ya está. Tú, Jorge, bueno, tú sigues ahí, ya me contarás mañana a ver cómo el detalle de lo que has ido avanzando, pero estoy seguro que tienes todavía que machacar. y revisar que temas. 
+Gonzalo
+José, para que la reunión que sitúo ahora sitúo a Jorge y llegue a Carlos.
+Jose Cortinat
+Ah, pues por eso andaba el Carlos preguntando porque que no tenía la cita o lo.
+Magda
+Que sea.
+Jose Cortinat
+Vale, vale, listo, se la reenviamos. Venga, hasta ahora. Gracias chicos.

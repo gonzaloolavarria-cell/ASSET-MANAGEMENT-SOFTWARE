@@ -1,0 +1,60 @@
+# project.yaml — AMS Project Configuration
+# Copy this file to your project root and fill in the values.
+# Path: ASSET-MANAGEMENT-SOFTWARE-CLIENT/clients/{client}/projects/{project}/project.yaml
+
+project:
+  id: "${PROJECT_ID}"                    # Unique project identifier (e.g., "ocp-jfc-001")
+  name: "${PROJECT_NAME}"                # Human-readable name
+  version: "1.0"
+  created_at: "${CREATED_AT}"            # ISO 8601 date
+
+client:
+  slug: "${CLIENT_SLUG}"                 # Lowercase, hyphenated (e.g., "ocp")
+  name: "${CLIENT_NAME}"                 # Full company name (e.g., "OCP Group")
+  industry: "${INDUSTRY}"                # mining | chemical | oil-gas | manufacturing | power | other
+  country: "${COUNTRY}"                  # ISO 3166-1 alpha-2 (e.g., "MA")
+  language: "${LANGUAGE}"                # Primary language: fr | en | ar | es
+
+scope:
+  type: "${SCOPE_TYPE}"                  # full-plant | area | system | equipment
+  plant:
+    name: "${PLANT_NAME}"                # Plant name (e.g., "Jorf Fertilizer Complex")
+    code: "${PLANT_CODE}"                # SAP plant code (e.g., "OCP-JFC")
+    location: "${PLANT_LOCATION}"        # City, Country
+  priority_equipment: []                 # List of equipment tags to prioritize
+  timeline:
+    start_date: "${START_DATE}"          # ISO 8601 date
+    target_completion: "${END_DATE}"     # ISO 8601 date
+  areas_in_scope: []                     # Plant areas included
+
+maintenance_context:
+  strategy_maturity: "${MATURITY}"       # reactive | emerging | developing | mature | optimized
+  cmms: "${CMMS}"                        # sap-pm | maximo | infor | other | none
+  sap_version: "${SAP_VERSION}"          # S/4HANA | ECC 6.0 | none
+  criticality_method: "${CRIT_METHOD}"   # r8-4level | gfsn-3level | client-custom
+  availability_target: 0.95             # Target availability (0-1)
+  existing_data:
+    equipment_list: false                # Has structured equipment list?
+    failure_history: false               # Has work order / failure history?
+    existing_pm_plans: false             # Has existing PM plans?
+    spare_parts_inventory: false         # Has spare parts data?
+    bom_data: false                      # Has Bills of Materials?
+
+organization:
+  team_size: 0                           # Maintenance team headcount
+  structure: "${ORG_STRUCTURE}"          # centralized | area-based | hybrid
+  shifts: 1                             # Number of shifts per day
+  trades: []                            # Available crafts (e.g., ["mechanical", "electrical", "instrumentation"])
+
+standards:
+  iso_certifications: []                 # e.g., ["ISO 55001", "ISO 14001"]
+  safety_requirements: []                # e.g., ["LOTOTO", "confined-space", "working-at-height"]
+  procedure_language: "${LANGUAGE}"      # Language for work instructions
+
+kpi_baseline:
+  availability: null                     # Current availability %
+  mtbf_hours: null                       # Current MTBF in hours
+  mttr_hours: null                       # Current MTTR in hours
+  oee: null                              # Current OEE %
+  planned_vs_unplanned: null             # % planned maintenance
+  pm_compliance: null                    # PM schedule compliance %

@@ -1,0 +1,28 @@
+# ${PROJECT_NAME} — Project Context
+
+## Client
+- **Name**: ${CLIENT_NAME}
+- **Industry**: ${INDUSTRY}
+- **Country**: ${COUNTRY}
+- **Language**: ${LANGUAGE}
+
+## Scope
+- **Plant**: ${PLANT_NAME} (${PLANT_CODE})
+- **Type**: ${SCOPE_TYPE}
+- **Timeline**: ${START_DATE} → ${END_DATE}
+
+## Maintenance Context
+- **Strategy Maturity**: ${MATURITY}
+- **CMMS**: ${CMMS}
+- **Criticality Method**: ${CRIT_METHOD}
+- **Availability Target**: ${AVAILABILITY_TARGET}
+
+## Key Rules
+- All outputs are DRAFT — never auto-submit to SAP
+- Follow the 72-combo Failure Mode validation table (zero tolerance)
+- Criticality assessment must precede strategy development
+- Work instructions in ${LANGUAGE}
+
+## Data Availability
+Check `0-input/` subdirectories for available client data.
+Refer to `project.yaml` for detailed data availability flags.

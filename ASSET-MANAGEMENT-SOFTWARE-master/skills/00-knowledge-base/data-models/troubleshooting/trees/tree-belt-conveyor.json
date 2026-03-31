@@ -1,0 +1,707 @@
+{
+  "_meta": {
+    "equipment_type_id": "ET-BELT-CONVEYOR",
+    "version": "1.0.0",
+    "description": "Troubleshooting decision tree for Belt Conveyor (A/B criticality). Covers belt tracking/drift, roller bearing failures, motor overheating, belt tears, and drive chain/coupling issues.",
+    "entry_categories": ["vibration", "noise", "visual", "performance", "electrical"]
+  },
+  "entry_nodes": {
+    "vibration": "V-001",
+    "noise": "N-001",
+    "visual": "VIS-001",
+    "performance": "P-001",
+    "electrical": "E-001"
+  },
+  "nodes": {
+    "V-001": {
+      "question": "Is the vibration predominantly from the drive station (motor/gearbox/drive pulley) or along the conveyor structure?",
+      "question_fr": "La vibration provient-elle principalement de la station d'entraînement (moteur/réducteur/poulie motrice) ou le long de la structure du convoyeur?",
+      "branches": {
+        "drive_station": "V-010",
+        "structure": "V-020",
+        "tail_end": "V-030"
+      }
+    },
+    "V-010": {
+      "question": "Can you feel excessive vibration at the drive motor housing by hand?",
+      "question_fr": "Pouvez-vous sentir une vibration excessive sur le carter du moteur d'entraînement à la main?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Tactile vibration check at motor, gearbox, and drive pulley bearing housings",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 5,
+        "threshold": "Noticeable difference between motor DE and NDE or gearbox input/output → localized problem"
+      },
+      "branches": {
+        "motor": "V-011",
+        "gearbox": "V-012",
+        "drive_pulley": "V-013"
+      }
+    },
+    "V-011": {
+      "question": "Measure motor bearing vibration with portable analyzer. Is overall velocity >4.5 mm/s?",
+      "question_fr": "Mesurer la vibration des paliers moteur avec analyseur portable. Vélocité globale >4,5 mm/s?",
+      "test": {
+        "test_type": "VIBRATION_ANALYSIS",
+        "description": "Measure vibration at motor bearings in V, H, A planes on DE and NDE",
+        "estimated_cost_usd": 200,
+        "estimated_time_minutes": 30,
+        "threshold": "ISO 10816: >4.5 mm/s = Zone C (alert), >7.1 mm/s = Zone D (danger)"
+      },
+      "branches": {
+        "yes": "V-011A",
+        "no": "V-014"
+      }
+    },
+    "V-011A": {
+      "question": "Check motor bearing temperature with IR thermometer. Is it >90°C or >10°C above baseline?",
+      "question_fr": "Vérifier la température du palier moteur au pistolet IR. Est-elle >90°C ou >10°C au-dessus de la référence?",
+      "test": {
+        "test_type": "PORTABLE_INSTRUMENT",
+        "description": "Measure bearing housing temperature with IR thermometer",
+        "estimated_cost_usd": 50,
+        "estimated_time_minutes": 5,
+        "threshold": ">90°C or >10°C above baseline → bearing issue"
+      },
+      "branches": {
+        "yes": "V-011A-DIAG",
+        "no": "V-014"
+      }
+    },
+    "V-011A-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-53",
+      "terminal_mechanism": "OVERHEATS_MELTS",
+      "terminal_cause": "OVERLOAD",
+      "corrective_action": "Motor bearing overheating from overload or lubrication issue. Check belt loading and motor current. Verify greasing schedule. Replace bearing if spalling detected.",
+      "corrective_action_fr": "Surchauffe du palier moteur par surcharge ou problème de lubrification. Vérifier chargement de la bande et courant moteur. Vérifier calendrier de graissage. Remplacer roulement si écaillage."
+    },
+    "V-012": {
+      "question": "Check gearbox oil level and condition. Is oil dark, burnt smell, or low level?",
+      "question_fr": "Vérifier le niveau et l'état de l'huile du réducteur. L'huile est-elle sombre, odeur brûlée, ou niveau bas?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Check oil sight glass level and draw small sample to assess color and smell",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 5,
+        "threshold": "Dark/burnt → change oil; low level → top up and check seals"
+      },
+      "branches": {
+        "low_level": "V-012A-DIAG",
+        "degraded": "V-012B-DIAG",
+        "normal": "V-012C"
+      }
+    },
+    "V-012A-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-31",
+      "terminal_mechanism": "WEARS_ERODES",
+      "terminal_cause": "DESIGN_DEFICIENCY",
+      "corrective_action": "Gearbox oil low causing internal wear. Top up immediately. Check output shaft seal and housing for leaks. Sample oil for wear metals.",
+      "corrective_action_fr": "Niveau d'huile réducteur bas causant usure interne. Compléter immédiatement. Vérifier joint d'arbre de sortie et carter pour fuites. Analyser huile pour métaux d'usure."
+    },
+    "V-012B-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-31",
+      "terminal_mechanism": "WEARS_ERODES",
+      "terminal_cause": "DESIGN_DEFICIENCY",
+      "corrective_action": "Gearbox oil degraded. Change oil immediately. Sample for wear metals before draining. Schedule internal inspection if metals elevated.",
+      "corrective_action_fr": "Huile du réducteur dégradée. Changer immédiatement. Échantillonner pour métaux d'usure avant vidange. Planifier inspection interne si métaux élevés."
+    },
+    "V-012C": {
+      "question": "Check gearbox for wear metals via oil analysis. Are Fe or Cu trending upward?",
+      "question_fr": "Analyser l'huile du réducteur pour métaux d'usure. Le Fe ou Cu est-il en hausse?",
+      "test": {
+        "test_type": "OIL_ANALYSIS",
+        "description": "Sample gearbox oil — analyze for Fe, Cu, Sn wear metals and particle count",
+        "estimated_cost_usd": 150,
+        "estimated_time_minutes": 60,
+        "threshold": "Fe >80 ppm or step-change >50% → schedule inspection"
+      },
+      "branches": {
+        "yes": "V-012A-DIAG",
+        "no": "V-014"
+      }
+    },
+    "V-013": {
+      "question": "Check drive pulley bearings. Is there play or roughness when rotating by hand (belt off)?",
+      "question_fr": "Vérifier les roulements de la poulie motrice. Y a-t-il du jeu ou de la rugosité en tournant à la main (bande retirée)?",
+      "test": {
+        "test_type": "VIBRATION_ANALYSIS",
+        "description": "Measure vibration at drive pulley bearing housings in V, H, A planes",
+        "estimated_cost_usd": 200,
+        "estimated_time_minutes": 30,
+        "threshold": ">4.5 mm/s velocity or bearing defect frequencies present → replace bearing"
+      },
+      "branches": {
+        "yes": "V-013-DIAG",
+        "no": "V-014"
+      }
+    },
+    "V-013-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-61",
+      "terminal_mechanism": "LOOSENS",
+      "terminal_cause": "VIBRATION_FATIGUE",
+      "corrective_action": "Drive pulley bearing worn. Schedule replacement at next shutdown. Monitor vibration and temperature until then. Verify bearing specification matches OEM.",
+      "corrective_action_fr": "Roulement de poulie motrice usé. Planifier remplacement au prochain arrêt. Surveiller vibration et température. Vérifier spécification du roulement conforme à l'OEM."
+    },
+    "V-014": {
+      "question": "Check motor-gearbox coupling condition. Is coupling element worn, cracked, or bolts loose?",
+      "question_fr": "Vérifier l'état de l'accouplement moteur-réducteur. L'élément d'accouplement est-il usé, fissuré, ou boulons desserrés?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Visual inspection of coupling element, guard, and bolt torque check",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 10,
+        "threshold": "Visible cracks, missing rubber, or loose bolts → repair/replace"
+      },
+      "branches": {
+        "worn_cracked": "V-014-DIAG",
+        "loose_bolts": "V-014B-DIAG",
+        "good_condition": "DIAG-ESC"
+      }
+    },
+    "V-014-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-13",
+      "terminal_mechanism": "FRACTURES_BREAKS",
+      "terminal_cause": "ASSEMBLY_INSTALLATION_ERROR",
+      "corrective_action": "Coupling element degraded. Replace coupling element and check alignment. Verify motor-gearbox alignment with laser after replacement.",
+      "corrective_action_fr": "Élément d'accouplement dégradé. Remplacer et vérifier l'alignement. Vérifier alignement moteur-réducteur au laser après remplacement."
+    },
+    "V-014B-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-61",
+      "terminal_mechanism": "LOOSENS",
+      "terminal_cause": "VIBRATION_FATIGUE",
+      "corrective_action": "Coupling bolts loosened from vibration. Retorque all bolts to OEM spec. Check for recurring loosening — consider thread-locking compound or Nordlock washers.",
+      "corrective_action_fr": "Boulons d'accouplement desserrés par vibration. Resserrer selon spec OEM. Vérifier récurrence — considérer produit de freinage de filetage ou rondelles Nordlock."
+    },
+    "V-020": {
+      "question": "Are carrying idler/return rollers vibrating excessively? Check by touching roller frames along the conveyor.",
+      "question_fr": "Les rouleaux porteurs/retour vibrent-ils excessivement? Vérifier en touchant les châssis de rouleaux le long du convoyeur.",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Walk the conveyor length, tactile check of roller frames for excessive vibration or seized rollers",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 15,
+        "threshold": "Seized or noisy rollers → mark for replacement; 3+ adjacent failed → urgent"
+      },
+      "branches": {
+        "seized_rollers": "V-020-DIAG",
+        "wobbling_rollers": "V-020A",
+        "normal": "V-030"
+      }
+    },
+    "V-020-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-31",
+      "terminal_mechanism": "WEARS_ERODES",
+      "terminal_cause": "DESIGN_DEFICIENCY",
+      "corrective_action": "Carrying idler bearings seized from dust ingress and wear. Replace seized rollers. Schedule batch replacement of aged rollers in affected zone. Improve sealing.",
+      "corrective_action_fr": "Roulements des rouleaux porteurs grippés par entrée de poussière et usure. Remplacer rouleaux grippés. Planifier remplacement par lot. Améliorer l'étanchéité."
+    },
+    "V-020A": {
+      "question": "Are the roller brackets or frames loose or broken?",
+      "question_fr": "Les supports ou châssis de rouleaux sont-ils desserrés ou cassés?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Visual and tactile inspection of roller brackets, mounting bolts, and stringer clips",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 10,
+        "threshold": "Loose or broken brackets → repair immediately to prevent belt damage"
+      },
+      "branches": {
+        "yes": "V-020A-DIAG",
+        "no": "DIAG-ESC"
+      }
+    },
+    "V-020A-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-61",
+      "terminal_mechanism": "LOOSENS",
+      "terminal_cause": "VIBRATION_FATIGUE",
+      "corrective_action": "Roller brackets loosened from vibration. Retighten or replace broken brackets. Check stringer condition. Consider welded brackets in high-vibration zones.",
+      "corrective_action_fr": "Supports de rouleaux desserrés par vibration. Resserrer ou remplacer supports cassés. Vérifier état des longerons. Considérer supports soudés dans les zones à forte vibration."
+    },
+    "V-030": {
+      "question": "Is the tail pulley or take-up system vibrating? Check take-up tension and pulley bearing condition.",
+      "question_fr": "La poulie de queue ou le système de tension vibre-t-il? Vérifier la tension et l'état des roulements de poulie.",
+      "test": {
+        "test_type": "PORTABLE_INSTRUMENT",
+        "description": "Measure vibration at tail pulley bearings and check take-up carriage position/tension",
+        "estimated_cost_usd": 50,
+        "estimated_time_minutes": 10,
+        "threshold": "Take-up at end of travel → belt stretched; bearing vibration high → replace"
+      },
+      "branches": {
+        "bearing_issue": "V-013-DIAG",
+        "tension_issue": "VIS-020-DIAG",
+        "normal": "DIAG-ESC"
+      }
+    },
+    "N-001": {
+      "question": "What type of noise? Squealing/squeaking, metallic scraping, or rhythmic thumping?",
+      "question_fr": "Quel type de bruit? Grincement/couinement, frottement métallique, ou battement rythmique?",
+      "branches": {
+        "squealing": "N-010",
+        "scraping": "N-020",
+        "thumping": "N-030"
+      }
+    },
+    "N-010": {
+      "question": "Is the squealing from the drive pulley area (belt slipping on pulley)?",
+      "question_fr": "Le grincement provient-il de la zone de la poulie motrice (bande glissant sur la poulie)?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Listen and observe drive pulley — belt slippage shows as speed difference between belt and pulley, with dust/smoke",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 5,
+        "threshold": "Belt speed <95% pulley surface speed → slipping; smoke/smell → urgent"
+      },
+      "branches": {
+        "yes": "N-010A",
+        "no": "N-010B"
+      }
+    },
+    "N-010A": {
+      "question": "Check belt tension. Is the take-up at maximum travel or counterweight inadequate?",
+      "question_fr": "Vérifier la tension de la bande. Le tendeur est-il en course maximale ou le contrepoids insuffisant?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Visual check of take-up position relative to travel limits and counterweight condition",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 5,
+        "threshold": "Take-up at max travel → belt stretched; counterweight insufficient → add weight"
+      },
+      "branches": {
+        "belt_stretched": "VIS-020-DIAG",
+        "low_tension": "N-010A-DIAG",
+        "adequate_tension": "N-010C"
+      }
+    },
+    "N-010A-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-61",
+      "terminal_mechanism": "LOOSENS",
+      "terminal_cause": "VIBRATION_FATIGUE",
+      "corrective_action": "Belt slipping from insufficient tension. Increase counterweight or adjust take-up. Check belt for elongation. Verify pulley lagging condition.",
+      "corrective_action_fr": "Bande glissant par tension insuffisante. Augmenter contrepoids ou ajuster tendeur. Vérifier allongement de la bande. Vérifier état du revêtement de poulie."
+    },
+    "N-010C": {
+      "question": "Is the drive pulley lagging (rubber coating) worn or damaged?",
+      "question_fr": "Le revêtement (garniture caoutchouc) de la poulie motrice est-il usé ou endommagé?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Visual inspection of pulley lagging for wear, peeling, or missing sections",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 10,
+        "threshold": "Lagging worn smooth or missing sections → schedule re-lagging"
+      },
+      "branches": {
+        "yes": "N-010C-DIAG",
+        "no": "DIAG-ESC"
+      }
+    },
+    "N-010C-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-31",
+      "terminal_mechanism": "WEARS_ERODES",
+      "terminal_cause": "DESIGN_DEFICIENCY",
+      "corrective_action": "Pulley lagging worn reducing friction coefficient. Schedule re-lagging with ceramic or diamond-groove rubber at next shutdown. Increase tension temporarily.",
+      "corrective_action_fr": "Revêtement de poulie usé réduisant le coefficient de friction. Planifier re-garnissage céramique ou caoutchouc rainuré au prochain arrêt."
+    },
+    "N-010B": {
+      "question": "Is the squealing from idler rollers along the conveyor?",
+      "question_fr": "Le grincement provient-il des rouleaux le long du convoyeur?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Walk conveyor to locate squealing rollers — mark each one for replacement",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 15,
+        "threshold": "Squealing roller → bearing failing; seized roller → belt damage risk"
+      },
+      "branches": {
+        "yes": "V-020-DIAG",
+        "no": "V-010"
+      }
+    },
+    "N-020": {
+      "question": "Is the metallic scraping from the belt contacting the conveyor structure or skirting?",
+      "question_fr": "Le frottement métallique provient-il de la bande touchant la structure ou les jupes?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Visual check of belt edge alignment relative to structure, skirt rubber, and chute walls",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 10,
+        "threshold": "Belt edge contacting structure → tracking issue; skirt dragging → adjust"
+      },
+      "branches": {
+        "belt_edge_contact": "VIS-010",
+        "skirt_contact": "N-020-DIAG",
+        "scraper_issue": "N-020A"
+      }
+    },
+    "N-020-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-31",
+      "terminal_mechanism": "WEARS_ERODES",
+      "terminal_cause": "DESIGN_DEFICIENCY",
+      "corrective_action": "Skirt rubber dragging on belt causing edge wear. Adjust skirt clearance to 3-5 mm above belt. Replace worn skirt rubber sections.",
+      "corrective_action_fr": "Jupe en caoutchouc frottant sur la bande causant usure de bord. Ajuster le jeu de jupe à 3-5 mm au-dessus de la bande. Remplacer sections de jupe usées."
+    },
+    "N-020A": {
+      "question": "Is the belt scraper/cleaner blade worn or improperly adjusted?",
+      "question_fr": "La lame du racleur de bande est-elle usée ou mal ajustée?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Visual inspection of primary and secondary scrapers — blade condition, tension, contact angle",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 10,
+        "threshold": "Blade worn to holder → replace; poor contact → adjust tension/angle"
+      },
+      "branches": {
+        "worn_blade": "N-020A-DIAG",
+        "misadjusted": "N-020A-DIAG",
+        "normal": "DIAG-ESC"
+      }
+    },
+    "N-020A-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-31",
+      "terminal_mechanism": "WEARS_ERODES",
+      "terminal_cause": "DESIGN_DEFICIENCY",
+      "corrective_action": "Belt scraper blade worn or misadjusted. Replace blade and adjust per manufacturer instructions. Carry-back material damages return rollers and increases belt wear.",
+      "corrective_action_fr": "Lame de racleur usée ou mal ajustée. Remplacer et ajuster selon instructions fabricant. Le matériau résiduel endommage les rouleaux retour et augmente l'usure de la bande."
+    },
+    "N-030": {
+      "question": "Is the thumping synchronized with belt rotation (once per belt revolution)?",
+      "question_fr": "Le battement est-il synchronisé avec la rotation de la bande (une fois par tour de bande)?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Time the thumping interval and compare with belt cycle time (belt length / belt speed)",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 5,
+        "threshold": "1x per belt revolution → belt splice or damage at one point"
+      },
+      "branches": {
+        "yes": "N-030-DIAG",
+        "no": "V-020"
+      }
+    },
+    "N-030-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-31",
+      "terminal_mechanism": "WEARS_ERODES",
+      "terminal_cause": "DESIGN_DEFICIENCY",
+      "corrective_action": "Belt splice failure or localized belt damage causing thumping. Inspect belt splice for lifting, delamination, or misalignment. Repair or replace splice.",
+      "corrective_action_fr": "Défaillance de jonction ou dommage localisé de la bande causant battement. Inspecter jonction pour décollement, délamination, ou désalignement. Réparer ou remplacer la jonction."
+    },
+    "VIS-001": {
+      "question": "What visual issue? Belt mistracking/drift, belt damage, or material spillage?",
+      "question_fr": "Quel problème visuel? Dérive de bande, dommage à la bande, ou déversement de matériau?",
+      "branches": {
+        "mistracking": "VIS-010",
+        "belt_damage": "VIS-020",
+        "spillage": "VIS-030"
+      }
+    },
+    "VIS-010": {
+      "question": "Is the belt drifting to one side consistently or does it wander back and forth?",
+      "question_fr": "La bande dérive-t-elle constamment d'un côté ou oscille-t-elle d'un côté à l'autre?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Observe belt tracking over several revolutions — note if drift is constant or oscillating",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 10,
+        "threshold": "Belt edge within 50 mm of structure → immediate adjustment needed"
+      },
+      "branches": {
+        "constant_one_side": "VIS-011",
+        "wandering": "VIS-012"
+      }
+    },
+    "VIS-011": {
+      "question": "Check for off-center loading at the feed chute. Is material loading to one side?",
+      "question_fr": "Vérifier le chargement décentré à la trémie. Le matériau est-il chargé d'un côté?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Visual inspection of material flow from feed chute onto belt — check for asymmetric loading",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 5,
+        "threshold": "Material consistently to one side → adjust chute alignment or install impact cradle"
+      },
+      "branches": {
+        "off_center_loading": "VIS-011-DIAG",
+        "centered_loading": "VIS-011A"
+      }
+    },
+    "VIS-011-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-13",
+      "terminal_mechanism": "FRACTURES_BREAKS",
+      "terminal_cause": "ASSEMBLY_INSTALLATION_ERROR",
+      "corrective_action": "Belt mistracking from off-center loading. Adjust feed chute to center material on belt. Install impact cradle or training idlers. Check belt splice squareness.",
+      "corrective_action_fr": "Dérive de bande par chargement décentré. Ajuster la trémie pour centrer le matériau. Installer berceau d'impact ou rouleaux auto-centreurs. Vérifier équerrage de la jonction."
+    },
+    "VIS-011A": {
+      "question": "Are the idler frames/troughing sets aligned perpendicular to belt travel? Check with string line.",
+      "question_fr": "Les châssis de rouleaux sont-ils alignés perpendiculairement à la direction de la bande? Vérifier avec un cordeau.",
+      "test": {
+        "test_type": "PORTABLE_INSTRUMENT",
+        "description": "Check idler frame alignment with string line or laser along conveyor centerline",
+        "estimated_cost_usd": 50,
+        "estimated_time_minutes": 10,
+        "threshold": "Idler frame skewed >2° → realign to square; multiple frames off → structural issue"
+      },
+      "branches": {
+        "misaligned": "VIS-011A-DIAG",
+        "aligned": "DIAG-ESC"
+      }
+    },
+    "VIS-011A-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-13",
+      "terminal_mechanism": "FRACTURES_BREAKS",
+      "terminal_cause": "ASSEMBLY_INSTALLATION_ERROR",
+      "corrective_action": "Idler frames misaligned causing belt drift. Realign frames perpendicular to belt travel direction using string line. Check stringer straightness and support condition.",
+      "corrective_action_fr": "Châssis de rouleaux désalignés causant dérive. Réaligner les châssis perpendiculairement à la direction de la bande. Vérifier rectitude des longerons."
+    },
+    "VIS-012": {
+      "question": "Check belt splice for squareness. Is the splice cut at an angle to belt edges?",
+      "question_fr": "Vérifier l'équerrage de la jonction. La jonction est-elle coupée en angle par rapport aux bords?",
+      "test": {
+        "test_type": "PORTABLE_INSTRUMENT",
+        "description": "Measure belt splice angle relative to belt edge using square and tape measure",
+        "estimated_cost_usd": 50,
+        "estimated_time_minutes": 10,
+        "threshold": "Splice angle >1° from perpendicular → redo splice"
+      },
+      "branches": {
+        "not_square": "VIS-011-DIAG",
+        "square": "VIS-011A"
+      }
+    },
+    "VIS-020": {
+      "question": "What type of belt damage? Edge fraying, surface cuts/gouges, or longitudinal tear?",
+      "question_fr": "Quel type de dommage à la bande? Effilochage des bords, coupures/rainures en surface, ou déchirure longitudinale?",
+      "branches": {
+        "edge_fraying": "VIS-010",
+        "surface_cuts": "VIS-020A",
+        "longitudinal_tear": "VIS-020B"
+      }
+    },
+    "VIS-020A": {
+      "question": "Are surface cuts from sharp material falling from height at the loading point?",
+      "question_fr": "Les coupures en surface sont-elles dues au matériau tranchant tombant de hauteur au point de chargement?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Inspect loading point — check drop height, impact bed condition, skirt sealing",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 10,
+        "threshold": "Drop height >2 m with sharp material → install impact cradle/bars"
+      },
+      "branches": {
+        "yes": "VIS-020A-DIAG",
+        "no": "N-020A"
+      }
+    },
+    "VIS-020A-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-31",
+      "terminal_mechanism": "WEARS_ERODES",
+      "terminal_cause": "DESIGN_DEFICIENCY",
+      "corrective_action": "Belt surface cuts from impact damage at loading point. Install or replace impact cradle/bars. Reduce drop height if possible. Consider thicker cover grade belt.",
+      "corrective_action_fr": "Coupures de surface de la bande par dommage d'impact au point de chargement. Installer ou remplacer berceau/barres d'impact. Réduire hauteur de chute. Considérer bande à revêtement plus épais."
+    },
+    "VIS-020B": {
+      "question": "Is the longitudinal tear being detected by the rip detection system?",
+      "question_fr": "La déchirure longitudinale est-elle détectée par le système de détection de déchirure?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Visual inspection of belt for longitudinal tears — check rip detection loops/sensors status",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 10,
+        "threshold": "Active tear → STOP CONVEYOR immediately; rip detection failed → repair sensor system"
+      },
+      "branches": {
+        "active_tear": "VIS-020-DIAG",
+        "old_repair": "VIS-020A-DIAG",
+        "rip_detect_failed": "VIS-020-DIAG"
+      }
+    },
+    "VIS-020-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-31",
+      "terminal_mechanism": "WEARS_ERODES",
+      "terminal_cause": "DESIGN_DEFICIENCY",
+      "corrective_action": "Belt tear detected. STOP CONVEYOR. Repair tear with hot or cold vulcanized patch. Investigate cause — trapped material, seized roller, or foreign object. Verify rip detection system.",
+      "corrective_action_fr": "Déchirure de bande détectée. ARRÊTER LE CONVOYEUR. Réparer par patch vulcanisé à chaud ou à froid. Investiguer cause — matériau coincé, rouleau grippé, ou corps étranger."
+    },
+    "VIS-030": {
+      "question": "Is material spilling from the loading zone or along the conveyor length?",
+      "question_fr": "Le matériau se déverse-t-il de la zone de chargement ou le long du convoyeur?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Visual inspection of spillage locations along conveyor — loading zone, transfer point, curves",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 10,
+        "threshold": "Continuous spillage → overloading or tracking issue; localized → skirt/chute problem"
+      },
+      "branches": {
+        "loading_zone": "VIS-011-DIAG",
+        "along_length": "VIS-010",
+        "at_curves": "VIS-011A"
+      }
+    },
+    "P-001": {
+      "question": "What performance issue? Low throughput/belt slipping, belt stopping, or speed variation?",
+      "question_fr": "Quel problème de performance? Faible débit/glissement, arrêt de la bande, ou variation de vitesse?",
+      "branches": {
+        "low_throughput_slipping": "N-010",
+        "belt_stopping": "E-001",
+        "speed_variation": "P-010"
+      }
+    },
+    "P-010": {
+      "question": "Is the belt speed varying or surging? Check VFD output frequency and belt speed sensor.",
+      "question_fr": "La vitesse de la bande varie-t-elle ou fait-elle des à-coups? Vérifier fréquence de sortie VFD et capteur de vitesse.",
+      "test": {
+        "test_type": "PROCESS_MONITORING",
+        "description": "Monitor belt speed from speed sensor and VFD output frequency — look for variation pattern",
+        "estimated_cost_usd": 100,
+        "estimated_time_minutes": 15,
+        "threshold": "Speed variation >5% → drive or control issue"
+      },
+      "branches": {
+        "vfd_issue": "E-020",
+        "mechanical_slip": "N-010",
+        "sensor_fault": "DIAG-ESC"
+      }
+    },
+    "E-001": {
+      "question": "What electrical issue? Motor tripping, motor not starting, or overload alarm?",
+      "question_fr": "Quel problème électrique? Déclenchement moteur, moteur ne démarre pas, ou alarme de surcharge?",
+      "branches": {
+        "motor_tripping": "E-010",
+        "not_starting": "E-020",
+        "overload": "E-030"
+      }
+    },
+    "E-010": {
+      "question": "Check motor protection relay fault code. Is trip from thermal overload or electrical fault?",
+      "question_fr": "Vérifier le code défaut du relais de protection moteur. Le déclenchement est-il par surcharge thermique ou défaut électrique?",
+      "test": {
+        "test_type": "ELECTRICAL_TEST",
+        "description": "Read motor protection relay fault log — check for overload, earth fault, phase imbalance, or stall codes",
+        "estimated_cost_usd": 150,
+        "estimated_time_minutes": 20,
+        "threshold": "Repeated thermal trips → investigate mechanical overload or cooling issue"
+      },
+      "branches": {
+        "thermal_overload": "E-030",
+        "earth_fault": "E-010A",
+        "phase_fault": "E-010B"
+      }
+    },
+    "E-010A": {
+      "question": "Measure motor insulation resistance with megger. Is IR <50 MOhm?",
+      "question_fr": "Mesurer la résistance d'isolement du moteur au mégohmmètre. IR <50 MOhm?",
+      "test": {
+        "test_type": "ELECTRICAL_TEST",
+        "description": "Insulation resistance test on motor windings — requires LOTO",
+        "estimated_cost_usd": 150,
+        "estimated_time_minutes": 20,
+        "threshold": "IR <1 MOhm/kV → DO NOT ENERGIZE; IR <50 MOhm → schedule rewind"
+      },
+      "branches": {
+        "yes": "E-010A-DIAG",
+        "no": "DIAG-ESC"
+      }
+    },
+    "E-010A-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-53",
+      "terminal_mechanism": "OVERHEATS_MELTS",
+      "terminal_cause": "OVERLOAD",
+      "corrective_action": "Motor insulation degraded — earth fault trip. If IR <1 MOhm/kV, do not energize. Schedule motor rewind or replacement. Check for moisture ingress and clean motor.",
+      "corrective_action_fr": "Isolement moteur dégradé — déclenchement défaut terre. Si IR <1 MOhm/kV, ne pas mettre sous tension. Planifier rebobinage ou remplacement. Vérifier entrée d'humidité."
+    },
+    "E-010B": {
+      "question": "Check supply voltage balance at MCC. Is voltage imbalance >3%?",
+      "question_fr": "Vérifier l'équilibre de tension au MCC. Le déséquilibre de tension est-il >3%?",
+      "test": {
+        "test_type": "ELECTRICAL_TEST",
+        "description": "Measure 3-phase voltage at MCC with digital multimeter",
+        "estimated_cost_usd": 150,
+        "estimated_time_minutes": 20,
+        "threshold": "Voltage imbalance >3% → causes current imbalance >18% → investigate supply"
+      },
+      "branches": {
+        "yes": "E-010B-DIAG",
+        "no": "DIAG-ESC"
+      }
+    },
+    "E-010B-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-53",
+      "terminal_mechanism": "OVERHEATS_MELTS",
+      "terminal_cause": "OVERLOAD",
+      "corrective_action": "Supply voltage imbalance causing motor phase fault trips. Investigate transformer taps, loose connections, and single-phasing protection. May require power quality study.",
+      "corrective_action_fr": "Déséquilibre de tension d'alimentation causant déclenchements. Investiguer prises transformateur, connexions desserrées, et protection contre la marche monophasée."
+    },
+    "E-020": {
+      "question": "Check for mechanical lock-up. Can the conveyor be turned by hand (jog attempt)?",
+      "question_fr": "Vérifier le blocage mécanique. Le convoyeur peut-il être tourné à la main (tentative de marche lente)?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Attempt to jog conveyor — listen for starting, check for seized components or trapped material",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 5,
+        "threshold": "Cannot turn → mechanical blockage; starts then trips → overload"
+      },
+      "branches": {
+        "blocked": "E-020-DIAG",
+        "turns_freely": "E-010"
+      }
+    },
+    "E-020-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-53",
+      "terminal_mechanism": "OVERHEATS_MELTS",
+      "terminal_cause": "OVERLOAD",
+      "corrective_action": "Conveyor mechanically blocked — cannot start. Check for trapped material in chute, seized rollers, or jammed belt. Clear blockage before restarting. Check backstop operation.",
+      "corrective_action_fr": "Convoyeur mécaniquement bloqué — ne peut pas démarrer. Vérifier matériau coincé dans la trémie, rouleaux grippés, ou bande coincée. Dégager avant redémarrage."
+    },
+    "E-030": {
+      "question": "Check motor current under load. Is it consistently above nameplate FLA?",
+      "question_fr": "Vérifier le courant moteur en charge. Est-il constamment au-dessus du courant nominal?",
+      "test": {
+        "test_type": "PORTABLE_INSTRUMENT",
+        "description": "Measure motor running current with clamp meter on all 3 phases under normal load",
+        "estimated_cost_usd": 50,
+        "estimated_time_minutes": 5,
+        "threshold": "Current >100% FLA sustained → overloaded; >110% → reduce load"
+      },
+      "branches": {
+        "overloaded": "E-030-DIAG",
+        "normal_current": "E-010"
+      }
+    },
+    "E-030-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-53",
+      "terminal_mechanism": "OVERHEATS_MELTS",
+      "terminal_cause": "OVERLOAD",
+      "corrective_action": "Conveyor motor overloaded. Check belt loading — reduce feed rate. Inspect for seized rollers adding drag. Verify belt tension is not excessive. Check for material buildup on pulleys.",
+      "corrective_action_fr": "Moteur du convoyeur en surcharge. Vérifier chargement — réduire débit. Inspecter rouleaux grippés ajoutant résistance. Vérifier tension pas excessive. Vérifier accumulation sur poulies."
+    },
+    "DIAG-ESC": {
+      "is_terminal": true,
+      "terminal_diagnosis": "ESCALATE",
+      "corrective_action": "Root cause not identified through standard troubleshooting. Escalate to specialist for detailed structural analysis, belt condition survey, or drive system diagnostics.",
+      "corrective_action_fr": "Cause racine non identifiée par dépannage standard. Escalader vers spécialiste pour analyse structurelle détaillée, relevé d'état de la bande, ou diagnostics du système d'entraînement."
+    }
+  }
+}

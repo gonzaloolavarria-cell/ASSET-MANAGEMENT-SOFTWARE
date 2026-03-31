@@ -1,0 +1,737 @@
+{
+  "_meta": {
+    "equipment_type_id": "ET-SAG-MILL",
+    "version": "1.0.0",
+    "description": "Troubleshooting decision tree for SAG Mill (AA criticality)",
+    "entry_categories": ["vibration", "temperature", "noise", "performance", "electrical", "leak"]
+  },
+  "entry_nodes": {
+    "vibration": "V-001",
+    "temperature": "T-001",
+    "noise": "N-001",
+    "performance": "P-001",
+    "electrical": "E-001",
+    "leak": "L-001"
+  },
+  "nodes": {
+    "V-001": {
+      "question": "Is the vibration predominantly from the drive system or the mill body?",
+      "question_fr": "La vibration provient-elle principalement du système d'entraînement ou du corps du broyeur?",
+      "branches": {
+        "drive_system": "V-010",
+        "mill_body": "V-020",
+        "both": "V-030"
+      }
+    },
+    "V-010": {
+      "question": "Check motor bearing vibration with portable analyzer. Is overall velocity >4.5 mm/s (ISO 10816 Zone C)?",
+      "question_fr": "Vérifier la vibration du palier moteur avec analyseur portable. Vélocité globale >4.5 mm/s (ISO 10816 Zone C)?",
+      "test": {
+        "test_type": "VIBRATION_ANALYSIS",
+        "description": "Measure vibration velocity at motor bearings (V, H, A planes)",
+        "estimated_cost_usd": 200,
+        "estimated_time_minutes": 30,
+        "threshold": "ISO 10816: >4.5 mm/s = Zone C (alert), >7.1 mm/s = Zone D (danger)"
+      },
+      "branches": {
+        "yes": "V-011",
+        "no": "V-015"
+      }
+    },
+    "V-011": {
+      "question": "Is there elevated high-frequency vibration (>5 kHz envelope)? This indicates metal-to-metal contact in bearing.",
+      "question_fr": "Y a-t-il une vibration haute fréquence élevée (>5 kHz enveloppe)? Cela indique un contact métal-métal dans le roulement.",
+      "test": {
+        "test_type": "VIBRATION_ANALYSIS",
+        "description": "Measure high-frequency envelope spectrum at motor bearings",
+        "estimated_cost_usd": 200,
+        "estimated_time_minutes": 20,
+        "threshold": "HFE >5 kHz indicates bearing damage or lubrication failure"
+      },
+      "branches": {
+        "yes": "V-012",
+        "no": "V-013"
+      }
+    },
+    "V-012": {
+      "question": "Check motor bearing temperature. Is it >10°C above normal trend?",
+      "question_fr": "Vérifier la température du palier moteur. Est-elle >10°C au-dessus de la tendance normale?",
+      "test": {
+        "test_type": "PORTABLE_INSTRUMENT",
+        "description": "Measure bearing temperature with IR thermometer",
+        "estimated_cost_usd": 50,
+        "estimated_time_minutes": 5,
+        "threshold": "Temp >20°C above baseline or >95°C → shut down immediately"
+      },
+      "branches": {
+        "yes": "V-012-DIAG-A",
+        "no": "V-012-DIAG-B"
+      }
+    },
+    "V-012-DIAG-A": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-51",
+      "terminal_mechanism": "OVERHEATS_MELTS",
+      "terminal_cause": "LACK_OF_LUBRICATION",
+      "corrective_action": "Shut down immediately. Check oil level, relubricate per SKF spec. Inspect bearing for damage.",
+      "corrective_action_fr": "Arrêt immédiat. Vérifier le niveau d'huile, relubrifier selon spéc SKF. Inspecter le roulement."
+    },
+    "V-012-DIAG-B": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-49",
+      "terminal_mechanism": "OVERHEATS_MELTS",
+      "terminal_cause": "CONTAMINATION",
+      "corrective_action": "Motor bearing contaminated. Schedule bearing inspection at next shutdown. Clean motor fins and cooling surfaces.",
+      "corrective_action_fr": "Roulement moteur contaminé. Planifier inspection du roulement au prochain arrêt. Nettoyer les ailettes du moteur."
+    },
+    "V-013": {
+      "question": "Check gearbox oil sample for metal particles. Is wear metal trending upward?",
+      "question_fr": "Analyser l'huile du réducteur pour particules métalliques. Les métaux d'usure sont-ils en hausse?",
+      "test": {
+        "test_type": "OIL_ANALYSIS",
+        "description": "Sample gearbox oil - analyze for Fe, Cu, Sn wear metals and ISO particle count",
+        "estimated_cost_usd": 300,
+        "estimated_time_minutes": 60,
+        "threshold": "TAN >4.0 mg KOH/g or wear metals step-change → change oil immediately"
+      },
+      "branches": {
+        "yes": "V-013-DIAG",
+        "no": "V-014"
+      }
+    },
+    "V-013-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-71",
+      "terminal_mechanism": "WEARS",
+      "terminal_cause": "METAL_TO_METAL_CONTACT",
+      "corrective_action": "Gearbox gear wear. Schedule gearbox inspection, change oil, install kidney-loop filtration.",
+      "corrective_action_fr": "Usure des engrenages du réducteur. Planifier inspection du réducteur, changer l'huile, installer filtration en dérivation."
+    },
+    "V-014": {
+      "question": "Check coupling alignment. Is misalignment >0.05 mm offset or angularity?",
+      "question_fr": "Vérifier l'alignement de l'accouplement. Désalignement >0.05 mm en offset ou angularité?",
+      "test": {
+        "test_type": "SPECIALIST_ANALYSIS",
+        "description": "Laser alignment measurement of motor-gearbox coupling",
+        "estimated_cost_usd": 2000,
+        "estimated_time_minutes": 120,
+        "threshold": "Alignment >0.05 mm → realign per API 686"
+      },
+      "branches": {
+        "yes": "V-014-DIAG",
+        "no": "V-014-ESC"
+      }
+    },
+    "V-014-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-53",
+      "terminal_mechanism": "OVERHEATS_MELTS",
+      "terminal_cause": "RELATIVE_MOVEMENT",
+      "corrective_action": "Coupling misalignment causing friction. Realign per API 686. Check foundation settlement.",
+      "corrective_action_fr": "Désalignement de l'accouplement causant friction. Réaligner selon API 686. Vérifier tassement de fondation."
+    },
+    "V-014-ESC": {
+      "is_terminal": true,
+      "terminal_diagnosis": "ESCALATE",
+      "corrective_action": "Vibration source not identified. Escalate to specialist for detailed vibration analysis (orbit, waterfall, order tracking).",
+      "corrective_action_fr": "Source de vibration non identifiée. Escalader vers spécialiste pour analyse détaillée."
+    },
+    "V-015": {
+      "question": "Is coupling flex element visually degraded (cracking, deformation)?",
+      "question_fr": "L'élément flexible de l'accouplement est-il visuellement dégradé (fissures, déformation)?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Visual inspection of coupling flex element for cracks, deformation, discoloration",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 10,
+        "threshold": "Visible cracks or deformation → replace at next opportunity"
+      },
+      "branches": {
+        "yes": "V-015-DIAG",
+        "no": "V-016"
+      }
+    },
+    "V-015-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-25",
+      "terminal_mechanism": "DEGRADES",
+      "terminal_cause": "AGE",
+      "corrective_action": "Coupling element degraded. Schedule replacement at next shutdown.",
+      "corrective_action_fr": "Élément d'accouplement dégradé. Planifier remplacement au prochain arrêt."
+    },
+    "V-016": {
+      "question": "Are coupling bolts loose? Check for preload loss.",
+      "question_fr": "Les boulons de l'accouplement sont-ils desserrés? Vérifier la perte de précharge.",
+      "test": {
+        "test_type": "PORTABLE_INSTRUMENT",
+        "description": "Check coupling bolt torque with torque wrench",
+        "estimated_cost_usd": 50,
+        "estimated_time_minutes": 20,
+        "threshold": "Torque below OEM spec → retorque to specification"
+      },
+      "branches": {
+        "yes": "V-016-DIAG",
+        "no": "V-014-ESC"
+      }
+    },
+    "V-016-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-47",
+      "terminal_mechanism": "LOOSES_PRELOAD",
+      "terminal_cause": "VIBRATION",
+      "corrective_action": "Coupling bolts lost preload due to vibration. Retorque to OEM spec. Consider Nordlock washers.",
+      "corrective_action_fr": "Boulons d'accouplement ayant perdu leur précharge. Resserrer selon spéc OEM. Considérer rondelles Nordlock."
+    },
+    "V-020": {
+      "question": "Check mill liner condition. Is liner thickness below OEM minimum?",
+      "question_fr": "Vérifier l'état des blindages. L'épaisseur est-elle sous le minimum OEM?",
+      "test": {
+        "test_type": "ULTRASONIC",
+        "description": "UT thickness measurement on mill shell at liner bolt locations",
+        "estimated_cost_usd": 500,
+        "estimated_time_minutes": 60,
+        "threshold": "Liner at/below OEM minimum → replace within 7 days"
+      },
+      "branches": {
+        "yes": "V-020-DIAG",
+        "no": "V-021"
+      }
+    },
+    "V-020-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-67",
+      "terminal_mechanism": "WEARS",
+      "terminal_cause": "IMPACT_SHOCK_LOADING",
+      "corrective_action": "Mill liner worn from cascading charge impact. Replace liners at next planned shutdown.",
+      "corrective_action_fr": "Blindages usés par impact de la charge. Remplacer au prochain arrêt planifié."
+    },
+    "V-021": {
+      "question": "Check trunnion bearing vibration. Is there progressive looseness (vibration showing ½× sub-synchronous)?",
+      "question_fr": "Vérifier vibration du palier de tourillon. Y a-t-il un jeu progressif (vibration montrant ½× sous-synchrone)?",
+      "test": {
+        "test_type": "VIBRATION_ANALYSIS",
+        "description": "Spectrum analysis at trunnion bearing for ½× and harmonics",
+        "estimated_cost_usd": 200,
+        "estimated_time_minutes": 30,
+        "threshold": "½× >50% of 1× → shutdown within 7 days"
+      },
+      "branches": {
+        "yes": "V-021-DIAG",
+        "no": "V-022"
+      }
+    },
+    "V-021-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-72",
+      "terminal_mechanism": "WEARS",
+      "terminal_cause": "RELATIVE_MOVEMENT",
+      "corrective_action": "Trunnion bearing seat fretting. Inspect at next shutdown, apply anti-fretting compound.",
+      "corrective_action_fr": "Siège de palier de tourillon en fretting. Inspecter au prochain arrêt, appliquer composé anti-fretting."
+    },
+    "V-022": {
+      "question": "Check for cracks at trunnion shaft stress concentrations using MPI.",
+      "question_fr": "Vérifier les fissures aux concentrations de contrainte du tourillon par MPI.",
+      "test": {
+        "test_type": "NDT_INSPECTION",
+        "description": "MPI inspection at trunnion shaft fillets and keyways",
+        "estimated_cost_usd": 1000,
+        "estimated_time_minutes": 120,
+        "threshold": "Crack <25% section → monitor quarterly; >50% → remove from service immediately"
+      },
+      "branches": {
+        "yes": "V-022-DIAG",
+        "no": "V-014-ESC"
+      }
+    },
+    "V-022-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-05",
+      "terminal_mechanism": "BREAKS_FRACTURE_SEPARATES",
+      "terminal_cause": "CYCLIC_LOADING",
+      "corrective_action": "Fatigue crack at trunnion shaft. CRITICAL: Assess crack size immediately. >25% section → plan repair within 30 days.",
+      "corrective_action_fr": "Fissure de fatigue au tourillon. CRITIQUE: Évaluer taille immédiatement. >25% section → planifier réparation sous 30 jours."
+    },
+    "V-030": {
+      "question": "Both drive and mill body vibrating. Check motor current — is it >100% FLA?",
+      "question_fr": "Vibration du système d'entraînement et du corps du broyeur. Vérifier courant moteur — est-il >100% FLA?",
+      "test": {
+        "test_type": "PORTABLE_INSTRUMENT",
+        "description": "Measure motor current with clamp meter",
+        "estimated_cost_usd": 50,
+        "estimated_time_minutes": 5,
+        "threshold": "Current 110-125% FLA → reduce load immediately"
+      },
+      "branches": {
+        "yes": "V-030-DIAG",
+        "no": "V-010"
+      }
+    },
+    "V-030-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-60",
+      "terminal_mechanism": "THERMALLY_OVERLOADS",
+      "terminal_cause": "MECHANICAL_OVERLOAD",
+      "corrective_action": "Motor overloaded from hard rock feed or charge imbalance. Reduce feed rate immediately. Investigate root cause.",
+      "corrective_action_fr": "Moteur en surcharge par roche dure ou déséquilibre de charge. Réduire débit d'alimentation. Investiguer cause racine."
+    },
+    "T-001": {
+      "question": "Where is the high temperature? Motor, gearbox, or trunnion bearings?",
+      "question_fr": "Où se situe la haute température? Moteur, réducteur, ou paliers de tourillon?",
+      "branches": {
+        "motor": "T-010",
+        "gearbox": "T-020",
+        "trunnion": "T-030"
+      }
+    },
+    "T-010": {
+      "question": "Check motor winding temperature (RTD). Is it exceeding thermal class rating?",
+      "question_fr": "Vérifier température du bobinage moteur (RTD). Dépasse-t-elle la classe thermique?",
+      "test": {
+        "test_type": "PROCESS_CHECK",
+        "description": "Read motor winding RTD from DCS/SCADA",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 2,
+        "threshold": "Temperature approaching OEM max at rated load → clean immediately"
+      },
+      "branches": {
+        "yes": "T-011",
+        "no": "T-012"
+      }
+    },
+    "T-011": {
+      "question": "Are motor cooling fins visibly covered with dust/contamination?",
+      "question_fr": "Les ailettes de refroidissement du moteur sont-elles visiblement couvertes de poussière?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Visual inspection of motor cooling fins and air intake",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 5,
+        "threshold": "Visible contamination → clean motor fins"
+      },
+      "branches": {
+        "yes": "T-011-DIAG",
+        "no": "T-013"
+      }
+    },
+    "T-011-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-49",
+      "terminal_mechanism": "OVERHEATS_MELTS",
+      "terminal_cause": "CONTAMINATION",
+      "corrective_action": "Motor overheating from dust on cooling surfaces. Clean motor fins immediately. Schedule FT cleaning every 1-3 months.",
+      "corrective_action_fr": "Surchauffe moteur due à poussière sur surfaces de refroidissement. Nettoyer immédiatement. Planifier nettoyage 1-3 mois."
+    },
+    "T-013": {
+      "question": "Check motor current draw. Is phase imbalance >5%?",
+      "question_fr": "Vérifier le courant moteur. Le déséquilibre de phase est-il >5%?",
+      "test": {
+        "test_type": "PORTABLE_INSTRUMENT",
+        "description": "Measure 3-phase current with clamp meter",
+        "estimated_cost_usd": 50,
+        "estimated_time_minutes": 10,
+        "threshold": "Voltage imbalance >3% or single phase → trip immediately"
+      },
+      "branches": {
+        "yes": "T-013-DIAG",
+        "no": "V-030-DIAG"
+      }
+    },
+    "T-013-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-61",
+      "terminal_mechanism": "THERMALLY_OVERLOADS",
+      "terminal_cause": "OVERCURRENT",
+      "corrective_action": "Phase imbalance causing motor overheating. Check supply voltage balance at MCC. Investigate power quality.",
+      "corrective_action_fr": "Déséquilibre de phases causant surchauffe moteur. Vérifier équilibre tension au MCC. Investiguer qualité énergie."
+    },
+    "T-012": {
+      "question": "Check motor bearing temperature with IR gun. Is it >10°C above normal?",
+      "question_fr": "Vérifier température palier moteur au pistolet IR. Est-elle >10°C au-dessus de la normale?",
+      "test": {
+        "test_type": "PORTABLE_INSTRUMENT",
+        "description": "Measure bearing housing temperature with IR thermometer",
+        "estimated_cost_usd": 50,
+        "estimated_time_minutes": 5,
+        "threshold": "Temp >20°C above baseline or >95°C → shut down immediately"
+      },
+      "branches": {
+        "yes": "V-012-DIAG-A",
+        "no": "V-014-ESC"
+      }
+    },
+    "T-020": {
+      "question": "Check gearbox oil temperature. Is it above OEM limit?",
+      "question_fr": "Vérifier la température d'huile du réducteur. Est-elle au-dessus de la limite OEM?",
+      "test": {
+        "test_type": "PROCESS_CHECK",
+        "description": "Read gearbox oil temperature from local gauge or DCS",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 2,
+        "threshold": "Oil temp >OEM max → investigate"
+      },
+      "branches": {
+        "yes": "T-021",
+        "no": "V-013"
+      }
+    },
+    "T-021": {
+      "question": "Is gearbox oil level normal and oil condition acceptable (not dark/burnt smell)?",
+      "question_fr": "Le niveau d'huile du réducteur est-il normal et l'état de l'huile acceptable (pas sombre/odeur brûlée)?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Check oil sight glass level and smell/color of oil sample",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 5,
+        "threshold": "TAN >4.0 mg KOH/g → change immediately"
+      },
+      "branches": {
+        "low_level": "T-021-DIAG-A",
+        "degraded_oil": "T-021-DIAG-B",
+        "normal": "T-022"
+      }
+    },
+    "T-021-DIAG-A": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-51",
+      "terminal_mechanism": "OVERHEATS_MELTS",
+      "terminal_cause": "LACK_OF_LUBRICATION",
+      "corrective_action": "Gearbox oil low. Top up immediately. Investigate seal condition for leaks.",
+      "corrective_action_fr": "Niveau d'huile réducteur bas. Compléter immédiatement. Investiguer état des joints pour fuites."
+    },
+    "T-021-DIAG-B": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-64",
+      "terminal_mechanism": "WEARS",
+      "terminal_cause": "BREAKDOWN_OF_LUBRICATION",
+      "corrective_action": "Gearbox oil degraded. Change oil immediately. Sample for wear metals to assess gear condition.",
+      "corrective_action_fr": "Huile réducteur dégradée. Changer l'huile immédiatement. Analyser métaux d'usure pour évaluer engrenages."
+    },
+    "T-022": {
+      "question": "Is gearbox running above rated torque? Check motor current.",
+      "question_fr": "Le réducteur fonctionne-t-il au-dessus du couple nominal? Vérifier le courant moteur.",
+      "test": {
+        "test_type": "PORTABLE_INSTRUMENT",
+        "description": "Measure motor current as proxy for gearbox torque",
+        "estimated_cost_usd": 50,
+        "estimated_time_minutes": 5,
+        "threshold": "Sustained >100% rated torque → reduce load"
+      },
+      "branches": {
+        "yes": "T-022-DIAG",
+        "no": "V-014-ESC"
+      }
+    },
+    "T-022-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-52",
+      "terminal_mechanism": "OVERHEATS_MELTS",
+      "terminal_cause": "MECHANICAL_OVERLOAD",
+      "corrective_action": "Gearbox overloaded. Reduce mill feed rate. Investigate charge composition.",
+      "corrective_action_fr": "Réducteur en surcharge. Réduire le débit d'alimentation. Investiguer la composition de la charge."
+    },
+    "T-030": {
+      "question": "Check trunnion bearing temperature. Is it >10°C above trend?",
+      "question_fr": "Vérifier température palier tourillon. Est-elle >10°C au-dessus de la tendance?",
+      "test": {
+        "test_type": "PROCESS_CHECK",
+        "description": "Read trunnion bearing RTD from DCS/SCADA",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 2,
+        "threshold": "Rate >2°C/hr → shut down immediately; trip at 95°C rolling, 85°C babbitt"
+      },
+      "branches": {
+        "yes": "T-031",
+        "no": "V-021"
+      }
+    },
+    "T-031": {
+      "question": "Is trunnion bearing oil flow and pressure normal?",
+      "question_fr": "Le débit et la pression d'huile du palier de tourillon sont-ils normaux?",
+      "test": {
+        "test_type": "PROCESS_CHECK",
+        "description": "Check lube oil supply pressure and flow from DCS",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 2,
+        "threshold": "Oil pressure below OEM minimum → trip before damage"
+      },
+      "branches": {
+        "low_pressure": "T-031-DIAG",
+        "normal": "V-012-DIAG-A"
+      }
+    },
+    "T-031-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-68",
+      "terminal_mechanism": "WEARS",
+      "terminal_cause": "LOW_PRESSURE",
+      "corrective_action": "Low lube oil pressure at trunnion bearing. CRITICAL: Check pump, filter blockage, relief valve. Shutdown if pressure cannot be restored.",
+      "corrective_action_fr": "Basse pression d'huile au palier tourillon. CRITIQUE: Vérifier pompe, colmatage filtre, soupape. Arrêt si pression non restaurée."
+    },
+    "N-001": {
+      "question": "What type of noise? Metallic scraping, grinding, or intermittent knocking?",
+      "question_fr": "Quel type de bruit? Frottement métallique, broyage, ou cognement intermittent?",
+      "branches": {
+        "metallic_scraping": "N-010",
+        "grinding": "N-020",
+        "knocking": "N-030"
+      }
+    },
+    "N-010": {
+      "question": "Is the metallic scraping continuous and correlated with rotation speed?",
+      "question_fr": "Le frottement métallique est-il continu et corrélé avec la vitesse de rotation?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Listen with stethoscope at different locations to isolate source",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 15,
+        "threshold": "Full rub (continuous contact, temp spike, metallic noise) → IMMEDIATE shutdown"
+      },
+      "branches": {
+        "yes": "N-010-DIAG",
+        "no": "V-016"
+      }
+    },
+    "N-010-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-54",
+      "terminal_mechanism": "OVERHEATS_MELTS",
+      "terminal_cause": "RUBBING",
+      "corrective_action": "Rub detected between rotating and stationary parts. IMMEDIATE SHUTDOWN required. Inspect clearances at wear rings/seals.",
+      "corrective_action_fr": "Frottement détecté entre pièces rotatives et fixes. ARRÊT IMMÉDIAT requis. Inspecter jeux aux bagues d'usure/joints."
+    },
+    "N-020": {
+      "question": "Is the grinding noise coming from inside the mill (charge area)?",
+      "question_fr": "Le bruit de broyage provient-il de l'intérieur du broyeur (zone de charge)?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Listen at mill shell with stethoscope, compare with normal charge noise profile",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 10,
+        "threshold": "Abnormal charge noise → inspect liners at next opportunity"
+      },
+      "branches": {
+        "yes": "V-020",
+        "no": "V-010"
+      }
+    },
+    "N-030": {
+      "question": "Is the knocking from the drive train (coupling/gearbox area)?",
+      "question_fr": "Le cognement provient-il de la transmission (zone accouplement/réducteur)?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Locate knocking source using directional stethoscope",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 10,
+        "threshold": "Coupling knock → check alignment and preload"
+      },
+      "branches": {
+        "yes": "V-016",
+        "no": "V-020"
+      }
+    },
+    "P-001": {
+      "question": "What performance issue? Low throughput, high power draw, or product quality (grind size)?",
+      "question_fr": "Quel problème de performance? Faible débit, puissance élevée, ou qualité produit (granulométrie)?",
+      "branches": {
+        "low_throughput": "P-010",
+        "high_power": "V-030",
+        "product_quality": "P-020"
+      }
+    },
+    "P-010": {
+      "question": "Check mill charge level (acoustic/power draw). Is charge below optimal?",
+      "question_fr": "Vérifier le niveau de charge du broyeur. La charge est-elle sous l'optimal?",
+      "test": {
+        "test_type": "PROCESS_CHECK",
+        "description": "Review mill weight/power draw trend from DCS",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 5,
+        "threshold": "Charge significantly below design → investigate feed system"
+      },
+      "branches": {
+        "yes": "P-010-DIAG",
+        "no": "V-020"
+      }
+    },
+    "P-010-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-67",
+      "terminal_mechanism": "WEARS",
+      "terminal_cause": "IMPACT_SHOCK_LOADING",
+      "corrective_action": "Mill liners worn affecting charge trajectory. Inspect liner profile, replace worn liners.",
+      "corrective_action_fr": "Blindages usés affectant trajectoire de charge. Inspecter profil des blindages, remplacer les blindages usés."
+    },
+    "P-020": {
+      "question": "Check trommel screen condition. Are apertures worn >110% nominal?",
+      "question_fr": "Vérifier l'état du trommel. Les ouvertures sont-elles usées >110% nominal?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Visual inspection of trommel screen panels for wear and damage",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 15,
+        "threshold": "Screen apertures >110% nominal → replace panels"
+      },
+      "branches": {
+        "yes": "P-020-DIAG",
+        "no": "V-014-ESC"
+      }
+    },
+    "P-020-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-55",
+      "terminal_mechanism": "SEVERS",
+      "terminal_cause": "ABRASION",
+      "corrective_action": "Trommel screen worn from abrasion. Replace screen panels. Consider upgrading to polyurethane panels.",
+      "corrective_action_fr": "Trommel usé par abrasion. Remplacer les panneaux. Considérer mise à niveau vers polyuréthane."
+    },
+    "E-001": {
+      "question": "What electrical symptom? Motor trips, insulation alarm, or erratic operation?",
+      "question_fr": "Quel symptôme électrique? Déclenchement moteur, alarme isolement, ou fonctionnement erratique?",
+      "branches": {
+        "motor_trips": "T-013",
+        "insulation_alarm": "E-010",
+        "erratic": "E-020"
+      }
+    },
+    "E-010": {
+      "question": "Measure motor winding insulation resistance with megger. Is IR <50 MOhm?",
+      "question_fr": "Mesurer la résistance d'isolement du bobinage au mégohmmètre. IR <50 MOhm?",
+      "test": {
+        "test_type": "SPECIALIST_ANALYSIS",
+        "description": "Insulation resistance test (megger) on motor windings - requires LOTO",
+        "estimated_cost_usd": 2000,
+        "estimated_time_minutes": 60,
+        "threshold": "IR <50 MOhm → schedule rewinding within 30 days; IR <1 MOhm/kV → do not energize"
+      },
+      "branches": {
+        "yes": "E-010-DIAG",
+        "no": "E-011"
+      }
+    },
+    "E-010-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-01",
+      "terminal_mechanism": "ARCS",
+      "terminal_cause": "BREAKDOWN_IN_INSULATION",
+      "corrective_action": "Motor insulation degraded. If IR <1 MOhm/kV, DO NOT ENERGIZE. Schedule rewinding within 30 days.",
+      "corrective_action_fr": "Isolement moteur dégradé. Si IR <1 MOhm/kV, NE PAS METTRE SOUS TENSION. Planifier rebobinage sous 30 jours."
+    },
+    "E-011": {
+      "question": "Check for conductive deposits on insulation surfaces (switchgear, MCC).",
+      "question_fr": "Vérifier les dépôts conducteurs sur les surfaces d'isolement (appareillage, MCC).",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Visual inspection of switchgear and MCC for dust/contamination deposits",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 15,
+        "threshold": "Surface IR <100 MOhm at 500V DC → schedule cleaning within 30 days"
+      },
+      "branches": {
+        "yes": "E-011-DIAG",
+        "no": "V-014-ESC"
+      }
+    },
+    "E-011-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-59",
+      "terminal_mechanism": "SHORT_CIRCUITS",
+      "terminal_cause": "CONTAMINATION",
+      "corrective_action": "Conductive contamination on insulation surfaces. Clean immediately. Schedule FT cleaning every 3-6 months.",
+      "corrective_action_fr": "Contamination conductrice sur surfaces d'isolement. Nettoyer immédiatement. Planifier nettoyage tous les 3-6 mois."
+    },
+    "E-020": {
+      "question": "Check VFD fault codes. Any harmonic or thermal faults?",
+      "question_fr": "Vérifier codes défaut du VFD. Des défauts harmoniques ou thermiques?",
+      "test": {
+        "test_type": "PROCESS_CHECK",
+        "description": "Read VFD fault log and alarm history from HMI",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 10,
+        "threshold": "THD-I >15% → install output reactor/sine-wave filter"
+      },
+      "branches": {
+        "thermal_fault": "T-011",
+        "harmonic_fault": "T-013-DIAG",
+        "other": "V-014-ESC"
+      }
+    },
+    "L-001": {
+      "question": "Where is the leak? Gearbox seals, trunnion seals, or lube oil system?",
+      "question_fr": "Où est la fuite? Joints du réducteur, joints du tourillon, ou circuit d'huile?",
+      "branches": {
+        "gearbox_seals": "L-010",
+        "trunnion_seals": "L-020",
+        "lube_system": "L-030"
+      }
+    },
+    "L-010": {
+      "question": "Is the gearbox seal visibly degraded (hardened, cracked, leaking)?",
+      "question_fr": "Le joint du réducteur est-il visiblement dégradé (durci, fissuré, fuyant)?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Visual inspection of gearbox seal area for oil leak evidence",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 5,
+        "threshold": "Active leak → schedule seal replacement"
+      },
+      "branches": {
+        "yes": "L-010-DIAG",
+        "no": "V-014-ESC"
+      }
+    },
+    "L-010-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-25",
+      "terminal_mechanism": "DEGRADES",
+      "terminal_cause": "AGE",
+      "corrective_action": "Gearbox seal degraded from age. Schedule replacement at next shutdown. Monitor oil level daily until then.",
+      "corrective_action_fr": "Joint du réducteur dégradé par vieillissement. Planifier remplacement au prochain arrêt. Surveiller niveau huile quotidiennement."
+    },
+    "L-020": {
+      "question": "Is there increasing mechanical seal leakage at trunnion?",
+      "question_fr": "Y a-t-il une fuite croissante au joint mécanique du tourillon?",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Visual inspection of trunnion seal area for slurry/water leakage",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 10,
+        "threshold": "Seal temp trend >5°C/month → investigate"
+      },
+      "branches": {
+        "yes": "L-020-DIAG",
+        "no": "V-014-ESC"
+      }
+    },
+    "L-020-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-53",
+      "terminal_mechanism": "OVERHEATS_MELTS",
+      "terminal_cause": "RELATIVE_MOVEMENT",
+      "corrective_action": "Trunnion labyrinth seal leaking from shaft deflection. Schedule seal replacement. Check shaft alignment.",
+      "corrective_action_fr": "Joint labyrinthe tourillon fuyant par déflexion d'arbre. Planifier remplacement joint. Vérifier alignement arbre."
+    },
+    "L-030": {
+      "question": "Check lube oil system for leaks (piping, connections, cooler).",
+      "question_fr": "Vérifier le circuit d'huile pour fuites (tuyauterie, raccords, refroidisseur).",
+      "test": {
+        "test_type": "SENSORY",
+        "description": "Walk-down lube oil system, check all connections, cooler, and filter housings",
+        "estimated_cost_usd": 0,
+        "estimated_time_minutes": 20,
+        "threshold": "Any active leak → repair immediately to prevent bearing damage"
+      },
+      "branches": {
+        "found_leak": "L-030-DIAG",
+        "no_leak": "V-014-ESC"
+      }
+    },
+    "L-030-DIAG": {
+      "is_terminal": true,
+      "terminal_diagnosis": "FM-25",
+      "terminal_mechanism": "DEGRADES",
+      "terminal_cause": "AGE",
+      "corrective_action": "Lube oil system leak found. Repair connection/replace hose. Top up oil level. Monitor bearing temperature.",
+      "corrective_action_fr": "Fuite trouvée sur circuit d'huile. Réparer connexion/remplacer flexible. Compléter niveau. Surveiller température paliers."
+    }
+  }
+}

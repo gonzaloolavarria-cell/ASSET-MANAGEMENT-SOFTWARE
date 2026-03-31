@@ -1,0 +1,6119 @@
+{
+  "_meta": {
+    "description": "Symptom catalog derived from 72 FM MASTER cards (216 P-conditions)",
+    "source": "skills/00-knowledge-base/data-models/failure-modes/MASTER.md",
+    "version": "1.0",
+    "date": "2026-03-11",
+    "total_symptoms": 214,
+    "total_fm_codes": 72,
+    "categories": [
+      "alignment",
+      "contamination",
+      "electrical",
+      "flow",
+      "leak",
+      "noise",
+      "performance",
+      "pressure",
+      "smell",
+      "temperature",
+      "vibration",
+      "visual"
+    ]
+  },
+  "symptoms": [
+    {
+      "symptom_id": "SYM-0001",
+      "fm_codes": [
+        "FM-01"
+      ],
+      "description": "Declining insulation resistance (>10%/yr)",
+      "category": "electrical",
+      "keywords": [
+        "insulation",
+        "declining",
+        "resistance"
+      ],
+      "equipment_categories": [
+        "EM",
+        "SG",
+        "PT",
+        "EG",
+        "PC",
+        "FC"
+      ],
+      "mechanism": "Arcs",
+      "cause": "Breakdown in insulation",
+      "cbm_technique": "Insulation resistance testing (megger)",
+      "threshold": "IR <50 MΩ → schedule rewinding within 30 days; IR <1 MΩ/kV → do not energize",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0002",
+      "fm_codes": [
+        "FM-01"
+      ],
+      "description": "PD activity >100 pC",
+      "category": "electrical",
+      "keywords": [
+        "activity"
+      ],
+      "equipment_categories": [
+        "EM",
+        "SG",
+        "PT",
+        "EG",
+        "PC",
+        "FC"
+      ],
+      "mechanism": "Arcs",
+      "cause": "Breakdown in insulation",
+      "cbm_technique": "Insulation resistance testing (megger)",
+      "threshold": "IR <50 MΩ → schedule rewinding within 30 days; IR <1 MΩ/kV → do not energize",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0003",
+      "fm_codes": [
+        "FM-01"
+      ],
+      "description": "tan delta trending >0.5% above baseline",
+      "category": "visual",
+      "keywords": [
+        "baseline",
+        "trending",
+        "tan",
+        "delta"
+      ],
+      "equipment_categories": [
+        "EM",
+        "SG",
+        "PT",
+        "EG",
+        "PC",
+        "FC"
+      ],
+      "mechanism": "Arcs",
+      "cause": "Breakdown in insulation",
+      "cbm_technique": "Insulation resistance testing (megger)",
+      "threshold": "IR <50 MΩ → schedule rewinding within 30 days; IR <1 MΩ/kV → do not energize",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0004",
+      "fm_codes": [
+        "FM-02"
+      ],
+      "description": "Increasing ΔP (>50% above clean baseline)",
+      "category": "visual",
+      "keywords": [
+        "baseline",
+        "increasing",
+        "clean"
+      ],
+      "equipment_categories": [
+        "ID",
+        "VA",
+        "HE",
+        "PI",
+        "PU",
+        "CS",
+        "FS"
+      ],
+      "mechanism": "Blocks",
+      "cause": "Contamination",
+      "cbm_technique": "Differential pressure measurement",
+      "threshold": "ΔP 2–3× baseline → clean within 2 weeks; ΔP >3× baseline → replace/clean immediately",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0005",
+      "fm_codes": [
+        "FM-02"
+      ],
+      "description": "decreasing flow rate (>10% below design)",
+      "category": "flow",
+      "keywords": [
+        "design",
+        "decreasing",
+        "rate",
+        "flow"
+      ],
+      "equipment_categories": [
+        "ID",
+        "VA",
+        "HE",
+        "PI",
+        "PU",
+        "CS",
+        "FS"
+      ],
+      "mechanism": "Blocks",
+      "cause": "Contamination",
+      "cbm_technique": "Differential pressure measurement",
+      "threshold": "ΔP 2–3× baseline → clean within 2 weeks; ΔP >3× baseline → replace/clean immediately",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0006",
+      "fm_codes": [
+        "FM-02"
+      ],
+      "description": "heat exchanger approach temperature rising",
+      "category": "temperature",
+      "keywords": [
+        "temperature",
+        "rising",
+        "approach",
+        "heat",
+        "exchanger"
+      ],
+      "equipment_categories": [
+        "ID",
+        "VA",
+        "HE",
+        "PI",
+        "PU",
+        "CS",
+        "FS"
+      ],
+      "mechanism": "Blocks",
+      "cause": "Contamination",
+      "cbm_technique": "Differential pressure measurement",
+      "threshold": "ΔP 2–3× baseline → clean within 2 weeks; ΔP >3× baseline → replace/clean immediately",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0007",
+      "fm_codes": [
+        "FM-03"
+      ],
+      "description": "Sudden step-change ΔP increase (>100% in minutes)",
+      "category": "visual",
+      "keywords": [
+        "step",
+        "increase",
+        "minutes",
+        "sudden",
+        "change"
+      ],
+      "equipment_categories": [
+        "ID",
+        "VA",
+        "ND",
+        "HC",
+        "PI",
+        "PU",
+        "FS"
+      ],
+      "mechanism": "Blocks",
+      "cause": "Excessive particle size",
+      "cbm_technique": "ΔP monitoring with alarm",
+      "threshold": "Sudden ΔP >100% of baseline → clear blockage at next safe opportunity; >2 events/month → investigate upstream screening",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0008",
+      "fm_codes": [
+        "FM-03"
+      ],
+      "description": "upstream pressure spike >15%",
+      "category": "pressure",
+      "keywords": [
+        "pressure",
+        "spike",
+        "upstream"
+      ],
+      "equipment_categories": [
+        "ID",
+        "VA",
+        "ND",
+        "HC",
+        "PI",
+        "PU",
+        "FS"
+      ],
+      "mechanism": "Blocks",
+      "cause": "Excessive particle size",
+      "cbm_technique": "ΔP monitoring with alarm",
+      "threshold": "Sudden ΔP >100% of baseline → clear blockage at next safe opportunity; >2 events/month → investigate upstream screening",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0009",
+      "fm_codes": [
+        "FM-03"
+      ],
+      "description": "flow rate drop >20%",
+      "category": "flow",
+      "keywords": [
+        "drop",
+        "flow",
+        "rate"
+      ],
+      "equipment_categories": [
+        "ID",
+        "VA",
+        "ND",
+        "HC",
+        "PI",
+        "PU",
+        "FS"
+      ],
+      "mechanism": "Blocks",
+      "cause": "Excessive particle size",
+      "cbm_technique": "ΔP monitoring with alarm",
+      "threshold": "Sudden ΔP >100% of baseline → clear blockage at next safe opportunity; >2 events/month → investigate upstream screening",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0010",
+      "fm_codes": [
+        "FM-04"
+      ],
+      "description": "Velocity falling below design minimum",
+      "category": "flow",
+      "keywords": [
+        "minimum",
+        "falling",
+        "design",
+        "velocity"
+      ],
+      "equipment_categories": [
+        "VA",
+        "GF",
+        "HC",
+        "PI",
+        "TA",
+        "HE",
+        "PU"
+      ],
+      "mechanism": "Blocks",
+      "cause": "Insufficient fluid velocity",
+      "cbm_technique": "Pipeline flow velocity monitoring (electromagnetic/ultrasonic)",
+      "threshold": "Velocity <1.0×Vc for >30 min → initiate water flush; complete blockage → do NOT increase pump pressure (rupture risk)",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0011",
+      "fm_codes": [
+        "FM-04"
+      ],
+      "description": "increasing pipeline ΔP at constant flow",
+      "category": "flow",
+      "keywords": [
+        "increasing",
+        "flow",
+        "pipeline",
+        "constant"
+      ],
+      "equipment_categories": [
+        "VA",
+        "GF",
+        "HC",
+        "PI",
+        "TA",
+        "HE",
+        "PU"
+      ],
+      "mechanism": "Blocks",
+      "cause": "Insufficient fluid velocity",
+      "cbm_technique": "Pipeline flow velocity monitoring (electromagnetic/ultrasonic)",
+      "threshold": "Velocity <1.0×Vc for >30 min → initiate water flush; complete blockage → do NOT increase pump pressure (rupture risk)",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0012",
+      "fm_codes": [
+        "FM-04"
+      ],
+      "description": "density meter showing lower solids at discharge vs inlet",
+      "category": "visual",
+      "keywords": [
+        "showing",
+        "solids",
+        "meter",
+        "inlet",
+        "discharge",
+        "lower",
+        "density"
+      ],
+      "equipment_categories": [
+        "VA",
+        "GF",
+        "HC",
+        "PI",
+        "TA",
+        "HE",
+        "PU"
+      ],
+      "mechanism": "Blocks",
+      "cause": "Insufficient fluid velocity",
+      "cbm_technique": "Pipeline flow velocity monitoring (electromagnetic/ultrasonic)",
+      "threshold": "Velocity <1.0×Vc for >30 min → initiate water flush; complete blockage → do NOT increase pump pressure (rupture risk)",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0013",
+      "fm_codes": [
+        "FM-05"
+      ],
+      "description": "Surface cracks detectable by MPI/DPI at stress concentrations",
+      "category": "pressure",
+      "keywords": [
+        "surface",
+        "dpi",
+        "stress",
+        "concentrations",
+        "detectable",
+        "cracks",
+        "mpi"
+      ],
+      "equipment_categories": [
+        "RO",
+        "VE",
+        "CV",
+        "PI",
+        "PU",
+        "ML",
+        "VS",
+        "CR"
+      ],
+      "mechanism": "Breaks/Fracture/Separates",
+      "cause": "Cyclic loading",
+      "cbm_technique": "MPI at known hot spots",
+      "threshold": "Crack <25% section → monitor quarterly; 25–50% → repair within 30 days; >50% or >1 mm/month growth → remove from service immediately",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0014",
+      "fm_codes": [
+        "FM-05"
+      ],
+      "description": "vibration amplitude change (stiffness reduction)",
+      "category": "vibration",
+      "keywords": [
+        "reduction",
+        "amplitude",
+        "vibration",
+        "stiffness",
+        "change"
+      ],
+      "equipment_categories": [
+        "RO",
+        "VE",
+        "CV",
+        "PI",
+        "PU",
+        "ML",
+        "VS",
+        "CR"
+      ],
+      "mechanism": "Breaks/Fracture/Separates",
+      "cause": "Cyclic loading",
+      "cbm_technique": "MPI at known hot spots",
+      "threshold": "Crack <25% section → monitor quarterly; 25–50% → repair within 30 days; >50% or >1 mm/month growth → remove from service immediately",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0015",
+      "fm_codes": [
+        "FM-05"
+      ],
+      "description": "oxide staining at crack mouths",
+      "category": "visual",
+      "keywords": [
+        "crack",
+        "staining",
+        "oxide",
+        "mouths"
+      ],
+      "equipment_categories": [
+        "RO",
+        "VE",
+        "CV",
+        "PI",
+        "PU",
+        "ML",
+        "VS",
+        "CR"
+      ],
+      "mechanism": "Breaks/Fracture/Separates",
+      "cause": "Cyclic loading",
+      "cbm_technique": "MPI at known hot spots",
+      "threshold": "Crack <25% section → monitor quarterly; 25–50% → repair within 30 days; >50% or >1 mm/month growth → remove from service immediately",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0016",
+      "fm_codes": [
+        "FM-06"
+      ],
+      "description": "Visible deformation/bending at connections",
+      "category": "visual",
+      "keywords": [
+        "connections",
+        "bending",
+        "visible",
+        "deformation"
+      ],
+      "equipment_categories": [
+        "VA",
+        "CV",
+        "PU",
+        "ST",
+        "ML",
+        "GB",
+        "CU",
+        "CR"
+      ],
+      "mechanism": "Breaks/Fracture/Separates",
+      "cause": "Mechanical overload",
+      "cbm_technique": "UT thickness at corroded/worn sections",
+      "threshold": "Section loss >30% → de-rate and plan replacement; visible plastic deformation → reduce load, repair within 30 days",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0017",
+      "fm_codes": [
+        "FM-06"
+      ],
+      "description": "section loss from corrosion reducing safety factor",
+      "category": "visual",
+      "keywords": [
+        "section",
+        "loss",
+        "safety",
+        "factor",
+        "reducing",
+        "corrosion"
+      ],
+      "equipment_categories": [
+        "VA",
+        "CV",
+        "PU",
+        "ST",
+        "ML",
+        "GB",
+        "CU",
+        "CR"
+      ],
+      "mechanism": "Breaks/Fracture/Separates",
+      "cause": "Mechanical overload",
+      "cbm_technique": "UT thickness at corroded/worn sections",
+      "threshold": "Section loss >30% → de-rate and plan replacement; visible plastic deformation → reduce load, repair within 30 days",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0018",
+      "fm_codes": [
+        "FM-06"
+      ],
+      "description": "bolt stretch >1% (ultrasonic gauging)",
+      "category": "visual",
+      "keywords": [
+        "bolt",
+        "gauging",
+        "ultrasonic",
+        "stretch"
+      ],
+      "equipment_categories": [
+        "VA",
+        "CV",
+        "PU",
+        "ST",
+        "ML",
+        "GB",
+        "CU",
+        "CR"
+      ],
+      "mechanism": "Breaks/Fracture/Separates",
+      "cause": "Mechanical overload",
+      "cbm_technique": "UT thickness at corroded/worn sections",
+      "threshold": "Section loss >30% → de-rate and plan replacement; visible plastic deformation → reduce load, repair within 30 days",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0019",
+      "fm_codes": [
+        "FM-07"
+      ],
+      "description": "Surface temperature exceeding design rating",
+      "category": "temperature",
+      "keywords": [
+        "temperature",
+        "surface",
+        "rating",
+        "exceeding",
+        "design"
+      ],
+      "equipment_categories": [
+        "VA",
+        "RO",
+        "FU",
+        "VE",
+        "HE",
+        "PI",
+        "PU",
+        "CS"
+      ],
+      "mechanism": "Breaks/Fracture/Separates",
+      "cause": "Thermal overload",
+      "cbm_technique": "Thermal scan on kiln shell",
+      "threshold": "Shell temp >350°C (carbon steel) → reduce firing, plan refractory repair; >400°C or cherry-red → reduce firing immediately, emergency repair",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0020",
+      "fm_codes": [
+        "FM-07"
+      ],
+      "description": "heat discoloration (straw 200°C",
+      "category": "temperature",
+      "keywords": [
+        "discoloration",
+        "straw",
+        "heat"
+      ],
+      "equipment_categories": [
+        "VA",
+        "RO",
+        "FU",
+        "VE",
+        "HE",
+        "PI",
+        "PU",
+        "CS"
+      ],
+      "mechanism": "Breaks/Fracture/Separates",
+      "cause": "Thermal overload",
+      "cbm_technique": "Thermal scan on kiln shell",
+      "threshold": "Shell temp >350°C (carbon steel) → reduce firing, plan refractory repair; >400°C or cherry-red → reduce firing immediately, emergency repair",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0021",
+      "fm_codes": [
+        "FM-07"
+      ],
+      "description": "blue 300°C",
+      "category": "visual",
+      "keywords": [
+        "blue"
+      ],
+      "equipment_categories": [
+        "VA",
+        "RO",
+        "FU",
+        "VE",
+        "HE",
+        "PI",
+        "PU",
+        "CS"
+      ],
+      "mechanism": "Breaks/Fracture/Separates",
+      "cause": "Thermal overload",
+      "cbm_technique": "Thermal scan on kiln shell",
+      "threshold": "Shell temp >350°C (carbon steel) → reduce firing, plan refractory repair; >400°C or cherry-red → reduce firing immediately, emergency repair",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0022",
+      "fm_codes": [
+        "FM-07"
+      ],
+      "description": "grey 400°C+)",
+      "category": "visual",
+      "keywords": [
+        "grey"
+      ],
+      "equipment_categories": [
+        "VA",
+        "RO",
+        "FU",
+        "VE",
+        "HE",
+        "PI",
+        "PU",
+        "CS"
+      ],
+      "mechanism": "Breaks/Fracture/Separates",
+      "cause": "Thermal overload",
+      "cbm_technique": "Thermal scan on kiln shell",
+      "threshold": "Shell temp >350°C (carbon steel) → reduce firing, plan refractory repair; >400°C or cherry-red → reduce firing immediately, emergency repair",
+      "pcondition_rank": 4
+    },
+    {
+      "symptom_id": "SYM-0023",
+      "fm_codes": [
+        "FM-07"
+      ],
+      "description": "refractory spalling exposing structural shell",
+      "category": "visual",
+      "keywords": [
+        "shell",
+        "exposing",
+        "structural",
+        "spalling",
+        "refractory"
+      ],
+      "equipment_categories": [
+        "VA",
+        "RO",
+        "FU",
+        "VE",
+        "HE",
+        "PI",
+        "PU",
+        "CS"
+      ],
+      "mechanism": "Breaks/Fracture/Separates",
+      "cause": "Thermal overload",
+      "cbm_technique": "Thermal scan on kiln shell",
+      "threshold": "Shell temp >350°C (carbon steel) → reduce firing, plan refractory repair; >400°C or cherry-red → reduce firing immediately, emergency repair",
+      "pcondition_rank": 5
+    },
+    {
+      "symptom_id": "SYM-0024",
+      "fm_codes": [
+        "FM-08"
+      ],
+      "description": "Black FeS deposits under tubercles (H₂S odor)",
+      "category": "visual",
+      "keywords": [
+        "odor",
+        "black",
+        "tubercles",
+        "deposits",
+        "fes"
+      ],
+      "equipment_categories": [
+        "VA",
+        "CT",
+        "PI",
+        "TA",
+        "HE",
+        "PU",
+        "FP"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "Bio-organisms",
+      "cbm_technique": "Bacterial count monitoring (planktonic + sessile)",
+      "threshold": "Planktonic >10⁴ CFU/mL → review biocide program; sessile >10⁵ CFU/cm² → mechanical cleaning required",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0025",
+      "fm_codes": [
+        "FM-08"
+      ],
+      "description": "localized hemispherical pitting at 6 o'clock in horizontal pipes",
+      "category": "visual",
+      "keywords": [
+        "localized",
+        "pipes",
+        "hemispherical",
+        "pitting",
+        "clock",
+        "horizontal"
+      ],
+      "equipment_categories": [
+        "VA",
+        "CT",
+        "PI",
+        "TA",
+        "HE",
+        "PU",
+        "FP"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "Bio-organisms",
+      "cbm_technique": "Bacterial count monitoring (planktonic + sessile)",
+      "threshold": "Planktonic >10⁴ CFU/mL → review biocide program; sessile >10⁵ CFU/cm² → mechanical cleaning required",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0026",
+      "fm_codes": [
+        "FM-08"
+      ],
+      "description": "planktonic bacterial counts >10⁴ CFU/mL",
+      "category": "visual",
+      "keywords": [
+        "planktonic",
+        "counts",
+        "bacterial",
+        "cfu"
+      ],
+      "equipment_categories": [
+        "VA",
+        "CT",
+        "PI",
+        "TA",
+        "HE",
+        "PU",
+        "FP"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "Bio-organisms",
+      "cbm_technique": "Bacterial count monitoring (planktonic + sessile)",
+      "threshold": "Planktonic >10⁴ CFU/mL → review biocide program; sessile >10⁵ CFU/cm² → mechanical cleaning required",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0027",
+      "fm_codes": [
+        "FM-09"
+      ],
+      "description": "Progressive wall thinning by UT (uniform loss pattern)",
+      "category": "performance",
+      "keywords": [
+        "progressive",
+        "loss",
+        "uniform",
+        "thinning",
+        "wall",
+        "pattern"
+      ],
+      "equipment_categories": [
+        "VA",
+        "HE",
+        "TA",
+        "PI",
+        "PU",
+        "RE",
+        "FS"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "Chemical attack",
+      "cbm_technique": "UT thickness measurement at TMLs",
+      "threshold": "Corrosion rate >design allowance → investigate root cause; lining holiday detected → repair within 30 days",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0028",
+      "fm_codes": [
+        "FM-09"
+      ],
+      "description": "lining degradation (blistering, delamination, pinholing)",
+      "category": "visual",
+      "keywords": [
+        "pinholing",
+        "lining",
+        "degradation",
+        "delamination",
+        "blistering"
+      ],
+      "equipment_categories": [
+        "VA",
+        "HE",
+        "TA",
+        "PI",
+        "PU",
+        "RE",
+        "FS"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "Chemical attack",
+      "cbm_technique": "UT thickness measurement at TMLs",
+      "threshold": "Corrosion rate >design allowance → investigate root cause; lining holiday detected → repair within 30 days",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0029",
+      "fm_codes": [
+        "FM-09"
+      ],
+      "description": "corrosion coupon weight loss >2× design rate",
+      "category": "flow",
+      "keywords": [
+        "loss",
+        "weight",
+        "corrosion",
+        "design",
+        "coupon",
+        "rate"
+      ],
+      "equipment_categories": [
+        "VA",
+        "HE",
+        "TA",
+        "PI",
+        "PU",
+        "RE",
+        "FS"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "Chemical attack",
+      "cbm_technique": "UT thickness measurement at TMLs",
+      "threshold": "Corrosion rate >design allowance → investigate root cause; lining holiday detected → repair within 30 days",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0030",
+      "fm_codes": [
+        "FM-10"
+      ],
+      "description": "Visible rust and paint degradation (ASTM D714 blistering",
+      "category": "visual",
+      "keywords": [
+        "visible",
+        "rust",
+        "paint",
+        "degradation",
+        "astm",
+        "blistering"
+      ],
+      "equipment_categories": [
+        "ID",
+        "CV",
+        "PI",
+        "TA",
+        "EI",
+        "ST",
+        "CR"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "Corrosive environment",
+      "cbm_technique": "Visual coating condition assessment",
+      "threshold": "Coating <rating 6 per ASTM D610 → plan spot repair; structural section loss >10% → immediate de-rate",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0031",
+      "fm_codes": [
+        "FM-10"
+      ],
+      "description": "D610 rusting)",
+      "category": "visual",
+      "keywords": [
+        "rusting"
+      ],
+      "equipment_categories": [
+        "ID",
+        "CV",
+        "PI",
+        "TA",
+        "EI",
+        "ST",
+        "CR"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "Corrosive environment",
+      "cbm_technique": "Visual coating condition assessment",
+      "threshold": "Coating <rating 6 per ASTM D610 → plan spot repair; structural section loss >10% → immediate de-rate",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0032",
+      "fm_codes": [
+        "FM-10"
+      ],
+      "description": "galvanized coating white/red rust breakthrough",
+      "category": "visual",
+      "keywords": [
+        "galvanized",
+        "rust",
+        "white",
+        "breakthrough",
+        "red",
+        "coating"
+      ],
+      "equipment_categories": [
+        "ID",
+        "CV",
+        "PI",
+        "TA",
+        "EI",
+        "ST",
+        "CR"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "Corrosive environment",
+      "cbm_technique": "Visual coating condition assessment",
+      "threshold": "Coating <rating 6 per ASTM D610 → plan spot repair; structural section loss >10% → immediate de-rate",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0033",
+      "fm_codes": [
+        "FM-10"
+      ],
+      "description": "structural section loss at connections",
+      "category": "performance",
+      "keywords": [
+        "connections",
+        "structural",
+        "section",
+        "loss"
+      ],
+      "equipment_categories": [
+        "ID",
+        "CV",
+        "PI",
+        "TA",
+        "EI",
+        "ST",
+        "CR"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "Corrosive environment",
+      "cbm_technique": "Visual coating condition assessment",
+      "threshold": "Coating <rating 6 per ASTM D610 → plan spot repair; structural section loss >10% → immediate de-rate",
+      "pcondition_rank": 4
+    },
+    {
+      "symptom_id": "SYM-0034",
+      "fm_codes": [
+        "FM-11"
+      ],
+      "description": "Gasket face staining/seepage at outer crevice edge",
+      "category": "leak",
+      "keywords": [
+        "crevice",
+        "staining",
+        "seepage",
+        "gasket",
+        "outer",
+        "face",
+        "edge"
+      ],
+      "equipment_categories": [
+        "FT",
+        "VA",
+        "VE",
+        "HE",
+        "TA",
+        "PI",
+        "PU"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "Crevice",
+      "cbm_technique": "UT thickness at flange faces and gasket lines",
+      "threshold": "Crevice pitting >1 mm on flange face → engineer assessment; flange finish must be restored to ≤6.3 μm Ra per ASME B16.5",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0035",
+      "fm_codes": [
+        "FM-11"
+      ],
+      "description": "weeping at flanged joints, under-deposit hemispherical pitting visible after cleaning",
+      "category": "visual",
+      "keywords": [
+        "deposit",
+        "visible",
+        "hemispherical",
+        "weeping",
+        "pitting",
+        "flanged",
+        "cleaning",
+        "joints"
+      ],
+      "equipment_categories": [
+        "FT",
+        "VA",
+        "VE",
+        "HE",
+        "TA",
+        "PI",
+        "PU"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "Crevice",
+      "cbm_technique": "UT thickness at flange faces and gasket lines",
+      "threshold": "Crevice pitting >1 mm on flange face → engineer assessment; flange finish must be restored to ≤6.3 μm Ra per ASME B16.5",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0036",
+      "fm_codes": [
+        "FM-12"
+      ],
+      "description": "Accelerated corrosion of less noble metal at junction with clean noble metal adjacent",
+      "category": "flow",
+      "keywords": [
+        "adjacent",
+        "metal",
+        "clean",
+        "noble",
+        "corrosion",
+        "accelerated",
+        "junction"
+      ],
+      "equipment_categories": [
+        "FT",
+        "VA",
+        "HE",
+        "PI",
+        "PU",
+        "ST",
+        "EI"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "Dissimilar metals",
+      "cbm_technique": "UT thickness at dissimilar metal junctions",
+      "threshold": "Wall thinning >20% at junction → install insulating gasket kit per NACE SP0286; galvanic rate >2× general rate → redesign junction",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0037",
+      "fm_codes": [
+        "FM-12"
+      ],
+      "description": "distinctive wall thinning within 1–5 pipe diameters of junction",
+      "category": "visual",
+      "keywords": [
+        "distinctive",
+        "diameters",
+        "pipe",
+        "thinning",
+        "wall",
+        "junction"
+      ],
+      "equipment_categories": [
+        "FT",
+        "VA",
+        "HE",
+        "PI",
+        "PU",
+        "ST",
+        "EI"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "Dissimilar metals",
+      "cbm_technique": "UT thickness at dissimilar metal junctions",
+      "threshold": "Wall thinning >20% at junction → install insulating gasket kit per NACE SP0286; galvanic rate >2× general rate → redesign junction",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0038",
+      "fm_codes": [
+        "FM-12"
+      ],
+      "description": "galvanic potential >100 mV",
+      "category": "visual",
+      "keywords": [
+        "potential",
+        "galvanic"
+      ],
+      "equipment_categories": [
+        "FT",
+        "VA",
+        "HE",
+        "PI",
+        "PU",
+        "ST",
+        "EI"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "Dissimilar metals",
+      "cbm_technique": "UT thickness at dissimilar metal junctions",
+      "threshold": "Wall thinning >20% at junction → install insulating gasket kit per NACE SP0286; galvanic rate >2× general rate → redesign junction",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0039",
+      "fm_codes": [
+        "FM-13"
+      ],
+      "description": "Progressive surface rust (orange to lamellar scaling to deep pitting)",
+      "category": "visual",
+      "keywords": [
+        "progressive",
+        "scaling",
+        "surface",
+        "rust",
+        "pitting",
+        "orange",
+        "deep",
+        "lamellar"
+      ],
+      "equipment_categories": [
+        "CV",
+        "PI",
+        "TA",
+        "EI",
+        "ST",
+        "CS",
+        "CR"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "Exposure to atmosphere",
+      "cbm_technique": "Visual coating and corrosion condition assessment",
+      "threshold": "Coating <5 per ASTM D610 or adhesion <2.0 MPa → plan full recoating at next shutdown",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0040",
+      "fm_codes": [
+        "FM-13"
+      ],
+      "description": "coating chalking/cracking/blistering/delamination",
+      "category": "visual",
+      "keywords": [
+        "cracking",
+        "chalking",
+        "delamination",
+        "coating",
+        "blistering"
+      ],
+      "equipment_categories": [
+        "CV",
+        "PI",
+        "TA",
+        "EI",
+        "ST",
+        "CS",
+        "CR"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "Exposure to atmosphere",
+      "cbm_technique": "Visual coating and corrosion condition assessment",
+      "threshold": "Coating <5 per ASTM D610 or adhesion <2.0 MPa → plan full recoating at next shutdown",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0041",
+      "fm_codes": [
+        "FM-13"
+      ],
+      "description": "galvanized white rust with red rust breakthrough",
+      "category": "visual",
+      "keywords": [
+        "galvanized",
+        "rust",
+        "white",
+        "breakthrough",
+        "red"
+      ],
+      "equipment_categories": [
+        "CV",
+        "PI",
+        "TA",
+        "EI",
+        "ST",
+        "CS",
+        "CR"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "Exposure to atmosphere",
+      "cbm_technique": "Visual coating and corrosion condition assessment",
+      "threshold": "Coating <5 per ASTM D610 or adhesion <2.0 MPa → plan full recoating at next shutdown",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0042",
+      "fm_codes": [
+        "FM-14"
+      ],
+      "description": "Multi-layered scale buildup (oxide+sulfide)",
+      "category": "visual",
+      "keywords": [
+        "scale",
+        "sulfide",
+        "multi",
+        "oxide",
+        "layered",
+        "buildup"
+      ],
+      "equipment_categories": [
+        "RO",
+        "FU",
+        "HE",
+        "PI",
+        "FA",
+        "BO",
+        "SK"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "High-temp corrosive environment",
+      "cbm_technique": "Tube metal temperature monitoring (thermocouples, IR)",
+      "threshold": "Tube metal temp >max allowable per API 530 → clean deposits or upgrade alloy; vanadium >50 ppm in fuel ash → add Mg-based additive",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0043",
+      "fm_codes": [
+        "FM-14"
+      ],
+      "description": "tube metal temperature trending upward, vanadium-rich deposit accumulation (green/black)",
+      "category": "temperature",
+      "keywords": [
+        "deposit",
+        "accumulation",
+        "temperature",
+        "trending",
+        "green",
+        "tube",
+        "rich",
+        "black",
+        "metal",
+        "vanadium"
+      ],
+      "equipment_categories": [
+        "RO",
+        "FU",
+        "HE",
+        "PI",
+        "FA",
+        "BO",
+        "SK"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "High-temp corrosive environment",
+      "cbm_technique": "Tube metal temperature monitoring (thermocouples, IR)",
+      "threshold": "Tube metal temp >max allowable per API 530 → clean deposits or upgrade alloy; vanadium >50 ppm in fuel ash → add Mg-based additive",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0044",
+      "fm_codes": [
+        "FM-15"
+      ],
+      "description": "Progressive oxide scale with spallation (rough pitted surface), steam-side oxide exfoliation detected by tube temperature increase",
+      "category": "temperature",
+      "keywords": [
+        "progressive",
+        "rough",
+        "temperature",
+        "scale",
+        "side",
+        "surface",
+        "exfoliation",
+        "pitted",
+        "increase",
+        "tube"
+      ],
+      "equipment_categories": [
+        "FT",
+        "RO",
+        "FU",
+        "HE",
+        "PI",
+        "FA",
+        "BO"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "High-temp environment",
+      "cbm_technique": "Surface temperature monitoring (thermocouples, IR pyrometry)",
+      "threshold": "Steam-side oxide >500 μm → plan chemical cleaning; high-temp bolt torque loss >20% → re-torque using hot-bolting procedure",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0045",
+      "fm_codes": [
+        "FM-15"
+      ],
+      "description": "bolt torque relaxation from thread oxidation",
+      "category": "visual",
+      "keywords": [
+        "relaxation",
+        "thread",
+        "bolt",
+        "oxidation",
+        "torque"
+      ],
+      "equipment_categories": [
+        "FT",
+        "RO",
+        "FU",
+        "HE",
+        "PI",
+        "FA",
+        "BO"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "High-temp environment",
+      "cbm_technique": "Surface temperature monitoring (thermocouples, IR pyrometry)",
+      "threshold": "Steam-side oxide >500 μm → plan chemical cleaning; high-temp bolt torque loss >20% → re-torque using hot-bolting procedure",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0046",
+      "fm_codes": [
+        "FM-16"
+      ],
+      "description": "Intergranular cracking at galvanized weld HAZ (MPI/DPI post-weld)",
+      "category": "pressure",
+      "keywords": [
+        "cracking",
+        "galvanized",
+        "dpi",
+        "haz",
+        "post",
+        "weld",
+        "intergranular",
+        "mpi"
+      ],
+      "equipment_categories": [
+        "WS",
+        "ID",
+        "FT",
+        "BE",
+        "PI",
+        "ST"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "Liquid metal",
+      "cbm_technique": "MPI/DPI at welds on galvanized structures (post-weld)",
+      "threshold": "Any LME crack at galvanized weld → stop operation, grind out completely, remove all zinc 100 mm around weld, re-weld and inspect",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0047",
+      "fm_codes": [
+        "FM-16"
+      ],
+      "description": "sudden brittle fracture of galvanized high-strength bolt during/after tightening",
+      "category": "visual",
+      "keywords": [
+        "fracture",
+        "tightening",
+        "galvanized",
+        "strength",
+        "sudden",
+        "bolt",
+        "high",
+        "brittle"
+      ],
+      "equipment_categories": [
+        "WS",
+        "ID",
+        "FT",
+        "BE",
+        "PI",
+        "ST"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "Liquid metal",
+      "cbm_technique": "MPI/DPI at welds on galvanized structures (post-weld)",
+      "threshold": "Any LME crack at galvanized weld → stop operation, grind out completely, remove all zinc 100 mm around weld, re-weld and inspect",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0048",
+      "fm_codes": [
+        "FM-16"
+      ],
+      "description": "weld HAZ cracking",
+      "category": "visual",
+      "keywords": [
+        "weld",
+        "cracking",
+        "haz"
+      ],
+      "equipment_categories": [
+        "WS",
+        "ID",
+        "FT",
+        "BE",
+        "PI",
+        "ST"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "Liquid metal",
+      "cbm_technique": "MPI/DPI at welds on galvanized structures (post-weld)",
+      "threshold": "Any LME crack at galvanized weld → stop operation, grind out completely, remove all zinc 100 mm around weld, re-weld and inspect",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0049",
+      "fm_codes": [
+        "FM-17"
+      ],
+      "description": "Elevated temperature at connections (IR thermography ΔT >10°C), discolored/oxidized surfaces (greenish-blue Cu",
+      "category": "temperature",
+      "keywords": [
+        "temperature",
+        "discolored",
+        "oxidized",
+        "connections",
+        "elevated",
+        "blue",
+        "greenish",
+        "thermography",
+        "surfaces"
+      ],
+      "equipment_categories": [
+        "VD",
+        "EM",
+        "TR",
+        "SG",
+        "CP",
+        "CA"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "Poor electrical connections",
+      "cbm_technique": "IR thermographic survey",
+      "threshold": "ΔT >70°C (NETA \"Deficiency\") → de-energize and repair immediately — risk of thermal runaway and fire",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0050",
+      "fm_codes": [
+        "FM-17"
+      ],
+      "description": "white Al)",
+      "category": "visual",
+      "keywords": [
+        "white"
+      ],
+      "equipment_categories": [
+        "VD",
+        "EM",
+        "TR",
+        "SG",
+        "CP",
+        "CA"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "Poor electrical connections",
+      "cbm_technique": "IR thermographic survey",
+      "threshold": "ΔT >70°C (NETA \"Deficiency\") → de-energize and repair immediately — risk of thermal runaway and fire",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0051",
+      "fm_codes": [
+        "FM-17"
+      ],
+      "description": "voltage drop >50 μΩ per bolt",
+      "category": "electrical",
+      "keywords": [
+        "bolt",
+        "drop",
+        "voltage"
+      ],
+      "equipment_categories": [
+        "VD",
+        "EM",
+        "TR",
+        "SG",
+        "CP",
+        "CA"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "Poor electrical connections",
+      "cbm_technique": "IR thermographic survey",
+      "threshold": "ΔT >70°C (NETA \"Deficiency\") → de-energize and repair immediately — risk of thermal runaway and fire",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0052",
+      "fm_codes": [
+        "FM-18"
+      ],
+      "description": "Localized deep pitting at discrete points on buried piping, pipe-to-soil potential positive shifts near foreign CP systems",
+      "category": "visual",
+      "keywords": [
+        "discrete",
+        "localized",
+        "systems",
+        "foreign",
+        "points",
+        "pitting",
+        "buried",
+        "pipe",
+        "piping",
+        "potential"
+      ],
+      "equipment_categories": [
+        "PI",
+        "TA",
+        "RW",
+        "EI",
+        "ST",
+        "CP"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "Poor electrical insulation",
+      "cbm_technique": "Pipe-to-soil potential survey",
+      "threshold": "Pipe-to-soil positive shift → investigate stray current source, install drainage bond; AC voltage >15V → install AC mitigation per NACE SP21424",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0053",
+      "fm_codes": [
+        "FM-18"
+      ],
+      "description": "insulating flange resistance <1 MΩ",
+      "category": "electrical",
+      "keywords": [
+        "insulating",
+        "resistance",
+        "flange"
+      ],
+      "equipment_categories": [
+        "PI",
+        "TA",
+        "RW",
+        "EI",
+        "ST",
+        "CP"
+      ],
+      "mechanism": "Corrodes",
+      "cause": "Poor electrical insulation",
+      "cbm_technique": "Pipe-to-soil potential survey",
+      "threshold": "Pipe-to-soil positive shift → investigate stray current source, install drainage bond; AC voltage >15V → install AC mitigation per NACE SP21424",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0054",
+      "fm_codes": [
+        "FM-19"
+      ],
+      "description": "Surface cracks by DPI/MPI at welds and stress concentrations",
+      "category": "pressure",
+      "keywords": [
+        "surface",
+        "dpi",
+        "stress",
+        "concentrations",
+        "cracks",
+        "mpi",
+        "welds"
+      ],
+      "equipment_categories": [
+        "VA",
+        "VE",
+        "SG",
+        "PI",
+        "TA",
+        "RL",
+        "PU"
+      ],
+      "mechanism": "Cracks",
+      "cause": "Age",
+      "cbm_technique": "Dye penetrant inspection (DPI)",
+      "threshold": "SCC crack in stainless steel → assess by UT, plan repair (sudden failure possible); elastomer hardness >15% above spec → replace immediately",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0055",
+      "fm_codes": [
+        "FM-19"
+      ],
+      "description": "elastomer crazing/hardening (Shore A change >15%)",
+      "category": "visual",
+      "keywords": [
+        "elastomer",
+        "crazing",
+        "hardening",
+        "shore",
+        "change"
+      ],
+      "equipment_categories": [
+        "VA",
+        "VE",
+        "SG",
+        "PI",
+        "TA",
+        "RL",
+        "PU"
+      ],
+      "mechanism": "Cracks",
+      "cause": "Age",
+      "cbm_technique": "Dye penetrant inspection (DPI)",
+      "threshold": "SCC crack in stainless steel → assess by UT, plan repair (sudden failure possible); elastomer hardness >15% above spec → replace immediately",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0056",
+      "fm_codes": [
+        "FM-19"
+      ],
+      "description": "seal leakage through aged gaskets",
+      "category": "leak",
+      "keywords": [
+        "gaskets",
+        "aged",
+        "leakage",
+        "seal"
+      ],
+      "equipment_categories": [
+        "VA",
+        "VE",
+        "SG",
+        "PI",
+        "TA",
+        "RL",
+        "PU"
+      ],
+      "mechanism": "Cracks",
+      "cause": "Age",
+      "cbm_technique": "Dye penetrant inspection (DPI)",
+      "threshold": "SCC crack in stainless steel → assess by UT, plan repair (sudden failure possible); elastomer hardness >15% above spec → replace immediately",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0057",
+      "fm_codes": [
+        "FM-20"
+      ],
+      "description": "Surface cracks by MPI/DPI/eddy current at fatigue-prone locations",
+      "category": "pressure",
+      "keywords": [
+        "surface",
+        "current",
+        "dpi",
+        "eddy",
+        "locations",
+        "prone",
+        "cracks",
+        "fatigue",
+        "mpi"
+      ],
+      "equipment_categories": [
+        "RO",
+        "VE",
+        "PI",
+        "PU",
+        "ML",
+        "VS",
+        "CR"
+      ],
+      "mechanism": "Cracks",
+      "cause": "Cyclic loading",
+      "cbm_technique": "MPI at welds",
+      "threshold": "Crack >25% of section or growth exceeding prediction → remove from service (sudden fracture risk)",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0058",
+      "fm_codes": [
+        "FM-20"
+      ],
+      "description": "measurable crack growth between NDE inspections",
+      "category": "visual",
+      "keywords": [
+        "crack",
+        "measurable",
+        "nde",
+        "inspections",
+        "growth"
+      ],
+      "equipment_categories": [
+        "RO",
+        "VE",
+        "PI",
+        "PU",
+        "ML",
+        "VS",
+        "CR"
+      ],
+      "mechanism": "Cracks",
+      "cause": "Cyclic loading",
+      "cbm_technique": "MPI at welds",
+      "threshold": "Crack >25% of section or growth exceeding prediction → remove from service (sudden fracture risk)",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0059",
+      "fm_codes": [
+        "FM-20"
+      ],
+      "description": "oxide staining at crack mouths",
+      "category": "visual",
+      "keywords": [
+        "crack",
+        "staining",
+        "oxide",
+        "mouths"
+      ],
+      "equipment_categories": [
+        "RO",
+        "VE",
+        "PI",
+        "PU",
+        "ML",
+        "VS",
+        "CR"
+      ],
+      "mechanism": "Cracks",
+      "cause": "Cyclic loading",
+      "cbm_technique": "MPI at welds",
+      "threshold": "Crack >25% of section or growth exceeding prediction → remove from service (sudden fracture risk)",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0060",
+      "fm_codes": [
+        "FM-21"
+      ],
+      "description": "Surface thermal checking (\"elephant skin\" crack network)",
+      "category": "temperature",
+      "keywords": [
+        "crack",
+        "thermal",
+        "surface",
+        "network",
+        "skin",
+        "checking",
+        "elephant"
+      ],
+      "equipment_categories": [
+        "VA",
+        "RO",
+        "FU",
+        "VE",
+        "PI",
+        "HE",
+        "PU"
+      ],
+      "mechanism": "Cracks",
+      "cause": "Excessive temperature",
+      "cbm_technique": "Process temperature monitoring (thermocouples, RTDs)",
+      "threshold": "Glass lining holiday → repair if <100 cm², reline if larger; sensitization in SS HAZ → solution anneal or replace",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0061",
+      "fm_codes": [
+        "FM-21"
+      ],
+      "description": "glass lining crack by spark test per NACE SP0188",
+      "category": "visual",
+      "keywords": [
+        "crack",
+        "spark",
+        "nace",
+        "lining",
+        "test",
+        "glass"
+      ],
+      "equipment_categories": [
+        "VA",
+        "RO",
+        "FU",
+        "VE",
+        "PI",
+        "HE",
+        "PU"
+      ],
+      "mechanism": "Cracks",
+      "cause": "Excessive temperature",
+      "cbm_technique": "Process temperature monitoring (thermocouples, RTDs)",
+      "threshold": "Glass lining holiday → repair if <100 cm², reline if larger; sensitization in SS HAZ → solution anneal or replace",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0062",
+      "fm_codes": [
+        "FM-21"
+      ],
+      "description": "metallurgical change by replica metallography or hardness shift",
+      "category": "visual",
+      "keywords": [
+        "metallography",
+        "replica",
+        "hardness",
+        "metallurgical",
+        "shift",
+        "change"
+      ],
+      "equipment_categories": [
+        "VA",
+        "RO",
+        "FU",
+        "VE",
+        "PI",
+        "HE",
+        "PU"
+      ],
+      "mechanism": "Cracks",
+      "cause": "Excessive temperature",
+      "cbm_technique": "Process temperature monitoring (thermocouples, RTDs)",
+      "threshold": "Glass lining holiday → repair if <100 cm², reline if larger; sensitization in SS HAZ → solution anneal or replace",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0063",
+      "fm_codes": [
+        "FM-22"
+      ],
+      "description": "SCC branching crack patterns by DPI (highly branched dendritic)",
+      "category": "pressure",
+      "keywords": [
+        "crack",
+        "dpi",
+        "branching",
+        "branched",
+        "dendritic",
+        "patterns",
+        "highly",
+        "scc"
+      ],
+      "equipment_categories": [
+        "VA",
+        "VE",
+        "PI",
+        "HE",
+        "TA",
+        "PU",
+        "BO"
+      ],
+      "mechanism": "Cracks",
+      "cause": "High-temp corrosive environment",
+      "cbm_technique": "DPI for surface SCC detection",
+      "threshold": "Any HTHA fissuring → de-rate vessel per API 579; corrosion rate >0.5 mm/yr SS or >1.0 mm/yr CS → review process chemistry",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0064",
+      "fm_codes": [
+        "FM-22"
+      ],
+      "description": "HTHA fissuring by advanced UT (backscatter",
+      "category": "visual",
+      "keywords": [
+        "backscatter",
+        "fissuring",
+        "advanced",
+        "htha"
+      ],
+      "equipment_categories": [
+        "VA",
+        "VE",
+        "PI",
+        "HE",
+        "TA",
+        "PU",
+        "BO"
+      ],
+      "mechanism": "Cracks",
+      "cause": "High-temp corrosive environment",
+      "cbm_technique": "DPI for surface SCC detection",
+      "threshold": "Any HTHA fissuring → de-rate vessel per API 579; corrosion rate >0.5 mm/yr SS or >1.0 mm/yr CS → review process chemistry",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0065",
+      "fm_codes": [
+        "FM-22"
+      ],
+      "description": "velocity ratio)",
+      "category": "flow",
+      "keywords": [
+        "ratio",
+        "velocity"
+      ],
+      "equipment_categories": [
+        "VA",
+        "VE",
+        "PI",
+        "HE",
+        "TA",
+        "PU",
+        "BO"
+      ],
+      "mechanism": "Cracks",
+      "cause": "High-temp corrosive environment",
+      "cbm_technique": "DPI for surface SCC detection",
+      "threshold": "Any HTHA fissuring → de-rate vessel per API 579; corrosion rate >0.5 mm/yr SS or >1.0 mm/yr CS → review process chemistry",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0066",
+      "fm_codes": [
+        "FM-22"
+      ],
+      "description": "metallographic replica showing grain boundary attack",
+      "category": "visual",
+      "keywords": [
+        "showing",
+        "replica",
+        "attack",
+        "boundary",
+        "grain",
+        "metallographic"
+      ],
+      "equipment_categories": [
+        "VA",
+        "VE",
+        "PI",
+        "HE",
+        "TA",
+        "PU",
+        "BO"
+      ],
+      "mechanism": "Cracks",
+      "cause": "High-temp corrosive environment",
+      "cbm_technique": "DPI for surface SCC detection",
+      "threshold": "Any HTHA fissuring → de-rate vessel per API 579; corrosion rate >0.5 mm/yr SS or >1.0 mm/yr CS → review process chemistry",
+      "pcondition_rank": 4
+    },
+    {
+      "symptom_id": "SYM-0067",
+      "fm_codes": [
+        "FM-23"
+      ],
+      "description": "Visible surface crack from impact dent",
+      "category": "visual",
+      "keywords": [
+        "crack",
+        "surface",
+        "visible",
+        "impact",
+        "dent"
+      ],
+      "equipment_categories": [
+        "VA",
+        "VE",
+        "CV",
+        "PI",
+        "TA",
+        "PU",
+        "CS",
+        "CU"
+      ],
+      "mechanism": "Cracks",
+      "cause": "Impact/shock loading",
+      "cbm_technique": "DPI/MPI at impact locations",
+      "threshold": "Crack in cast iron → replace immediately (cannot be reliably weld-repaired); water hammer >1.5× design → install surge protection",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0068",
+      "fm_codes": [
+        "FM-23"
+      ],
+      "description": "water hammer pressure >2× normal logged by instrumentation",
+      "category": "pressure",
+      "keywords": [
+        "instrumentation",
+        "pressure",
+        "normal",
+        "logged",
+        "hammer",
+        "water"
+      ],
+      "equipment_categories": [
+        "VA",
+        "VE",
+        "CV",
+        "PI",
+        "TA",
+        "PU",
+        "CS",
+        "CU"
+      ],
+      "mechanism": "Cracks",
+      "cause": "Impact/shock loading",
+      "cbm_technique": "DPI/MPI at impact locations",
+      "threshold": "Crack in cast iron → replace immediately (cannot be reliably weld-repaired); water hammer >1.5× design → install surge protection",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0069",
+      "fm_codes": [
+        "FM-23"
+      ],
+      "description": "cast iron crack with sharp edges at impact site",
+      "category": "visual",
+      "keywords": [
+        "crack",
+        "site",
+        "cast",
+        "iron",
+        "sharp",
+        "impact",
+        "edges"
+      ],
+      "equipment_categories": [
+        "VA",
+        "VE",
+        "CV",
+        "PI",
+        "TA",
+        "PU",
+        "CS",
+        "CU"
+      ],
+      "mechanism": "Cracks",
+      "cause": "Impact/shock loading",
+      "cbm_technique": "DPI/MPI at impact locations",
+      "threshold": "Crack in cast iron → replace immediately (cannot be reliably weld-repaired); water hammer >1.5× design → install surge protection",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0070",
+      "fm_codes": [
+        "FM-24"
+      ],
+      "description": "Surface checking/crazing by DPI (fine crack network perpendicular to thermal stress)",
+      "category": "temperature",
+      "keywords": [
+        "crack",
+        "thermal",
+        "surface",
+        "network",
+        "perpendicular",
+        "dpi",
+        "stress",
+        "checking",
+        "fine",
+        "crazing"
+      ],
+      "equipment_categories": [
+        "VA",
+        "RO",
+        "FU",
+        "VE",
+        "HE",
+        "PI",
+        "PU"
+      ],
+      "mechanism": "Cracks",
+      "cause": "Thermal stresses",
+      "cbm_technique": "DPI for thermal fatigue crack detection",
+      "threshold": "DMW cracking → plan weld replacement (Inconel 82/182 for CS-to-SS) within 30 days; bellows cracked → replace immediately",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0071",
+      "fm_codes": [
+        "FM-24"
+      ],
+      "description": "cracking at dissimilar metal welds",
+      "category": "visual",
+      "keywords": [
+        "dissimilar",
+        "welds",
+        "cracking",
+        "metal"
+      ],
+      "equipment_categories": [
+        "VA",
+        "RO",
+        "FU",
+        "VE",
+        "HE",
+        "PI",
+        "PU"
+      ],
+      "mechanism": "Cracks",
+      "cause": "Thermal stresses",
+      "cbm_technique": "DPI for thermal fatigue crack detection",
+      "threshold": "DMW cracking → plan weld replacement (Inconel 82/182 for CS-to-SS) within 30 days; bellows cracked → replace immediately",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0072",
+      "fm_codes": [
+        "FM-24"
+      ],
+      "description": "pipe support damage from excessive thermal movement",
+      "category": "temperature",
+      "keywords": [
+        "movement",
+        "thermal",
+        "support",
+        "excessive",
+        "pipe",
+        "damage"
+      ],
+      "equipment_categories": [
+        "VA",
+        "RO",
+        "FU",
+        "VE",
+        "HE",
+        "PI",
+        "PU"
+      ],
+      "mechanism": "Cracks",
+      "cause": "Thermal stresses",
+      "cbm_technique": "DPI for thermal fatigue crack detection",
+      "threshold": "DMW cracking → plan weld replacement (Inconel 82/182 for CS-to-SS) within 30 days; bellows cracked → replace immediately",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0073",
+      "fm_codes": [
+        "FM-25"
+      ],
+      "description": "Elastomer hardness increasing (Shore A >15% above spec)",
+      "category": "visual",
+      "keywords": [
+        "elastomer",
+        "increasing",
+        "spec",
+        "hardness",
+        "shore"
+      ],
+      "equipment_categories": [
+        "HO",
+        "CL",
+        "SG",
+        "CV",
+        "PI",
+        "SD",
+        "UP"
+      ],
+      "mechanism": "Degrades",
+      "cause": "Age",
+      "cbm_technique": "Hardness testing of elastomeric components",
+      "threshold": "Battery capacity <80% → replace within 12 mo; <70% → replace within 30 days",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0074",
+      "fm_codes": [
+        "FM-25"
+      ],
+      "description": "surface cracking/crazing/chalking on polymers",
+      "category": "visual",
+      "keywords": [
+        "surface",
+        "cracking",
+        "polymers",
+        "chalking",
+        "crazing"
+      ],
+      "equipment_categories": [
+        "HO",
+        "CL",
+        "SG",
+        "CV",
+        "PI",
+        "SD",
+        "UP"
+      ],
+      "mechanism": "Degrades",
+      "cause": "Age",
+      "cbm_technique": "Hardness testing of elastomeric components",
+      "threshold": "Battery capacity <80% → replace within 12 mo; <70% → replace within 30 days",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0075",
+      "fm_codes": [
+        "FM-25"
+      ],
+      "description": "UPS battery capacity <80% of rated",
+      "category": "flow",
+      "keywords": [
+        "rated",
+        "capacity",
+        "battery",
+        "ups"
+      ],
+      "equipment_categories": [
+        "HO",
+        "CL",
+        "SG",
+        "CV",
+        "PI",
+        "SD",
+        "UP"
+      ],
+      "mechanism": "Degrades",
+      "cause": "Age",
+      "cbm_technique": "Hardness testing of elastomeric components",
+      "threshold": "Battery capacity <80% → replace within 12 mo; <70% → replace within 30 days",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0076",
+      "fm_codes": [
+        "FM-26"
+      ],
+      "description": "Polymer swelling/softening (>5% volume change)",
+      "category": "visual",
+      "keywords": [
+        "softening",
+        "swelling",
+        "volume",
+        "polymer",
+        "change"
+      ],
+      "equipment_categories": [
+        "VA",
+        "SG",
+        "PI",
+        "TA",
+        "HE",
+        "PU",
+        "FS"
+      ],
+      "mechanism": "Degrades",
+      "cause": "Chemical attack",
+      "cbm_technique": "Hardness and dimensional measurement",
+      "threshold": "Blistering >10% area or substrate exposed → relining within 14 days",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0077",
+      "fm_codes": [
+        "FM-26"
+      ],
+      "description": "surface blistering/delamination of linings",
+      "category": "visual",
+      "keywords": [
+        "linings",
+        "delamination",
+        "blistering",
+        "surface"
+      ],
+      "equipment_categories": [
+        "VA",
+        "SG",
+        "PI",
+        "TA",
+        "HE",
+        "PU",
+        "FS"
+      ],
+      "mechanism": "Degrades",
+      "cause": "Chemical attack",
+      "cbm_technique": "Hardness and dimensional measurement",
+      "threshold": "Blistering >10% area or substrate exposed → relining within 14 days",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0078",
+      "fm_codes": [
+        "FM-26"
+      ],
+      "description": "FRP roughening with exposed fibers",
+      "category": "visual",
+      "keywords": [
+        "frp",
+        "roughening",
+        "fibers",
+        "exposed"
+      ],
+      "equipment_categories": [
+        "VA",
+        "SG",
+        "PI",
+        "TA",
+        "HE",
+        "PU",
+        "FS"
+      ],
+      "mechanism": "Degrades",
+      "cause": "Chemical attack",
+      "cbm_technique": "Hardness and dimensional measurement",
+      "threshold": "Blistering >10% area or substrate exposed → relining within 14 days",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0079",
+      "fm_codes": [
+        "FM-27"
+      ],
+      "description": "Oil TAN >2.0 mg KOH/g, varnish/sludge visible on surfaces",
+      "category": "visual",
+      "keywords": [
+        "sludge",
+        "visible",
+        "tan",
+        "koh",
+        "surfaces",
+        "oil",
+        "varnish"
+      ],
+      "equipment_categories": [
+        "RL",
+        "PU",
+        "CS",
+        "PT",
+        "GB",
+        "CO",
+        "HY"
+      ],
+      "mechanism": "Degrades",
+      "cause": "Chemical reaction",
+      "cbm_technique": "Oil analysis (TAN, viscosity, oxidation, wear metals)",
+      "threshold": "TAN >4.0 mg KOH/g → change oil immediately (acid attack on bearing surfaces)",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0080",
+      "fm_codes": [
+        "FM-27"
+      ],
+      "description": "transformer DGA showing CO >300 ppm",
+      "category": "visual",
+      "keywords": [
+        "ppm",
+        "transformer",
+        "dga",
+        "showing"
+      ],
+      "equipment_categories": [
+        "RL",
+        "PU",
+        "CS",
+        "PT",
+        "GB",
+        "CO",
+        "HY"
+      ],
+      "mechanism": "Degrades",
+      "cause": "Chemical reaction",
+      "cbm_technique": "Oil analysis (TAN, viscosity, oxidation, wear metals)",
+      "threshold": "TAN >4.0 mg KOH/g → change oil immediately (acid attack on bearing surfaces)",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0081",
+      "fm_codes": [
+        "FM-28"
+      ],
+      "description": "Particle count exceeding ISO 4406 target",
+      "category": "visual",
+      "keywords": [
+        "iso",
+        "count",
+        "target",
+        "particle",
+        "exceeding"
+      ],
+      "equipment_categories": [
+        "EM",
+        "PU",
+        "CS",
+        "PT",
+        "GB",
+        "CO",
+        "EN",
+        "HY"
+      ],
+      "mechanism": "Degrades",
+      "cause": "Contamination",
+      "cbm_technique": "Oil analysis (particle count, water, viscosity, wear metals)",
+      "threshold": "Water >500 ppm → drain/dehydrate and find source; particle count exceeding target by 2 ISO codes → upgrade filtration",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0082",
+      "fm_codes": [
+        "FM-28"
+      ],
+      "description": "water in oil >200 ppm",
+      "category": "contamination",
+      "keywords": [
+        "oil",
+        "ppm",
+        "water"
+      ],
+      "equipment_categories": [
+        "EM",
+        "PU",
+        "CS",
+        "PT",
+        "GB",
+        "CO",
+        "EN",
+        "HY"
+      ],
+      "mechanism": "Degrades",
+      "cause": "Contamination",
+      "cbm_technique": "Oil analysis (particle count, water, viscosity, wear metals)",
+      "threshold": "Water >500 ppm → drain/dehydrate and find source; particle count exceeding target by 2 ISO codes → upgrade filtration",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0083",
+      "fm_codes": [
+        "FM-28"
+      ],
+      "description": "metallic wear debris trending upward (ferrography)",
+      "category": "visual",
+      "keywords": [
+        "trending",
+        "metallic",
+        "debris",
+        "ferrography",
+        "upward",
+        "wear"
+      ],
+      "equipment_categories": [
+        "EM",
+        "PU",
+        "CS",
+        "PT",
+        "GB",
+        "CO",
+        "EN",
+        "HY"
+      ],
+      "mechanism": "Degrades",
+      "cause": "Contamination",
+      "cbm_technique": "Oil analysis (particle count, water, viscosity, wear metals)",
+      "threshold": "Water >500 ppm → drain/dehydrate and find source; particle count exceeding target by 2 ISO codes → upgrade filtration",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0084",
+      "fm_codes": [
+        "FM-29"
+      ],
+      "description": "Contact resistance >50% above baseline (micro-ohm test)",
+      "category": "electrical",
+      "keywords": [
+        "resistance",
+        "ohm",
+        "baseline",
+        "contact",
+        "test",
+        "micro"
+      ],
+      "equipment_categories": [
+        "EM",
+        "CL",
+        "SG",
+        "UP",
+        "EG",
+        "FC"
+      ],
+      "mechanism": "Degrades",
+      "cause": "Electrical arcing",
+      "cbm_technique": "Contact resistance measurement (micro-ohm)",
+      "threshold": "Contact resistance >200% baseline or pitting >50% area → replace before next operational cycle",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0085",
+      "fm_codes": [
+        "FM-29"
+      ],
+      "description": "thermography ΔT >10°C at contacts",
+      "category": "visual",
+      "keywords": [
+        "contacts",
+        "thermography"
+      ],
+      "equipment_categories": [
+        "EM",
+        "CL",
+        "SG",
+        "UP",
+        "EG",
+        "FC"
+      ],
+      "mechanism": "Degrades",
+      "cause": "Electrical arcing",
+      "cbm_technique": "Contact resistance measurement (micro-ohm)",
+      "threshold": "Contact resistance >200% baseline or pitting >50% area → replace before next operational cycle",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0086",
+      "fm_codes": [
+        "FM-29"
+      ],
+      "description": "visible contact pitting/erosion",
+      "category": "visual",
+      "keywords": [
+        "contact",
+        "pitting",
+        "visible",
+        "erosion"
+      ],
+      "equipment_categories": [
+        "EM",
+        "CL",
+        "SG",
+        "UP",
+        "EG",
+        "FC"
+      ],
+      "mechanism": "Degrades",
+      "cause": "Electrical arcing",
+      "cbm_technique": "Contact resistance measurement (micro-ohm)",
+      "threshold": "Contact resistance >200% baseline or pitting >50% area → replace before next operational cycle",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0087",
+      "fm_codes": [
+        "FM-30"
+      ],
+      "description": "Cavitation noise (cracking/rattling at pump suction)",
+      "category": "noise",
+      "keywords": [
+        "cracking",
+        "cavitation",
+        "suction",
+        "pump",
+        "rattling",
+        "noise"
+      ],
+      "equipment_categories": [
+        "VA",
+        "PI",
+        "PU",
+        "GB",
+        "CO",
+        "HY"
+      ],
+      "mechanism": "Degrades",
+      "cause": "Entrained air",
+      "cbm_technique": "Vibration monitoring (cavitation detection — broadband HF)",
+      "threshold": "NPSHa must be ≥ NPSHr + 0.5 m; cavitation erosion on impeller → correct NPSH deficiency before replacing impeller",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0088",
+      "fm_codes": [
+        "FM-30"
+      ],
+      "description": "foam in oil reservoirs",
+      "category": "visual",
+      "keywords": [
+        "oil",
+        "foam",
+        "reservoirs"
+      ],
+      "equipment_categories": [
+        "VA",
+        "PI",
+        "PU",
+        "GB",
+        "CO",
+        "HY"
+      ],
+      "mechanism": "Degrades",
+      "cause": "Entrained air",
+      "cbm_technique": "Vibration monitoring (cavitation detection — broadband HF)",
+      "threshold": "NPSHa must be ≥ NPSHr + 0.5 m; cavitation erosion on impeller → correct NPSH deficiency before replacing impeller",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0089",
+      "fm_codes": [
+        "FM-30"
+      ],
+      "description": "pump discharge pressure fluctuating >±5%",
+      "category": "pressure",
+      "keywords": [
+        "pressure",
+        "fluctuating",
+        "pump",
+        "discharge"
+      ],
+      "equipment_categories": [
+        "VA",
+        "PI",
+        "PU",
+        "GB",
+        "CO",
+        "HY"
+      ],
+      "mechanism": "Degrades",
+      "cause": "Entrained air",
+      "cbm_technique": "Vibration monitoring (cavitation detection — broadband HF)",
+      "threshold": "NPSHa must be ≥ NPSHr + 0.5 m; cavitation erosion on impeller → correct NPSH deficiency before replacing impeller",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0090",
+      "fm_codes": [
+        "FM-31"
+      ],
+      "description": "Material becoming brittle/discolored/chalky",
+      "category": "visual",
+      "keywords": [
+        "discolored",
+        "material",
+        "becoming",
+        "chalky",
+        "brittle"
+      ],
+      "equipment_categories": [
+        "ID",
+        "CL",
+        "SG",
+        "PI",
+        "EI",
+        "PU",
+        "SD"
+      ],
+      "mechanism": "Degrades",
+      "cause": "Exposure to excessive temperature",
+      "cbm_technique": "Ambient temperature monitoring near sensitive equipment",
+      "threshold": "Cable IR <1 MΩ/km per IEEE 400 → plan cable replacement at next outage",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0091",
+      "fm_codes": [
+        "FM-31"
+      ],
+      "description": "cable insulation cracking/hardening",
+      "category": "electrical",
+      "keywords": [
+        "cable",
+        "insulation",
+        "hardening",
+        "cracking"
+      ],
+      "equipment_categories": [
+        "ID",
+        "CL",
+        "SG",
+        "PI",
+        "EI",
+        "PU",
+        "SD"
+      ],
+      "mechanism": "Degrades",
+      "cause": "Exposure to excessive temperature",
+      "cbm_technique": "Ambient temperature monitoring near sensitive equipment",
+      "threshold": "Cable IR <1 MΩ/km per IEEE 400 → plan cable replacement at next outage",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0092",
+      "fm_codes": [
+        "FM-31"
+      ],
+      "description": "equipment temperature exceeding material rating (DCS logged)",
+      "category": "temperature",
+      "keywords": [
+        "temperature",
+        "dcs",
+        "material",
+        "logged",
+        "rating",
+        "equipment",
+        "exceeding"
+      ],
+      "equipment_categories": [
+        "ID",
+        "CL",
+        "SG",
+        "PI",
+        "EI",
+        "PU",
+        "SD"
+      ],
+      "mechanism": "Degrades",
+      "cause": "Exposure to excessive temperature",
+      "cbm_technique": "Ambient temperature monitoring near sensitive equipment",
+      "threshold": "Cable IR <1 MΩ/km per IEEE 400 → plan cable replacement at next outage",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0093",
+      "fm_codes": [
+        "FM-32"
+      ],
+      "description": "Surface chalking/fading/discoloration",
+      "category": "visual",
+      "keywords": [
+        "fading",
+        "discoloration",
+        "surface",
+        "chalking"
+      ],
+      "equipment_categories": [
+        "SG",
+        "CV",
+        "PI",
+        "TA",
+        "EI",
+        "ST"
+      ],
+      "mechanism": "Degrades",
+      "cause": "Radiation",
+      "cbm_technique": "Visual inspection for chalking, cracking, discoloration",
+      "threshold": "FRP Barcol hardness drops >20% or fibers exposed → apply UV-resistant topcoat within 6 months",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0094",
+      "fm_codes": [
+        "FM-32"
+      ],
+      "description": "surface cracking/crazing on UV-exposed surfaces",
+      "category": "visual",
+      "keywords": [
+        "surface",
+        "cracking",
+        "surfaces",
+        "crazing",
+        "exposed"
+      ],
+      "equipment_categories": [
+        "SG",
+        "CV",
+        "PI",
+        "TA",
+        "EI",
+        "ST"
+      ],
+      "mechanism": "Degrades",
+      "cause": "Radiation",
+      "cbm_technique": "Visual inspection for chalking, cracking, discoloration",
+      "threshold": "FRP Barcol hardness drops >20% or fibers exposed → apply UV-resistant topcoat within 6 months",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0095",
+      "fm_codes": [
+        "FM-32"
+      ],
+      "description": "FRP roughening with fiber exposure",
+      "category": "visual",
+      "keywords": [
+        "frp",
+        "roughening",
+        "fiber",
+        "exposure"
+      ],
+      "equipment_categories": [
+        "SG",
+        "CV",
+        "PI",
+        "TA",
+        "EI",
+        "ST"
+      ],
+      "mechanism": "Degrades",
+      "cause": "Radiation",
+      "cbm_technique": "Visual inspection for chalking, cracking, discoloration",
+      "threshold": "FRP Barcol hardness drops >20% or fibers exposed → apply UV-resistant topcoat within 6 months",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0096",
+      "fm_codes": [
+        "FM-33"
+      ],
+      "description": "Visible bending/denting/buckling",
+      "category": "visual",
+      "keywords": [
+        "denting",
+        "buckling",
+        "bending",
+        "visible"
+      ],
+      "equipment_categories": [
+        "CV",
+        "PI",
+        "TA",
+        "PU",
+        "ST",
+        "CU"
+      ],
+      "mechanism": "Distorts",
+      "cause": "Impact/shock loading",
+      "cbm_technique": "Visual inspection for dents, bends, deformation",
+      "threshold": "Pipe dent >6% of diameter → fitness-for-service per API 579; shaft runout >50 μm → realign",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0097",
+      "fm_codes": [
+        "FM-33"
+      ],
+      "description": "alignment deviation exceeding tolerance",
+      "category": "performance",
+      "keywords": [
+        "exceeding",
+        "deviation",
+        "alignment",
+        "tolerance"
+      ],
+      "equipment_categories": [
+        "CV",
+        "PI",
+        "TA",
+        "PU",
+        "ST",
+        "CU"
+      ],
+      "mechanism": "Distorts",
+      "cause": "Impact/shock loading",
+      "cbm_technique": "Visual inspection for dents, bends, deformation",
+      "threshold": "Pipe dent >6% of diameter → fitness-for-service per API 579; shaft runout >50 μm → realign",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0098",
+      "fm_codes": [
+        "FM-33"
+      ],
+      "description": "increased vibration from distortion-induced unbalance",
+      "category": "vibration",
+      "keywords": [
+        "unbalance",
+        "induced",
+        "vibration",
+        "increased",
+        "distortion"
+      ],
+      "equipment_categories": [
+        "CV",
+        "PI",
+        "TA",
+        "PU",
+        "ST",
+        "CU"
+      ],
+      "mechanism": "Distorts",
+      "cause": "Impact/shock loading",
+      "cbm_technique": "Visual inspection for dents, bends, deformation",
+      "threshold": "Pipe dent >6% of diameter → fitness-for-service per API 579; shaft runout >50 μm → realign",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0099",
+      "fm_codes": [
+        "FM-34"
+      ],
+      "description": "Visible permanent deflection/bowing/twisting",
+      "category": "visual",
+      "keywords": [
+        "visible",
+        "deflection",
+        "permanent",
+        "bowing",
+        "twisting"
+      ],
+      "equipment_categories": [
+        "VE",
+        "CV",
+        "PI",
+        "TA",
+        "PU",
+        "ST",
+        "CR"
+      ],
+      "mechanism": "Distorts",
+      "cause": "Mechanical overload",
+      "cbm_technique": "Structural survey (deflection, plumb, level)",
+      "threshold": "Beam deflection >L/200 or increasing under constant load → de-rate, plan reinforcement",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0100",
+      "fm_codes": [
+        "FM-34"
+      ],
+      "description": "buckling of thin-walled structures",
+      "category": "visual",
+      "keywords": [
+        "structures",
+        "buckling",
+        "walled",
+        "thin"
+      ],
+      "equipment_categories": [
+        "VE",
+        "CV",
+        "PI",
+        "TA",
+        "PU",
+        "ST",
+        "CR"
+      ],
+      "mechanism": "Distorts",
+      "cause": "Mechanical overload",
+      "cbm_technique": "Structural survey (deflection, plumb, level)",
+      "threshold": "Beam deflection >L/200 or increasing under constant load → de-rate, plan reinforcement",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0101",
+      "fm_codes": [
+        "FM-34"
+      ],
+      "description": "bolt gap opening at flanges",
+      "category": "alignment",
+      "keywords": [
+        "gap",
+        "bolt",
+        "opening",
+        "flanges"
+      ],
+      "equipment_categories": [
+        "VE",
+        "CV",
+        "PI",
+        "TA",
+        "PU",
+        "ST",
+        "CR"
+      ],
+      "mechanism": "Distorts",
+      "cause": "Mechanical overload",
+      "cbm_technique": "Structural survey (deflection, plumb, level)",
+      "threshold": "Beam deflection >L/200 or increasing under constant load → de-rate, plan reinforcement",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0102",
+      "fm_codes": [
+        "FM-35"
+      ],
+      "description": "Belt mistracking (consistently one side)",
+      "category": "visual",
+      "keywords": [
+        "side",
+        "consistently",
+        "mistracking",
+        "one",
+        "belt"
+      ],
+      "equipment_categories": [
+        "CV",
+        "TA",
+        "PU",
+        "ST",
+        "ML",
+        "CR"
+      ],
+      "mechanism": "Distorts",
+      "cause": "Off-center loading",
+      "cbm_technique": "Alignment and level survey",
+      "threshold": "Foundation differential >5 mm between supports → re-shim and investigate; belt off-center >50 mm → adjust within 30 days",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0103",
+      "fm_codes": [
+        "FM-35"
+      ],
+      "description": "differential bearing temperature (loaded side >10°C hotter)",
+      "category": "temperature",
+      "keywords": [
+        "temperature",
+        "bearing",
+        "side",
+        "hotter",
+        "differential",
+        "loaded"
+      ],
+      "equipment_categories": [
+        "CV",
+        "TA",
+        "PU",
+        "ST",
+        "ML",
+        "CR"
+      ],
+      "mechanism": "Distorts",
+      "cause": "Off-center loading",
+      "cbm_technique": "Alignment and level survey",
+      "threshold": "Foundation differential >5 mm between supports → re-shim and investigate; belt off-center >50 mm → adjust within 30 days",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0104",
+      "fm_codes": [
+        "FM-35"
+      ],
+      "description": "uneven wear on bearings/liners",
+      "category": "visual",
+      "keywords": [
+        "liners",
+        "bearings",
+        "wear",
+        "uneven"
+      ],
+      "equipment_categories": [
+        "CV",
+        "TA",
+        "PU",
+        "ST",
+        "ML",
+        "CR"
+      ],
+      "mechanism": "Distorts",
+      "cause": "Off-center loading",
+      "cbm_technique": "Alignment and level survey",
+      "threshold": "Foundation differential >5 mm between supports → re-shim and investigate; belt off-center >50 mm → adjust within 30 days",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0105",
+      "fm_codes": [
+        "FM-36"
+      ],
+      "description": "Mill shell ovality increasing (>0.5% of diameter)",
+      "category": "visual",
+      "keywords": [
+        "increasing",
+        "mill",
+        "shell",
+        "diameter",
+        "ovality"
+      ],
+      "equipment_categories": [
+        "VA",
+        "RO",
+        "CV",
+        "HE",
+        "PU",
+        "ML",
+        "CR"
+      ],
+      "mechanism": "Distorts",
+      "cause": "Use",
+      "cbm_technique": "Dimensional survey against baseline",
+      "threshold": "Mill ovality >1.0% → engineer assessment, reduce load; impeller distortion >5% throat area → replace",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0106",
+      "fm_codes": [
+        "FM-36"
+      ],
+      "description": "kiln riding ring gap differential exceeding tolerance",
+      "category": "pressure",
+      "keywords": [
+        "tolerance",
+        "riding",
+        "gap",
+        "ring",
+        "differential",
+        "exceeding",
+        "kiln"
+      ],
+      "equipment_categories": [
+        "VA",
+        "RO",
+        "CV",
+        "HE",
+        "PU",
+        "ML",
+        "CR"
+      ],
+      "mechanism": "Distorts",
+      "cause": "Use",
+      "cbm_technique": "Dimensional survey against baseline",
+      "threshold": "Mill ovality >1.0% → engineer assessment, reduce load; impeller distortion >5% throat area → replace",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0107",
+      "fm_codes": [
+        "FM-36"
+      ],
+      "description": "progressive dimensional change vs as-built baseline",
+      "category": "visual",
+      "keywords": [
+        "progressive",
+        "baseline",
+        "built",
+        "change",
+        "dimensional"
+      ],
+      "equipment_categories": [
+        "VA",
+        "RO",
+        "CV",
+        "HE",
+        "PU",
+        "ML",
+        "CR"
+      ],
+      "mechanism": "Distorts",
+      "cause": "Use",
+      "cbm_technique": "Dimensional survey against baseline",
+      "threshold": "Mill ovality >1.0% → engineer assessment, reduce load; impeller distortion >5% throat area → replace",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0108",
+      "fm_codes": [
+        "FM-37"
+      ],
+      "description": "Deviation from redundant reading >1% of span",
+      "category": "performance",
+      "keywords": [
+        "deviation",
+        "span",
+        "reading",
+        "redundant"
+      ],
+      "equipment_categories": [
+        "ID",
+        "FM",
+        "LI",
+        "CV",
+        "SD",
+        "AN"
+      ],
+      "mechanism": "Drifts",
+      "cause": "Excessive temperature",
+      "cbm_technique": "Calibration verification",
+      "threshold": "Drift >1.0% of span → recalibrate immediately and install thermal barrier",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0109",
+      "fm_codes": [
+        "FM-37"
+      ],
+      "description": "calibration drift >0.5% since last verification",
+      "category": "performance",
+      "keywords": [
+        "last",
+        "calibration",
+        "drift",
+        "verification",
+        "since"
+      ],
+      "equipment_categories": [
+        "ID",
+        "FM",
+        "LI",
+        "CV",
+        "SD",
+        "AN"
+      ],
+      "mechanism": "Drifts",
+      "cause": "Excessive temperature",
+      "cbm_technique": "Calibration verification",
+      "threshold": "Drift >1.0% of span → recalibrate immediately and install thermal barrier",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0110",
+      "fm_codes": [
+        "FM-37"
+      ],
+      "description": "smart transmitter diagnostic flags",
+      "category": "visual",
+      "keywords": [
+        "smart",
+        "transmitter",
+        "diagnostic",
+        "flags"
+      ],
+      "equipment_categories": [
+        "ID",
+        "FM",
+        "LI",
+        "CV",
+        "SD",
+        "AN"
+      ],
+      "mechanism": "Drifts",
+      "cause": "Excessive temperature",
+      "cbm_technique": "Calibration verification",
+      "threshold": "Drift >1.0% of span → recalibrate immediately and install thermal barrier",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0111",
+      "fm_codes": [
+        "FM-38"
+      ],
+      "description": "Sudden step-change after known impact",
+      "category": "visual",
+      "keywords": [
+        "step",
+        "known",
+        "impact",
+        "sudden",
+        "change"
+      ],
+      "equipment_categories": [
+        "ID",
+        "FM",
+        "WE",
+        "CV",
+        "SD",
+        "AN"
+      ],
+      "mechanism": "Drifts",
+      "cause": "Impact/shock loading",
+      "cbm_technique": "Calibration verification",
+      "threshold": "Drift >0.5% on safety instrument → recalibrate; recurrence → relocate or upgrade to shock-resistant model",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0112",
+      "fm_codes": [
+        "FM-38"
+      ],
+      "description": "calibration shift >0.5% between verifications",
+      "category": "visual",
+      "keywords": [
+        "calibration",
+        "shift",
+        "verifications"
+      ],
+      "equipment_categories": [
+        "ID",
+        "FM",
+        "WE",
+        "CV",
+        "SD",
+        "AN"
+      ],
+      "mechanism": "Drifts",
+      "cause": "Impact/shock loading",
+      "cbm_technique": "Calibration verification",
+      "threshold": "Drift >0.5% on safety instrument → recalibrate; recurrence → relocate or upgrade to shock-resistant model",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0113",
+      "fm_codes": [
+        "FM-38"
+      ],
+      "description": "gauge needle not returning to zero",
+      "category": "visual",
+      "keywords": [
+        "zero",
+        "gauge",
+        "not",
+        "needle",
+        "returning"
+      ],
+      "equipment_categories": [
+        "ID",
+        "FM",
+        "WE",
+        "CV",
+        "SD",
+        "AN"
+      ],
+      "mechanism": "Drifts",
+      "cause": "Impact/shock loading",
+      "cbm_technique": "Calibration verification",
+      "threshold": "Drift >0.5% on safety instrument → recalibrate; recurrence → relocate or upgrade to shock-resistant model",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0114",
+      "fm_codes": [
+        "FM-39"
+      ],
+      "description": "Reading varying with nearby equipment operation",
+      "category": "visual",
+      "keywords": [
+        "varying",
+        "equipment",
+        "operation",
+        "reading",
+        "nearby"
+      ],
+      "equipment_categories": [
+        "ID",
+        "FM",
+        "WE",
+        "LI",
+        "CL",
+        "AN"
+      ],
+      "mechanism": "Drifts",
+      "cause": "Stray current",
+      "cbm_technique": "Instrument signal quality analysis (noise, ripple)",
+      "threshold": "AC noise on 4–20 mA >1% of span (>0.16 mA p-p) → check shield continuity, verify single-point grounding",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0115",
+      "fm_codes": [
+        "FM-39"
+      ],
+      "description": "difference between installed reading and portable calibrator",
+      "category": "visual",
+      "keywords": [
+        "difference",
+        "installed",
+        "portable",
+        "calibrator",
+        "reading"
+      ],
+      "equipment_categories": [
+        "ID",
+        "FM",
+        "WE",
+        "LI",
+        "CL",
+        "AN"
+      ],
+      "mechanism": "Drifts",
+      "cause": "Stray current",
+      "cbm_technique": "Instrument signal quality analysis (noise, ripple)",
+      "threshold": "AC noise on 4–20 mA >1% of span (>0.16 mA p-p) → check shield continuity, verify single-point grounding",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0116",
+      "fm_codes": [
+        "FM-39"
+      ],
+      "description": "AC ripple on 4–20 mA loop >1% of span",
+      "category": "visual",
+      "keywords": [
+        "span",
+        "loop",
+        "ripple"
+      ],
+      "equipment_categories": [
+        "ID",
+        "FM",
+        "WE",
+        "LI",
+        "CL",
+        "AN"
+      ],
+      "mechanism": "Drifts",
+      "cause": "Stray current",
+      "cbm_technique": "Instrument signal quality analysis (noise, ripple)",
+      "threshold": "AC noise on 4–20 mA >1% of span (>0.16 mA p-p) → check shield continuity, verify single-point grounding",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0117",
+      "fm_codes": [
+        "FM-40"
+      ],
+      "description": "Weighing instrument deviating from independent check",
+      "category": "visual",
+      "keywords": [
+        "check",
+        "instrument",
+        "weighing",
+        "deviating",
+        "independent"
+      ],
+      "equipment_categories": [
+        "ID",
+        "FM",
+        "WE",
+        "LI",
+        "CV"
+      ],
+      "mechanism": "Drifts",
+      "cause": "Uneven loading",
+      "cbm_technique": "Calibration verification with known reference",
+      "threshold": "Belt weigher accuracy >±0.5% → recalibrate; load cells unbalanced >5% → re-shim, inspect for binding",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0118",
+      "fm_codes": [
+        "FM-40"
+      ],
+      "description": "calibration shifting with loading position",
+      "category": "visual",
+      "keywords": [
+        "calibration",
+        "position",
+        "loading",
+        "shifting"
+      ],
+      "equipment_categories": [
+        "ID",
+        "FM",
+        "WE",
+        "LI",
+        "CV"
+      ],
+      "mechanism": "Drifts",
+      "cause": "Uneven loading",
+      "cbm_technique": "Calibration verification with known reference",
+      "threshold": "Belt weigher accuracy >±0.5% → recalibrate; load cells unbalanced >5% → re-shim, inspect for binding",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0119",
+      "fm_codes": [
+        "FM-40"
+      ],
+      "description": "load cell output imbalance >2%",
+      "category": "vibration",
+      "keywords": [
+        "output",
+        "imbalance",
+        "cell",
+        "load"
+      ],
+      "equipment_categories": [
+        "ID",
+        "FM",
+        "WE",
+        "LI",
+        "CV"
+      ],
+      "mechanism": "Drifts",
+      "cause": "Uneven loading",
+      "cbm_technique": "Calibration verification with known reference",
+      "threshold": "Belt weigher accuracy >±0.5% → recalibrate; load cells unbalanced >5% → re-shim, inspect for binding",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0120",
+      "fm_codes": [
+        "FM-41"
+      ],
+      "description": "Progressive calibration drift trending (consistent direction), as-found data showing systematic shift",
+      "category": "performance",
+      "keywords": [
+        "progressive",
+        "systematic",
+        "trending",
+        "showing",
+        "found",
+        "direction",
+        "data",
+        "shift",
+        "calibration",
+        "drift"
+      ],
+      "equipment_categories": [
+        "ID",
+        "FM",
+        "WE",
+        "LI",
+        "CV",
+        "SD",
+        "AN"
+      ],
+      "mechanism": "Drifts",
+      "cause": "Use",
+      "cbm_technique": "Scheduled calibration verification",
+      "threshold": "SIS drift >0.5% of span → recalibrate and shorten interval; pH slope <85% Nernst theoretical → replace electrode",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0121",
+      "fm_codes": [
+        "FM-41"
+      ],
+      "description": "pH electrode response time >30 s to 95%",
+      "category": "visual",
+      "keywords": [
+        "time",
+        "response",
+        "electrode"
+      ],
+      "equipment_categories": [
+        "ID",
+        "FM",
+        "WE",
+        "LI",
+        "CV",
+        "SD",
+        "AN"
+      ],
+      "mechanism": "Drifts",
+      "cause": "Use",
+      "cbm_technique": "Scheduled calibration verification",
+      "threshold": "SIS drift >0.5% of span → recalibrate and shorten interval; pH slope <85% Nernst theoretical → replace electrode",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0122",
+      "fm_codes": [
+        "FM-42"
+      ],
+      "description": "Approaching/exceeding manufacturer shelf life",
+      "category": "visual",
+      "keywords": [
+        "manufacturer",
+        "shelf",
+        "approaching",
+        "exceeding",
+        "life"
+      ],
+      "equipment_categories": [
+        "ID",
+        "VA",
+        "NO",
+        "CL",
+        "UP",
+        "FG",
+        "FS"
+      ],
+      "mechanism": "Expires",
+      "cause": "Age",
+      "cbm_technique": "Battery capacity testing (discharge test)",
+      "threshold": "Battery capacity <80% → replace within 60 days; <60% → replace immediately",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0123",
+      "fm_codes": [
+        "FM-42"
+      ],
+      "description": "battery capacity <80% per IEEE 450",
+      "category": "performance",
+      "keywords": [
+        "ieee",
+        "capacity",
+        "battery"
+      ],
+      "equipment_categories": [
+        "ID",
+        "VA",
+        "NO",
+        "CL",
+        "UP",
+        "FG",
+        "FS"
+      ],
+      "mechanism": "Expires",
+      "cause": "Age",
+      "cbm_technique": "Battery capacity testing (discharge test)",
+      "threshold": "Battery capacity <80% → replace within 60 days; <60% → replace immediately",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0124",
+      "fm_codes": [
+        "FM-42"
+      ],
+      "description": "fire suppression agent weight loss >5%",
+      "category": "performance",
+      "keywords": [
+        "fire",
+        "agent",
+        "loss",
+        "suppression",
+        "weight"
+      ],
+      "equipment_categories": [
+        "ID",
+        "VA",
+        "NO",
+        "CL",
+        "UP",
+        "FG",
+        "FS"
+      ],
+      "mechanism": "Expires",
+      "cause": "Age",
+      "cbm_technique": "Battery capacity testing (discharge test)",
+      "threshold": "Battery capacity <80% → replace within 60 days; <60% → replace immediately",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0125",
+      "fm_codes": [
+        "FM-43"
+      ],
+      "description": "Increased actuating force/torque trending",
+      "category": "visual",
+      "keywords": [
+        "trending",
+        "force",
+        "actuating",
+        "increased",
+        "torque"
+      ],
+      "equipment_categories": [
+        "VA",
+        "CL",
+        "CV",
+        "PU",
+        "CO",
+        "CR"
+      ],
+      "mechanism": "Immobilised",
+      "cause": "Contamination",
+      "cbm_technique": "Valve partial stroke testing (PST)",
+      "threshold": "Stroke time >125% baseline → schedule cleaning within 30 days; fail to achieve full stroke → immediate corrective action",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0126",
+      "fm_codes": [
+        "FM-43"
+      ],
+      "description": "valve stroke time >25% above baseline",
+      "category": "visual",
+      "keywords": [
+        "baseline",
+        "stroke",
+        "time",
+        "valve"
+      ],
+      "equipment_categories": [
+        "VA",
+        "CL",
+        "CV",
+        "PU",
+        "CO",
+        "CR"
+      ],
+      "mechanism": "Immobilised",
+      "cause": "Contamination",
+      "cbm_technique": "Valve partial stroke testing (PST)",
+      "threshold": "Stroke time >125% baseline → schedule cleaning within 30 days; fail to achieve full stroke → immediate corrective action",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0127",
+      "fm_codes": [
+        "FM-43"
+      ],
+      "description": "partial stroke test showing increased friction",
+      "category": "visual",
+      "keywords": [
+        "friction",
+        "stroke",
+        "showing",
+        "increased",
+        "test",
+        "partial"
+      ],
+      "equipment_categories": [
+        "VA",
+        "CL",
+        "CV",
+        "PU",
+        "CO",
+        "CR"
+      ],
+      "mechanism": "Immobilised",
+      "cause": "Contamination",
+      "cbm_technique": "Valve partial stroke testing (PST)",
+      "threshold": "Stroke time >125% baseline → schedule cleaning within 30 days; fail to achieve full stroke → immediate corrective action",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0128",
+      "fm_codes": [
+        "FM-44"
+      ],
+      "description": "Elevated bearing temperature (ΔT >15°C above baseline)",
+      "category": "temperature",
+      "keywords": [
+        "baseline",
+        "elevated",
+        "temperature",
+        "bearing"
+      ],
+      "equipment_categories": [
+        "EM",
+        "CV",
+        "PU",
+        "FA",
+        "CO",
+        "CR"
+      ],
+      "mechanism": "Immobilised",
+      "cause": "Lack of lubrication",
+      "cbm_technique": "Vibration analysis (envelope/demodulation)",
+      "threshold": "Vibration >7.1 mm/s RMS (ISO Zone D) → schedule immediate replacement; bearing temp >90°C → stop immediately",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0129",
+      "fm_codes": [
+        "FM-44"
+      ],
+      "description": "vibration at bearing defect frequencies (BPFO/BPFI/BSF)",
+      "category": "vibration",
+      "keywords": [
+        "bearing",
+        "bsf",
+        "frequencies",
+        "bpfi",
+        "vibration",
+        "defect",
+        "bpfo"
+      ],
+      "equipment_categories": [
+        "EM",
+        "CV",
+        "PU",
+        "FA",
+        "CO",
+        "CR"
+      ],
+      "mechanism": "Immobilised",
+      "cause": "Lack of lubrication",
+      "cbm_technique": "Vibration analysis (envelope/demodulation)",
+      "threshold": "Vibration >7.1 mm/s RMS (ISO Zone D) → schedule immediate replacement; bearing temp >90°C → stop immediately",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0130",
+      "fm_codes": [
+        "FM-44"
+      ],
+      "description": "audible grinding/squealing",
+      "category": "noise",
+      "keywords": [
+        "grinding",
+        "squealing",
+        "audible"
+      ],
+      "equipment_categories": [
+        "EM",
+        "CV",
+        "PU",
+        "FA",
+        "CO",
+        "CR"
+      ],
+      "mechanism": "Immobilised",
+      "cause": "Lack of lubrication",
+      "cbm_technique": "Vibration analysis (envelope/demodulation)",
+      "threshold": "Vibration >7.1 mm/s RMS (ISO Zone D) → schedule immediate replacement; bearing temp >90°C → stop immediately",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0131",
+      "fm_codes": [
+        "FM-45"
+      ],
+      "description": "Bolt torque <80% of spec",
+      "category": "visual",
+      "keywords": [
+        "bolt",
+        "torque",
+        "spec"
+      ],
+      "equipment_categories": [
+        "VA",
+        "RO",
+        "VE",
+        "PI",
+        "HE",
+        "PU"
+      ],
+      "mechanism": "Looses preload",
+      "cause": "Creep",
+      "cbm_technique": "Ultrasonic bolt tension measurement",
+      "threshold": "Preload <70% → replace gasket (cannot reliably re-torque crept gasket); active leakage → repair within 7 days",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0132",
+      "fm_codes": [
+        "FM-45"
+      ],
+      "description": "visible gasket extrusion at flange edges",
+      "category": "visual",
+      "keywords": [
+        "visible",
+        "gasket",
+        "flange",
+        "extrusion",
+        "edges"
+      ],
+      "equipment_categories": [
+        "VA",
+        "RO",
+        "VE",
+        "PI",
+        "HE",
+        "PU"
+      ],
+      "mechanism": "Looses preload",
+      "cause": "Creep",
+      "cbm_technique": "Ultrasonic bolt tension measurement",
+      "threshold": "Preload <70% → replace gasket (cannot reliably re-torque crept gasket); active leakage → repair within 7 days",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0133",
+      "fm_codes": [
+        "FM-45"
+      ],
+      "description": "minor weeping/seepage at gasketed joints",
+      "category": "leak",
+      "keywords": [
+        "weeping",
+        "seepage",
+        "minor",
+        "gasketed",
+        "joints"
+      ],
+      "equipment_categories": [
+        "VA",
+        "RO",
+        "VE",
+        "PI",
+        "HE",
+        "PU"
+      ],
+      "mechanism": "Looses preload",
+      "cause": "Creep",
+      "cbm_technique": "Ultrasonic bolt tension measurement",
+      "threshold": "Preload <70% → replace gasket (cannot reliably re-torque crept gasket); active leakage → repair within 7 days",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0134",
+      "fm_codes": [
+        "FM-46"
+      ],
+      "description": "DCS high-high temperature alarm",
+      "category": "temperature",
+      "keywords": [
+        "temperature",
+        "high",
+        "dcs",
+        "alarm"
+      ],
+      "equipment_categories": [
+        "VA",
+        "RO",
+        "VE",
+        "PI",
+        "HE",
+        "BO"
+      ],
+      "mechanism": "Looses preload",
+      "cause": "Excessive temperature",
+      "cbm_technique": "Post-event bolt torque and condition inspection",
+      "threshold": "Bolt temper colors >350°C → replace all bolts; temperature >120% gasket max → replace gasket regardless of visible condition",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0135",
+      "fm_codes": [
+        "FM-46"
+      ],
+      "description": "bolt head temper colors (straw 200°C",
+      "category": "temperature",
+      "keywords": [
+        "colors",
+        "straw",
+        "bolt",
+        "head",
+        "temper"
+      ],
+      "equipment_categories": [
+        "VA",
+        "RO",
+        "VE",
+        "PI",
+        "HE",
+        "BO"
+      ],
+      "mechanism": "Looses preload",
+      "cause": "Excessive temperature",
+      "cbm_technique": "Post-event bolt torque and condition inspection",
+      "threshold": "Bolt temper colors >350°C → replace all bolts; temperature >120% gasket max → replace gasket regardless of visible condition",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0136",
+      "fm_codes": [
+        "FM-46"
+      ],
+      "description": "blue 300°C",
+      "category": "visual",
+      "keywords": [
+        "blue"
+      ],
+      "equipment_categories": [
+        "VA",
+        "RO",
+        "VE",
+        "PI",
+        "HE",
+        "BO"
+      ],
+      "mechanism": "Looses preload",
+      "cause": "Excessive temperature",
+      "cbm_technique": "Post-event bolt torque and condition inspection",
+      "threshold": "Bolt temper colors >350°C → replace all bolts; temperature >120% gasket max → replace gasket regardless of visible condition",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0137",
+      "fm_codes": [
+        "FM-46"
+      ],
+      "description": "black >400°C)",
+      "category": "visual",
+      "keywords": [
+        "black"
+      ],
+      "equipment_categories": [
+        "VA",
+        "RO",
+        "VE",
+        "PI",
+        "HE",
+        "BO"
+      ],
+      "mechanism": "Looses preload",
+      "cause": "Excessive temperature",
+      "cbm_technique": "Post-event bolt torque and condition inspection",
+      "threshold": "Bolt temper colors >350°C → replace all bolts; temperature >120% gasket max → replace gasket regardless of visible condition",
+      "pcondition_rank": 4
+    },
+    {
+      "symptom_id": "SYM-0138",
+      "fm_codes": [
+        "FM-46"
+      ],
+      "description": "gasket charring/embrittlement",
+      "category": "visual",
+      "keywords": [
+        "gasket",
+        "embrittlement",
+        "charring"
+      ],
+      "equipment_categories": [
+        "VA",
+        "RO",
+        "VE",
+        "PI",
+        "HE",
+        "BO"
+      ],
+      "mechanism": "Looses preload",
+      "cause": "Excessive temperature",
+      "cbm_technique": "Post-event bolt torque and condition inspection",
+      "threshold": "Bolt temper colors >350°C → replace all bolts; temperature >120% gasket max → replace gasket regardless of visible condition",
+      "pcondition_rank": 5
+    },
+    {
+      "symptom_id": "SYM-0139",
+      "fm_codes": [
+        "FM-47"
+      ],
+      "description": "Witness mark rotation on bolt/nut",
+      "category": "visual",
+      "keywords": [
+        "nut",
+        "mark",
+        "bolt",
+        "witness",
+        "rotation"
+      ],
+      "equipment_categories": [
+        "CV",
+        "PU",
+        "FA",
+        "ST",
+        "ML",
+        "VS",
+        "CU"
+      ],
+      "mechanism": "Looses preload",
+      "cause": "Vibration",
+      "cbm_technique": "Torque audit (calibrated wrench)",
+      "threshold": "Preload <60% or nut rotated >30° → replace bolt/nut set and upgrade locking method (nord-lock, thread-lock)",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0140",
+      "fm_codes": [
+        "FM-47"
+      ],
+      "description": "bolt torque <70% of spec",
+      "category": "visual",
+      "keywords": [
+        "bolt",
+        "torque",
+        "spec"
+      ],
+      "equipment_categories": [
+        "CV",
+        "PU",
+        "FA",
+        "ST",
+        "ML",
+        "VS",
+        "CU"
+      ],
+      "mechanism": "Looses preload",
+      "cause": "Vibration",
+      "cbm_technique": "Torque audit (calibrated wrench)",
+      "threshold": "Preload <60% or nut rotated >30° → replace bolt/nut set and upgrade locking method (nord-lock, thread-lock)",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0141",
+      "fm_codes": [
+        "FM-47"
+      ],
+      "description": "audible rattling during operation",
+      "category": "visual",
+      "keywords": [
+        "operation",
+        "rattling",
+        "audible"
+      ],
+      "equipment_categories": [
+        "CV",
+        "PU",
+        "FA",
+        "ST",
+        "ML",
+        "VS",
+        "CU"
+      ],
+      "mechanism": "Looses preload",
+      "cause": "Vibration",
+      "cbm_technique": "Torque audit (calibrated wrench)",
+      "threshold": "Preload <60% or nut rotated >30° → replace bolt/nut set and upgrade locking method (nord-lock, thread-lock)",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0142",
+      "fm_codes": [
+        "FM-48"
+      ],
+      "description": "Thermography ΔT >10°C at connections",
+      "category": "visual",
+      "keywords": [
+        "connections",
+        "thermography"
+      ],
+      "equipment_categories": [
+        "EM",
+        "SG",
+        "UP",
+        "EG",
+        "PC",
+        "FC"
+      ],
+      "mechanism": "Open-circuit",
+      "cause": "Electrical overload",
+      "cbm_technique": "Thermography of electrical connections",
+      "threshold": "ΔT >40°C or absolute >105°C (NETA Priority 1) → de-energize and repair immediately (imminent failure/fire)",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0143",
+      "fm_codes": [
+        "FM-48"
+      ],
+      "description": "increasing contact resistance (>50% above initial), discoloration/heat marks at connections",
+      "category": "temperature",
+      "keywords": [
+        "increasing",
+        "initial",
+        "resistance",
+        "connections",
+        "contact",
+        "marks",
+        "discoloration",
+        "heat"
+      ],
+      "equipment_categories": [
+        "EM",
+        "SG",
+        "UP",
+        "EG",
+        "PC",
+        "FC"
+      ],
+      "mechanism": "Open-circuit",
+      "cause": "Electrical overload",
+      "cbm_technique": "Thermography of electrical connections",
+      "threshold": "ΔT >40°C or absolute >105°C (NETA Priority 1) → de-energize and repair immediately (imminent failure/fire)",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0144",
+      "fm_codes": [
+        "FM-49"
+      ],
+      "description": "Operating temperature >10°C above clean baseline",
+      "category": "temperature",
+      "keywords": [
+        "baseline",
+        "operating",
+        "temperature",
+        "clean"
+      ],
+      "equipment_categories": [
+        "BE",
+        "EM",
+        "CL",
+        "HE",
+        "PT",
+        "GB",
+        "FC"
+      ],
+      "mechanism": "Overheats/melts",
+      "cause": "Contamination",
+      "cbm_technique": "Operating temperature trending (RTD/thermocouple/thermography)",
+      "threshold": "Temperature approaching OEM max at rated load → clean immediately and reduce load until cleaned",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0145",
+      "fm_codes": [
+        "FM-49"
+      ],
+      "description": "heat exchanger approach temperature increasing >5°C",
+      "category": "temperature",
+      "keywords": [
+        "temperature",
+        "increasing",
+        "approach",
+        "heat",
+        "exchanger"
+      ],
+      "equipment_categories": [
+        "BE",
+        "EM",
+        "CL",
+        "HE",
+        "PT",
+        "GB",
+        "FC"
+      ],
+      "mechanism": "Overheats/melts",
+      "cause": "Contamination",
+      "cbm_technique": "Operating temperature trending (RTD/thermocouple/thermography)",
+      "threshold": "Temperature approaching OEM max at rated load → clean immediately and reduce load until cleaned",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0146",
+      "fm_codes": [
+        "FM-49"
+      ],
+      "description": "visible contamination on cooling surfaces",
+      "category": "contamination",
+      "keywords": [
+        "surfaces",
+        "visible",
+        "cooling",
+        "contamination"
+      ],
+      "equipment_categories": [
+        "BE",
+        "EM",
+        "CL",
+        "HE",
+        "PT",
+        "GB",
+        "FC"
+      ],
+      "mechanism": "Overheats/melts",
+      "cause": "Contamination",
+      "cbm_technique": "Operating temperature trending (RTD/thermocouple/thermography)",
+      "threshold": "Temperature approaching OEM max at rated load → clean immediately and reduce load until cleaned",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0147",
+      "fm_codes": [
+        "FM-50"
+      ],
+      "description": "Connection thermography ΔT >10°C per NETA",
+      "category": "visual",
+      "keywords": [
+        "neta",
+        "connection",
+        "thermography"
+      ],
+      "equipment_categories": [
+        "EM",
+        "SG",
+        "PT",
+        "EG",
+        "PC",
+        "FC"
+      ],
+      "mechanism": "Overheats/melts",
+      "cause": "Electrical overload",
+      "cbm_technique": "Thermography of panels and connections",
+      "threshold": "ΔT >40°C or absolute >105°C (NETA Priority 1) → de-energize and repair immediately",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0148",
+      "fm_codes": [
+        "FM-50"
+      ],
+      "description": "winding temperature above thermal class",
+      "category": "temperature",
+      "keywords": [
+        "temperature",
+        "thermal",
+        "class",
+        "winding"
+      ],
+      "equipment_categories": [
+        "EM",
+        "SG",
+        "PT",
+        "EG",
+        "PC",
+        "FC"
+      ],
+      "mechanism": "Overheats/melts",
+      "cause": "Electrical overload",
+      "cbm_technique": "Thermography of panels and connections",
+      "threshold": "ΔT >40°C or absolute >105°C (NETA Priority 1) → de-energize and repair immediately",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0149",
+      "fm_codes": [
+        "FM-50"
+      ],
+      "description": "cable surface >70°C for PVC",
+      "category": "visual",
+      "keywords": [
+        "pvc",
+        "cable",
+        "surface"
+      ],
+      "equipment_categories": [
+        "EM",
+        "SG",
+        "PT",
+        "EG",
+        "PC",
+        "FC"
+      ],
+      "mechanism": "Overheats/melts",
+      "cause": "Electrical overload",
+      "cbm_technique": "Thermography of panels and connections",
+      "threshold": "ΔT >40°C or absolute >105°C (NETA Priority 1) → de-energize and repair immediately",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0150",
+      "fm_codes": [
+        "FM-51"
+      ],
+      "description": "Bearing temperature rising >10°C above trend, high-frequency vibration (>5 kHz envelope) indicating metal contact",
+      "category": "temperature",
+      "keywords": [
+        "temperature",
+        "bearing",
+        "rising",
+        "indicating",
+        "contact",
+        "trend",
+        "frequency",
+        "vibration",
+        "metal",
+        "high"
+      ],
+      "equipment_categories": [
+        "EM",
+        "CV",
+        "PU",
+        "FA",
+        "CO",
+        "ML",
+        "GB",
+        "CU"
+      ],
+      "mechanism": "Overheats/melts",
+      "cause": "Lack of lubrication",
+      "cbm_technique": "Bearing temperature monitoring",
+      "threshold": "Temp >20°C above baseline or rate >2°C/hr → shut down immediately; trip at 95°C rolling, 85°C babbitt",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0151",
+      "fm_codes": [
+        "FM-51"
+      ],
+      "description": "oil level below minimum",
+      "category": "visual",
+      "keywords": [
+        "oil",
+        "minimum",
+        "level"
+      ],
+      "equipment_categories": [
+        "EM",
+        "CV",
+        "PU",
+        "FA",
+        "CO",
+        "ML",
+        "GB",
+        "CU"
+      ],
+      "mechanism": "Overheats/melts",
+      "cause": "Lack of lubrication",
+      "cbm_technique": "Bearing temperature monitoring",
+      "threshold": "Temp >20°C above baseline or rate >2°C/hr → shut down immediately; trip at 95°C rolling, 85°C babbitt",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0152",
+      "fm_codes": [
+        "FM-52"
+      ],
+      "description": "Bearing temperature rising while lubricant is normal",
+      "category": "temperature",
+      "keywords": [
+        "temperature",
+        "bearing",
+        "rising",
+        "while",
+        "normal",
+        "lubricant"
+      ],
+      "equipment_categories": [
+        "CV",
+        "PU",
+        "FA",
+        "ML",
+        "GB",
+        "CO",
+        "CU"
+      ],
+      "mechanism": "Overheats/melts",
+      "cause": "Mechanical overload",
+      "cbm_technique": "Bearing temperature + load monitoring",
+      "threshold": "Bearing temp rising with load increase → reduce load to rated within 1 hr; repeated overloads → install torque limiters",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0153",
+      "fm_codes": [
+        "FM-52"
+      ],
+      "description": "simultaneous elevated motor current/torque",
+      "category": "electrical",
+      "keywords": [
+        "current",
+        "elevated",
+        "motor",
+        "simultaneous",
+        "torque"
+      ],
+      "equipment_categories": [
+        "CV",
+        "PU",
+        "FA",
+        "ML",
+        "GB",
+        "CO",
+        "CU"
+      ],
+      "mechanism": "Overheats/melts",
+      "cause": "Mechanical overload",
+      "cbm_technique": "Bearing temperature + load monitoring",
+      "threshold": "Bearing temp rising with load increase → reduce load to rated within 1 hr; repeated overloads → install torque limiters",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0154",
+      "fm_codes": [
+        "FM-52"
+      ],
+      "description": "gearbox oil temperature exceeding OEM limit",
+      "category": "temperature",
+      "keywords": [
+        "temperature",
+        "limit",
+        "gearbox",
+        "oil",
+        "exceeding",
+        "oem"
+      ],
+      "equipment_categories": [
+        "CV",
+        "PU",
+        "FA",
+        "ML",
+        "GB",
+        "CO",
+        "CU"
+      ],
+      "mechanism": "Overheats/melts",
+      "cause": "Mechanical overload",
+      "cbm_technique": "Bearing temperature + load monitoring",
+      "threshold": "Bearing temp rising with load increase → reduce load to rated within 1 hr; repeated overloads → install torque limiters",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0155",
+      "fm_codes": [
+        "FM-53"
+      ],
+      "description": "Hot spots at seal/coupling locations (thermography)",
+      "category": "temperature",
+      "keywords": [
+        "locations",
+        "spots",
+        "hot",
+        "seal",
+        "thermography",
+        "coupling"
+      ],
+      "equipment_categories": [
+        "EM",
+        "CV",
+        "PU",
+        "FA",
+        "CO",
+        "ML",
+        "GB"
+      ],
+      "mechanism": "Overheats/melts",
+      "cause": "Relative movement",
+      "cbm_technique": "Seal face temperature monitoring",
+      "threshold": "Alignment >0.05 mm offset or angularity → realign per API 686; seal temp trend >5°C/month → investigate",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0156",
+      "fm_codes": [
+        "FM-53"
+      ],
+      "description": "fretting corrosion (reddish-brown oxide) at interference fits",
+      "category": "visual",
+      "keywords": [
+        "fretting",
+        "interference",
+        "reddish",
+        "fits",
+        "brown",
+        "oxide",
+        "corrosion"
+      ],
+      "equipment_categories": [
+        "EM",
+        "CV",
+        "PU",
+        "FA",
+        "CO",
+        "ML",
+        "GB"
+      ],
+      "mechanism": "Overheats/melts",
+      "cause": "Relative movement",
+      "cbm_technique": "Seal face temperature monitoring",
+      "threshold": "Alignment >0.05 mm offset or angularity → realign per API 686; seal temp trend >5°C/month → investigate",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0157",
+      "fm_codes": [
+        "FM-53"
+      ],
+      "description": "increasing mechanical seal leakage",
+      "category": "leak",
+      "keywords": [
+        "mechanical",
+        "leakage",
+        "increasing",
+        "seal"
+      ],
+      "equipment_categories": [
+        "EM",
+        "CV",
+        "PU",
+        "FA",
+        "CO",
+        "ML",
+        "GB"
+      ],
+      "mechanism": "Overheats/melts",
+      "cause": "Relative movement",
+      "cbm_technique": "Seal face temperature monitoring",
+      "threshold": "Alignment >0.05 mm offset or angularity → realign per API 686; seal temp trend >5°C/month → investigate",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0158",
+      "fm_codes": [
+        "FM-54"
+      ],
+      "description": "Sub-synchronous vibration (½×) or truncated shaft orbit indicating rub",
+      "category": "vibration",
+      "keywords": [
+        "truncated",
+        "indicating",
+        "sub",
+        "vibration",
+        "rub",
+        "shaft",
+        "synchronous",
+        "orbit"
+      ],
+      "equipment_categories": [
+        "RO",
+        "EM",
+        "CV",
+        "PU",
+        "FA",
+        "CO",
+        "ML"
+      ],
+      "mechanism": "Overheats/melts",
+      "cause": "Rubbing",
+      "cbm_technique": "Vibration monitoring (rub detection — ½× sub-synchronous, orbit analysis)",
+      "threshold": "Full rub (continuous contact, temp spike, metallic noise) → IMMEDIATE shutdown; partial rub (½× >50% of 1×) → shutdown within 7 days",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0159",
+      "fm_codes": [
+        "FM-54"
+      ],
+      "description": "temperature spike at rubbing location",
+      "category": "temperature",
+      "keywords": [
+        "rubbing",
+        "temperature",
+        "spike",
+        "location"
+      ],
+      "equipment_categories": [
+        "RO",
+        "EM",
+        "CV",
+        "PU",
+        "FA",
+        "CO",
+        "ML"
+      ],
+      "mechanism": "Overheats/melts",
+      "cause": "Rubbing",
+      "cbm_technique": "Vibration monitoring (rub detection — ½× sub-synchronous, orbit analysis)",
+      "threshold": "Full rub (continuous contact, temp spike, metallic noise) → IMMEDIATE shutdown; partial rub (½× >50% of 1×) → shutdown within 7 days",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0160",
+      "fm_codes": [
+        "FM-54"
+      ],
+      "description": "audible metallic scraping",
+      "category": "visual",
+      "keywords": [
+        "scraping",
+        "metallic",
+        "audible"
+      ],
+      "equipment_categories": [
+        "RO",
+        "EM",
+        "CV",
+        "PU",
+        "FA",
+        "CO",
+        "ML"
+      ],
+      "mechanism": "Overheats/melts",
+      "cause": "Rubbing",
+      "cbm_technique": "Vibration monitoring (rub detection — ½× sub-synchronous, orbit analysis)",
+      "threshold": "Full rub (continuous contact, temp spike, metallic noise) → IMMEDIATE shutdown; partial rub (½× >50% of 1×) → shutdown within 7 days",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0161",
+      "fm_codes": [
+        "FM-55"
+      ],
+      "description": "Wall thickness trending below API 574 minimum, rate-of-loss >0.5 mm/yr",
+      "category": "flow",
+      "keywords": [
+        "trending",
+        "api",
+        "minimum",
+        "loss",
+        "thickness",
+        "wall",
+        "rate"
+      ],
+      "equipment_categories": [
+        "VA",
+        "CV",
+        "PI",
+        "HC",
+        "PU",
+        "FS"
+      ],
+      "mechanism": "Severs",
+      "cause": "Abrasion",
+      "cbm_technique": "UT thickness measurement",
+      "threshold": "Wall at or below minimum design → remove from service immediately per API 574 (sudden rupture risk)",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0162",
+      "fm_codes": [
+        "FM-55"
+      ],
+      "description": "visible wear grooves on internal surfaces",
+      "category": "visual",
+      "keywords": [
+        "visible",
+        "grooves",
+        "surfaces",
+        "internal",
+        "wear"
+      ],
+      "equipment_categories": [
+        "VA",
+        "CV",
+        "PI",
+        "HC",
+        "PU",
+        "FS"
+      ],
+      "mechanism": "Severs",
+      "cause": "Abrasion",
+      "cbm_technique": "UT thickness measurement",
+      "threshold": "Wall at or below minimum design → remove from service immediately per API 574 (sudden rupture risk)",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0163",
+      "fm_codes": [
+        "FM-56"
+      ],
+      "description": "Visible dents/gouges",
+      "category": "visual",
+      "keywords": [
+        "gouges",
+        "dents",
+        "visible"
+      ],
+      "equipment_categories": [
+        "CV",
+        "PI",
+        "TA",
+        "PU",
+        "SC",
+        "CU",
+        "FS"
+      ],
+      "mechanism": "Severs",
+      "cause": "Impact/shock loading",
+      "cbm_technique": "Belt rip detection (electromagnetic loop/sensor cord)",
+      "threshold": "Belt carcass damage → splice within 2 weeks or replace within 30 days; pump casing punctured → immediate shutdown",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0164",
+      "fm_codes": [
+        "FM-56"
+      ],
+      "description": "belt rip detection system activation",
+      "category": "visual",
+      "keywords": [
+        "system",
+        "belt",
+        "rip",
+        "activation",
+        "detection"
+      ],
+      "equipment_categories": [
+        "CV",
+        "PI",
+        "TA",
+        "PU",
+        "SC",
+        "CU",
+        "FS"
+      ],
+      "mechanism": "Severs",
+      "cause": "Impact/shock loading",
+      "cbm_technique": "Belt rip detection (electromagnetic loop/sensor cord)",
+      "threshold": "Belt carcass damage → splice within 2 weeks or replace within 30 days; pump casing punctured → immediate shutdown",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0165",
+      "fm_codes": [
+        "FM-56"
+      ],
+      "description": "surface cracking around impact sites on brittle materials",
+      "category": "visual",
+      "keywords": [
+        "surface",
+        "cracking",
+        "sites",
+        "materials",
+        "impact",
+        "around",
+        "brittle"
+      ],
+      "equipment_categories": [
+        "CV",
+        "PI",
+        "TA",
+        "PU",
+        "SC",
+        "CU",
+        "FS"
+      ],
+      "mechanism": "Severs",
+      "cause": "Impact/shock loading",
+      "cbm_technique": "Belt rip detection (electromagnetic loop/sensor cord)",
+      "threshold": "Belt carcass damage → splice within 2 weeks or replace within 30 days; pump casing punctured → immediate shutdown",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0166",
+      "fm_codes": [
+        "FM-57"
+      ],
+      "description": "Wire rope broken wires >6 per lay length per ISO 4309",
+      "category": "visual",
+      "keywords": [
+        "iso",
+        "broken",
+        "wires",
+        "lay",
+        "wire",
+        "length",
+        "rope"
+      ],
+      "equipment_categories": [
+        "LE",
+        "VE",
+        "CV",
+        "PI",
+        "PU",
+        "ST",
+        "CR"
+      ],
+      "mechanism": "Severs",
+      "cause": "Mechanical overload",
+      "cbm_technique": "Wire rope inspection (visual + MRT)",
+      "threshold": "Rope diameter reduction >10% → discard per ISO 4309; hose reinforcement exposed → replace immediately (burst risk)",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0167",
+      "fm_codes": [
+        "FM-57"
+      ],
+      "description": "visible plastic deformation at stress concentrations",
+      "category": "visual",
+      "keywords": [
+        "visible",
+        "stress",
+        "concentrations",
+        "deformation",
+        "plastic"
+      ],
+      "equipment_categories": [
+        "LE",
+        "VE",
+        "CV",
+        "PI",
+        "PU",
+        "ST",
+        "CR"
+      ],
+      "mechanism": "Severs",
+      "cause": "Mechanical overload",
+      "cbm_technique": "Wire rope inspection (visual + MRT)",
+      "threshold": "Rope diameter reduction >10% → discard per ISO 4309; hose reinforcement exposed → replace immediately (burst risk)",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0168",
+      "fm_codes": [
+        "FM-57"
+      ],
+      "description": "hose surface bulging/reinforcement exposure",
+      "category": "visual",
+      "keywords": [
+        "surface",
+        "hose",
+        "bulging",
+        "reinforcement",
+        "exposure"
+      ],
+      "equipment_categories": [
+        "LE",
+        "VE",
+        "CV",
+        "PI",
+        "PU",
+        "ST",
+        "CR"
+      ],
+      "mechanism": "Severs",
+      "cause": "Mechanical overload",
+      "cbm_technique": "Wire rope inspection (visual + MRT)",
+      "threshold": "Rope diameter reduction >10% → discard per ISO 4309; hose reinforcement exposed → replace immediately (burst risk)",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0169",
+      "fm_codes": [
+        "FM-58"
+      ],
+      "description": "Declining IR (>10%/yr per IEEE 43)",
+      "category": "visual",
+      "keywords": [
+        "ieee",
+        "declining"
+      ],
+      "equipment_categories": [
+        "EM",
+        "SG",
+        "PT",
+        "EG",
+        "PC",
+        "FC"
+      ],
+      "mechanism": "Short-circuits",
+      "cause": "Breakdown in insulation",
+      "cbm_technique": "Insulation resistance testing (megger)",
+      "threshold": "IR <50 MΩ or PI <1.5 → schedule rewinding within 30 days; IR <1 MΩ/kV → do NOT energize",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0170",
+      "fm_codes": [
+        "FM-58"
+      ],
+      "description": "PD >100 pC per IEC 60270",
+      "category": "electrical",
+      "keywords": [
+        "iec"
+      ],
+      "equipment_categories": [
+        "EM",
+        "SG",
+        "PT",
+        "EG",
+        "PC",
+        "FC"
+      ],
+      "mechanism": "Short-circuits",
+      "cause": "Breakdown in insulation",
+      "cbm_technique": "Insulation resistance testing (megger)",
+      "threshold": "IR <50 MΩ or PI <1.5 → schedule rewinding within 30 days; IR <1 MΩ/kV → do NOT energize",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0171",
+      "fm_codes": [
+        "FM-58"
+      ],
+      "description": "tan delta increasing >0.05 or >2× baseline",
+      "category": "visual",
+      "keywords": [
+        "increasing",
+        "tan",
+        "baseline",
+        "delta"
+      ],
+      "equipment_categories": [
+        "EM",
+        "SG",
+        "PT",
+        "EG",
+        "PC",
+        "FC"
+      ],
+      "mechanism": "Short-circuits",
+      "cause": "Breakdown in insulation",
+      "cbm_technique": "Insulation resistance testing (megger)",
+      "threshold": "IR <50 MΩ or PI <1.5 → schedule rewinding within 30 days; IR <1 MΩ/kV → do NOT energize",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0172",
+      "fm_codes": [
+        "FM-59"
+      ],
+      "description": "Decreasing surface IR (<100 MΩ at 500V DC)",
+      "category": "visual",
+      "keywords": [
+        "decreasing",
+        "surface"
+      ],
+      "equipment_categories": [
+        "EM",
+        "CL",
+        "SG",
+        "PT",
+        "JB",
+        "FC"
+      ],
+      "mechanism": "Short-circuits",
+      "cause": "Contamination",
+      "cbm_technique": "Surface insulation resistance measurement",
+      "threshold": "Surface IR <100 MΩ at 500V DC → schedule cleaning within 30 days; active tracking/PD → de-energize and clean immediately",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0173",
+      "fm_codes": [
+        "FM-59"
+      ],
+      "description": "visible conductive deposits on bus bars/insulators",
+      "category": "pressure",
+      "keywords": [
+        "insulators",
+        "conductive",
+        "visible",
+        "bus",
+        "bars",
+        "deposits"
+      ],
+      "equipment_categories": [
+        "EM",
+        "CL",
+        "SG",
+        "PT",
+        "JB",
+        "FC"
+      ],
+      "mechanism": "Short-circuits",
+      "cause": "Contamination",
+      "cbm_technique": "Surface insulation resistance measurement",
+      "threshold": "Surface IR <100 MΩ at 500V DC → schedule cleaning within 30 days; active tracking/PD → de-energize and clean immediately",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0174",
+      "fm_codes": [
+        "FM-59"
+      ],
+      "description": "partial discharge activity (TEV/ultrasonic)",
+      "category": "electrical",
+      "keywords": [
+        "tev",
+        "activity",
+        "ultrasonic",
+        "discharge",
+        "partial"
+      ],
+      "equipment_categories": [
+        "EM",
+        "CL",
+        "SG",
+        "PT",
+        "JB",
+        "FC"
+      ],
+      "mechanism": "Short-circuits",
+      "cause": "Contamination",
+      "cbm_technique": "Surface insulation resistance measurement",
+      "threshold": "Surface IR <100 MΩ at 500V DC → schedule cleaning within 30 days; active tracking/PD → de-energize and clean immediately",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0175",
+      "fm_codes": [
+        "FM-60"
+      ],
+      "description": "Motor current trending >100% FLA",
+      "category": "electrical",
+      "keywords": [
+        "motor",
+        "trending",
+        "fla",
+        "current"
+      ],
+      "equipment_categories": [
+        "EM",
+        "CV",
+        "PU",
+        "FA",
+        "CO",
+        "CU"
+      ],
+      "mechanism": "Thermally overloads",
+      "cause": "Mechanical overload",
+      "cbm_technique": "Motor current monitoring",
+      "threshold": "Current 110–125% FLA → reduce load immediately; do NOT increase relay setting on repeated trips — investigate root cause",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0176",
+      "fm_codes": [
+        "FM-60"
+      ],
+      "description": "winding temperature exceeding thermal class (RTD)",
+      "category": "temperature",
+      "keywords": [
+        "temperature",
+        "thermal",
+        "winding",
+        "rtd",
+        "class",
+        "exceeding"
+      ],
+      "equipment_categories": [
+        "EM",
+        "CV",
+        "PU",
+        "FA",
+        "CO",
+        "CU"
+      ],
+      "mechanism": "Thermally overloads",
+      "cause": "Mechanical overload",
+      "cbm_technique": "Motor current monitoring",
+      "threshold": "Current 110–125% FLA → reduce load immediately; do NOT increase relay setting on repeated trips — investigate root cause",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0177",
+      "fm_codes": [
+        "FM-60"
+      ],
+      "description": "repeated overload trips (>2/month)",
+      "category": "visual",
+      "keywords": [
+        "overload",
+        "repeated",
+        "month",
+        "trips"
+      ],
+      "equipment_categories": [
+        "EM",
+        "CV",
+        "PU",
+        "FA",
+        "CO",
+        "CU"
+      ],
+      "mechanism": "Thermally overloads",
+      "cause": "Mechanical overload",
+      "cbm_technique": "Motor current monitoring",
+      "threshold": "Current 110–125% FLA → reduce load immediately; do NOT increase relay setting on repeated trips — investigate root cause",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0178",
+      "fm_codes": [
+        "FM-61"
+      ],
+      "description": "Phase current imbalance >5%",
+      "category": "vibration",
+      "keywords": [
+        "phase",
+        "imbalance",
+        "current"
+      ],
+      "equipment_categories": [
+        "CB",
+        "EM",
+        "SG",
+        "PT",
+        "UP",
+        "PC",
+        "FC"
+      ],
+      "mechanism": "Thermally overloads",
+      "cause": "Overcurrent",
+      "cbm_technique": "Phase current and voltage balance monitoring",
+      "threshold": "Voltage imbalance >3% or single phase → trip immediately (rotor destroyed in 2–10 min); THD-I >15% → install output reactor/sine-wave filter",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0179",
+      "fm_codes": [
+        "FM-61"
+      ],
+      "description": "voltage imbalance >2% at PCC, cable/neutral temperature elevated (thermography)",
+      "category": "temperature",
+      "keywords": [
+        "temperature",
+        "cable",
+        "neutral",
+        "pcc",
+        "voltage",
+        "elevated",
+        "thermography",
+        "imbalance"
+      ],
+      "equipment_categories": [
+        "CB",
+        "EM",
+        "SG",
+        "PT",
+        "UP",
+        "PC",
+        "FC"
+      ],
+      "mechanism": "Thermally overloads",
+      "cause": "Overcurrent",
+      "cbm_technique": "Phase current and voltage balance monitoring",
+      "threshold": "Voltage imbalance >3% or single phase → trip immediately (rotor destroyed in 2–10 min); THD-I >15% → install output reactor/sine-wave filter",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0180",
+      "fm_codes": [
+        "FM-62"
+      ],
+      "description": "UT wall thickness loss >10% from baseline",
+      "category": "performance",
+      "keywords": [
+        "thickness",
+        "baseline",
+        "wall",
+        "loss"
+      ],
+      "equipment_categories": [
+        "VA",
+        "VE",
+        "HE",
+        "PI",
+        "PU",
+        "FS"
+      ],
+      "mechanism": "Washes off",
+      "cause": "Excessive fluid velocity",
+      "cbm_technique": "UT thickness at high-velocity points",
+      "threshold": "Wall <120% design minimum → schedule replacement within 30 days; at or below minimum → remove immediately per API 574",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0181",
+      "fm_codes": [
+        "FM-62"
+      ],
+      "description": "visible lining bare spots during internal inspection",
+      "category": "pressure",
+      "keywords": [
+        "visible",
+        "bare",
+        "lining",
+        "spots",
+        "internal",
+        "inspection"
+      ],
+      "equipment_categories": [
+        "VA",
+        "VE",
+        "HE",
+        "PI",
+        "PU",
+        "FS"
+      ],
+      "mechanism": "Washes off",
+      "cause": "Excessive fluid velocity",
+      "cbm_technique": "UT thickness at high-velocity points",
+      "threshold": "Wall <120% design minimum → schedule replacement within 30 days; at or below minimum → remove immediately per API 574",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0182",
+      "fm_codes": [
+        "FM-62"
+      ],
+      "description": "downstream coating particles in fluid",
+      "category": "visual",
+      "keywords": [
+        "fluid",
+        "coating",
+        "particles",
+        "downstream"
+      ],
+      "equipment_categories": [
+        "VA",
+        "VE",
+        "HE",
+        "PI",
+        "PU",
+        "FS"
+      ],
+      "mechanism": "Washes off",
+      "cause": "Excessive fluid velocity",
+      "cbm_technique": "UT thickness at high-velocity points",
+      "threshold": "Wall <120% design minimum → schedule replacement within 30 days; at or below minimum → remove immediately per API 574",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0183",
+      "fm_codes": [
+        "FM-63"
+      ],
+      "description": "Coating DFT <70% of original",
+      "category": "visual",
+      "keywords": [
+        "coating",
+        "original",
+        "dft"
+      ],
+      "equipment_categories": [
+        "VE",
+        "CV",
+        "HE",
+        "TA",
+        "PI",
+        "PU",
+        "CR"
+      ],
+      "mechanism": "Washes off",
+      "cause": "Use",
+      "cbm_technique": "Coating thickness measurement (DFT gauge)",
+      "threshold": "DFT <50% minimum or rust Ri 4 (>8%) → full restoration within 30 days; base metal exposed >10% → immediate spot-prime",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0184",
+      "fm_codes": [
+        "FM-63"
+      ],
+      "description": "visual chalking/blistering/rust bleeding (ASTM D610/D714)",
+      "category": "visual",
+      "keywords": [
+        "rust",
+        "visual",
+        "chalking",
+        "bleeding",
+        "astm",
+        "blistering"
+      ],
+      "equipment_categories": [
+        "VE",
+        "CV",
+        "HE",
+        "TA",
+        "PI",
+        "PU",
+        "CR"
+      ],
+      "mechanism": "Washes off",
+      "cause": "Use",
+      "cbm_technique": "Coating thickness measurement (DFT gauge)",
+      "threshold": "DFT <50% minimum or rust Ri 4 (>8%) → full restoration within 30 days; base metal exposed >10% → immediate spot-prime",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0185",
+      "fm_codes": [
+        "FM-63"
+      ],
+      "description": "corrosion rate increase on protected surfaces",
+      "category": "flow",
+      "keywords": [
+        "increase",
+        "protected",
+        "surfaces",
+        "corrosion",
+        "rate"
+      ],
+      "equipment_categories": [
+        "VE",
+        "CV",
+        "HE",
+        "TA",
+        "PI",
+        "PU",
+        "CR"
+      ],
+      "mechanism": "Washes off",
+      "cause": "Use",
+      "cbm_technique": "Coating thickness measurement (DFT gauge)",
+      "threshold": "DFT <50% minimum or rust Ri 4 (>8%) → full restoration within 30 days; base metal exposed >10% → immediate spot-prime",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0186",
+      "fm_codes": [
+        "FM-64"
+      ],
+      "description": "Oil TAN >2.0 mg KOH/g",
+      "category": "visual",
+      "keywords": [
+        "oil",
+        "tan",
+        "koh"
+      ],
+      "equipment_categories": [
+        "EM",
+        "CV",
+        "PU",
+        "CO",
+        "GB",
+        "EN",
+        "CU"
+      ],
+      "mechanism": "Wears",
+      "cause": "Breakdown of lubrication",
+      "cbm_technique": "Oil analysis (oxidation, viscosity, TAN, wear metals)",
+      "threshold": "TAN >4.0 mg KOH/g or wear metals step-change → change oil immediately AND investigate wear source",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0187",
+      "fm_codes": [
+        "FM-64"
+      ],
+      "description": "viscosity change >20%",
+      "category": "visual",
+      "keywords": [
+        "viscosity",
+        "change"
+      ],
+      "equipment_categories": [
+        "EM",
+        "CV",
+        "PU",
+        "CO",
+        "GB",
+        "EN",
+        "CU"
+      ],
+      "mechanism": "Wears",
+      "cause": "Breakdown of lubrication",
+      "cbm_technique": "Oil analysis (oxidation, viscosity, TAN, wear metals)",
+      "threshold": "TAN >4.0 mg KOH/g or wear metals step-change → change oil immediately AND investigate wear source",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0188",
+      "fm_codes": [
+        "FM-64"
+      ],
+      "description": "wear metals (Fe",
+      "category": "visual",
+      "keywords": [
+        "wear",
+        "metals"
+      ],
+      "equipment_categories": [
+        "EM",
+        "CV",
+        "PU",
+        "CO",
+        "GB",
+        "EN",
+        "CU"
+      ],
+      "mechanism": "Wears",
+      "cause": "Breakdown of lubrication",
+      "cbm_technique": "Oil analysis (oxidation, viscosity, TAN, wear metals)",
+      "threshold": "TAN >4.0 mg KOH/g or wear metals step-change → change oil immediately AND investigate wear source",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0189",
+      "fm_codes": [
+        "FM-64"
+      ],
+      "description": "Cu",
+      "category": "visual",
+      "keywords": [],
+      "equipment_categories": [
+        "EM",
+        "CV",
+        "PU",
+        "CO",
+        "GB",
+        "EN",
+        "CU"
+      ],
+      "mechanism": "Wears",
+      "cause": "Breakdown of lubrication",
+      "cbm_technique": "Oil analysis (oxidation, viscosity, TAN, wear metals)",
+      "threshold": "TAN >4.0 mg KOH/g or wear metals step-change → change oil immediately AND investigate wear source",
+      "pcondition_rank": 4
+    },
+    {
+      "symptom_id": "SYM-0190",
+      "fm_codes": [
+        "FM-64"
+      ],
+      "description": "Sn) increasing",
+      "category": "visual",
+      "keywords": [
+        "increasing"
+      ],
+      "equipment_categories": [
+        "EM",
+        "CV",
+        "PU",
+        "CO",
+        "GB",
+        "EN",
+        "CU"
+      ],
+      "mechanism": "Wears",
+      "cause": "Breakdown of lubrication",
+      "cbm_technique": "Oil analysis (oxidation, viscosity, TAN, wear metals)",
+      "threshold": "TAN >4.0 mg KOH/g or wear metals step-change → change oil immediately AND investigate wear source",
+      "pcondition_rank": 5
+    },
+    {
+      "symptom_id": "SYM-0191",
+      "fm_codes": [
+        "FM-65"
+      ],
+      "description": "Distinctive crackling cavitation noise",
+      "category": "noise",
+      "keywords": [
+        "distinctive",
+        "crackling",
+        "cavitation",
+        "noise"
+      ],
+      "equipment_categories": [
+        "VA",
+        "HC",
+        "PI",
+        "PU",
+        "HY"
+      ],
+      "mechanism": "Wears",
+      "cause": "Entrained air (cavitation)",
+      "cbm_technique": "Vibration monitoring (broadband HF cavitation)",
+      "threshold": "NPSHa < NPSHr × 1.3 → correct suction deficiency immediately; cavitation depth >2 mm → replace and upgrade material",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0192",
+      "fm_codes": [
+        "FM-65"
+      ],
+      "description": "pump head/efficiency decreasing",
+      "category": "performance",
+      "keywords": [
+        "pump",
+        "decreasing",
+        "efficiency",
+        "head"
+      ],
+      "equipment_categories": [
+        "VA",
+        "HC",
+        "PI",
+        "PU",
+        "HY"
+      ],
+      "mechanism": "Wears",
+      "cause": "Entrained air (cavitation)",
+      "cbm_technique": "Vibration monitoring (broadband HF cavitation)",
+      "threshold": "NPSHa < NPSHr × 1.3 → correct suction deficiency immediately; cavitation depth >2 mm → replace and upgrade material",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0193",
+      "fm_codes": [
+        "FM-65"
+      ],
+      "description": "broadband HF vibration (>5 kHz)",
+      "category": "vibration",
+      "keywords": [
+        "broadband",
+        "khz",
+        "vibration"
+      ],
+      "equipment_categories": [
+        "VA",
+        "HC",
+        "PI",
+        "PU",
+        "HY"
+      ],
+      "mechanism": "Wears",
+      "cause": "Entrained air (cavitation)",
+      "cbm_technique": "Vibration monitoring (broadband HF cavitation)",
+      "threshold": "NPSHa < NPSHr × 1.3 → correct suction deficiency immediately; cavitation depth >2 mm → replace and upgrade material",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0194",
+      "fm_codes": [
+        "FM-66"
+      ],
+      "description": "UT wall thinning at elbows/tees",
+      "category": "visual",
+      "keywords": [
+        "elbows",
+        "thinning",
+        "tees",
+        "wall"
+      ],
+      "equipment_categories": [
+        "VA",
+        "NO",
+        "HC",
+        "HE",
+        "PI",
+        "PU"
+      ],
+      "mechanism": "Wears",
+      "cause": "Excessive fluid velocity",
+      "cbm_technique": "UT wall thickness at erosion-prone locations",
+      "threshold": "Wall 100–120% of minimum → plan replacement within 30 days; at/below minimum → remove immediately",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0195",
+      "fm_codes": [
+        "FM-66"
+      ],
+      "description": "erosion rate above design allowance",
+      "category": "flow",
+      "keywords": [
+        "allowance",
+        "design",
+        "erosion",
+        "rate"
+      ],
+      "equipment_categories": [
+        "VA",
+        "NO",
+        "HC",
+        "HE",
+        "PI",
+        "PU"
+      ],
+      "mechanism": "Wears",
+      "cause": "Excessive fluid velocity",
+      "cbm_technique": "UT wall thickness at erosion-prone locations",
+      "threshold": "Wall 100–120% of minimum → plan replacement within 30 days; at/below minimum → remove immediately",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0196",
+      "fm_codes": [
+        "FM-66"
+      ],
+      "description": "characteristic horseshoe/cat-eye patterns",
+      "category": "visual",
+      "keywords": [
+        "cat",
+        "horseshoe",
+        "eye",
+        "characteristic",
+        "patterns"
+      ],
+      "equipment_categories": [
+        "VA",
+        "NO",
+        "HC",
+        "HE",
+        "PI",
+        "PU"
+      ],
+      "mechanism": "Wears",
+      "cause": "Excessive fluid velocity",
+      "cbm_technique": "UT wall thickness at erosion-prone locations",
+      "threshold": "Wall 100–120% of minimum → plan replacement within 30 days; at/below minimum → remove immediately",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0197",
+      "fm_codes": [
+        "FM-67"
+      ],
+      "description": "Progressive thickness reduction at impact zones",
+      "category": "visual",
+      "keywords": [
+        "progressive",
+        "zones",
+        "reduction",
+        "thickness",
+        "impact"
+      ],
+      "equipment_categories": [
+        "FE",
+        "CV",
+        "PI",
+        "SC",
+        "ML",
+        "CU"
+      ],
+      "mechanism": "Wears",
+      "cause": "Impact/shock loading",
+      "cbm_technique": "Liner thickness/profile measurement (template, UT)",
+      "threshold": "Crusher liner at/below OEM minimum → replace within 7 days (risk of frame damage)",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0198",
+      "fm_codes": [
+        "FM-67"
+      ],
+      "description": "crusher liner profile worn beyond OEM minimum",
+      "category": "visual",
+      "keywords": [
+        "crusher",
+        "minimum",
+        "worn",
+        "beyond",
+        "profile",
+        "liner",
+        "oem"
+      ],
+      "equipment_categories": [
+        "FE",
+        "CV",
+        "PI",
+        "SC",
+        "ML",
+        "CU"
+      ],
+      "mechanism": "Wears",
+      "cause": "Impact/shock loading",
+      "cbm_technique": "Liner thickness/profile measurement (template, UT)",
+      "threshold": "Crusher liner at/below OEM minimum → replace within 7 days (risk of frame damage)",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0199",
+      "fm_codes": [
+        "FM-67"
+      ],
+      "description": "screen apertures worn >110% nominal",
+      "category": "visual",
+      "keywords": [
+        "apertures",
+        "nominal",
+        "screen",
+        "worn"
+      ],
+      "equipment_categories": [
+        "FE",
+        "CV",
+        "PI",
+        "SC",
+        "ML",
+        "CU"
+      ],
+      "mechanism": "Wears",
+      "cause": "Impact/shock loading",
+      "cbm_technique": "Liner thickness/profile measurement (template, UT)",
+      "threshold": "Crusher liner at/below OEM minimum → replace within 7 days (risk of frame damage)",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0200",
+      "fm_codes": [
+        "FM-68"
+      ],
+      "description": "Suction pressure below design minimum (approaching NPSHr)",
+      "category": "pressure",
+      "keywords": [
+        "npshr",
+        "pressure",
+        "minimum",
+        "approaching",
+        "design",
+        "suction"
+      ],
+      "equipment_categories": [
+        "VA",
+        "BE",
+        "PI",
+        "PU",
+        "CO",
+        "HY"
+      ],
+      "mechanism": "Wears",
+      "cause": "Low pressure",
+      "cbm_technique": "Suction pressure monitoring",
+      "threshold": "NPSHa < NPSHr × 1.3 → correct immediately; bearing oil below OEM minimum → trip before damage",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0201",
+      "fm_codes": [
+        "FM-68"
+      ],
+      "description": "cavitation noise at pump",
+      "category": "noise",
+      "keywords": [
+        "pump",
+        "cavitation",
+        "noise"
+      ],
+      "equipment_categories": [
+        "VA",
+        "BE",
+        "PI",
+        "PU",
+        "CO",
+        "HY"
+      ],
+      "mechanism": "Wears",
+      "cause": "Low pressure",
+      "cbm_technique": "Suction pressure monitoring",
+      "threshold": "NPSHa < NPSHr × 1.3 → correct immediately; bearing oil below OEM minimum → trip before damage",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0202",
+      "fm_codes": [
+        "FM-68"
+      ],
+      "description": "oil supply pressure below OEM minimum at bearing",
+      "category": "pressure",
+      "keywords": [
+        "bearing",
+        "pressure",
+        "minimum",
+        "supply",
+        "oil",
+        "oem"
+      ],
+      "equipment_categories": [
+        "VA",
+        "BE",
+        "PI",
+        "PU",
+        "CO",
+        "HY"
+      ],
+      "mechanism": "Wears",
+      "cause": "Low pressure",
+      "cbm_technique": "Suction pressure monitoring",
+      "threshold": "NPSHa < NPSHr × 1.3 → correct immediately; bearing oil below OEM minimum → trip before damage",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0203",
+      "fm_codes": [
+        "FM-69"
+      ],
+      "description": "ISO 4406 count exceeding target by ≥2 codes",
+      "category": "visual",
+      "keywords": [
+        "iso",
+        "count",
+        "target",
+        "codes",
+        "exceeding"
+      ],
+      "equipment_categories": [
+        "EM",
+        "CV",
+        "PU",
+        "GB",
+        "CO",
+        "EN",
+        "HY"
+      ],
+      "mechanism": "Wears",
+      "cause": "Lubricant contamination (particles)",
+      "cbm_technique": "Oil particle count (ISO 4406)",
+      "threshold": "Count exceeding target by >4 ISO codes → flush, replace oil, inspect seals, install kidney-loop filtration",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0204",
+      "fm_codes": [
+        "FM-69"
+      ],
+      "description": "wear metals trending upward",
+      "category": "visual",
+      "keywords": [
+        "upward",
+        "trending",
+        "wear",
+        "metals"
+      ],
+      "equipment_categories": [
+        "EM",
+        "CV",
+        "PU",
+        "GB",
+        "CO",
+        "EN",
+        "HY"
+      ],
+      "mechanism": "Wears",
+      "cause": "Lubricant contamination (particles)",
+      "cbm_technique": "Oil particle count (ISO 4406)",
+      "threshold": "Count exceeding target by >4 ISO codes → flush, replace oil, inspect seals, install kidney-loop filtration",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0205",
+      "fm_codes": [
+        "FM-69"
+      ],
+      "description": "ferrography showing cutting wear (long ribbon particles)",
+      "category": "visual",
+      "keywords": [
+        "cutting",
+        "showing",
+        "ribbon",
+        "long",
+        "ferrography",
+        "particles",
+        "wear"
+      ],
+      "equipment_categories": [
+        "EM",
+        "CV",
+        "PU",
+        "GB",
+        "CO",
+        "EN",
+        "HY"
+      ],
+      "mechanism": "Wears",
+      "cause": "Lubricant contamination (particles)",
+      "cbm_technique": "Oil particle count (ISO 4406)",
+      "threshold": "Count exceeding target by >4 ISO codes → flush, replace oil, inspect seals, install kidney-loop filtration",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0206",
+      "fm_codes": [
+        "FM-70"
+      ],
+      "description": "Wear rate increasing above trend",
+      "category": "flow",
+      "keywords": [
+        "trend",
+        "increasing",
+        "wear",
+        "rate"
+      ],
+      "equipment_categories": [
+        "VA",
+        "CV",
+        "PU",
+        "GB",
+        "ML",
+        "CO",
+        "CU"
+      ],
+      "mechanism": "Wears",
+      "cause": "Mechanical overload",
+      "cbm_technique": "Load monitoring (power, current, pressure)",
+      "threshold": "Load consistently >100% design → investigate and reduce; wear rate >150% historical → adjust maintenance interval",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0207",
+      "fm_codes": [
+        "FM-70"
+      ],
+      "description": "operating load sustained above design",
+      "category": "visual",
+      "keywords": [
+        "operating",
+        "design",
+        "sustained",
+        "load"
+      ],
+      "equipment_categories": [
+        "VA",
+        "CV",
+        "PU",
+        "GB",
+        "ML",
+        "CO",
+        "CU"
+      ],
+      "mechanism": "Wears",
+      "cause": "Mechanical overload",
+      "cbm_technique": "Load monitoring (power, current, pressure)",
+      "threshold": "Load consistently >100% design → investigate and reduce; wear rate >150% historical → adjust maintenance interval",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0208",
+      "fm_codes": [
+        "FM-70"
+      ],
+      "description": "oil analysis wear metals correlated with load events",
+      "category": "visual",
+      "keywords": [
+        "analysis",
+        "correlated",
+        "load",
+        "events",
+        "oil",
+        "wear",
+        "metals"
+      ],
+      "equipment_categories": [
+        "VA",
+        "CV",
+        "PU",
+        "GB",
+        "ML",
+        "CO",
+        "CU"
+      ],
+      "mechanism": "Wears",
+      "cause": "Mechanical overload",
+      "cbm_technique": "Load monitoring (power, current, pressure)",
+      "threshold": "Load consistently >100% design → investigate and reduce; wear rate >150% historical → adjust maintenance interval",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0209",
+      "fm_codes": [
+        "FM-71"
+      ],
+      "description": "Increasing shaft sleeve diameter at seal zone (micrometer)",
+      "category": "visual",
+      "keywords": [
+        "increasing",
+        "micrometer",
+        "sleeve",
+        "diameter",
+        "seal",
+        "shaft",
+        "zone"
+      ],
+      "equipment_categories": [
+        "VA",
+        "BR",
+        "CV",
+        "PU",
+        "GB",
+        "CG",
+        "CR"
+      ],
+      "mechanism": "Wears",
+      "cause": "Metal to metal contact",
+      "cbm_technique": "Dimensional measurement of wear components",
+      "threshold": "Wire rope approaching ISO 4309 discard → replace within 30 days; brake disc below OEM minimum → replace immediately (safety)",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0210",
+      "fm_codes": [
+        "FM-71"
+      ],
+      "description": "wire rope flattened strands and sheave groove wear",
+      "category": "visual",
+      "keywords": [
+        "strands",
+        "flattened",
+        "groove",
+        "wire",
+        "sheave",
+        "wear",
+        "rope"
+      ],
+      "equipment_categories": [
+        "VA",
+        "BR",
+        "CV",
+        "PU",
+        "GB",
+        "CG",
+        "CR"
+      ],
+      "mechanism": "Wears",
+      "cause": "Metal to metal contact",
+      "cbm_technique": "Dimensional measurement of wear components",
+      "threshold": "Wire rope approaching ISO 4309 discard → replace within 30 days; brake disc below OEM minimum → replace immediately (safety)",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0211",
+      "fm_codes": [
+        "FM-71"
+      ],
+      "description": "chain elongation >2%",
+      "category": "visual",
+      "keywords": [
+        "elongation",
+        "chain"
+      ],
+      "equipment_categories": [
+        "VA",
+        "BR",
+        "CV",
+        "PU",
+        "GB",
+        "CG",
+        "CR"
+      ],
+      "mechanism": "Wears",
+      "cause": "Metal to metal contact",
+      "cbm_technique": "Dimensional measurement of wear components",
+      "threshold": "Wire rope approaching ISO 4309 discard → replace within 30 days; brake disc below OEM minimum → replace immediately (safety)",
+      "pcondition_rank": 3
+    },
+    {
+      "symptom_id": "SYM-0212",
+      "fm_codes": [
+        "FM-72"
+      ],
+      "description": "Red-brown oxide powder (fretting debris) at press-fit interfaces",
+      "category": "contamination",
+      "keywords": [
+        "fretting",
+        "press",
+        "debris",
+        "brown",
+        "fit",
+        "red",
+        "oxide",
+        "powder",
+        "interfaces"
+      ],
+      "equipment_categories": [
+        "EM",
+        "CV",
+        "PU",
+        "CG",
+        "FA",
+        "ML",
+        "CU",
+        "CR"
+      ],
+      "mechanism": "Wears",
+      "cause": "Relative movement (fretting)",
+      "cbm_technique": "Vibration monitoring for progressive fit loosening",
+      "threshold": "Shaft undersize at bearing seat → apply shaft repair (metal spray + grind); fretting cracks at shaft shoulder → replace shaft immediately (fatigue risk)",
+      "pcondition_rank": 1
+    },
+    {
+      "symptom_id": "SYM-0213",
+      "fm_codes": [
+        "FM-72"
+      ],
+      "description": "increasing bearing clearance on shaft (dial indicator)",
+      "category": "alignment",
+      "keywords": [
+        "indicator",
+        "increasing",
+        "dial",
+        "bearing",
+        "clearance",
+        "shaft"
+      ],
+      "equipment_categories": [
+        "EM",
+        "CV",
+        "PU",
+        "CG",
+        "FA",
+        "ML",
+        "CU",
+        "CR"
+      ],
+      "mechanism": "Wears",
+      "cause": "Relative movement (fretting)",
+      "cbm_technique": "Vibration monitoring for progressive fit loosening",
+      "threshold": "Shaft undersize at bearing seat → apply shaft repair (metal spray + grind); fretting cracks at shaft shoulder → replace shaft immediately (fatigue risk)",
+      "pcondition_rank": 2
+    },
+    {
+      "symptom_id": "SYM-0214",
+      "fm_codes": [
+        "FM-72"
+      ],
+      "description": "vibration showing progressive looseness",
+      "category": "vibration",
+      "keywords": [
+        "progressive",
+        "looseness",
+        "showing",
+        "vibration"
+      ],
+      "equipment_categories": [
+        "EM",
+        "CV",
+        "PU",
+        "CG",
+        "FA",
+        "ML",
+        "CU",
+        "CR"
+      ],
+      "mechanism": "Wears",
+      "cause": "Relative movement (fretting)",
+      "cbm_technique": "Vibration monitoring for progressive fit loosening",
+      "threshold": "Shaft undersize at bearing seat → apply shaft repair (metal spray + grind); fretting cracks at shaft shoulder → replace shaft immediately (fatigue risk)",
+      "pcondition_rank": 3
+    }
+  ]
+}

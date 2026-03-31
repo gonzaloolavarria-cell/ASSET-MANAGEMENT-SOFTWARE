@@ -1,0 +1,129 @@
+# agents/planning/skills.yaml
+# Skills asignados al Planning Specialist Agent
+# Última actualización: 2026-02-24
+
+agent: planning
+model: claude-sonnet-4-5-20250929
+
+skills:
+  # ── Milestone 3: Strategy + Tasks + Resources ────────────────
+  - name: prepare-work-packages
+    path: skills/02-maintenance-strategy-development/assemble-work-packages/CLAUDE.md
+    load_level: 2
+    milestone: 3
+    mandatory: true
+    references_to_preload:
+      - references/element-types.md
+      - references/ppe-matrix.md
+    # Includes integrated WI generation (formerly generate-work-instructions)
+
+  # generate-work-instructions: DEPRECATED — merged into prepare-work-packages Phase 2 (v0.2, 2026-03-11)
+
+  - name: group-backlog
+    path: skills/02-work-planning/group-backlog/CLAUDE.md
+    load_level: 2
+    milestone: 3
+    mandatory: true
+    references_to_preload:
+      - references/backlog-strategies.md
+
+  - name: calculate-priority
+    path: skills/02-work-planning/calculate-priority/CLAUDE.md
+    load_level: 2
+    milestone: 3
+    mandatory: true
+    references_to_preload:
+      - references/priority-examples.md
+
+  - name: schedule-weekly-program
+    path: skills/02-work-planning/schedule-weekly-program/CLAUDE.md
+    load_level: 3
+    milestone: 3
+    mandatory: false
+
+  - name: orchestrate-shutdown
+    path: skills/02-work-planning/orchestrate-shutdown/CLAUDE.md
+    load_level: 3
+    milestone: 3
+    mandatory: false
+
+  - name: manage-capa
+    path: skills/manage-capa/CLAUDE.md
+    load_level: 3
+    milestone: 3
+    mandatory: false
+
+  - name: calculate-planning-kpis
+    path: skills/02-work-planning/calculate-planning-kpis/CLAUDE.md
+    load_level: 3
+    milestone: 3
+    mandatory: false
+
+  - name: generate-execution-checklists
+    path: skills/02-work-planning/generate-execution-checklists/CLAUDE.md
+    load_level: 3
+    milestone: 3
+    mandatory: false
+    # GAP-W06: Digital execution checklists with gate enforcement
+
+  # ── Milestone 4: SAP Upload ──────────────────────────────────
+  - name: export-to-sap
+    path: skills/02-work-planning/export-to-sap/CLAUDE.md
+    load_level: 2
+    milestone: 4
+    mandatory: true
+    references_to_preload:
+      - references/sap-field-constraints.md
+
+  # ── Cost Analysis (disponible en M3 bajo demanda) ────────────
+  - name: calculate-life-cycle-cost
+    path: skills/04-cost-analysis/calculate-life-cycle-cost/CLAUDE.md
+    load_level: 3
+    milestone: 3
+    mandatory: false
+
+  - name: optimize-cost-risk
+    path: skills/04-cost-analysis/optimize-cost-risk/CLAUDE.md
+    load_level: 3
+    milestone: 3
+    mandatory: false
+
+  - name: track-budget
+    path: skills/04-cost-analysis/track-budget/CLAUDE.md
+    load_level: 3
+    milestone: 3
+    mandatory: false
+    # GAP-W04: Budget tracking, variance alerts, spend forecast
+
+  # ── Cross-Agent Skills (compartidos con otros agentes) ────────
+  - name: validate-quality
+    path: skills/05-general-functionalities/validate-quality/CLAUDE.md
+    load_level: 3
+    milestone: all
+    mandatory: false
+    # Auto-validación interna de work packages y SAP exports antes de devolver al Orchestrator
+
+  - name: import-data
+    path: skills/05-general-functionalities/import-data/CLAUDE.md
+    load_level: 3
+    milestone: all
+    mandatory: false
+    # Importar backlog y calendarios de mantenimiento
+
+  - name: identify-work-request
+    path: skills/01-work-identification/identify-work-request/CLAUDE.md
+    load_level: 1
+    milestone: all
+    mandatory: false
+    # Reference only — planner understands incoming structured work requests
+
+# ── Knowledge Base (siempre disponible, carga selectiva) ──────
+knowledge_base:
+  - path: skills/00-knowledge-base/integration/ref-03-sap-pm-integration.md
+    load_when: "Agent needs SAP field definitions or integration rules"
+  - path: skills/00-knowledge-base/methodologies/ref-07-work-instruction-templates.md
+    load_when: "Agent needs work instruction templates and formatting"
+  - path: skills/00-knowledge-base/gfsn/ref-14-planning-scheduling-procedure.md
+    load_when: "Agent needs scheduling methodology reference"
+  - path: skills/00-knowledge-base/quality/ref-04-quality-validation-rules.md
+    load_when: "Agent needs validation rule definitions"

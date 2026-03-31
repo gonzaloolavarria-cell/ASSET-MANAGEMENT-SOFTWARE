@@ -1,0 +1,522 @@
+Magda
+Vamos a jugar. Bueno, la idea de estar muy bonus es que podamos revisar. No, me equivoqué, no era este mitogénico. Ya. La idea de estar reunión es que podamos hacer un producto joven para nosotros, ya, y por eso es un ocasionamiento más funcional que estético. Eh.
+Magda
+¿Qué vamos a hacer? Yo creo que lo entraremos primero. El primero los logros. El segundo. Ahí si pueden entrar, cualquier les explique, lo voy a estar haciendo hoy día. Contexto, plataforma de, de.
+Magda
+de OR, de la que. O sea, es que después que me confundes mucho con eso, porque hablas del módulo, de. Ya, entonces en ese país estamos acá para poder aclararlo, la de un sitio. Esa es la plataforma que vamos a trabajar en el día, ¿no. 
+Jose Cortinat
+Sí, correcto. Entendamos entre este equipo, ¿vale? Entendamos que hay un paraguas, De un una solución tipo integral, vale, organizacional, centrada en Operational Readiness, pero también para soportar equipos agénticos que los llamamos así como federados para el área de proyectos, para el área de soporte, para el área de operaciones. Vale, como desde una visión de un producto y un servicio de acompañar a las compañías a implementar organizaciones agénticas.
+Jose Cortinat
+En la que personal humano se apalanca en estas soluciones para tal vale. Ese es como el hacia dónde vamos, como mucho más paraguas general. Dentro de ese paraguas hay diferentes áreas, una de ellas es el asset management, otra es permisos, otra es recursos humanos. Vale, entonces hoy vamos a hablar no del paraguas general, sino simplemente de una solución agéntica. Enfocada en una solución software de Asset Management.
+Jose Cortinat
+Exclusivamente. No es de OR, cero OR. Vale.
+Magda
+Entonces con este foco de Asset Management lo que vamos a hacer es una sesión de crew discover. Voy a compartir mi pantalla. Porque lo que tiene que salir de esta sesión finalmente es poder tener súper claro qué es lo que hace esta plataforma, de qué problemas resuelve, a qué usuarios imparta, etcétera.
+Magda
+Ya muy en lo general. Y después nos vamos a ir a lo más particular de cómo se mueve el usuario dentro de la plataforma. Entonces, lo que vamos a crear acá es un entendimiento común, que esta plataforma de asset management es como funciona, como debería funcionar, como queremos que funcione, qué características queremos que tenga para que sea diferenciadora y por eso están ustedes acá, porque es desde el lado funcional. No vamos a hablar y no nos vamos a ir a el detalle de cómo debemos construirla.
+Magda
+Yo creo que lo que normalmente estamos haciendo primero. sino que vamos a ir al detalle de qué es lo que queremos que la plataforma haga y cómo queremos que funcione. Entonces, para el entendimiento inicial y para hacer un doble clic en este contexto que está dando también el posero, vamos a partir por acá, que es el contexto del problema. Vamos a definir el por qué estamos haciendo esto, cómo impacta el negocio y a los usuarios.
+Magda
+Entonces les vamos a dar un par de minutitos para compartir un poco las ideas que tengamos. Debajo pueden ver que hay dos que y nos vamos a dar solamente cuatro minutos en esta parte para poder plasmar algunas ideas. Es un pequeño brainstorming que nos permita entender el coste de negocio y el problema que resolvemos, los estar ajustados y el impacto de crear una visión en común de eso. Luego vamos a ir avanzando, a cómo se mapea la lógica del sistema.
+Magda
+Después, cuál es el objetivo principal y cuáles son las oportunidades que tenemos con esta plataforma. Después vamos a estar revisando cuáles son los posibles picos que esta plataforma podría tener, qué cosas, qué tareas de lo que es Accessing Management debería automatizar, tareas debería analizar por sí solas, en qué partes debería predecir un resultado, explicar cosas, orquestar cosas, etcétera.
+Magda
+Para que vayamos teniendo claridad de todas las características. Y después, nos vamos a ir a lo más específico de qué agentes debería tener, qué herramientas debería tener, qué datos deberían manejar, qué decisiones, etcétera. Es una mirada general de lo que es la plataforma y después, ¿Qué hipótesis queremos validar con esta plataforma? Y después vamos a terminar todo esto que es más específico, que no sé si lo vamos a alcanzar a hacer hoy día, pero que es lo que nos va a ayudar a que el desarrollo sea lo que me sigas.
+Magda
+Ahora, José pregunta, ¿no sé si quieres mostrarla primero o quieres que vayamos como para no sesgar planteando las ideas y mostramos al final lo que tenemos en base a algo que hemos trabajado.
+Jose Cortinat
+Es un buen punto, lo dejo un poco como a criterio de todos, no solo yo, porque tiene sus pros y sus contras. Si de repente muestro, genero o sesgo en un entendimiento como ya más centrado en lo que se ha desarrollado, y si no digo nada mejor, como que se imagina cada uno y luego complementamos con lo que ya está desarrollado. Es una pena, Jorge Gonzalo. Magda, que hemos estado desarrollando cosas sin estas iniciativas que Magda está planteando para que son súper claves para como ir ya directamente a qué problema estamos resolviendo.
+Jose Cortinat
+No en lugar de desarrollar una plataforma en base a lo que a ti se te ocurre, es como poner en común y luego trabajar en base a ese problema en común o solución o lo que sea. Pero bueno, en adelante lo tendríamos porque al final.
+Magda
+Es parte de ir armando como un proceso que nos permita tener un producto de mejor calidad al final y aprovechar que ahora también tenemos como más que tener equipos que tienen más conocimiento, hay distintas cosas y podemos construir esta mirada con su calidad. Entonces, en base a lo que dijiste, yo quiero que no mostremos la plataforma todavía, que las mostremos al final, que nos abstraigamos y que pensemos desde la expertise, ahí más, de terreno y de experiencia que ustedes tienen también pensando el asset management, por ejemplo, cuál es la situación actual hoy día de las empresas en eso, cuáles son los problemas que se enfrentan al tratar de hacer asset management, cómo le afrontan los usuarios, etc.
+Magda
+Entonces esa es la idea de esta primera parte. ¿Les parece que nos demos cuatro minutitos? una lluvia de ideas y compensamos un poco esa visión. ¿Sí? Acá abajo están los postes. Lo voy a poner ahí. No saben lo que tenéis que voy a hacer cuando tenga mi pantalla de.
+Magda
+¿Le damos entonces? Vamos nomás. ya está iniciado el bien. Tratemos de ser súper específicos, como a porque estamos enfocados en lo que es hacer más.
+Magda
+Entonces, ¿qué es lo que hay que hacer? ¿Cuál es el problema que el CIST o los problemas que existen, mente, eso. ¿Cómo se gestiona dentro de los negocios actualmente? No sé, son montones de éxito. ¿Cómo lo gestionan los equipos? ¿Cómo se mide?
+Magda
+¿Cómo se reporta? Yo también. ¿Cómo se aplican los frameworks? Piensen en los zapatos de haber estado acá.
+Magda
+Habla, queda un minutito para contarte ahí y la pregunta ahí es, recordemos cómo se cruza bien el rol en la pérdida, porque cuando esto no se hace bien o no funciona con lo de, ahh, el tiempo está el negocio.
+Magda
+Ahora siguen ahí compartiendo abajo, vamos a hacer un repaso y nos vamos a tomar más de tres minutitos para esto, para que todos estemos ahí actualizados o en realidad alineados en el mismo contexto. Entonces, ¿qué tenemos en la industria, en donde está como contextualizado, negocio, que estamos migrando para este tipo de soluciones. Producción continua, que es 24 soluciones, que es impacto en el negocio, muchas veces son cortos.
+Magda
+Necesita hay tiempo para actividades técnicas de análisis, explosión de datos que entregan a equipos. O sea, explosión de datos que entrega de equipos función por la presencia de los equipos, toma de decisiones en base a experiencia y poco a datos de calidad. Es el contexto del negocio. Por fa, vayan comentando igual ahí si quieren preguntar o explicar algo de esto.
+Magda
+No me entendí.
+Jorge Alquinta
+¿No. Disculpa, ¿cuál era? Estaba terminando de escribir la última.
+Jose Cortinat
+En cuanto al contexto del negocio.
+Magda
+Comentar algo o explicar algo. 
+Jorge Alquinta
+Pero el contexto del negocio, por lo menos lo que lo veo es que está apuntando a empresas que tienen producción continua, 24/7, que no paran, que la mayoría trabaja día y noche bajo las mismas situaciones, no digo que cambias el entorno, digamos, producto de trabajar de noche, con entornos más fríos, extremos, etc. Pero que tienen, al tener producción continua, están bajo mucha presión,
+Jorge Alquinta
+Y que realmente como estamos ocultando a la industria minera, que está asociado a cualquier tipo de metal, que hoy en día está muy apetecido. Más con los precios de los marcas, están todos los metales, el cobre, el oro, la plata. Todos los metales están en un peak de precio, entonces la industria más agitada está. Por otro lado también el contexto de que todas estas empresas trabajan con equipos productivos que son de alto impacto. O sea, uno que esté fuera le impacta significativamente o tiene la producción de todas las plantas o la merma hasta la mitad o en una fracción.
+Jorge Alquinta
+Entonces son equipos sensibles, son de alto costo, son muy productivos, pero cuando tienen un problema impacta el negocio financieramente y eso no se recupera.
+Jose Cortinat
+Claro, a esto hay que agregarle que como tiene tanto impacto, la industria es bien reacia a hacer cambios. Significativos que pudieran poner en riesgo la continuidad del negocio. Me explico, quiero decir, como hay tanta presión, porque los equipos continúen operando y no tengan fallas, incluso teniéndolo súper claro que un cambio de componente o material, no sé, un sello, un filtro, puede traerles buenos beneficios.
+Jose Cortinat
+Igual es complejo hacer cambios. Porque no estás tan seguro, entonces prefieres no arriesgar mucho. No sé, Jorge, cuál es tu experiencia en cuanto a eso. 
+Jorge Alquinta
+Sí, por eso, los cambios son desde el punto de vista muy tomados con pinzas. Si hablamos de la producción operativamente, también quienes la toman. Entonces, estamos hablando de commodity, que es creo que un punto a favor. que significa que cuando vayamos a un país y a otro, o a una empresa, a un grupo minero y a otro, nos vamos a encontrar con procesos similares, incluso con equipos iguales. Eso es un punto a favor desde el punto de vista del negocio, de la consultoría o de las soluciones, porque no tienes que hacer miles de soluciones distintas, sino que los cambios son muy menores y a veces incluso ni siquiera se van a tener que hacer.
+Jorge Alquinta
+Pero es un negocio de commodity y por tal, están establecidos los procesos en la India o en Chile, para empresas de cobre son lo mismo, para empresas de hierro son lo mismo y así sucesivamente.
+Magda
+Claro, efectivamente eso es como una ventaja. Ahí José, como para que vayamos avanzando, ¿puedes dar una mirada como el problema que se da en estos ambientes en general.
+Jose Cortinat
+Sí, mira, leyendo un poco y como sobre lo que vamos, tenemos ahí, hay mucha gente en este tipo de como de proyectos, o sea, en este tipo de industria que la que venimos hablando, 247 partido operando, nunca hubo tiempo de pararla porque no se puede parar, entonces todo es como sobre la marcha, vale, entonces nunca se partido de manera ordenada, entonces nunca se tuvieron completos los planes de mantenimiento. Nunca se planificó, no hay tiempo para muchas cosas.
+Jose Cortinat
+Lo importante es seguir operando en el fondo, ¿no? Entonces, ¿qué pasa si se lanzan proyectos y entonces hay mucha gente involucrada? Son proyectos que normalmente se ejecutan con consultoras, son proyectos largos, costosos para cuando terminas los entregables, posiblemente esos entregables en el camino se han desviado. No hay un. Estándar claro, ni un criterio claro, es decir, en la misma consultora, 2 consultores te pueden hacer la pega de un de una forma diferente.
+Jose Cortinat
+Vale, esos propios entregables pueden hasta quedar obsoletos, porque como tardas tanto en entregarlo hasta que llegan a su destino y se cargan en un SAP, igual ha cambiado el contexto operacional. Vale, entonces, como no está del todo adaptado, eso como se van haciendo. Batch en block es un batch, es un proyecto que se ejecuta en 6 o 8 o 1 año de tiempo y para cuando se ha terminado, yo no estoy tan convencido de que haya creado creado un proyecto, un producto final y siendo ejecutado.
+Magda
+Lo que decía antes. Pero a José, como para entender y hacer doble clic. Porque decía algo antes que también es muy interesante. O sea, hay formas de hacer las cosas que son iguales en todos lados, pero aún así, ¿por qué ocurre que sean en la práctica como inconsistencia si en el fondo hay una forma como establecida. 
+Jorge Alquinta
+Yo voy a responder primero a eso, hay algo ahí que faltó describirlo, pero es el factor cultural. Y por lo menos a mí que me ha tocado la suerte de trabajar operando. No haciendo consultoría, sino que también, pero operando dentro de mineras, por ejemplo en Argentina, en Panamá, en México. Pude ver que la cultura son totalmente distintas. Y uno las compara contra la base de millas en este caso que es Chile.
+Jorge Alquinta
+Y que hay cuenta, claro, por qué nos dicen y nos reconocen fuera del país que somos un país minero. Por los años que uno viene haciendo esto y te encontras con realidades que en Argentina yo me sentí como en los años 90. siendo que yo nunca lo hayas 90 trabajé, me imagino que era así, tan atrasado culturalmente desde un todo de vista minero. Porque las tecnologías son las mismas que hoy en día andan rondando en todos lados, pero si la cultura de la gente está atrasada, eso no lo podéis cambiar con nada. Eso va a costar mucho, prácticamente generaciones, pensando más encima que es un país que no es un fuerte productivo, el país se dedica a otra cosa y llegan minas, necesitan gente, traen gente de afuera.
+Jorge Alquinta
+pasa un poco eso. Entonces yo creo que eso va a ser una de las cosas que a lo mejor cuesta cómo abordarla, porque muchas veces nos enfocamos en los estándares, en lo duro. Pero el tema cultural que es un tema hablando, yo creo que si una consultora lo mete en la fórmula, la solución y le busca cómo abordarlo, sería un paquete mucho más completo. Porque con eso choca todo. Y esto te hace que un proyecto sea exitoso, fracase. Y eso es desde arriba abajo. O sea, me refiero desde la alta gerencia, está el técnico que está abajo.
+Jorge Alquinta
+Entonces hay un problema como a nivel regional, tema cultural. Y por eso dentro de un mismo país, hay compañías que están más maduras, que están la mitad y otras que la llaman madurez. De los mismos bajo ciertos factores. Hay cómo medirlo. Pero es un tema que impacta mucho, respondiendo porque tú dices que, en mis procesos en los distintos países, por qué no se logran cosas, o no la logran lograr y otros han avanzado un poco más.
+Jorge Alquinta
+Es por eso. 
+Gonzalo
+Yo tengo ahí un alcance solamente para complementar lo que dice Jorge, que pasó de hecho de un tema importante acá en Chile que es CODELCO. Porque CODELCO genera muchas oportunidades, pero a nivel de cultura, a nivel de sindicato, entrar con procesos, cambios, ajustes, es todo un tema. Tuve la oportunidad de trabajar un proyecto directamente desarrollando mejora mi proceso directamente en CODELCO. Y fue un tema implementar ajustes, cambios por temas de responsabilidades, sindicatos. Entonces, ahí sobre todo el tema cultural es muy grande.
+Jose Cortinat
+Sí, estamos hablando de que son, estamos hablando de compañías que son de 200.000 empleados para arriba, me explico, o sea, a ese nivel. Entonces ya hay una cultura tan implantada y estamos hablando de una industria que es pesada, compleja. Entonces, El perfil de profesional que se ha quedado no es el más avanzado, así como que busca todo lo último, ¿no? O sea, sabes, se centran en lo básico y se hacen las cosas de una manera.
+Jose Cortinat
+Entonces cuesta mucho cambiar las cosas, literalmente. Entonces, por lo mismo, Magda, o sea, y tú lo entiendes, o sea, te vas a empresas y dices, ¿de verdad que están utilizando esto un Excel para gestionar esto y no sé qué y tal y cual? Que además imputan errores manualmente constantemente y no pueden conectar ningún dato. Pues esa es la realidad, ese es el problema, no ha evolucionado. La tecnología evoluciona, los equipos, los vendors entregan nuevas, nuevas tecnologías, las implementan, la gestión de todo intacta, unos mejor, otros, otros peores, gente que quiere innovar al final.
+Jose Cortinat
+Si realmente se preocupa por su desarrollo profesional, yo creo que cambia de empleo, se va a otras industrias, porque o aceptas cómo es la burocracia de este tipo de empresas o te vas a aburrir mucho también, ¿sabes? Y te vas a frustrar, porque los cambios no se generan rápido.
+Magda
+Oye, a mí me gustaría emprender algo que compartamos entre todos la mirada de los usuarios, cómo los viven los usuarios, hay intentos y los labores. Bueno, no sé si quieres liderar tu contra la conversación, o sea, quienes son los usuarios afectados por esto y cómo creeremos que nos afecta. O sea, que tenemos ahí si quieres en intendentes, copia, etcétera. No sé, ahí te doy la palabra, te la tiro, solo a ver que. ¿A ti también me acuerda. 
+Gonzalo
+Sí. Ah, escuchado muy culpa hombre, sí. No, principalmente, usuarios afectados y ahí va la estructura completa, yo me enfoque más que nada en la parte como más de gestión, no solamente de la parte operativa, efectivamente los usuarios afectados va desde toda la parte de la planificación, la gestión desde la gerencia hasta la parte de los planificadores y los técnicos de mantenimiento donde tienen el acceso a la información en tiempo real y con los suministros efectivamente, ya gestionados y a disposición para efectivamente tenerlos para plantas, para las mantenciones, etc.
+Gonzalo
+Entonces, en ese punto, la secuencia general desde la gerencia hasta los planificadores, es sumamente importante, porque todos se ven afectados desde cierto punto, y si no hay una planificación, una estructura, un orden de como efectivamente se tiene que estructurar toda la parte del abastecimiento, el suministro, la estructura de la gestión, de todo lo que son los activos, Hay un problema gigante, como pasó por ejemplo muchas veces que teníamos diferentes proyectos de eficiencia de gestión de activos y resulta que en diferentes divisiones, en este caso fue Codelco hace muchos años, existían muchos equipos que tenían compra exprés o rápida, pagaban un charter y resulta que el equipo estaba disponible.
+Gonzalo
+el equipo está disponible o la herramienta está disponible en una dirección cercana, pero no tenían una estandarización, no tenían un software, no tenían un control para poder compartir los equipos y la división en el norte, hay cuatro división en el norte y las tenían a un par de kilómetros y compraban, gastaban y con el análisis que hicimos nos dimos cuenta que efectivamente hay toda una parte que solamente va desde la gerencia para que exista el sistema, exista una planificación, sino que también el control interno por parte de toda la gestión de los técnicos, planificadores y todo el personal de abastecimiento está alineado con las herramientas que se utilicen de forma correcta.
+Gonzalo
+No solamente es un tema a nivel estratégico, sino también el tema cultural del uso correcto de las herramientas que se utilicen adecuadamente, que se impute la información como corresponde, yo creo que ahí es donde la inteligencia artificial nos va a ayudar bastante. Porque no solamente es un tema de disposición de la gente, sino de saber utilizar la información que existe y poder complementarla a nivel transversal.
+Magda
+Bien. O sea que se producen unas ineficiencias así brutales con la estructura integrada.
+Gonzalo
+Exactamente, cuando no existe una gestión integrada de activos que la administración a nivel de compañía, sobre todo cuando tienen diferentes operaciones, es un tema sumamente relevante y hay un nivel de ahorro y eficiencias que se pueden lograr son bastante buenas.
+Magda
+Super. Ya, y ¿cómo impactan estas cosas? O sea, ¿cómo impactan con qué indicadores de negocio se maneja su parte? La verdad paso de rápido y después les doy la palabra como les comento. El porcentaje de equipos críticos como Plan Matriz o Plan Matriz, me imagino que el plan. que el plan matriz.
+Jose Cortinat
+Ah, el plan matriz es el plan. El plan de mantenimiento que se carga en el sistema ERP. Lo llaman también así plan matriz o plan matriz o plan de mantenimiento.
+Magda
+Ya. Ok, después tenemos mantenimiento reactivo. Lo ponemos como programa silencioso, poco, lo es mantenimiento por equipo, lo que es más alto. El MTTR. en este caso. Claro, y que se mide, me imagino, ¿cuánto tiempo para estar producida la máquina? O si no es una máquina. ¿Aplicas solo para equipos, el MTTR.
+Jose Cortinat
+Sí, ese es el para equipos físicos, el tiempo medio hasta que reparas, falla, vas, reparas, le pones en marcha y tal. Hay una serie de KPIs de mantenimiento y demás que te puede dar evidencia de tal. Pero yo creo.
+Magda
+¿Cuáles son los que impactarían? Eso lo vamos a ver más adelante para que lo pienses.
+Jose Cortinat
+A ver, aquí hay costos. Yo creo que hay como dos tipos de KPIs. Uno, el KPI como, no sé, como directo. es el que va a ver el gerente general y gerente de mantenimiento y tal, que va a ser ya qué punto de disponibilidad o confiabilidad hemos ganado en la planta. Vale, por ejemplo, que de qué manera se ha reducido el MTTR, por ejemplo. Vale, de qué manera ha mejorado el tiempo entre identificación de un problema y la reparación o.
+Jose Cortinat
+La solución no en el fondo, que es parte también de lo que queremos resolver. No hay una serie de cosas que son en esa línea, pero luego hay otro tipo de tema de KPI. Yo creo que es más como justificativo de presupuestos, que va a ser más como comparativos y ahí me estoy adelantando en alguna cosa que les voy a mostrar después de oye, ¿cuánto te cuesta a ti intentar resolver todo esto de la manera tradicional, no trayendo consultoras, siendo así tal tal y cuánto te podría costar? Ya de esta otra manera, no sólo en.
+Jose Cortinat
+costos, sino en tiempo y en calidad. ¿Sabes? Un poco. Entonces, una cosa es el resultado duro, que es lo que hemos dicho al principio, y otra cosa va a ser es y además, ¿cuánto y de qué manera mejor lo vas a poder ejecutar.
+Magda
+Bien, he entendido. Hay entonces un contexto general, está un poco como entiendo con la misma visión de lo que un chica hace contexto. Y ahora me gustaría que avancemos en la siguiente parte, que es como la lógica, la lógica para el usuario. Entonces acá les voy a sugerir que tomemos este cosa y que revisemos un poquito.
+Magda
+A ver, tenemos, no sé, cómo separarlo en gerentes. Por eso, ¿si tuvieran que decir usuarios principales? ¿Ayúdenme ustedes, gerentes de operaciones u otro tipo de mantenimiento.
+Jose Cortinat
+Bueno, vamos a tener diferentes. El gerente de mantenimiento o de gestión de activos va a tener acceso probablemente a algún dashboard con KPIs básicos. luego vas a tener al ingeniero de confiabilidad, al planificador, al operario, al inspector o al mantenedor, al ingeniero de repuestos o planificador de repuestos.
+Jorge Alquinta
+Planificador.
+Jose Cortinat
+No nos olvidemos tampoco del consultor en el fondo. Esos son por el lado del cliente mismo, pero para hacer las veces de ese cliente puede estar en paralelo un consultor que haga el trabajo como más duro o pesado. ¿Me explico.
+Magda
+Esto ya es bastante, porque aquí estamos diciendo que todas estas personas en teoría podrían utilizar esta situación. No son pocas. Vamos a poner ahí aparte. Vale, entonces, ¿cuál es la idea acá? Identificamos estos usuarios que tenemos ahí, son unos tres, cuatro, cinco, seis, siete. En la plataforma. ¿Qué quiere lograr el gerente de mantenimiento?
+Magda
+Y acá lo vamos a hacer en conjunto no más, no nos vamos a ir a reinstorming. El gerente de mantenimiento ¿Qué quiera lograr en una plataforma de gestión de auxilios? ¿Cuál es su objetivo? Y ahí los escucho.
+Jose Cortinat
+Dale Jorge, tú.
+Jorge Alquinta
+Bueno, el gerente de mantenimiento principalmente ve el negocio completo. el apellido es mantenimiento, pasa constantemente preocupado si cumplimos o no las metas de producción, porque sabe que eso es uno de los factores, no todos, pero el factor es a consecuencia de los equipos y toda la gestión que se haya hecho bien o no se haya hecho bien. En ellos, el tema de seguridad, producción, seguridad, costo, son como los tres grandes focos que él tiene.
+Jorge Alquinta
+Seguridad, claramente, porque así como los operadores están directamente en los equipos, los mecánicos también están en riesgo de sufrir algún evento, algún accidente producto de algún procedimiento mal aplicado, alguna herramienta que estaba defectuosa y generó un accidente. Y hemos tenido casos en la industria donde gente ha fallecido en actividades de mantenimiento, así como también ha fallecido operando equipos. Entonces, Por eso el tema de seguridad. El costo, claramente, porque acá hablamos de millones de dólares, los presupuestos que se manejan en mi.
+Jorge Alquinta
+A mí me tocó, si bien como superficiante, pero el gerente al final despercó la va hacia abajo, tener la responsabilidad de administrar 80 millones de dólares. Para el año, un año. Sólo plantas, sin sumar minas, manteniendo. Va a depender del tamaño de la mina, la cantidad de equipo, a veces sube, a veces baja, se implanta, se mira también son distintos, a veces se diferencia un poco. Pero todo ese costo hay que estarlo controlando.
+Jorge Alquinta
+El gerente necesita ver, va mirando los números grandes, va mirando el presupuesto, el gasto, y va mirando el costo unitario, el puerto de lado. Y por el tema de producción, eso es lo que nos mueve a todos, o sea, no solamente la operación, la mantenimiento, todos trabajamos para que la compañía produzca lo que el objetivo está definido, entonces esos tres pilares para la gerencia son fundamentales. Pueden haber otras cosas más, pero.
+Gonzalo
+Y ahí también sumar al gerente de mantenimiento quizá la parte principal que es el asegurar la disponibilidad de los activos.
+Jorge Alquinta
+Es el entregable de mantenimiento.
+Magda
+Claro. Vamos a ponerlo. Ya, perfecto. Si. Vamos al cliente de gestión de activos. ¿Qué querría? ¿Qué es importante para esto. 
+Jorge Alquinta
+Es lo mismo prácticamente. La diferencia es que en algunas mineras ya el nombre ha ido mutando y se llama, de activos, en otros siguen tomando mantenimiento, pero siguen viendo lo mismo que ambos.
+Gonzalo
+Ah y quizás podríamos sumarle que el gerente de gestión de activos tiene su responsabilidad es el maximizar el valor del ciclo de vida de los activos, eso proponemos ya para la parte más operativa, bajando un poco más de la parte más.
+Jorge Alquinta
+Claro, eso se lo llevamos ya a la parte, si cruzamos el estándar de gestión de activos podría ser eso, pero en la práctica, Muchas compañías siguen operando bajo el paraguas de mantenimiento, con nombres pomposos. Me ha tocado porque yo fui superintendente de gestión de activos. Y no hacía gestión de activos. Para los que conocemos gestión de activos al nivel de pureza, tú podrías distinguir, acá están participando de abastecimiento, están todos conectados, estamos todos en un ecosistema que es la gestión de activos.
+Jorge Alquinta
+No, esto sigue siendo mantenimiento. Entonces, en la práctica muchas empresas empiezan a adoptar estos nombres, pero cuando tú lo ves cómo operan, siguen operando bajo la lógica del mantenimiento. Metiendo cositas de gestión de activos, pero siguen aislados de finanzas, siguen aislados de BHI. No significa aislado, me refiero a que la gestión de activos, si hay un cambio allá, repercute en todo, si hay un cambio acá, hacia allá, es todo bidireccional. Muchas veces el mantenimiento se hacen cosas, o se dejan equipos fuera, la gente de finanzas, de contabilidad,
+Jorge Alquinta
+no tiene idea, se entera meses después de que habían dado de baja un equipo y por tanto no estaban actualizados el tema contable de los activos. A eso me refiero.
+Magda
+Sí. O sea, ¿La verdad es que me puso algo más acá.
+Jorge Alquinta
+En Chile la única industria que yo conozco está al nivel de gestión de activos es la industria eléctrica ¿Por qué? Porque el gobierno, sacó un decreto, que por ahí lo tengo en la norma, el pliego técnico, creo que es el número 19, que obliga a todo lo que está, generación, centrales, todo lo que es eléctrico. Incluso algunas mineras como Chuquica Mata y otras más que tienen como sus propias generadoras, tuvieron que aplicar el estándar de gestión de activos, y todo lo que empuja eso.
+Jorge Alquinta
+Pero no es que la mina se haya ido a gestión de activos, sino que esa parte, y esa parte tuvo que, certificarse.
+Jose Cortinat
+Sí, sí.
+Jorge Alquinta
+Y más encima les pidieron eh y saben el pliego técnico del gobierno. Eh como base el IRAM, el Institute of Asset Management. Entonces eh esa industria si tú vas son los que están a la vanguardia ¿Por qué? Porque está considerado como infraestructura crítica probablemente y por eso salió a nivel de país una exigencia, exigencia. Eh las mineras no están obligadas a implementar, Hizo 55.000 de gestión de activos.
+Jose Cortinat
+Sí, pero luego luego también. Luego hay que mirar el detalle de cómo lo han implementado y cómo se les ha auditado y todo eso. Bueno, eso también es verdad. Pero bueno, oye, ya sí, sigamos, sigamos. Entonces el consultor.
+Magda
+¿Qué quiere ver el consultor acá? ¿Cuáles son las cosas importantes para el consultor. 
+Jose Cortinat
+El consultorio espera 1 segundo para no perderme aquí en este apartado es como la intención del propósito de lo que buscaría en la plataforma, no el consulto en cada uno. no.
+Jorge Alquinta
+Sí, que quiere lograr, que quiere lograr.
+Jose Cortinat
+Claro, exacto, pues ahí yo creo que. Que, sobre todo, eficiencia, consistencia y poder reutilizar información de una manera inteligente, te iría. Eso en resumen.
+Magda
+No, somos muy específicos. Porque después tenemos que pensar cómo tienen todas las funcionalidades, ¿no? Claro.
+Jose Cortinat
+Entonces, tardar menos. Tardar menos tiempo en entregar, en generar los entregables que pueda tener el consultor, como no hay que hacer estrategias de mantenimiento o hay que hacer lo que sea. O no sé, igual la han contratado para hacer un RCA, no me voy a limitar solo como estrategia de mantenimiento porque ya sé que va a parte.
+Magda
+O sea, toda la información en un solo lugar sería importante como información, porque si no, cómo lo hace, tiene que estar.
+Jose Cortinat
+Por eso, ¿qué busca? Busca, primero, generar mucho más rápido el entregable. Segundo, no tener que, y por lo mismo, no tener que hacer retrabajos o empezar de cero la rueda, que pasa mucho, como que de repente, nuevo proyecto, casi que los mismos equipos y todo, y casi que partes medio de cero. Partes de la planilla Excel que tiene el consultor y cada consultor lo hace a su manera, entonces buscarías como, consistencia en la calidad también entregada, ¿sabes. 
+Jorge Alquinta
+En cambio, todo eso lo comentaría dentro del concepto estándar, porque cuando no está estandarizado, desde la mirada del consultor de cómo hacer algo, al final se hace desde la mirada que tienen alguno de los integrantes que tienen más experiencias, pero si está estandarizado, a quien pongas tú ahí, lo va a tener que hacer de esta forma.
+Magda
+Entonces, pero o solo llegar a. Es como. Eh.
+LInda
+Están. ¿Proceso estandarizado? Estándar.
+Magda
+Ya. ¿Están de acuerdo o alguna ciencia diferente? Sí. Esto querría ver entonces como para que sean más fáciles. Realmente entonces podemos que en nuestro día a día sea mejor vacío. Cada uno de los controles de esto de mirada. Entonces, es como la seguridad más fácil al consultor. Con esta eficiencia en la data centralizada de calidad estructurada. ¿Hay algo más. 
+Jose Cortinat
+Mira, una cosa que podría buscar también el consultor es tener un canal de comunicación con su cliente. En el que pueda generar algún proceso de revisión de la información y demás, porque al final creo que se hace. Normalmente se hace muy informal, no sé, uno le envías un correo, otro lo haces con un taller, el otro no sé qué, pero no hay una trazabilidad realmente que digas qué pasó con este entregable, cuándo se revisó, cuánto tiempos de la propia ejecución del entregable, no sé, como un traqueo del entregable hasta que se entrega, sabes, como con el input del cliente.
+Jose Cortinat
+En la línea que decía está bien Magda de tener toda la información un poco conectada. O sea, esos entregables, de qué manera están hablando con la información que te entregó el cliente? De qué manera podemos medir qué tan customizado está respecto a lo que te ha entregado el cliente, si es que te ha entregado algo? Son librerías, es conocimiento técnico del consultor, de la empresa. Se ha hecho un levantamiento de información y manuales de los vendors. ¿Cómo auditamos todo este proceso?
+Jose Cortinat
+Sabes, en el fondo, yo creo que también el propio cliente tiene ese problema, que como no tienen tiempo, cómo dicen que está bien el entregable y libero el pago de un de un contrato que normalmente son caros y demás, no tienen, no tienen. Yo creo que no tienen cómo medirlo. ¿Tú qué opinas de eso, Jorge? Depende mucho, al final en la práctica.
+Jorge Alquinta
+En la práctica por ejemplo, cuando me ha tocado a mí pedir proyectos desde el centro de la operación y contratar una consultora que nos da una solución, la gente que yo tengo no es experta en las metodologías que usan los consultores, la empresa. Lo único que ellos el parámetro por el cual se van a guiar es que tú me pasaste un plan, una carta acá, en lazos, en entregables, pongamos como que no vas a haber afectado el costo, a no ser que hayan sorpresas, pero plazos entregables.
+Jorge Alquinta
+O sea, me dijiste que me iba a entregar tal cosa, ok, te falta algo, Warning. Oye, te estáis demorando más de lo que dijiste, porque para atrasar todo, Warning. Es por un tema de conocimiento, de competencias de la gente, la gente tiene otro foco, operar, ver el día a día, los procesos de la operación.
+Jose Cortinat
+De repente ponen a una persona a gestionar un contrato y se limita por falta de competencias a eso, o, O luego le dicen a no sé cuántos revisores, si un revisor revisa de una manera, el otro revisa de otra manera, uno es más pesado, el otro no sé cuántos, el uno pasa de todo, el otro, sabes como el entregable final, ya te digo yo que agrega menos valor del que uno piensa, porque luego, claro, como todos sabemos esto que está comentando Jorge y que estoy comentando yo.
+Jose Cortinat
+A la hora de quitar un plan matriz y poner otro, también puede quedar la cagada, sabes, entonces no hay seguridad, no hay trazabilidad de nada y eso nosotros deberíamos poder resolverlo, sabes o darle tranquilidad de oye, que esto ha considerado esto, esto, esto está basado en estas buenas prácticas. Podemos trazar desde la. todas las decisiones, desde el manual del equipo, a el por qué, qué modos de falla, a qué tipo de estrategia y qué frecuencia y por qué, conectado con data histórica de órdenes de trabajo.
+Jose Cortinat
+Ya me estoy un poco como imaginando todo eso. En el fondo es todo un modelo que es 100% auditable, trazable y da tranquilidad de que estamos tomando la decisión como adecuada. Y si no es la adecuada, Tenemos un sistema que se va a retroalimentar y va a actualizar, digamos, o recomendar nuevas estrategias, nuevos ajustes en base a desempeño. Ese es un poco la idea, ¿no. 
+Gonzalo
+No tengo un punto. Yo creo que está correcto todo lo que estamos hablando, pero es más que nada operativo, pero yo creo que falta un tema importante. Aquí el consultor muchas veces se le critica o muchas veces se hace, pero no con forma correcta. que es la medición y el impacto financiero, la reducción de costos, el impacto del ROI, etc. Yo creo que también es una responsabilidad del consultor demostrar efectivamente que la mejora del proceso, la gestión de los proyectos, cómo impacta realmente financieramente a la empresa. 
+Jose Cortinat
+Eso sería brutal. Imagínate poder realmente transformar lo realizado en a través de una formulación, un no sé qué, un caso de estudio, lo que sea. impacto está teniendo financiero y demás qué retornos espera de la inversión sí.
+Jorge Alquinta
+Nosotros llegáramos a un gerente de planta de mantención incluso y después el de plantas de relación dijéramos mira es toda la solución está aumentar vaya a pasar de 4.000 a 4.300 toneladas hora sería ideal y sería sería muy arriesgado, porque el compromiso de lograr eso sería el paso entre trabajar contigo eternamente o no de llamarte nunca más porque fuiste a vender humo.
+Jose Cortinat
+Bueno, pero supongamos que Jorge esto que lo llevemos al nivel de despliegue organizacional en el que no solo se queda en un proceso o subproceso, el del desarrollo de estrategia, sino que nos metemos a tener datos, de órdenes de trabajo, conectado con SAP, con ciertas realidades de terreno que no se reflejen en SAP, ¿sabes? Como que podamos llegar al porqué de las cosas.
+Jorge Alquinta
+Claro. Hay cosas que a lo mejor uno las puede cuantificar directamente si vas a producir más plata, más cobre, más cobre, o va a pasar más por tu planta, no, sino que lo que buscan también los gerentes, por ejemplo, en áreas de mantenimiento, es mejorar el estándar y el nivel de conocimiento de la gente. Ellas son conscientes de que tienen una persona a lo más dos, que son los que tienen el mayor conocimiento y el resto son profesionales de término medio que todavía le falta recorrer, y mucho joven que está recién empezando. Entonces, herramientas que permitan de que de una forma, ese conocimiento que no tiene el joven o el de nivel intermedio, estas herramientas, estas soluciones, hagan de que todos suban a un nivel y estén parejos porque todos tienen las herramientas, necesitan aprender otras cosas porque ya están acá, solamente tienen que.
+Jorge Alquinta
+empezar a tomar mejores decisiones con eso, cosas como esas que les van a ayudar a las compañías a tener una madurez, una mayor madurez en cuanto a como trabajan sus procesos, menos variabilidad, hay mucha variabilidad por lo mismo, porque como hay debilidades en estándares, en procesos, a veces están escritos, nadie los mira, porque si no trabajas con ellos en el día a día y siguiéndolo al pie de la letra, Cada cual empieza a hacerlo lo que piensa que.
+Jorge Alquinta
+mejor, toman algunas pescas del estándar del proceso, pero lo fino, lo que te falta la diferencia, no lo toman. Entonces, cosas que mejoren a reducir la radiabilidad, aunque eso va a llevar a estabilidad del proceso, eso después inherentemente va a generar que los equipos operen mejor, no fallen, y que eso va a llevar a que haya la producción, por lo menos la que se comprometió. Entonces, para eso hay que apuntar a soluciones que van a lograr, cosas que son más, realistas.
+Jorge Alquinta
+Sí. Claro.
+Magda
+Oye, está bueno lo que está decir, no sé si están captando a dónde vamos, pero todo esto que estamos en el grano va a decir qué funcionalidades tiene que tener la para responder así. Hay una fortaleera frenada, modularizada y clara para enriquecer a la vida, una plataforma de tal y tal, específicamente lo que no están los de aquí. Ayúdenme agregando cosas si es que lo consideran pero sigamos con el resfriado y aquí le puede pedir que nos damos un poco la velocidad porque nos quedarnos con tiempo.
+Magda
+Ingeniero confiabilidad, es que lo quieres, les gusta, cuál es el foco, objetivo es la plataforma.
+Jose Cortinat
+Dale Jorge, tú, dale, dale que quiero escucharte.
+Jorge Alquinta
+Al ingeniero de confiabilidad, el foco es, anticiparse a la falla. Los equipos van a fallar, es imposible que no fallen. Pero si eligiere confiabilidad con datos de monitoreo de condición, datos de fallas que a lo mejor van a generar otras fallas más catastróficas, con data bien procesada, puedan marcar una tendencia que le esté levantando de un warning. Mira, este sistema o este componente puede fallar.
+Jorge Alquinta
+Mientras él tenga la información confiable y de calidad procesada, va a poder anticiparse a eso. Yo soy el de la gatilla, va a ajustar una estrategia, pedir una detención anticipada, que a lo mejor el equipo va a parar en dos meses más, nos paranteamos unos a un mes por esto, y levanta el tema con la Superintendencia. Superintendencia lo levanta con operaciones, si hay que parar una renta completa, etcétera. Manejar indicadores. El ingeniero de confiabilidad es el que lleva el dashboard de todos los indicadores de resultados.
+Jorge Alquinta
+Recién José o alguien decía, ¿cómo englobamos todos los indicadores? En minería se habla de dos conceptos, mantenimiento. Indicadores de resultados e indicadores de disciplina operacional. Los de resultados están la disponibilidad, la utilización, el rendimiento, estoy mezclando operación con mantenimiento, el rendimiento, MTBF, MTTR, el OEE, que algunos lo llevan al tema de eficiencia operacional. Y los de disciplina operacional, el cumplimiento del programa, la capacidad de los puestos de trabajo, las órdenes atrasadas, los avisos atrasados, el trabajo planificado, y todos los que puedan estar ahí englobados dentro de ese concepto.
+Jorge Alquinta
+Entonces, uno mide resultados del negocio y otro mide cómo están nuestros procesos. y los que son importantes y los que apalancan a los otros, son los de disciplina operacional. Porque si planificamos bien, programamos bien, ejecutamos bien, no tenemos aviso atrasado, por tanto, no nos pude reventar nada en la cara, una falla, porque vimos los avisos, las órdenes de trabajo, eso va a apalancar de que el resultado debiera ser mejor. Muchas veces, cuando hay malos resultados, y se empieza a hacer la investigación para atrás, "Oye, pero esto fue avisado.
+Jorge Alquinta
+hace dos meses atrás y ahí estaba el aviso pensar ni siquiera había sido transformado en OT o estaba en OT y no nos dejó el planificador puta, no, es que nos reventó y generó una pérdida financiera tremenda pérdida de disponibilidad, pérdida de producción entonces esas cosas son las que le interesa al ingeniero con Freire.
+Magda
+Super, avísenme si tengo que comentar algo más, el vino, el, dijo que esta aquí no le entendía nada un segundo, pero creo que esto lo resume un poquito, no sé si hay algo más que tendrás que agregar en esta parte como para que represente realmente lo que queremos que el ingeniero ya tenga, porque estabas hablando como de esta trazabilidad también, pero ahí no sé cuál sería la diferencia a la estrategia.
+Jorge Alquinta
+Claro, elige el área de confianza del día, está el ingeniero, su jefe y otras personas, es el cerebro, que daría confiabilidad en una gerencia de mantenimiento del cerebro, es el que dice qué tenemos que hacer y cómo tenemos que hacerlo, y eso percola la planificación, percola la generación, entonces, si ellos pueden ir llevando esa estrategia, lo vemos todo en el concepto de estrategia, actualizada y optimizada, esto debería generar resultados.
+Jorge Alquinta
+esperado y positivo hacia la disponibilidad, hacia la MTV.
+Gonzalo
+¿Él es el responsable de los planes de mantenimiento.
+Jorge Alquinta
+¿Cómo. 
+Gonzalo
+¿Él es el responsable de los planes de mantenimiento.
+Jorge Alquinta
+O sea, al principio cuando se crean, pero después cuando ya están los planes gatillando, es la planificación.
+Gonzalo
+Ah, claro.
+Magda
+Pero ustedes están pensando que el plan de mantenimiento se cree acá, porque el plan de mantenimiento se crea acá, ¿Cómo funciona eso. 
+Jorge Alquinta
+El ingeniero de confiabilidad es el administrador de los datos maestros. Y ahí están los planes de mantenimiento, están los puntos de medidas para definir cuánto es la pilla uno. Ese sería un punto. Confiero de confiabilidad, administración de data maestra. Eso sí, si tú quieres catalogar un material o modificar un texto, un material, ingeniero de confiabilidad. Si quieres cambiar una estrategia o un plan, ingeniero de confiabilidad. Ese es el área, vela por la administración de la Data Maestra.
+Jose Cortinat
+La Data Maestra, para que quede claro, Magda, es los datos en torno a esos planes de mantenimiento, para qué equipos, qué repuestos, qué sé yo, que está cargado un SAP. Pero a tu respuesta, Magda, decías, pero entonces se espera que este software tenga esa información. Sí, sí. Dentro de lo ahora entraremos dentro de lo que era la el plan de del alcance general que OCP quiere.
+Jose Cortinat
+No era el foco inicial del levantamiento de la de las deficiencias de la planificación y gestión del backlog y tal, pero sí que era parte del alcance, iba a venir un poco después. Es uno de los módulos, gestión, definición de estrategia de mantenimiento y lo vamos a ver lo que tenemos hecho.
+Jorge Alquinta
+Y lo último para el ingeniero con fidelidad son los análisis de falla. Las fallas, como dije, no van a. imposibles, no existe el mundo ideal, siempre van a ocurrir. La idea es evitarlas o minimizarlas, pero cuando ocurra es hacer un buen análisis de falla. Y con eso generar el mejor.
+Jose Cortinat
+Claro, y luego imagínate, tener toda la trazabilidad del análisis de falla con los planes de acción, su ejecución y medición, digamos, de. El resultado que hayan podido tener de la mitigación también, y todo esto lo conecto con la gestión del riesgo. ¿Dónde están los riesgos actualmente en mi planta? Ya pues ya porque no tenga planes de mantenimiento, ya porque tenga una un evento, un estatus, un estado de un equipo que se le está haciendo un monitoreo más cercano.
+Jose Cortinat
+Entonces, como al final, como monitorear todo desde la condición de los equipos. El levantamiento de los RC A cuando han pasado eventos, la definición de esos planes de acción que puede ser gatilla, por ejemplo, faltaba un procedimiento, faltó entrenamiento, capacitación, faltó, hace falta un rediseño en un equipo, hace falta una estrategia de mantenimiento, no sé, una inspección, un cambio de un componente con una frecuencia para que no vuelva a pasar. Entonces, ¿qué pasa también mucho en la industria?
+Jose Cortinat
+Que estos RC A se hacen, se emiten informes. informes que quedan en documentos sueltos. El ingeniero de confiabilidad como que se queda. Yo hice mi RCA. Pasé, no sé, las acciones al área correspondiente, pero luego ya el seguimiento real se pierde en el día a día.
+Magda
+Ya. Oye, hacemos con los otros. El ingeniero de confiabilidad, entonces un usuario como su esperado. Esperaría muchas cosas de. de estas locas formas. Se nos va muy imprimido de repuestos.
+Jorge Alquinta
+Yo me pasa el día el de planificación, porque el de repuestos en muchas faenas no existe ese cargo, el tema de repuestos lo que el mismo planificador.
+Jose Cortinat
+Sí, podría ser el mismo, sí. Hablemos desde el planificador, hablemos desde el planificador directamente y le englobamos al ingenio de repuestos como su parte de repuestos.
+Magda
+Vale. ¿Qué hace allí donde? ¿Qué objetivo tiene? ¿Qué objetivo. 
+Jorge Alquinta
+Bueno, pero primero el planificador es obviamente los planes a corto, mediano y largo plazo. Él tiene que tener la visión. y para eso los sistemas que manejan las compañías SAP, Maximo, GP Edward, etcétera, de una u otra forma están ahí en lo que es mantenimiento con los módulos de mantenimiento para ayudarlos a tener una administración de todos esos planes. El AI activa, llama a planes del sistema, o dependiendo de cómo estén configurados los planes que guían en automático según la fecha o el periodo que están establecidos, etcétera.
+Jorge Alquinta
+Lo otro es el tema del presupuesto. Así como confiabilidad es el cerebro y es el que genera la estrategia y administra la estrategia. Planificación, su foco es el presupuesto. Planificación es el que está principalmente mirando y tiene que mirar permanentemente los gastos. Cuánto hemos gastado por mantenimiento preventivo, incluso cuando hay falla. Porque eso impacta. actividades que estaban consideradas, que tenían costos asociados y que hay que empezar a tomar sesiones.
+Jorge Alquinta
+Entonces, administrar todo el presupuesto o budget, el foco de la planificación. El tema, por otro lado, el tema de la gestión eficiente de los recursos. La planificación tiene que saber cuántos equipos, no equipos productivos me refiero, sino que con cuántos recursos contamos para, planificar, cuánta dotación de personas, cuántas máquinas especiales, cuántas herramientas especiales, de apoyo, qué contrato, planificación de una reforma en que administra, dentro de las áreas de planificación están las áreas de contrato, entonces todo lo que es recursos, herramientas, dotación, servicios, contratos, todo.
+Magda
+Esta persona, yo estoy pensando en los planificadores de mantenimiento de los aviones que nosotros teníamos. Y un caso que tenían o una cosa que era su muy complicada era que también tenían que planificar los turnos en los técnicos. ¿Estos planificadores también hacen eso? ¿O hay otra área? O sea, tienen que estar en los recursos personas.
+Jorge Alquinta
+Ellos van al detalle. Ellos te dicen, mira, el caso de una excepción necesita tantas personas, dos mecánicos, dos instrumentistas. ¿Por cuántas horas? Por tres horas cada uno. Y ellos son los que tienen que, administrar de esa forma el uso del rebus, el uso eficiente del rebus.
+Jose Cortinat
+Me ha dicho de otra manera también simple, el ingeniero de confiabilidad define qué se tiene que ejecutar, con qué frecuencia, como el por qué, el análisis del modo de falla, el equipo, su desempeño, adelantarse a la falla, pensar un poco eso en, Vale, entonces habría que ejecutar este tipo de mantenimiento. Vale, el planificador tiene que, tomando ese plan ya cargado en el ERP en SAP, tiene que gestionar ese plan preventivo o predictivo que tiene una frecuencia que tiene asignado unos recursos, ya sean mecánicos, eléctricos.
+Jose Cortinat
+Tiene que. Asegurarse que tiene la mano de obra suficiente para ejecutar ese plan que estaba ya planificado y que está rodando en el sistema y que va generando ciertas órdenes de trabajo para que se ejecute, y luego tiene que ir gestionando nuevos requerimientos de trabajo que son como imprevistos. Tiene que evaluar qué se requiere y hacer todo el resourcing. Vale, entonces para ejecutar este trabajo, mira, voy a necesitar este repuesto, este código y no sé qué.
+Jose Cortinat
+Estos Estas herramientas o este equipo especial para el cambio de la bomba, hay que planificarlo y tal. Entonces se encarga literalmente de todos los recursos, administrarlos y asegurar que están disponibles previos a poder ejecutar el trabajo. Vale, entonces ahí el ingeniero de confiabilidad no se mete en eso. Vale, el ingeniero de confiabilidad es como el plan estratégico para que no pasen eventualidades, pero pasan eventualidades. ¿Sabes?
+Jose Cortinat
+Entonces el planificador analiza eso y no hemos hablado del programador, que a veces está cubierto por el propio planificador, pero que es diferente en un tema. El programador, una vez que se ha planificado todo y en el fondo tengo las tarjetitas de trabajos pendientes en mi backlog, digo, va, yo esto cuando lo puedo ejecutar y le pone una fecha.
+Magda
+Vale, siempre hay dos roles ahí, el planificador y el programador siempre está.
+Jose Cortinat
+Jorge, sí, ¿no. 
+LInda
+Sí.
+Magda
+Un profesional y usted si considera, no, pero ya, y el operario o no sé si hay algo más cerca al llegar en el programador.
+Jorge Alquinta
+Le pondría al supervisor, al supervisor, estamos hablando de gente del área de mantenimiento, el supervisor es el último en la cadena, él ya tiene a cargo los técnicos que meten las manos en los equipos.
+Jose Cortinat
+No, pero también, Jorge, también el ejecutor también, porque para la parte del levantamiento de las word request, Va a tener alcance el sistema. 
+Magda
+¿El supervisor qué hace. 
+Jorge Alquinta
+El supervisor es el que ejecuta, el que establece las prioridades en base a su capacidad real de recursos. Una cosa es lo que se define en la planificación, que después se ajusta ya más a firme en la programación, Y después llega el real, el momento en que ese plan se le entrega al supervisor confiabilidad su equipo de mecánico eléctrico. Porque pasan cosas, pasan cosas que hacen de que en la práctica, en la realidad se planificó bien, se planificó bien, pueda tener por distintos motivos que generar algún ajuste final en la ejecución, y esa parte le corresponderá al supervisor tomar esa decisión.
+Magda
+Ok, ¿y este supervisor intentaría hacer algo? O sea, ¿podemos nosotros ofrecerle algún tipo de solución a su trabajo diario? El supervisor es como está muy en terreno, ¿no? Está en la ejecución de efectos.
+Jorge Alquinta
+El supervisor, claro, primero asigna, él asigna los trabajos a los técnicos y se los asigna en base a las competencias que tienen los técnicos. Por eso a tal personal o a los, gente que tiene más experiencia, más confiabilidadocimiento en ciertas cosas, en ciertos equipos, le asigna esas tareas y no a otros. Él también confiabilidadoce, digamos, las habilidades, fortalezas y habilidades de su equipo desde el punto de vista de confiabilidadocimiento. Entonces él asigna responsabilidades. Él también es el que va ejecutando el programa, por tanto tiene que ir llevando un confiabilidadtrol de lo que ha hecho y lo que le queda por hacer en su calendario.
+Jorge Alquinta
+Hablemos de una semana. Él tiene que ir usando, usando ya, efectivamente el recurso. O sea, si en la práctica él cuenta confiabilidad 15 personas, pero llegaron 12 porque hay tres enfermos, no llegaron, o hay uno en la actuación y dos enfermos confiabilidad licencia médica, esos 15 pasan a ser 12 y el programa a lo mejor estaba hecho para hacerse confiabilidad 15. Si tengo 12, por eso le decía que ahí es donde realmente él tiene que tomar esas decisiones.
+Jorge Alquinta
+Algo va a dejar de hacerse, alguna decisión tiene que tomar. y sumado a eso es que los equipos fallan, y cuando los equipos fallan también tiene que atenderlos, entonces él también tiene que tomar decisiones, ok, tengo que atender una falla, pero tengo que hacer esto según el programa de mantenimiento, y no me da, no me da el recurso, ¿a qué voy? tiene que tomar esas decisiones para priorizar, y él tiene que tener también esa toma de decisiones y herramientas para poder priorizar.
+Jose Cortinat
+Entonces, por ejemplo, yo creo, Honestamente, que si queremos que esto funcione y agregue valor, tiene que agregarle valor al supervisor. Es el típico huevón en la ejecución que no hay soluciones para ellos, como todo, es para el confiabilidad de confiabilidadfiabilidad, para el planificador y el ejecutor, puta huevón, como solo tiene que ejecutar solo entre aspas, no hay soluciones, simplemente va, vaya usted y ejecuta lo que es perfecto, como dice Jorge.
+Jose Cortinat
+No es perfecto. Entonces yo creo que aquí nosotros tenemos. Dale, dale.
+Magda
+No, hay una duda. ¿Cómo ustedes dicen le asigna al operario o al técnico. 
+Jose Cortinat
+Al técnico de mantenimiento, sí.
+Magda
+Ya, pero ¿Cómo le asignan? Le dicen: Oye Juanito, anda a arreglar esto, ya te toca esto, le entrega una orden de trabajo, está en el trabajo de física.
+Jorge Alquinta
+El programa de mantenimiento que viene confiabilidad órdenes de trabajo, viene confiabilidad documentación, ya viene establecido este trabajo, hay que hacerlo confiabilidad tantas personas, tantos mecánicos, tantos eléctricos o instrumentistas y por cuánto tiempo eso viene. lo que es programa y establecido. Él tiene que cruzar eso confiabilidad su dotación real y confiabilidad las fallas que tenga, porque eso le quita gente para atender lo que está programado. Entonces él tiene que tomar decisiones. ¿Qué es lo que necesita el supervisor? El supervisor necesita primero tener el programa.
+Jorge Alquinta
+Hoy en día las compañías siguen entregando el programa impreso, documentos, una hoja de papel, y algunos se lo mandan por correo, pero el supervisor anda en terreno. Del 100% de su tiempo, el 80 está en terreno, el 20 está en la oficina para temas administrativos. A no ser que tenga un tablet y pueda ir viendo cosas en terreno, prácticamente necesita eso, para ir teniendo claro allá, después de este equipo, entre este otro, después de esta actividad viene esta otra, para ir llevando un confiabilidadtrol por al menos como un dashboard de su programa.
+Jose Cortinat
+Sí, de hecho, mira, yo unos comentarios sobre esto, porque esto pucha es clave. Yo lo veo que es súper clave en la solución para la adopción, sobre todo porque nuevamente vuelvo a que la ejecución es la gran olvidada en herramientas para que puedan realizar un trabajo menor, mejor.
+Jorge Alquinta
+Vale, entonces hay 2 confiabilidadceptos, hay 2 confiabilidadceptos claros. de la ejecución que está el supervisor y todo su equipo. Así como en confiabilidadfiabilidad, yo les dije estrategia, en planificación les dije costo. En ejecución donde está el supervisor y sus mecánicos es calidad y seguridad. Esos son los dos focos. Seguridad obviamente para que no se le dé el accidente a una persona. Y calidad es para que los equipos no fallen y calidad en como hacen el trabajo, porque muchas veces hacen el trabajo, el equipo se entrega y a la hora, o a veces menos incluso,
+Jorge Alquinta
+vaya por lo mismo y se tiene que hacer un retrabajo, volver a hacer lo mismo porque lo hicieron mal, porque aplicaron un mal procedimiento, porque no tenían la herramienta adecuada, tuvieron que usar una herramienta que no es la adecuada, etc, etc. Entonces calidad y seguridad son los grandes focos de la ejecución.
+Jose Cortinat
+Pucha, mira, se me ocurren cosas, vale, las voy a tirar ahí como se va a quedar grabado. Decíamos que el supervisor en el fondo y la ejecución es como el gran olvidado, entonces, Un punto, decía Jorge, se le entrega la información en documentos en papel o en correo electrónico. No tiene primero, no está en terreno, papel, no sé si lo tomó, pero se lo dejó en la oficina, puta y el huevón. ¿Qué estás en el papel o el correo? Tampoco le llega al internet. Primer punto, que los planes se se vuelquen como offline y pueda trabajar como offline en terreno, vale.
+Jose Cortinat
+Y haga una sincronización, igual que dijo el David, oye, mira esta plataforma, realmente tú puedes, la última vez que estuviste confiabilidadectado, no tienes toda la realidad, vas, ajustas, chequeas, no sé qué he hecho, no sé qué, pum, vuelvo, me confiabilidadecto otra vez, se sincroniza y se actualiza lo que he hecho. Primer punto que tendría que tener la plataforma, esa sincronización offline para poder trabajar offline, para que cuando vuelvas a oficina como que pum. El trabajo, ese check que has puesto y ese comentario que has hecho y lo que sea se vuelva a cargar.
+Jose Cortinat
+Segundo, que le permita aquí ya si tiene un poco de Internet, pero que le permita hacer un diagnóstico de oye todo el trabajo que tiene en base al workforce que tiene actualmente y las características de su equipo. No sé, imagínate que les instruimos a generar una especie de prompt a ellos de oye, mira. Analiza, tengo estas órdenes de trabajo, no sé todas estas, no ta y tengo estos perfiles actualmente, estos viejitos que además esos viejitos los tengo ya preseteados de qué capacidades tienen.
+Jose Cortinat
+Prepárame un plan, sabes como ayúdame un poco como un diagnóstico de tal y además priorizado de tal. No te digo que lo vaya a ejecutar a rajatabla, pero mientras se está preparando el equipo para la sesión de seguridad, pum, le da aquello tal, no sé qué, lo revisa y dice, puta, sí. Y que vaya agarrando confiabilidadfianza y diga, oye, la verdad que me hace unos planes bastante cercanos a lo que yo diría que debemos hacer, ¿no? Primer punto. Segundo, el tema de la calidad.
+Jose Cortinat
+Vale, imagínate que el operario o el mantenedor en base al mantenimiento que va a tener que ejecutar le haga una especie de checklist final de oye, has hecho esto o durante. En base al checkpoint en el que estás de el avance del mantenimiento, hacer como gate reviews un poco de calidad, es decir, estoy, he desmontado la bomba. Vale, oye, pues oye, asegúrate de esto, revisa antes de instalar esto, esto, esto y que no pueda continuar con el mantenimiento.
+Jose Cortinat
+Si no se asegura de contestar con sí, sí o lo otro, me explico. Me sigues un poco, Jorge, de repente, y forzarles un poco a que tengan una guía y que sirva como de auditoría del trabajo también, para que en el fondo no nos llevemos esas sorpresas de que la bomba se pone en marcha y a la hora está parada de vuelta.
+Jorge Alquinta
+Sí, y además, José, hace muchos años, yo creo que la primera vez que lo escuché fue en el 2012, que se habla de ir a pautas digitales. hay empresas, pero muy pocas, yo todavía donde he trabajado nunca lo he visto, se ha hablado, se ha avanzado y nunca se ha llegado a nada, ni siquiera se ha avanzado en implementar, todo ha quedado en el papel, en la idea, en la idea.
+Jose Cortinat
+Jorge, a mi me parece impresionante esto.
+Jorge Alquinta
+Eliminar todo el papel impreso y que la gente esté con un tablet donde estén todas las actividades que hay que hacer en 2 horas de mantenimiento o en 10 horas de mantenimiento, con check, lo hidráulico, lo eléctrico, lo instrumental, gaste el lubricante, etcétera. Y de esa forma tú tienes un control de la pauta y por tarea, y te aseguras de que se hizo. Y eso mismo agarra de que toda la documentación de apoyo por procedimientos, procedimientos de seguridad, estándares, todo lo que ocupa, mapas, mapas planos, planos hidráulicos, planos eléctricos, toda la información que necesita.
+Jorge Alquinta
+el ejecutor también esté ahí. No sólo para el supervisor, sino que también para al menos uno para que lo ocupe el líder. Dentro de los mecánicos siempre hay un líder, un técnico superior, donde no pueden tener todos los mecánicos una tablet, pero uno que tenga la información y que ahí distribuya. Lo otro, el control de las herramientas. Muchas veces en algunas compañías mineras, el control de las herramientas está del lado de los ejecutores, y en otras se les entrega la planificación. Sea uno o sea el otro, nunca hay un buen control.
+Jorge Alquinta
+Y siempre lo ideal sería tercerizar, que ven una empresa externa, que existen y se dedican a eso. Pero muchas veces por bajar costos, ya, hagámoslo nosotros. Y eso hablo de los pañoles. El pañol tiene X cantidad de herramientas, tanto van operativas, a lo mejor hay 5 herramientas y resulta que 2 están operativas, y hay 3 fallas. Entonces no han tirado la compra para reponer y algunas herramientas se pueden mandar a reparar. las llaves hidráulicas de torque o neumáticas de torque se mandan a reparar y se certifican los ganchos para izar altas cargas, tienen que estar certificados.
+Jorge Alquinta
+Todo ese control se pide. Cuando tú vas a comenzar un trabajo dentro de los checks de seguridad, están las herramientas certificadas, están todos ese certificados. ¿Cómo lo aseguran? ¿Cómo lo certifican? Ahí hay muchas opciones de dar soluciones para que tengan un mejor control de ese pañol, de esa herramienta, de esa documentación.
+Jose Cortinat
+Totalmente, totalmente. Ya sigamos, ya entonces el operario y ponle operario o mantenedor, más bien en el fondo es el que identifica, identifica el trabajo, sobre todo en eso, identificar trabajo, o sea, posibilidad de identificar trabajo y que eso al planificador le agregue valor. Vale, primer punto, que sea fácil y que no tenga que ir a sentarse delante de un computador. Abrir el word request en SAT mañoso y que luego al final entregue una información que no es adecuada.
+Jose Cortinat
+Vale, segundo operario o más bien operario llamado mantenedor. De hecho, es oye un acompañamiento de seguridad, de aseguramiento de calidad en la ejecución de su trabajo. Y 3 te diría yo es. Oye, ¿de qué manera podría consultar información del proveedor o del equipo? ¿Sabes? Como para pequeñas cosas, ¿no? Tipo el listado de expertos.
+Magda
+Pues menos eso, ¿no? Como que tienes los manuales y en vez de estar pensando en el manual, pero sí tira eso, ¿no? Como que tienes algo que pone un VLM que puedes conversar con el manual.
+Jose Cortinat
+Claro, totalmente, sí, literalmente y que pueda y que y fíjate que imagínate que hubiese las posibilidades de en 60 segundos que le haga un refreshment en audio de decirle cuáles son los puntos críticos de este mantenimiento hoy, sabes, y que se lo recomiende, se lo recuerde tal lo he escuchado, lo he escuchado, vale, pum, ya está, ya es como que he hecho unas una. He tenido la reunión de seguridad donde hemos hablado de los problemas de los riesgos críticos y tal, pero aparte, en mi mantenimiento a la hora de ejecutar el trabajo, ¿con qué cosas tengo que andar con cuidado?
+Jose Cortinat
+Porque. Lo que dice Jorge es cierto. Luego hay un montón de procedimientos, pero la gente no los lee. Si la gente no quiere leer, no tiene tiempo para leer cosas. Entonces, ¿de qué manera convertir? ¿De qué manera podríamos convertir ese esos procedimientos específicos sobre tareas específicas en mini cápsulas mucho más rápidas en formato, no sé, audio, que sean mucho más al punto, sabes? Y de, por ejemplo, oye, pregúntame cualquier cosa que necesites. Oye, ¿y esto y esto?
+Jose Cortinat
+Hay dos cosas, ¿sabes. 
+Magda
+O sea, lo primero es que ahí puede haber una fuerte resistencia de ser una herramienta de todo este tipo, porque los que no son personas que por ahí llevan como mucho tiempo haciéndoles días casadas. Puede ser. ¿Y lo otro? Esto de. la persona que va y da una falla y la reporta, ¿es parte de este mismo sistema o no. 
+Jose Cortinat
+Sí, sí, sí, tal cual, tal cual. Sería el mantenedor. Sería el mantenedor ese, ese mantenedor. Identifica.
+Jorge Alquinta
+Estaría ahí dentro del concepto de identificar trabajo. 
+Jose Cortinat
+Exacto.
+LInda
+Como. ¿Hay algo más alto que tiene algo estar. 
+Jorge Alquinta
+Mira, el mantenedor tiene dos escenarios. Tiene un escenario planificado. No planificado, que es la falla. En el planificado, que es lo que yo recién le explicaba que al supervisor le asigna un trabajo, él tiene que saber con qué herramientas cuento para hacerlo, qué componentes, los componentes son esas piezas grandes, que ya se escapan del concepto de repuestos, repuestos son cosas chicas y componentes, un motor, una pieza grande. Entonces, están las herramientas, están en buen estado, ok, están los repuestos, están cerca, porque si no tengo que gastar tiempo, hacer pierden horas, tengo que ir a buscarlos a una bodega que está lejos, físicamente y volver.
+Jorge Alquinta
+Los componentes están, están las grúas, está el puente de grúa que está dentro del taller funciona, y todas esas cosas mantenido. lo tiene que ver el planificador y el programador, pero el mantenedor cuando hay que ejecutar, eso tiene que estar funcionando, si no, no va a poder hacer el trabajo, primero. Y después está la calidad con que lo hace y la secuencia lógica. ¿Qué es la secuencia lógica? Imaginémonos un par de mecánicos que entran a una máquina, estamos hablando de mantenimiento programado. La secuencia lógica es que él empiece por una zona del equipo y no tenga que partir adelante, irse atrás y después volver adelante, eso hace perder tiempo.
+Jorge Alquinta
+La secuencia lógica es que es parte por sistemas del equipo y que recorra el equipo en forma eficiente para que el tiempo total de atención de ese equipo de atención sea lógico. Porque cuando la secuencia lógica, cuando intervengo, si no está ordenada, el tiempo se puede hasta duplicar. Eso es uno. Después están las pruebas. El mantenedor, una vez que termina el mantenimiento de una máquina, tiene que probarla. Tiene que encenderla, él trabaja con equipos, él trabaja con equipos, desconectados eléctricamente, y ahí hay un concepto de bloqueo, hay un bloqueo eléctrico, hay un bloqueo de energía, bloqueo mecánico.
+Jorge Alquinta
+Entonces por seguridad él tiene que bloquearlo, hay protocolo, etc. Hay estándares para cómo bloquear, qué hacerlo, dónde, listo. Después están las pruebas como les decía, que tiene que desbloquear porque el equipo tiene que estar energizado, tiene que moverse, las pruebas. Y lo entregan. Eso es cuando es programado, cuando es una falta que es muy parecido.
+Magda
+Pregunta de eso que estás diciendo. hizo el trabajo, ¿Cierto? Se va a hacer una prueba, esa prueba solamente se queda en que el señor dice ya lo probamos que funciona o tiene que reforzar algo sobre esa prueba. 
+Jorge Alquinta
+O sea, hay un registro de la prueba ideal, porque en las pautas, en los documentos está para que él registre los parámetros que gatillaron la prueba. Fíjate, tú mandas un auto a un taller, le hacen un arreglo mecánico y lo aprueban y te anotan, No, el motor está en tanta temperatura, el aceite está en tanto, el nivel de aceite, las RPM son tantas, o sea, está dentro de los parámetros en que el auto funciona. En las máquinas es lo mismo. En esas pruebas tú tienes que asegurarte de que están los valores dentro de los rangos.
+Jorge Alquinta
+Y dentro de eso también va a ocupar información, los planos, todo lo que recién les comenté. Ahora en los escenarios, es cuando él está enfrentado a una falla. Cuando él está enfrentado a una falla, la diferencia es que lo programado llega al taller. Cuando son equipos, mira, llegan al taller, cuando la planta está en taller. Pero cuando es una falla, él tiene que trasladarse distancias grandes en minas. En planta va a la planta. Lo primero que tiene que hacer es que falló. Porque el equipo está detenido. Hay una noción, no, falló el sistema eléctrico. Pero, ¿qué falló? Eso se llama diagnóstico.
+Jorge Alquinta
+Él tiene que diagnosticar. Y eso le puede quitar. A veces la reparación es tan corta y el diagnóstico puede ser tan largo porque cuesta llegar. Entonces él tiene que tener, información técnica que le ayude a realizar un buen diagnóstico, más sus propias competencias y conocimientos. Si el diagnóstico es rápido, la reparación va a demorarse en lo que tenga que reparar, pero eso en el tiempo total va a ser más corto. Y lo otro es contar con los repuestos, con la información, con las herramientas, con lo mismo que se repite para el caso bajo un programa, en una falla es el concepto del diagnóstico.
+Jorge Alquinta
+Teniendo eso el repara, vuelve a hacer las pruebas y entrega.
+Magda
+José tenía en la mano.
+Jose Cortinat
+Mira, es que está súper interesante esto porque voy como conectando con cosas que igual no lo he hablado del todo o lo he hablado separado con Gonzalo, claramente, pero que de repente llegan aquí. A ver, de lo último a lo primero, tema de la falla que decía Jorge, claro, ese es como el troubleshooting, no en el fondo, es como oye, el diagnóstico de la falla, ¿qué está pasando aquí? Si es un tema eléctrico, oye, qué está pasando y empieza a testear aquí tal cual. Tú imagínate esto a pequeña escala ya lo hacemos nosotros con ChatGPT.
+Jose Cortinat
+Oye, estoy viendo esto en esta plataforma, dónde encuentro no sé qué, le pasa un pantallazo y no sé qué. Pues imagínate un sistema que describiéndole el síntoma que está viendo en el momento, le puede ayudar con dos o tres vías de testeo. Que complementen lo que él ya sabe, me explico. O sea, entonces, ¿qué pasa? Que no siempre tienes al más experimentado al levantar esa falla, es como que hay gente que tampoco sabe, se las sabe todas y esto lo voy a conectar con otro tema que era uno de los productos que quería lanzar yo y además que está ya vendido y todo, es decir, solo haría falta como desarrollarlo, que es hoy en día hay mucha persona mayor que está retirándose.
+Jose Cortinat
+Vale que se está digando yendo a la aposentarse o cómo es en al retiro, digamos, como jubilarse, jubilarse. Entonces, mucho técnico experimentado que todo ese conocimiento se está yendo, se van con él. Entonces, ¿cómo podríamos hacer para que el sistema vaya aprendiendo sobre diagnósticos de falla específicos y que se conecten con fallas anteriores, con órdenes de servicio? Que se cerraron adecuadamente y aquí lo dejo abierto un poco el supervisor.
+Jose Cortinat
+Parte también del trabajo del supervisor es que se cierren bien las órdenes de trabajo y yo creo en lo que creo que estamos al debe en la industria es primero que se cierre bien la orden de trabajo, vale, porque se prima la ejecución y luego como que se cierre bien ya es como ya es el. El 10, no sacar el 7, no que lo cierres bien y que ese dato además se utilice para alimentar la inteligencia del modelo de mantenimiento para que seamos mucho más predictivos.
+Jose Cortinat
+Ahí estamos 100% al debe, cierre, el cierre de orden de trabajo, información en esa orden de trabajo y que eso genere inteligencia a futuro. Eso no pasa hoy prácticamente. Vale, entonces, volviendo al punto, ¿cómo hacemos para? alimentar ese modelo de sugerencias, de revisiones para que los técnicos que no son de tanto nivel como un senior lleguen al senior. ¿Cómo hacemos para levantar la información. 
+Magda
+Pues yo estoy levantando postes, porque estás mezclando el clip con el fondo.
+Jose Cortinat
+Vale, sí.
+Magda
+Sí, verdad? Porque todo eso, por eso me voy para el lado, porque escuchándote. Claro, nosotros tenemos que decir, esta plataforma, para todo eso que vimos, qué tiene que automatizar, qué va a tener que analizar, cómo lo va a hacer, qué va a tener que predecir, qué va a tener que expresar. Entonces no sé si nos pinta que esas cosas las definamos ahí o que las definamos activas, no sé cómo lo quieren bajar y ahí también hay libertad para eso.
+Magda
+Viendo la lógica de esto, bueno, tenemos una mirada como bien general de lo que esto se llama intent map, map como herramienta. Es para hacerlo intent después de como contexto. Todo esto se tiene que procesar. En teoría, cuando nosotros construir una plataforma con las herramientas que nosotros utilizamos como AI first. Todo eso nos va a permitir generar el intent, que es la primera capital.
+Magda
+Después del intent se genera el espectro. Ellas son las especificaciones de contractuales, etc. para cada una de las funcionalidades que responden a ellas. Entonces hay preguntas. ¿Cómo lo hacemos? Porque ya estamos en tiempo para desarrollar, pero nos falta, Está como muy buena la conversación para poder entender hacia dónde va, marchar a una de las líneas.
+Jorge Alquinta
+Yo quiero rescatar una cosa de la que dijo José que es muy buena, que es el concepto de Travel Shooting y que amarra al tema de calidad y seguridad, que es fundamental en el mantenedor. O sea, si lo mencionamos arriba en el supervisor, en el mantenedor es purista 100% calidad y seguridad. El Travel Shooting. realmente los definen los OM, los fabricantes de equipos. Caterpillar tiene troubleshooting para sus equipos, y algunos otros fabricantes de equipos mundiales lo tienen también para sus equipos.
+Jorge Alquinta
+Pero como tú vas a una compañía minera, si a mí me ha tocado, los mantenedores no tienen los troubleshooting. Y no todos los OM también los tienen o los entregan. Entonces es fundamental que los troubleshooting existan. ¿Por qué? Porque yo he visto, me ha tocado, de que cuando hay una falla, el diagnóstico, el mantenedor lo empieza a hacer en base a su experiencia. La idea es siempre poner al más experto, pero en la realidad el más experto igual se equivocan. Y a veces empiezan a irse por una línea que gatilla costos, porque no, cambiemos esto.
+Jorge Alquinta
+Y la falla sigue, cambiemos esto otro. Y la falla sigue. Terminan cambiando cosas hasta que al final le dan, a veces ni siquiera no le chuntan al problema. El Exactamente, y eso es que me da costo, porque ya sacaste cosas de bodega, las montaste, cambiaste cosas que no deberían haber cambiado cuando el problema es otro, cuando después llegas realmente a la causa, el troubleshooting te ayuda a direccionar por donde evaluar, primero ir por lo mínimo y después ves a los cambios, no ir al cambio a la primera. A veces cuando es por efecto el mismo troubleshooting te dicen, para supuesto esto cambia esto otro.
+Jorge Alquinta
+Pero es porque había que hacerlo. Y el troubleshooting, los que lo tienen, lo tienen en papel, digital, muchas veces no está en el terreno y el gran porcentaje no lo tienen, entonces ahí hay una oportunidad tremenda de poder entregar una solución profesional.
+Jose Cortinat
+Es que imagínate, yo creo que hagamos un parón para recapacitar sobre esto, Magda y yo de hecho yo creo que podemos ir a cenar, no, no, esto, esto, si tiras de la, si nos ponemos de innovación a mí se me ocurren cosas que son bacanes, como por ejemplo, ¿tú te imaginas que la gente que está retirada ya, Que está y que igual le gusta trabajar y igual están hasta disponibles, pero desde su casa podrían agregar valor. Una aplicación tan sencilla como una especie de solicitud de tenemos esta falla, la IA me ha pasado esto, la IA me está yendo por aquí, ¿qué hago para dónde voy?
+Jose Cortinat
+Y decirle, oye, tira más por aquí y tal y darle un feedback casi que en el momento que le retribuya económicamente al viejito de terreno. Que eso alimenta, además, la mejora de la capacidad de decisiones de ese sistema de troubleshooting y vayamos alimentando un motor de a través de esas personas que ya se han ido, ¿sabes? Porque en muchos casos ya se han ido y están y están disponibles, están disponibles y no les no les importaría para nada, además, que se midiese el tiempo a un a un costo adecuado.
+Jose Cortinat
+Y que la y en su aplicación se vea el tiempo invertido en sus decisiones y que se le retribuye de alguna manera. Y la compañía lo que hace es un problemón, que es un problemón que lo hablan los grandes gerentes corporativos de mantenimiento de que están perdiendo el conocimiento y el know how por la gente que se está yendo. Es volver a tener contacto y recuperar parte hasta y quizás en algún momento sintéticamente. replicar ese conocimiento de esos viejitos a través de estas iteraciones.
+Jose Cortinat
+¿Se entiende, no. 
+Magda
+Sí. Oye, pero hay una duda. Porque está, bueno, es otra parte de ella, es otra ramificación, pero los equipos. Yo me acuerdo, por ejemplo, de una planta productiva que, que así en algún momento, traían técnicos de, no sé, de Alemania. en otros lugares como para que les enseñaran cómo hacer las máquinas y las máquinas también tenían algún tipo de manual o no sé cómo se llamara.
+Magda
+Eso es como, o sea, ¿eso te da la base de para poder encontrar los problemas o no? ¿O es sólo la experiencia de las personas o es una mezcla de todo? ¿Dónde se captura esa información. 
+Jorge Alquinta
+Una cosa es la experiencia, las fallas son las que más te enseñan, pero no es un negocio rentable de aprender para atrás de las fallas. Lo otro es la capacitación. Los mejores técnicos son los que ojalá han ido a fábrica y los que han ido a fábrica son capacitados por los representantes de equipos en el país. Que son los que tienen el conocimiento directo de su equipo, su sistema y potenciales fallas y como solucionarlos. Entonces por eso hay técnicos, las primeras tienen los técnicos, llamémosle A, B, C. El C es como el, tiene menos conocimiento, puede ser avanzado en edad, pero si tiene menos conocimiento es C, no necesariamente asociado a los años, porque se les hace pruebas, se les mide el conocimiento, y en función de eso los evalúan y suben de escala a un B, y el B al A, que el A se supone que cumple con años, con que tiene el conocimiento, lo demostró a través de las pruebas, etc.
+Jorge Alquinta
+Entonces, es una mezcla de experiencia y capacitación, certificación.
+Magda
+Está bien, y pasa, es que muchas voy a guardando este mes, que ahí teníamos. Miren por lo que teníamos. Porque los técnicos no hablaban inglés. Teníamos técnicos que sabían pero no hablaban inglés y los manuales, todo estaba en inglés y entonces había muchas cosas que les entendían y era un problema como que la compañía decían ¿Qué hacemos? ¿Qué tenemos que hacer? O sea, nosotros capacitarlos o enseñarles inglés para que puedan.
+Magda
+Entender que estos manuales es un problema súper solucionable. No sé cómo funciona eso en la minoría, pero son cosas tan pequeñas y tan fáciles de solucionar con la IA, tan fácil, que son como pequeños quick wins, como oportunidades que hay dentro de cada uno de estos mundos, de cada uno de estos roles. No sé si ahí funcionará igual. Porque lo que usa el Jose, como que se puede mezclar con otras cosas también. O que faciliten al final el trabajo de estas personas en el día a día y hagan que valoren tener una herramienta, porque si no, no la van a usar.
+Jose Cortinat
+Sí, mira. Magda, te digo, estoy como pensando un poco sobre todo esto. Las posibilidades son infinitas. De hecho, la gente, o sea, nosotros como empresa de software, plantando un poco como ya, Que somos también y conociendo los problemas que hay, son infinitas las ramas, nuestro.
+Magda
+De su peso, te fregaste.
+Jose Cortinat
+Sí, que les decía que nosotros como empresa de software y ahí ya plantando un poco como lo que somos, también vale, sobre todo más que el área consultiva, somos empresa de software y que queremos llevar todo ese tipo de soluciones al mercado. Para todas esas problemáticas que estamos identificando, las posibilidades van a ser infinitas y se va a ir enramando todo esto en un montón de cosas. Nuestra clave, y aquí Magda, te lo paso como líder de la fábrica de software, es ser concretos, delimitar y como una carta, un road más claro, modular para que luego Jorge y yo, por ejemplo, lo vendamos también en la industria con claridad.
+Jose Cortinat
+con sus temas de marketing y lo que sea, pero tenemos que ser más excelentes en la definición de cómo vamos a evaluar una posibilidad versus otra, ¿me explico? Que no tengo la respuesta ahora mismo, ¿eh. 
+Magda
+Es el curso reparto que puedes generar.
+Jose Cortinat
+Claro.
+Magda
+Ya, es como usaba uno de los focos, Porque hay que priorizar esto, no se puede hacer todo. Cuando uno lo quiere hacer todo, pasa que terminas con una plantaforma que no entiendes ni por dónde empezar. Por eso estamos haciendo esto. Entonces, lo que normalmente se hace cuando estamos haciendo un discovery, una cotización, que como yo creo, es bastante como a las oportunidades que tenemos y a lo que va a generar impacto de manera más simple.
+Magda
+Esas son las funcionalidades que deberían salir en vivo. Así que es parte de la priorización que tenemos ya. Me gustaría que, no sé si más tarde o mañana podamos continuar con esto. ¿Cómo lo hacemos? ¿Cómo manejamos. 
+Jose Cortinat
+Mira, yo creo, Magda, porque ha estado buena, hemos hecho mucho levantamiento del caso, de lo que, pasa la problemática y tal. Ahora vamos a ir un poco más al cómo. La solución? Claro, entonces yo creo que ahora podemos hacer un parón y luego nos juntamos en un ratito y yo ahora muestro qué hay, qué tenemos. Y luego, en base a ese análisis del qué tenemos, definimos qué queda y qué está faltando y cómo trabajamos en un plan de implementación de todo, de todo lo que queremos en base a lo que hemos comentado, ¿sabes. 
+Magda
+Sí, sí. Hagamos un place para que alcancemos también a comer nosotros si no nos pasamos porque ya.
+Magda
+Sí, hay ocho horas y nueve.
+Jorge Alquinta
+¿En qué sitio? ¿En cuál sitio nos conectamos todo sobre tu mamá. 
+Magda
+Voy a mover esta misma para más tarde. Sería a las diez. Ok. a las diez son las doce y media no dos o dos y media a ver ¿a qué hora le llegó a Fair.
+Gonzalo
+A las una y media ah ya no lo que pasa es que tenemos de un curso a la una o la una y media de acá de la base de permisos y partiría más pino con la otra.
+Magda
+Eh ah no ya entonces no creo que, Vamos a buscar esto. A ver, si la de permiso la ponemos a las. O sea, la ponemos a la. A esa hora. Yo puse ahí. Ya ve que ahora te sale más que mural. Tengo.
+Gonzalo
+45.
+Magda
+Sí, o a las 12.
+Gonzalo
+O sea, depende mucho de lo que conversemos ahora con el "Me tengo que conectar con Carlos" para integrar. Ya, así que invitamos. Que lo podamos revisar y que después de acuerdo a sus comentarios tengamos la tarde para ir haciendo ajustes. Y le dejamos pasado lo que acordamos para que lo puedan revisar. Lo culparan ustedes ya va a ser tarde.
+Magda
+Y a ver.
+Jose Cortinat
+Mira, Jorge, te comparto. Te he compartido ahí una página web para que tú vayas ya avanzando viendo algunas cositas y que ya vayas viendo como qué hay. Luego yo te hago una pasada también que no, que no es que la tengas súper súper clara porque. Hay mucha cosa medio un poco mezclada, pero vas a ver que hay cosas que hay que desarrollar, ajustar, reestructurar. Hay gaps en lo que hemos hablado, pero parte ya está para que lo revises.
+Jose Cortinat
+Vale, tú te metes en la plataforma.
+Jorge Alquinta
+Con qué usuario y clave. 
+Jose Cortinat
+Mira, si tú le clicas encima de cualquiera de los usuarios que se ve abajo que pone administrador y tal, al darle se te se te autocompleta y le das a aceptar y se y se conecta directamente. ¿Ves? En este caso es el de administrador, por ejemplo. ¿Has puedo entrar. 
+Jorge Alquinta
+No, no, no. Me pide.
+Jose Cortinat
+A ver, compárteme la pantalla. Todo en blanco. Compárteme la pantalla. Sí, ya entonces no pongas ahí, a ver, bueno, se ve medio borroso ahí abajo.
+Jose Cortinat
+Si tú clicas directamente abajo en admin, en el icono, dale, ahora dale a iniciar sesión, ves, vale. que le das al icono y entonces puedes entrar con un nuevo y vas a ver que son diferentes, vale, ahora mismo como que ves todo y medio mezclado, dar una vuelta a todo, juega, hay botones, alguna cosa funciona o alguna no, y luego lo comentamos, vale. 
+Magda
+Vale. Oye, ha llegado este cambio, estaba mirando entre la línea media, y ahora sí, ahí les llevo. que no les quería poner nada a la aguja porque es la hora que normalmente almuerzo. La dejé un poquito después. Ya dije el recurso de la tarde. La nuestra como. bueno, como un break. que nos juntamos con este golpe?
+Jose Cortinat
+Ya estimados. No nos vamos. Nos vamos? Chao, chao.
